@@ -1,8 +1,9 @@
 # Initial security model
 
 Status: required design boundaries, not implemented security guarantees. Mission 1
-has a local parser and trace recorder scaffold. It has no production loader,
-authentication, semantic gate, effect adapters, eval runtime, or tenant isolation.
+has a local parser, integer Counter reference oracle, observed traces and a
+concrete operational contract checker. It has no production loader, learned term
+verification, authentication, external effect adapters, eval runtime or tenant isolation.
 
 ## Trust and execution boundaries
 
@@ -49,8 +50,11 @@ execute model output as a host function or process command.
 | Trace or training disclosure | Authorized observations, redaction, no tenant training | Secret in input cannot appear in metadata/training export |
 | Resource exhaustion | Loader and inference/term/eval budgets | Huge proposal, deep nesting, infinite overlay: bounded failure |
 
-All table tests remain pending. Syntax rejection of direct init calls and parser
-nesting caps are implemented frontend checks, not runtime sandbox evidence.
+The concrete integer tests reject wrong returns/deltas, frame mutations,
+extra/reordered writes, overflow and partial state publication. Runtime init
+rejection, step/depth errors and rollback are also tested. The table’s tenant,
+model, loader, dependency, eval and external-effect controls remain pending.
+These local oracle checks are not production sandbox or gateway evidence.
 
 ## Limits that need explicit designs
 
@@ -66,5 +70,6 @@ must not publish new agent-visible tools or modify signed contracts. Its explici
 exact overlay mode, if used, remains separate in learned coverage metrics.
 
 Traces must distinguish observed facts, proposed steps, accepted proofs, rejected
-requests and actual commits. The recorder scaffold has no value fields to avoid
-premature data capture; even metadata needs policy before production exposure.
+requests and actual commits. Local trace capture omits integer payloads by default; synthetic examples opt
+in explicitly. Local result/state reports still contain values. Neither capture
+mode provides a production observation/redaction policy.

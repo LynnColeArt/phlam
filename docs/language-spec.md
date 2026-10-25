@@ -1,8 +1,10 @@
 # PHLAM language draft v0
 
 Status: bootstrap grammar plus proposed semantic defaults, 2026-10-25. The CLI
-checks the syntax described under “Implemented”; it does not execute code,
-resolve names, infer effects, parse manifests, or prove semantic contracts.
+`check` command validates the syntax below. The separate reference `run` command
+now executes the restricted integer/object subset described in
+[reference-execution.md](reference-execution.md), with concrete operational
+contracts. Manifests, general semantic analysis and symbolic proof remain pending.
 
 ## Implemented source structure
 
@@ -43,7 +45,7 @@ Layout is omitted from the EBNF except at statement boundaries. Properties may
 be uninitialized (`$name`) or have an expression default; semantic restrictions
 on defaults remain pending. Duplicate classes, same-kind members, and parameters
 are rejected. Required parameters cannot follow optional ones. Integers are
-preserved as raw decimal text in the AST; range enforcement awaits semantics.
+preserved as raw decimal text in the AST; the reference executor rejects out-of-range values without float conversion.
 Strings are single-line quoted tokens with escaped characters, retained raw;
 no interpolation or escape interpretation is implemented yet.
 
@@ -93,11 +95,10 @@ Only `new ClassName(...)` constructs an object; parentheses are mandatory.
 `function init(...)` is the only initializer. Class-named constructors and `__*`
 magic methods are rejected, as are `var` and visibility modifiers. All members
 are accessible inside an application; external access still requires policy.
-Direct `->init(...)` calls are rejected at parse time. Dynamically resolved init
-must also be rejected by the future runtime; static rejection is not enforcement
-of all dynamic paths.
+Direct `->init(...)` calls are rejected at parse time. The reference runtime API also rejects ordinary init calls. Dynamic member syntax
+is still pending, so static rejection is not enforcement of all future dynamic paths.
 
-Proposed semantics: allocate a fresh identity with independent property cells,
+Implemented reference behavior: allocate a fresh identity with independent property cells,
 evaluate per-instance defaults, call init once, then publish the instance. With
 no init, only zero arguments are valid. Initialization failure does not publish
 a usable handle. Ordinary assignment copies an object handle, preserving
@@ -105,7 +106,11 @@ identity: `$b = $a; $b->increment(2)` changes the same object. `new Counter` twi
 creates two independent objects. See pending scenarios in `tests/differential`.
 No inheritance, static methods, global application functions, or top-level code.
 
-## Proposed exact value and scope rules (not executed yet)
+## Exact value and scope defaults
+
+The oracle implements the integer/object/boolean subset in the execution guide.
+The broader arrays, strings, floats, aliases and dynamic evaluation below remain
+proposals until their evaluator tests exist.
 
 - Values: null, bool, signed int64, finite float64 (float syntax pending), strings,
   ordered associative arrays, and object handles. Integer overflow is an error.
@@ -163,6 +168,7 @@ reference overlay may be a disclosed mode but cannot count as learned success.
 ## Remaining Phase 1 work
 
 Manifest/lock parsing and dependency allowlists, name resolution, defaults/value
-validation, operational contract inference, dynamic member syntax, loops, more
+validation, general operational contract inference beyond the integer fragment, dynamic
+member syntax, loops, more
 complete source diagnostics and error recovery. `check` means bootstrap syntax
 and local declaration checks, not deployment readiness.

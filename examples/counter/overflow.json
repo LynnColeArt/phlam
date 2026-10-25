@@ -1,0 +1,8 @@
+{
+  "schema": "phlam.scenario.v0",
+  "capture_integers": true,
+  "steps": [
+    {"op": "new", "class": "Counter", "bind": "counter", "args": [9223372036854775807]},
+    {"op": "call", "target": "counter", "method": "increment"}
+  ]
+}

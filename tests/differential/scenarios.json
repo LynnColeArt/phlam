@@ -1,12 +1,41 @@
 {
   "schema": "phlam.pending-scenarios.v0",
-  "status": "not_implemented",
+  "status": "partial",
   "scenarios": [
-    {"name": "caller-scope-alias", "body": "$name = 'value'; $$name = 10; $alias = &$value; eval('$alias += 2'); return $value", "expected": 12},
-    {"name": "object-identity", "body": "$a = new Counter(0); $b = $a; $b->increment(2); return $a->read()", "expected": 2},
-    {"name": "independent-instances", "body": "$a = new Counter(0); $b = new Counter(0); $a->increment(2); return $b->read()", "expected": 0},
-    {"name": "dynamic-init-denied", "body": "$a = new Counter(0); $method = 'init'; $a->$method(9)", "expected_error": "initializer_not_callable", "note": "dynamic method syntax and runtime enforcement pending"},
-    {"name": "learned-invalid-proposal", "expected": "reject without committing state or invoking reference fallback"},
-    {"name": "eval-overlay", "expected": "caller variables mutate; frozen base artifact hash and authority remain unchanged"}
+    {
+      "name": "caller-scope-alias",
+      "body": "$name = 'value'; $$name = 10; $alias = &$value; eval('$alias += 2'); return $value",
+      "expected": 12,
+      "status": "pending"
+    },
+    {
+      "name": "object-identity",
+      "body": "$a = new Counter(0); $b = $a; $b->increment(2); return $a->read()",
+      "expected": 2,
+      "status": "implemented_reference"
+    },
+    {
+      "name": "independent-instances",
+      "body": "$a = new Counter(0); $b = new Counter(0); $a->increment(2); return $b->read()",
+      "expected": 0,
+      "status": "implemented_reference"
+    },
+    {
+      "name": "dynamic-init-denied",
+      "body": "$a = new Counter(0); $method = 'init'; $a->$method(9)",
+      "expected_error": "initializer_not_callable",
+      "note": "dynamic method syntax and runtime enforcement pending",
+      "status": "pending"
+    },
+    {
+      "name": "learned-invalid-proposal",
+      "expected": "reject without committing state or invoking reference fallback",
+      "status": "pending"
+    },
+    {
+      "name": "eval-overlay",
+      "expected": "caller variables mutate; frozen base artifact hash and authority remain unchanged",
+      "status": "pending"
+    }
   ]
 }

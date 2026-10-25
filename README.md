@@ -10,16 +10,23 @@ They are not the target deployed runtime.
 
 ## Current state
 
-Mission 1 provides a fresh Go frontend for the Counter example, deterministic JSON
-AST inspection, source diagnostics, syntax tests, and a future trace-recorder seam.
-**No reference evaluator, trained model, semantic validator or learned execution
-exists yet.** Runtime scenarios are explicitly skipped, not represented as passes.
+The Go frontend parses Counter and emits deterministic ASTs and diagnostics.
+The reference oracle now executes integer Counter methods with independent
+instances, shared object identity, checked arithmetic, real execution traces and
+transaction rollback. Compiler-derived operational contracts check exact returns,
+state relations and ordered writes before publication.
+
+**No trained model, learned executor or symbolic term verifier exists yet.**
+Reference execution is the oracle for that experiment. Dynamic variables,
+reference-cell aliases and eval remain unimplemented runtime obligations.
 
 Read the [project brief](PHLAM_Codex_Project_Brief.md),
 [learned executor/exact boundary](docs/learned-runtime.md),
 [language draft](docs/language-spec.md), and
 [initial security model](docs/security-model.md).
-The [mission report](docs/mission-0001-report.md) records evidence and limitations.
+The [Counter execution guide](docs/reference-execution.md) and
+[second-slice report](docs/mission-0002-report.md) record current evidence and limits.
+The [first mission report](docs/mission-0001-report.md) preserves the bootstrap history.
 
 ## Run
 
@@ -29,6 +36,8 @@ Requires Go 1.26+. No external Go dependencies or PHP installation.
 go test -v ./...
 go run ./cmd/phlam check examples/counter/counter.phlam
 go run ./cmd/phlam inspect examples/counter/counter.phlam
+go run ./cmd/phlam contracts examples/counter/counter.phlam
+go run ./cmd/phlam run examples/counter/counter.phlam examples/counter/scenario.json
 mkdir -p bin
 go build -o bin/phlam ./cmd/phlam
 ./bin/phlam check tests/syntax/invalid/missing-purpose.phlam
@@ -43,26 +52,28 @@ identical source bytes and contains no timestamp or absolute checkout path.
 Implemented: documented classes, properties, init/methods, parameters/defaults,
 integer/string/bool/null literals, arrays, variables/indirect variables, alias
 syntax, calls/new, arithmetic/comparisons, if/else, return, optional semicolons.
-These are parsing features, not executed semantics. See the spec for deliberate
-restrictions. Manifests, loops, dynamic member-name syntax, effect analysis and
+Those are frontend features. The [execution guide](docs/reference-execution.md)
+defines the smaller subset that actually runs. Manifests, loops, dynamic member-name syntax, effect analysis and
 full name/type checking are not implemented.
 
 ## Structure
 
 - `cmd/phlam`: CLI; `compiler/frontend`: tokens, AST, parser, diagnostics.
-- `runtime/trace`: recording interface for future actual execution events.
+- `compiler/contracts`: restricted operational contract derivation and checking.
+- `semantics`: exact values and checked integer primitives.
+- `runtime/reference`: local snapshot-based oracle; `runtime/trace`: observed events.
 - `examples/counter`: first source example.
 - `tests/syntax`: valid/invalid corpus with expected diagnostic codes.
 - `tests/differential`: skipped runtime obligations and proposed scenarios.
 - `docs/decisions`, `reference/php4`: evidence and recorded architectural choices.
 
-The skeleton creates only used directories. Future `runtime/reference`,
-`runtime/learned`, `runtime/effects`, training, stdlib, gateway and debugger
+The skeleton creates only used directories. Future `runtime/learned`, `runtime/effects`, training, stdlib, gateway and debugger
 packages will follow their first actual implementation.
 
-The next slice is a small reference evaluator with real trace generation and
-Counter operational contracts, followed by a separately measured learned
-transition experiment. Do not quietly replace that experiment with an index VM.
+The oracle and concrete contract checker now support designing the bounded
+learned transition experiment. It still needs learned parameters, independent
+inference, and honest accounting for all exact-checker work. Phase 2 aliases and
+eval also remain open. Do not quietly replace that experiment with an index VM.
 
 ## Licensing
 

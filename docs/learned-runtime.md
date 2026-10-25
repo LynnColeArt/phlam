@@ -1,8 +1,10 @@
 # Learned runtime: first experiment contract
 
-Status: proposed architecture, 2026-10-25. No trained model, deployment artifact,
-reference evaluator, or semantic validator exists yet. `phlam inspect` emits a
-compiler AST only. This document defines an experiment, not achieved properties.
+Status: proposed learned architecture, 2026-10-25. A restricted Counter reference
+evaluator, actual traces and concrete operational contract checker now exist; see
+[reference-execution.md](reference-execution.md). No trained model, learned
+deployment artifact or symbolic term verifier exists. `phlam inspect` still emits
+a compiler AST. The learned-execution claims below remain experiment goals.
 
 ## Architectural destination
 
@@ -65,7 +67,9 @@ and be cached only with the contract hash, term hash, domain, primitive semantic
 version, and artifact hash. Runtime domain, authority, state-version, and resource
 checks still apply every time.
 
-This is a design candidate, not an existing equivalence prover. Integer overflow
+This is a design candidate, not an existing equivalence prover. The implemented
+concrete checker re-evaluates relations for one transition; it does not discharge
+this symbolic proof obligation. Integer overflow
 and branch coverage cannot be waved away by treating machine integers as reals.
 Unknown predicates, unbounded loops, dynamic evaluation, or effects outside the
 proven fragment must reject as unsupported. A safe rejection is an execution

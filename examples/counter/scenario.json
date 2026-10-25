@@ -1,0 +1,12 @@
+{
+  "schema": "phlam.scenario.v0",
+  "capture_integers": true,
+  "steps": [
+    {"op": "new", "class": "Counter", "bind": "a", "args": [10]},
+    {"op": "alias", "from": "a", "bind": "b"},
+    {"op": "new", "class": "Counter", "bind": "independent"},
+    {"op": "call", "target": "b", "method": "increment", "args": [2]},
+    {"op": "call", "target": "a", "method": "read"},
+    {"op": "call", "target": "independent", "method": "read"}
+  ]
+}
