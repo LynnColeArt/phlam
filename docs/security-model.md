@@ -8,6 +8,14 @@ an explicitly public research signing key. That is not a production trust root.
 It has no production loader, symbolic learned-term verification, authentication,
 external effect adapters, eval runtime or tenant isolation.
 
+The bounded composition worker now deep-copies its artifact/engine and verifies
+all primitive input cases before setting a private in-process certificate. Runtime
+domain/shape/score guards protect reuse; changed engines or models require new
+verification. Tests cover certificate rejection, sealed-model independence and
+atomic rollback on domain escape. No caller-provided certificate or persisted
+proof bit is accepted. This finite local guarantee supplies no caller authority,
+tenant policy or permission for external effects.
+
 ## Trust and execution boundaries
 
 Source/class purposes, model outputs, dependency contents, business records,

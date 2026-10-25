@@ -1,12 +1,14 @@
 # Learned runtime: first experiment contract
 
-Status: first bounded numerical experiment implemented, 2026-10-25. It trains,
-freezes, reloads and invokes a Counter model without source; see the
-[recorded results](../experiments/counter/run-0001/REPORT.md). Held-out numeric
-accuracy and weight dependence pass, but exact checking repeats the computation
-and lookup is equally accurate. Unseen programs/compositions and symbolic term
-verification remain unproven. The sections below describe the broader target,
-not properties established by this small affine experiment.
+Status: bounded numerical and supplied-sequence experiments implemented,
+2026-10-25. The first model executes from frozen weights without source. Its
+unchanged single-step training also supports
+[held-out composition rollouts](../experiments/counter-compositions/run-0001/REPORT.md)
+of 2..16 supplied operations. A load-time finite-domain check now certifies all
+primitive inputs, allowing guarded warm composition without repeated relation
+arithmetic. Startup costs and break-even are recorded separately. Lookup remains
+faster. Learned planning, new program/branch structures and general symbolic term
+verification remain unproven. Sections below describe the broader target.
 
 ## Architectural destination
 
@@ -59,6 +61,16 @@ Read must return the current value and leave all state unchanged. A wrong but
 well-typed proposal must be rejected.
 
 ## Avoiding an oracle disguised as a validator
+
+Current bounded implementation: a worker checks all 4,386 discrete primitive
+inputs once, using its actual immutable model, shared quantizer and exact
+contracts. It keeps only an in-process certificate, not an output lookup table.
+Runtime bounds/shape/score guards plus ordered typed assembly compose those
+verified steps by induction. No source or reference evaluator is used in this
+certification. This removes warm arithmetic duplication but shifts exact work to
+startup, so amortization is measured. It is finite exhaustive verification, not
+a solution to unbounded program equivalence. The symbolic strategy below remains
+a candidate for a broader domain.
 
 Candidate approach: restrict terms to a small decidable fragment. For straight
 line counter arithmetic, symbolically normalize integer expressions and prove

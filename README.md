@@ -16,12 +16,17 @@ instances, shared object identity, checked arithmetic, real execution traces and
 transaction rollback. Compiler-derived operational contracts check exact returns,
 state relations and ordered writes before publication.
 
-**The first bounded learned Counter experiment now runs from frozen weights
-without source.** It matches the oracle on 4,216 held-out integer transitions;
-structural lookup also matches all cases, and the exact checker still repeats
-the arithmetic. This is a small numerical result, not a general learned runtime
-or efficiency gain. [Results and reproduction](experiments/counter/README.md).
-Symbolic term verification, dynamic variables, reference-cell aliases and eval
+**Frozen learned Counter execution now covers held-out operation sequences.**
+The unchanged model trained on 170 single steps matches the oracle on 1,096
+supported compositions across 136 shapes. Another 80 schedules leave its finite
+domain and reject atomically. These are caller-supplied schedules, not learned
+planning. [Composition results](experiments/counter-compositions/run-0001/REPORT.md).
+
+A load-time finite-domain certificate removes duplicated relation additions from
+the warm checker, with startup cost and break-even measured separately. Structural
+lookup remains equally correct and faster overall. The
+[first numerical experiment](experiments/counter/README.md) remains available.
+General symbolic verification, dynamic variables, reference-cell aliases and eval
 remain unimplemented.
 
 Read the [project brief](PHLAM_Codex_Project_Brief.md),
@@ -66,9 +71,12 @@ full name/type checking are not implemented.
 - `compiler/contracts`: restricted operational contract derivation and checking.
 - `semantics`: exact values and checked integer primitives.
 - `runtime/reference`: local snapshot-based oracle; `runtime/trace`: observed events.
-- `runtime/learned`: bounded trained predictor, frozen loader and checked transitions.
+- `runtime/learned`: bounded trained predictor, frozen loader, composition
+  certificates and atomic checked transitions.
 - `cmd/phlam-counter-experiment`, `cmd/phlam-counter-worker`: training/evaluation
   parent and independently invoked source-free executor.
+- `cmd/phlam-counter-compositions`, `cmd/phlam-counter-compose-worker`: held-out
+  composition study and source-free worker with concrete/certified boundaries.
 - `examples/counter`: first source example.
 - `tests/syntax`: valid/invalid corpus with expected diagnostic codes.
 - `tests/differential`: frozen-model/oracle/lookup comparison plus two skipped
@@ -76,7 +84,8 @@ full name/type checking are not implemented.
 - `docs/decisions`, `reference/php4`: evidence and recorded architectural choices.
 
 The next research question is whether learned execution can contribute beyond
-this affine numeric family while reducing the exact boundary's duplicated work.
+supplied schedules in this affine family, with a checker that scales beyond finite
+domain enumeration.
 Symbolic checking, generalization across programs/compositions, capability
 discovery, stdlib/effects, gateways and debugging remain open. Phase 2 aliases and
 eval also remain open. The learned substrate remains the architectural target.

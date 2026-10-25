@@ -159,35 +159,12 @@ func (e *Executor) Run(c Case, engine string) (out Outcome) {
 		}
 	}
 	t := time.Now()
-	switch engine {
-	case "learned":
-		out.Scores = e.artifact.Model.Predict(c)
-	case "zero":
-		out.Scores = Model{}.Predict(c)
-	case "shuffled":
-		// Fixed permutation preserves the weight distribution but breaks its feature
-		// and output associations. It is an ablation, not a retrained baseline.
-		var m Model
-		for h := range m.Weights {
-			for j := range m.Weights[h] {
-				m.Weights[h][j] = e.artifact.Model.Weights[(h+1)%3][(j+1)%4]
-			}
-		}
-		out.Scores = m.Predict(c)
-	case "lookup":
-		// Structural baseline: exact operation lookup + exact primitive, not a memo
-		// table of training cases. This is deliberately a strong trivial baseline.
-		value := c.State
-		write := 0.0
-		if lookupWrites[c.Operation] {
-			value, _ = semantics.Add(value, c.Delta)
-			write = 1
-		}
-		out.Scores = [3]float64{float64(value) / Scale, float64(value) / Scale, write}
-	default:
+	scores, ok := e.predict(c, engine)
+	if !ok {
 		out.Rejection = "unknown_engine"
 		return
 	}
+	out.Scores = scores
 	out.Timing.ProposalNS = time.Since(t).Nanoseconds()
 	t = time.Now()
 	for _, score := range out.Scores {
@@ -196,9 +173,8 @@ func (e *Executor) Run(c Case, engine string) (out Outcome) {
 			return
 		}
 	}
-	next := int64(math.Round(out.Scores[0] * Scale))
-	result := int64(math.Round(out.Scores[1] * Scale))
-	write := out.Scores[2] >= .5
+	decoded := decodePrediction(out.Scores)
+	next, result, write := decoded.Next, decoded.Result, decoded.Write
 	before := map[string]semantics.Value{"value": semantics.Integer(c.State)}
 	after := map[string]semantics.Value{"value": semantics.Integer(next)}
 	args := map[string]semantics.Value{}
@@ -230,4 +206,35 @@ func (e *Executor) Run(c Case, engine string) (out Outcome) {
 	}
 	out.Timing.CommitNS = time.Since(t).Nanoseconds()
 	return
+}
+
+// predict and decodePrediction are shared by certification and invocation so a
+// proof never approves a different predictor/quantizer from the executed one.
+func (e *Executor) predict(c Case, engine string) ([3]float64, bool) {
+	switch engine {
+	case "learned":
+		return e.artifact.Model.Predict(c), true
+	case "zero":
+		return Model{}.Predict(c), true
+	case "shuffled":
+		var m Model
+		for h := range m.Weights {
+			for j := range m.Weights[h] {
+				m.Weights[h][j] = e.artifact.Model.Weights[(h+1)%3][(j+1)%4]
+			}
+		}
+		return m.Predict(c), true
+	case "lookup":
+		v := c.State
+		w := 0.0
+		if lookupWrites[c.Operation] {
+			v, _ = semantics.Add(v, c.Delta)
+			w = 1
+		}
+		return [3]float64{float64(v) / Scale, float64(v) / Scale, w}, true
+	}
+	return [3]float64{}, false
+}
+func decodePrediction(scores [3]float64) Prediction {
+	return Prediction{Next: int64(math.Round(scores[0] * Scale)), Result: int64(math.Round(scores[1] * Scale)), Write: scores[2] >= .5}
 }

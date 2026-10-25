@@ -1,0 +1,24 @@
+{
+  "sequences": [
+    {
+      "id": "untrained-demo",
+      "initial": 12,
+      "steps": [
+        {"operation": "Counter.increment", "delta": 3},
+        {"operation": "Counter.read", "delta": 0},
+        {"operation": "Counter.increment", "delta": -7},
+        {"operation": "Counter.increment", "delta": 0},
+        {"operation": "Counter.read", "delta": 0}
+      ]
+    },
+    {
+      "id": "domain-escape-must-rollback",
+      "initial": 64,
+      "steps": [
+        {"operation": "Counter.increment", "delta": 16},
+        {"operation": "Counter.increment", "delta": -16}
+      ]
+    }
+  ],
+  "repeats": 1
+}

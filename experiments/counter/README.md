@@ -4,6 +4,10 @@ This experiment trains a linear state-transition model from observed reference
 runs, freezes its weights with exact contracts, reloads the artifact in a separate
 process without source, and compares with the oracle and structural lookup.
 
+A subsequent [composition study](../counter-compositions/README.md) reuses these
+weights without retraining and measures a smaller warm exact boundary. The
+results below remain the original single-step experiment.
+
 The [recorded result](run-0001/REPORT.md) includes correctness, ablations, timing,
 checker work, lineage and limitations. The [machine report](run-0001/report.json),
 [frozen artifact](run-0001/artifact.json), [training observations](run-0001/training.json)

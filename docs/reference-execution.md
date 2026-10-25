@@ -55,7 +55,9 @@ This is a scoped integer experiment, not completion of Phase 2.
 
 ## Snapshot publication and failures
 
-Each public Construct/Call copies the private local heap. All nested calls share
+Each public Construct/Call/Compose copies the private local heap. Compose is an
+ordered list of ordinary method invocations inside one transaction; its results
+and all nested state writes publish together only on success. All nested calls share
 that working snapshot. A successful invocation publishes the entire snapshot;
 objects with writes advance their version once per public transaction, including
 same-value writes. Reads do not advance versions. Failed init publishes no object.
@@ -121,7 +123,9 @@ transition: complete before/after state, effective arguments, return value and
 ordered write observations. It rejects unknown contracts, bad domain/frames,
 overflow, incorrect writes, changed protected slots and incorrect returns. It is
 pure: no mutation, AST evaluator call, policy decision, or reference fallback.
-The oracle checks inferred contracts before publishing state. Exported state,
+The oracle checks inferred contracts before publishing state. The separate
+[composition experiment](../experiments/counter-compositions/README.md) uses this
+API as its external source-based comparator. Exported state,
 contracts and event snapshots cannot mutate its private internal relations.
 
 This checker evaluates operational relation terms for the current input. That is

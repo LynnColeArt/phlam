@@ -286,3 +286,19 @@ func FuzzCounterTransition(f *testing.F) {
 		}
 	})
 }
+
+func TestAtomicReferenceComposition(t *testing.T) {
+	r := runtime(t, counterSource(t), Options{})
+	h := construct(t, r, "Counter", 10)
+	results, err := r.Compose(h, []Invocation{{Method: "increment", Args: []semantics.Value{semantics.Integer(3)}}, {Method: "read"}, {Method: "increment", Args: []semantics.Value{semantics.Integer(-7)}}})
+	if err != nil || len(results) != 3 || results[0].Int != 13 || results[1].Int != 13 || results[2].Int != 6 || r.Objects()[0].Version != 2 {
+		t.Fatal("composition not atomic", results, err, r.Objects())
+	}
+	before, _ := r.SnapshotJSON()
+	results, err = r.Compose(h, []Invocation{{Method: "increment", Args: []semantics.Value{semantics.Integer(2)}}, {Method: "init"}})
+	wantError(t, err, "R_INIT")
+	after, _ := r.SnapshotJSON()
+	if string(before) != string(after) || len(results) != 0 {
+		t.Fatal("composition failure leaked writes/results")
+	}
+}

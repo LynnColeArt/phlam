@@ -552,3 +552,24 @@ func (r *Runtime) arguments(nodes []*frontend.Node, locals map[string]semantics.
 
 // SnapshotJSON is a local debugging aid, never a production observation endpoint.
 func (r *Runtime) SnapshotJSON() ([]byte, error) { return json.Marshal(r.Objects()) }
+
+// Invocation is one method call in an atomic local composition. It is an oracle
+// harness operation, not a new top-level language construct or agent authority.
+type Invocation struct {
+	Method string
+	Args   []semantics.Value
+}
+
+func (r *Runtime) Compose(target semantics.Value, calls []Invocation) (results []semantics.Value, err error) {
+	site := r.program.Classes[0]
+	_, err = r.transaction(site, func() semantics.Value {
+		for _, call := range calls {
+			results = append(results, r.call(site, target, call.Method, call.Args, false))
+		}
+		return semantics.Null()
+	})
+	if err != nil {
+		results = nil
+	}
+	return results, err
+}
