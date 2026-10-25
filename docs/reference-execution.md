@@ -169,3 +169,18 @@ Execution fails with R_OVERFLOW. The report retains the original value and
 version 1, records the failed call and rollback, and has no commit for that failed
 transaction. `go run` reports its own wrapper exit as well; the built phlam
 binary itself returns 1.
+
+## Cross-instance value-passing oracle
+
+The independent-component study uses `ComposeBound`: a list of bound instance
+calls with literal/prior-return arguments, inside one private heap transaction.
+Its research ABI can treat a source return of false as rejection of the whole
+transaction. Ordinary language false returns do not themselves become exceptions.
+All application results are discarded on failure, while local value-bearing
+BoundObservation records preserve attempted calls for this explicitly captured
+research evidence. This is not a production trace disclosure policy.
+
+Counter and Accumulator source files train independently. The transaction oracle
+concatenates those class files, so its observed nodes have a separate combined
+source hash. [The component report](../experiments/components/run-0001/REPORT.md)
+records both forms of lineage and the source-free comparison.

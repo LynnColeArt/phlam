@@ -573,3 +573,60 @@ func (r *Runtime) Compose(target semantics.Value, calls []Invocation) (results [
 	}
 	return results, err
 }
+
+// ValueArgument and BoundInvocation form the oracle harness for inter-instance
+// calls. RejectFalse makes a source-level rejection abort the shared transaction.
+type ValueArgument struct {
+	Literal *semantics.Value
+	From    *int
+}
+type BoundInvocation struct {
+	Target      semantics.Value
+	Method      string
+	Args        []ValueArgument
+	RejectFalse bool
+}
+
+type BoundObservation struct {
+	Target uint64
+	Method string
+	Before map[string]semantics.Value
+	Args   []semantics.Value
+	Result semantics.Value
+}
+
+func (r *Runtime) ComposeBound(calls []BoundInvocation) (results []semantics.Value, observations []BoundObservation, err error) {
+	site := r.program.Classes[0]
+	_, err = r.transaction(site, func() semantics.Value {
+		for _, call := range calls {
+			args := make([]semantics.Value, 0, len(call.Args))
+			for _, binding := range call.Args {
+				if (binding.Literal == nil) == (binding.From == nil) {
+					r.fail(site, "R_BINDING", "exactly one value binding required")
+				}
+				if binding.Literal != nil {
+					args = append(args, *binding.Literal)
+				} else {
+					index := *binding.From
+					if index < 0 || index >= len(results) {
+						r.fail(site, "R_BINDING", "result binding must reference a prior call")
+					}
+					args = append(args, results[index])
+				}
+			}
+			before := cloneFields(r.object(site, call.Target).Fields)
+			value := r.call(site, call.Target, call.Method, args, false)
+			observations = append(observations, BoundObservation{Target: call.Target.Object, Method: call.Method, Before: before, Args: append([]semantics.Value(nil), args...), Result: value})
+			if call.RejectFalse && value == semantics.Boolean(false) {
+				o := r.object(site, call.Target)
+				r.fail(r.methods[o.Class][call.Method], "R_REJECT", "component returned rejection")
+			}
+			results = append(results, value)
+		}
+		return semantics.Null()
+	})
+	if err != nil {
+		results = nil
+	}
+	return results, observations, err
+}

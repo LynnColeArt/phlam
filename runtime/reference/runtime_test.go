@@ -302,3 +302,19 @@ func TestAtomicReferenceComposition(t *testing.T) {
 		t.Fatal("composition failure leaked writes/results")
 	}
 }
+
+func TestBoundCallsRejectFalseRollsBackAllInstances(t *testing.T) {
+	source := counterSource(t) + "\n/// Rejects explicitly.\nclass Rejector {$value=0; function init($n){$this->value=$n} function reject($n){return false}}"
+	r := runtime(t, source, Options{})
+	counter := construct(t, r, "Counter", 1)
+	rejector := construct(t, r, "Rejector", 0)
+	value := semantics.Integer(2)
+	index := 0
+	before, _ := r.SnapshotJSON()
+	results, attempts, err := r.ComposeBound([]BoundInvocation{{Target: counter, Method: "increment", Args: []ValueArgument{{Literal: &value}}, RejectFalse: true}, {Target: rejector, Method: "reject", Args: []ValueArgument{{From: &index}}, RejectFalse: true}})
+	wantError(t, err, "R_REJECT")
+	after, _ := r.SnapshotJSON()
+	if string(before) != string(after) || len(results) != 0 || len(attempts) != 2 || attempts[1].Args[0].Int != 3 || attempts[1].Result != semantics.Boolean(false) {
+		t.Fatal("bound rejection lost evidence or leaked state")
+	}
+}

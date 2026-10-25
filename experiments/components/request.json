@@ -1,0 +1,40 @@
+{
+  "transactions": [
+    {
+      "id": "independent-components-success",
+      "instances": {
+        "c": {"component": "counter", "value": 2, "version": 1},
+        "a": {"component": "accumulator", "value": 0, "version": 1}
+      },
+      "steps": [
+        {"target": "c", "operation": "increment", "argument": {"literal": 1}},
+        {"target": "a", "operation": "add", "argument": {"from_result": 0}},
+        {"target": "c", "operation": "read"},
+        {"target": "a", "operation": "read"}
+      ]
+    },
+    {
+      "id": "forwarded-value-outside-peer-domain",
+      "instances": {
+        "c": {"component": "counter", "value": 8, "version": 1},
+        "a": {"component": "accumulator", "value": 0, "version": 1}
+      },
+      "steps": [
+        {"target": "c", "operation": "increment", "argument": {"literal": 1}},
+        {"target": "a", "operation": "add", "argument": {"from_result": 0}}
+      ]
+    },
+    {
+      "id": "accumulator-cap-rejects-both-writes",
+      "instances": {
+        "c": {"component": "counter", "value": 3, "version": 1},
+        "a": {"component": "accumulator", "value": 15, "version": 1}
+      },
+      "steps": [
+        {"target": "c", "operation": "increment", "argument": {"literal": 1}},
+        {"target": "a", "operation": "add", "argument": {"from_result": 0}}
+      ]
+    }
+  ],
+  "repeats": 1
+}

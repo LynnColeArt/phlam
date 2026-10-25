@@ -1,8 +1,8 @@
-# PHLAM
+# PHLAME
 
 **Program Hierarchy and Learned Associative Memory**, pronounced *flam*.
 
-PHLAM explores compiling and training small PHP-descended applications into
+PHLAME explores compiling and training small PHP-descended applications into
 frozen learned computational representations. Learning must participate in
 execution; independent exact contracts, primitives and effect gates preserve
 correctness. ASTs and graph IR support compilation, training and baselines.
@@ -16,16 +16,18 @@ instances, shared object identity, checked arithmetic, real execution traces and
 transaction rollback. Compiler-derived operational contracts check exact returns,
 state relations and ordered writes before publication.
 
-**Frozen learned Counter execution now covers held-out operation sequences.**
-The unchanged model trained on 170 single steps matches the oracle on 1,096
-supported compositions across 136 shapes. Another 80 schedules leave its finite
-domain and reject atomically. These are caller-supplied schedules, not learned
-planning. [Composition results](experiments/counter-compositions/run-0001/REPORT.md).
+**Independently trained components now interoperate through a shared ABI.**
+Counter and a bounded Accumulator train separately, freeze as separate modules,
+and pass typed integer returns through one atomic transaction. All 188 supported
+cross-component transactions match the oracle; another 416 native rejections and
+146 uncertified-scope cases roll back both states. The generic source-free worker
+imports no compiler or oracle. [Results and reproduction](experiments/components/README.md).
 
-A load-time finite-domain certificate removes duplicated relation additions from
-the warm checker, with startup cost and break-even measured separately. Structural
-lookup remains equally correct and faster overall. The
-[first numerical experiment](experiments/counter/README.md) remains available.
+The models learn accepted affine transitions; source-derived contracts enforce
+rejection. Certification removes warm relation arithmetic, but did not improve
+total latency in the latest run. Supplied schedules are not learned planning.
+The [earlier Counter composition study](experiments/counter-compositions/README.md)
+and [first numerical experiment](experiments/counter/README.md) remain available.
 General symbolic verification, dynamic variables, reference-cell aliases and eval
 remain unimplemented.
 
@@ -69,6 +71,9 @@ full name/type checking are not implemented.
 
 - `cmd/phlam`: CLI; `compiler/frontend`: tokens, AST, parser, diagnostics.
 - `compiler/contracts`: restricted operational contract derivation and checking.
+- `compiler/components`: guarded scalar path relations lowered from source.
+- `runtime/components`: generic independently certified modules, value passing
+  and atomic instance-frame transactions.
 - `semantics`: exact values and checked integer primitives.
 - `runtime/reference`: local snapshot-based oracle; `runtime/trace`: observed events.
 - `runtime/learned`: bounded trained predictor, frozen loader, composition
@@ -77,15 +82,17 @@ full name/type checking are not implemented.
   parent and independently invoked source-free executor.
 - `cmd/phlam-counter-compositions`, `cmd/phlam-counter-compose-worker`: held-out
   composition study and source-free worker with concrete/certified boundaries.
-- `examples/counter`: first source example.
+- `examples/counter`, `examples/accumulator`: independent source examples.
+- `cmd/phlame-components-experiment`, `cmd/phlame-components-worker`: independent
+  module training, source-free execution and oracle/lookup measurements.
 - `tests/syntax`: valid/invalid corpus with expected diagnostic codes.
 - `tests/differential`: frozen-model/oracle/lookup comparison plus two skipped
   dynamic-language runtime obligations.
 - `docs/decisions`, `reference/php4`: evidence and recorded architectural choices.
 
-The next research question is whether learned execution can contribute beyond
-supplied schedules in this affine family, with a checker that scales beyond finite
-domain enumeration.
+The next research question is whether learned modules can contribute beyond
+accepted affine transitions and supplied schedules, with a checker that scales
+beyond finite domain enumeration and demonstrates an end-to-end benefit.
 Symbolic checking, generalization across programs/compositions, capability
 discovery, stdlib/effects, gateways and debugging remain open. Phase 2 aliases and
 eval also remain open. The learned substrate remains the architectural target.

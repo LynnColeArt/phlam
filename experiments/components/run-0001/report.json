@@ -1,0 +1,776 @@
+{
+  "schema": "phlame.components.experiment.v0",
+  "abi": "phlame.scalar-components.v0",
+  "implementation_sha256": "1e3cd5b421356ce938627db7b332eba7781b308181d9947dbb5ce985771ae432",
+  "combined_oracle_source_sha256": "2f2db8cb1b093cbdb60d6c74aed83f473ee3285b662cd878e89ce7d1d85937e2",
+  "toolchain": "go1.26.4",
+  "platform": "linux/amd64",
+  "worker_sha256": "eb5bb0dd07a3fa71364222a83582fb0809b0a5a71fab343f1d7afb29b54f178c",
+  "independent_modules": {
+    "accumulator": {
+      "learned_parameters": 15,
+      "source_sha256": "bda959bd8633e8f23b07db418c453df591ffa80659fd92aeff45844d97a81e36",
+      "module_sha256": "3cbaa95889e8884c9cd0ee028becbeb621daeb26c6f0922bf0730f7a47b207e6",
+      "training_sha256": "dffed32e05ca84a47cb0bd751913ee433fb416c9d539863e4e837b757b5edfba",
+      "oracle_domain_sha256": "5a45459bde618c8c0c34256a9778e42a7827ce46b8ac80765a497aba4fe361ee",
+      "seed": 202,
+      "training_samples": 48,
+      "primitive_cases": 594,
+      "source_rejected_inputs": 72,
+      "initial_mse": 0.31684129932207783,
+      "final_mse": 3.751800921889349e-31,
+      "training_ns": 15481733,
+      "bit_identical_retraining": true,
+      "artifact_bytes": 3331
+    },
+    "counter": {
+      "learned_parameters": 15,
+      "source_sha256": "fd26a7823ae1fd39b10f99a48ca42c99208acf36e598c7c46cd9b69ea0450d9e",
+      "module_sha256": "95fcdf2f39f1d0c4fce5d126bb269167ddfd112b935f9238a20bcd2521c004b5",
+      "training_sha256": "e986fd51e7146963dbcfa36c82d96d5a4f8d0e8f4e583f20ad0ffd4a1057b490",
+      "oracle_domain_sha256": "ce8b76024e2f5717b67ae6dcbed635f48f5dabf0c08b2091c52e4c6c5b1d7c11",
+      "seed": 101,
+      "training_samples": 30,
+      "primitive_cases": 330,
+      "source_rejected_inputs": 0,
+      "initial_mse": 0.3700589373491805,
+      "final_mse": 9.048573921041595e-31,
+      "training_ns": 10294685,
+      "bit_identical_retraining": true,
+      "artifact_bytes": 1938
+    }
+  },
+  "transactions": 750,
+  "oracle_categories": {
+    "accepted": 188,
+    "native_rejection": 416,
+    "outside_certified_scope": 146
+  },
+  "observations_sha256": "4d209d1936cf076374e71b188d086a58613b18984d13223fd4a5486bd190fb1c",
+  "oracle_transaction_time": {
+    "samples": 750,
+    "mean_ns": 19473.493333333332,
+    "p50_ns": 15430,
+    "p95_ns": 53210
+  },
+  "timing_repeats": 10,
+  "source_free_directory_files": [
+    "accumulator.json",
+    "counter.json",
+    "registry.json",
+    "trusted-key.hex",
+    "worker"
+  ],
+  "engines": {
+    "learned/certified": {
+      "accuracy": {
+        "scheduled": 750,
+        "evaluated": 750,
+        "accepted": 188,
+        "wrong_accepted": 0,
+        "supported_rejected": 0,
+        "native_rejected": 416,
+        "scope_rejected": 146
+      },
+      "certificates": {
+        "accumulator": {
+          "key": "a51f4dfd75f2bf47bdd4be88a3a462710246ab87302d1de264e9c7aa9833ea53",
+          "module_sha256": "3cbaa95889e8884c9cd0ee028becbeb621daeb26c6f0922bf0730f7a47b207e6",
+          "certified": true,
+          "cases": 594,
+          "accepted_inputs": 522,
+          "contract_rejected_inputs": 72,
+          "build_ns": 267288,
+          "checker_work": {
+            "expressions": 36261,
+            "integer_arithmetic": 4200,
+            "predicates": 12831,
+            "output_comparisons": 1566
+          }
+        },
+        "counter": {
+          "key": "f93a598fcd5c3fdef148cd9032be6112aac9228a98160ac471f5a8d874474df6",
+          "module_sha256": "95fcdf2f39f1d0c4fce5d126bb269167ddfd112b935f9238a20bcd2521c004b5",
+          "certified": true,
+          "cases": 330,
+          "accepted_inputs": 330,
+          "contract_rejected_inputs": 0,
+          "build_ns": 86090,
+          "checker_work": {
+            "expressions": 3960,
+            "integer_arithmetic": 1188,
+            "predicates": 0,
+            "output_comparisons": 990
+          }
+        }
+      },
+      "load_ns": 728446,
+      "timings": {
+        "binding": {
+          "samples": 7500,
+          "mean_ns": 219.6636,
+          "p50_ns": 190,
+          "p95_ns": 430
+        },
+        "checker": {
+          "samples": 7500,
+          "mean_ns": 378.4604,
+          "p50_ns": 240,
+          "p95_ns": 520
+        },
+        "commit": {
+          "samples": 7500,
+          "mean_ns": 48.56933333333333,
+          "p50_ns": 0,
+          "p95_ns": 200
+        },
+        "overhead": {
+          "samples": 7500,
+          "mean_ns": 1832.8082666666667,
+          "p50_ns": 980,
+          "p95_ns": 5880
+        },
+        "proposal": {
+          "samples": 7500,
+          "mean_ns": 242.1944,
+          "p50_ns": 140,
+          "p95_ns": 530
+        },
+        "total": {
+          "samples": 7500,
+          "mean_ns": 2721.696,
+          "p50_ns": 1660,
+          "p95_ns": 7120
+        }
+      },
+      "runtime_checker_work": {
+        "binding_checks": 21280,
+        "frame_checks": 15000,
+        "domain_checks": 37640,
+        "certificate_uses": 15660,
+        "relations": {
+          "expressions": 0,
+          "integer_arithmetic": 0,
+          "predicates": 0,
+          "output_comparisons": 0
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      }
+    },
+    "learned/concrete": {
+      "accuracy": {
+        "scheduled": 750,
+        "evaluated": 750,
+        "accepted": 188,
+        "wrong_accepted": 0,
+        "supported_rejected": 0,
+        "native_rejected": 416,
+        "scope_rejected": 146
+      },
+      "certificates": {
+        "accumulator": {
+          "key": "a51f4dfd75f2bf47bdd4be88a3a462710246ab87302d1de264e9c7aa9833ea53",
+          "module_sha256": "3cbaa95889e8884c9cd0ee028becbeb621daeb26c6f0922bf0730f7a47b207e6",
+          "certified": false,
+          "cases": 0,
+          "accepted_inputs": 0,
+          "contract_rejected_inputs": 0,
+          "build_ns": 89679,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "predicates": 0,
+            "output_comparisons": 0
+          }
+        },
+        "counter": {
+          "key": "f93a598fcd5c3fdef148cd9032be6112aac9228a98160ac471f5a8d874474df6",
+          "module_sha256": "95fcdf2f39f1d0c4fce5d126bb269167ddfd112b935f9238a20bcd2521c004b5",
+          "certified": false,
+          "cases": 0,
+          "accepted_inputs": 0,
+          "contract_rejected_inputs": 0,
+          "build_ns": 29600,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "predicates": 0,
+            "output_comparisons": 0
+          }
+        }
+      },
+      "load_ns": 606456,
+      "timings": {
+        "binding": {
+          "samples": 7500,
+          "mean_ns": 281.97866666666664,
+          "p50_ns": 160,
+          "p95_ns": 420
+        },
+        "checker": {
+          "samples": 7500,
+          "mean_ns": 431.29466666666667,
+          "p50_ns": 360,
+          "p95_ns": 900
+        },
+        "commit": {
+          "samples": 7500,
+          "mean_ns": 42.4904,
+          "p50_ns": 0,
+          "p95_ns": 150
+        },
+        "overhead": {
+          "samples": 7500,
+          "mean_ns": 1621.9468,
+          "p50_ns": 860,
+          "p95_ns": 5020
+        },
+        "proposal": {
+          "samples": 7500,
+          "mean_ns": 231.3332,
+          "p50_ns": 100,
+          "p95_ns": 490
+        },
+        "total": {
+          "samples": 7500,
+          "mean_ns": 2609.0437333333334,
+          "p50_ns": 1610,
+          "p95_ns": 6330
+        }
+      },
+      "runtime_checker_work": {
+        "binding_checks": 21280,
+        "frame_checks": 15000,
+        "domain_checks": 21280,
+        "certificate_uses": 0,
+        "relations": {
+          "expressions": 362450,
+          "integer_arithmetic": 52120,
+          "predicates": 97970,
+          "output_comparisons": 46980
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      }
+    },
+    "lookup/certified": {
+      "accuracy": {
+        "scheduled": 750,
+        "evaluated": 750,
+        "accepted": 188,
+        "wrong_accepted": 0,
+        "supported_rejected": 0,
+        "native_rejected": 416,
+        "scope_rejected": 146
+      },
+      "certificates": {
+        "accumulator": {
+          "key": "2fbe739e1167a235b3a67a32c8060bda2b6bbc1bb7674fda4f73fbb9113a10b8",
+          "module_sha256": "3cbaa95889e8884c9cd0ee028becbeb621daeb26c6f0922bf0730f7a47b207e6",
+          "certified": true,
+          "cases": 594,
+          "accepted_inputs": 522,
+          "contract_rejected_inputs": 72,
+          "build_ns": 324438,
+          "checker_work": {
+            "expressions": 36261,
+            "integer_arithmetic": 4200,
+            "predicates": 12831,
+            "output_comparisons": 1566
+          }
+        },
+        "counter": {
+          "key": "8a025fd7c8c68262a8c4d6ecbc8d44a85143c5ab790936b40b19c43070e2bc0d",
+          "module_sha256": "95fcdf2f39f1d0c4fce5d126bb269167ddfd112b935f9238a20bcd2521c004b5",
+          "certified": true,
+          "cases": 330,
+          "accepted_inputs": 330,
+          "contract_rejected_inputs": 0,
+          "build_ns": 77510,
+          "checker_work": {
+            "expressions": 3960,
+            "integer_arithmetic": 1188,
+            "predicates": 0,
+            "output_comparisons": 990
+          }
+        }
+      },
+      "load_ns": 731386,
+      "timings": {
+        "binding": {
+          "samples": 7500,
+          "mean_ns": 206.70746666666668,
+          "p50_ns": 170,
+          "p95_ns": 400
+        },
+        "checker": {
+          "samples": 7500,
+          "mean_ns": 285.7032,
+          "p50_ns": 230,
+          "p95_ns": 460
+        },
+        "commit": {
+          "samples": 7500,
+          "mean_ns": 43.38106666666667,
+          "p50_ns": 0,
+          "p95_ns": 150
+        },
+        "overhead": {
+          "samples": 7500,
+          "mean_ns": 1683.0924,
+          "p50_ns": 900,
+          "p95_ns": 5110
+        },
+        "proposal": {
+          "samples": 7500,
+          "mean_ns": 274.48013333333336,
+          "p50_ns": 110,
+          "p95_ns": 620
+        },
+        "total": {
+          "samples": 7500,
+          "mean_ns": 2493.3642666666665,
+          "p50_ns": 1550,
+          "p95_ns": 6100
+        }
+      },
+      "runtime_checker_work": {
+        "binding_checks": 21280,
+        "frame_checks": 15000,
+        "domain_checks": 37640,
+        "certificate_uses": 15660,
+        "relations": {
+          "expressions": 0,
+          "integer_arithmetic": 0,
+          "predicates": 0,
+          "output_comparisons": 0
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 324650,
+        "integer_arithmetic": 49320,
+        "predicates": 82570,
+        "output_comparisons": 0
+      }
+    },
+    "lookup/concrete": {
+      "accuracy": {
+        "scheduled": 750,
+        "evaluated": 750,
+        "accepted": 188,
+        "wrong_accepted": 0,
+        "supported_rejected": 0,
+        "native_rejected": 416,
+        "scope_rejected": 146
+      },
+      "certificates": {
+        "accumulator": {
+          "key": "2fbe739e1167a235b3a67a32c8060bda2b6bbc1bb7674fda4f73fbb9113a10b8",
+          "module_sha256": "3cbaa95889e8884c9cd0ee028becbeb621daeb26c6f0922bf0730f7a47b207e6",
+          "certified": false,
+          "cases": 0,
+          "accepted_inputs": 0,
+          "contract_rejected_inputs": 0,
+          "build_ns": 90340,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "predicates": 0,
+            "output_comparisons": 0
+          }
+        },
+        "counter": {
+          "key": "8a025fd7c8c68262a8c4d6ecbc8d44a85143c5ab790936b40b19c43070e2bc0d",
+          "module_sha256": "95fcdf2f39f1d0c4fce5d126bb269167ddfd112b935f9238a20bcd2521c004b5",
+          "certified": false,
+          "cases": 0,
+          "accepted_inputs": 0,
+          "contract_rejected_inputs": 0,
+          "build_ns": 29959,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "predicates": 0,
+            "output_comparisons": 0
+          }
+        }
+      },
+      "load_ns": 614746,
+      "timings": {
+        "binding": {
+          "samples": 7500,
+          "mean_ns": 204.05746666666667,
+          "p50_ns": 150,
+          "p95_ns": 400
+        },
+        "checker": {
+          "samples": 7500,
+          "mean_ns": 430.56,
+          "p50_ns": 350,
+          "p95_ns": 900
+        },
+        "commit": {
+          "samples": 7500,
+          "mean_ns": 45.19306666666667,
+          "p50_ns": 0,
+          "p95_ns": 150
+        },
+        "overhead": {
+          "samples": 7500,
+          "mean_ns": 1700.1346666666666,
+          "p50_ns": 830,
+          "p95_ns": 5050
+        },
+        "proposal": {
+          "samples": 7500,
+          "mean_ns": 46.7476,
+          "p50_ns": 30,
+          "p95_ns": 120
+        },
+        "total": {
+          "samples": 7500,
+          "mean_ns": 2426.6928,
+          "p50_ns": 1420,
+          "p95_ns": 5990
+        }
+      },
+      "runtime_checker_work": {
+        "binding_checks": 21280,
+        "frame_checks": 15000,
+        "domain_checks": 21280,
+        "certificate_uses": 0,
+        "relations": {
+          "expressions": 362450,
+          "integer_arithmetic": 52120,
+          "predicates": 97970,
+          "output_comparisons": 46980
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      }
+    },
+    "shuffled/certified": {
+      "accuracy": {
+        "scheduled": 750,
+        "evaluated": 0,
+        "accepted": 0,
+        "wrong_accepted": 0,
+        "supported_rejected": 0,
+        "native_rejected": 0,
+        "scope_rejected": 0
+      },
+      "certificates": {
+        "accumulator": {
+          "key": "7751335c74d2c96e9fbac2b89503ae3f1a6d3c0197f3ee187dc30019c2031574",
+          "module_sha256": "3cbaa95889e8884c9cd0ee028becbeb621daeb26c6f0922bf0730f7a47b207e6",
+          "certified": false,
+          "cases": 9,
+          "accepted_inputs": 1,
+          "contract_rejected_inputs": 8,
+          "build_ns": 90240,
+          "checker_work": {
+            "expressions": 458,
+            "integer_arithmetic": 32,
+            "predicates": 191,
+            "output_comparisons": 3
+          },
+          "failure": "model differs from contract at operation add state -16 arg 0"
+        }
+      },
+      "preflight_error": "model differs from contract at operation add state -16 arg 0",
+      "load_ns": 602997,
+      "timings": {},
+      "runtime_checker_work": {
+        "binding_checks": 0,
+        "frame_checks": 0,
+        "domain_checks": 0,
+        "certificate_uses": 0,
+        "relations": {
+          "expressions": 0,
+          "integer_arithmetic": 0,
+          "predicates": 0,
+          "output_comparisons": 0
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      }
+    },
+    "shuffled/concrete": {
+      "accuracy": {
+        "scheduled": 750,
+        "evaluated": 750,
+        "accepted": 0,
+        "wrong_accepted": 0,
+        "supported_rejected": 188,
+        "native_rejected": 416,
+        "scope_rejected": 146
+      },
+      "certificates": {
+        "accumulator": {
+          "key": "7751335c74d2c96e9fbac2b89503ae3f1a6d3c0197f3ee187dc30019c2031574",
+          "module_sha256": "3cbaa95889e8884c9cd0ee028becbeb621daeb26c6f0922bf0730f7a47b207e6",
+          "certified": false,
+          "cases": 0,
+          "accepted_inputs": 0,
+          "contract_rejected_inputs": 0,
+          "build_ns": 90990,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "predicates": 0,
+            "output_comparisons": 0
+          }
+        },
+        "counter": {
+          "key": "0f2c4b57e21dd4c7dc6d6104a44d259c6cd5d8fb198838183f7065375b17f574",
+          "module_sha256": "95fcdf2f39f1d0c4fce5d126bb269167ddfd112b935f9238a20bcd2521c004b5",
+          "certified": false,
+          "cases": 0,
+          "accepted_inputs": 0,
+          "contract_rejected_inputs": 0,
+          "build_ns": 30260,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "predicates": 0,
+            "output_comparisons": 0
+          }
+        }
+      },
+      "load_ns": 806945,
+      "timings": {
+        "binding": {
+          "samples": 750,
+          "mean_ns": 81,
+          "p50_ns": 80,
+          "p95_ns": 130
+        },
+        "checker": {
+          "samples": 750,
+          "mean_ns": 249.03866666666667,
+          "p50_ns": 210,
+          "p95_ns": 420
+        },
+        "commit": {
+          "samples": 750,
+          "mean_ns": 0,
+          "p50_ns": 0,
+          "p95_ns": 0
+        },
+        "overhead": {
+          "samples": 750,
+          "mean_ns": 1284.2426666666668,
+          "p50_ns": 550,
+          "p95_ns": 4270
+        },
+        "proposal": {
+          "samples": 750,
+          "mean_ns": 342.1573333333333,
+          "p50_ns": 160,
+          "p95_ns": 200
+        },
+        "total": {
+          "samples": 750,
+          "mean_ns": 1956.4386666666667,
+          "p50_ns": 1020,
+          "p95_ns": 4960
+        }
+      },
+      "runtime_checker_work": {
+        "binding_checks": 750,
+        "frame_checks": 1500,
+        "domain_checks": 750,
+        "certificate_uses": 0,
+        "relations": {
+          "expressions": 13635,
+          "integer_arithmetic": 2420,
+          "predicates": 2855,
+          "output_comparisons": 2190
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      }
+    },
+    "zero/certified": {
+      "accuracy": {
+        "scheduled": 750,
+        "evaluated": 0,
+        "accepted": 0,
+        "wrong_accepted": 0,
+        "supported_rejected": 0,
+        "native_rejected": 0,
+        "scope_rejected": 0
+      },
+      "certificates": {
+        "accumulator": {
+          "key": "7f971e06f281ec972d88ba6c9855e70b7d91d9bf97ec56b97410c8ae8dd60ef6",
+          "module_sha256": "3cbaa95889e8884c9cd0ee028becbeb621daeb26c6f0922bf0730f7a47b207e6",
+          "certified": false,
+          "cases": 9,
+          "accepted_inputs": 1,
+          "contract_rejected_inputs": 8,
+          "build_ns": 92829,
+          "checker_work": {
+            "expressions": 458,
+            "integer_arithmetic": 32,
+            "predicates": 191,
+            "output_comparisons": 3
+          },
+          "failure": "model differs from contract at operation add state -16 arg 0"
+        }
+      },
+      "preflight_error": "model differs from contract at operation add state -16 arg 0",
+      "load_ns": 569036,
+      "timings": {},
+      "runtime_checker_work": {
+        "binding_checks": 0,
+        "frame_checks": 0,
+        "domain_checks": 0,
+        "certificate_uses": 0,
+        "relations": {
+          "expressions": 0,
+          "integer_arithmetic": 0,
+          "predicates": 0,
+          "output_comparisons": 0
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      }
+    },
+    "zero/concrete": {
+      "accuracy": {
+        "scheduled": 750,
+        "evaluated": 750,
+        "accepted": 0,
+        "wrong_accepted": 0,
+        "supported_rejected": 188,
+        "native_rejected": 416,
+        "scope_rejected": 146
+      },
+      "certificates": {
+        "accumulator": {
+          "key": "7f971e06f281ec972d88ba6c9855e70b7d91d9bf97ec56b97410c8ae8dd60ef6",
+          "module_sha256": "3cbaa95889e8884c9cd0ee028becbeb621daeb26c6f0922bf0730f7a47b207e6",
+          "certified": false,
+          "cases": 0,
+          "accepted_inputs": 0,
+          "contract_rejected_inputs": 0,
+          "build_ns": 88299,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "predicates": 0,
+            "output_comparisons": 0
+          }
+        },
+        "counter": {
+          "key": "65d122187d006293f1fdd8f87232569c6cdda7d1be893d204cff05940338a1b8",
+          "module_sha256": "95fcdf2f39f1d0c4fce5d126bb269167ddfd112b935f9238a20bcd2521c004b5",
+          "certified": false,
+          "cases": 0,
+          "accepted_inputs": 0,
+          "contract_rejected_inputs": 0,
+          "build_ns": 36070,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "predicates": 0,
+            "output_comparisons": 0
+          }
+        }
+      },
+      "load_ns": 639626,
+      "timings": {
+        "binding": {
+          "samples": 750,
+          "mean_ns": 82.15866666666666,
+          "p50_ns": 80,
+          "p95_ns": 150
+        },
+        "checker": {
+          "samples": 750,
+          "mean_ns": 283.51866666666666,
+          "p50_ns": 210,
+          "p95_ns": 450
+        },
+        "commit": {
+          "samples": 750,
+          "mean_ns": 0,
+          "p50_ns": 0,
+          "p95_ns": 0
+        },
+        "overhead": {
+          "samples": 750,
+          "mean_ns": 1385.528,
+          "p50_ns": 550,
+          "p95_ns": 4240
+        },
+        "proposal": {
+          "samples": 750,
+          "mean_ns": 290.9026666666667,
+          "p50_ns": 130,
+          "p95_ns": 270
+        },
+        "total": {
+          "samples": 750,
+          "mean_ns": 2042.108,
+          "p50_ns": 990,
+          "p95_ns": 4900
+        }
+      },
+      "runtime_checker_work": {
+        "binding_checks": 800,
+        "frame_checks": 1500,
+        "domain_checks": 800,
+        "certificate_uses": 0,
+        "relations": {
+          "expressions": 15610,
+          "integer_arithmetic": 2720,
+          "predicates": 3430,
+          "output_comparisons": 2340
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      }
+    }
+  },
+  "estimated_total_break_even_transactions": {},
+  "limitations": [
+    "Independent accepted-transition models learn affine arithmetic; rejecting branch predicates belong to source-derived contracts, not the models.",
+    "A scalar slot per instance, int64 value passing, supplied schedules and finite domains; no learned planning, shared-cell aliases or arbitrary modules.",
+    "Module certification stores admission intervals, not transition outputs, and repeats at process startup.",
+    "The lookup baseline interprets exact source-derived contracts; it coalesces concrete expected-value computation rather than recomputing it.",
+    "Observed source rejections and source-valid but uncertified transactions are reported separately.",
+    "Signing uses a public research key; no production tenant permissions, external effect adapters or durable storage exist.",
+    "Timing includes instrumentation; workers use GOMAXPROCS=1, without CPU pinning; oracle machinery differs from workers."
+  ]
+}

@@ -16,6 +16,16 @@ atomic rollback on domain escape. No caller-provided certificate or persisted
 proof bit is accepted. This finite local guarantee supplies no caller authority,
 tenant policy or permission for external effects.
 
+The independent-component ABI now binds each local instance to a separately
+signed module root and finite certificate. Typed argument bindings can reference
+only prior integer results. A numerical model cannot choose a target, slot,
+resource handle or peer. Native false-as-rejection and outside-certified-domain
+inputs abort the shared in-memory transaction. Replacement, root tampering,
+invalid references/types and peer-frame preservation are tested. These are local
+laboratory guarantees, not caller authorization, tenant isolation or durable
+transaction guarantees. The publicly reproducible research signing key remains
+unsuitable as a production identity.
+
 ## Trust and execution boundaries
 
 Source/class purposes, model outputs, dependency contents, business records,

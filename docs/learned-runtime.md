@@ -1,14 +1,14 @@
 # Learned runtime: first experiment contract
 
-Status: bounded numerical and supplied-sequence experiments implemented,
-2026-10-25. The first model executes from frozen weights without source. Its
-unchanged single-step training also supports
-[held-out composition rollouts](../experiments/counter-compositions/run-0001/REPORT.md)
-of 2..16 supplied operations. A load-time finite-domain check now certifies all
-primitive inputs, allowing guarded warm composition without repeated relation
-arithmetic. Startup costs and break-even are recorded separately. Lookup remains
-faster. Learned planning, new program/branch structures and general symbolic term
-verification remain unproven. Sections below describe the broader target.
+Status: bounded numerical, composition and independent-component experiments
+implemented, 2026-10-25. The newest
+[module experiment](../experiments/components/run-0001/REPORT.md) trains Counter
+and Accumulator separately and composes their typed returns under a generic
+source-free scalar ABI. Exact source-derived guards enforce rejection and shared
+transaction rollback. Accepted numerical models remain affine. Finite startup
+certification removes warm relation evaluation, but the latest workload shows no
+end-to-end latency improvement. Learned planning, richer data/control flow and
+unbounded symbolic equivalence remain unproven. The broader target follows.
 
 ## Architectural destination
 
@@ -159,6 +159,24 @@ builds; bitwise reproducibility is unproven until measured.
 No implicit retraining. No reference fallback counted as learned success.
 External nontransactional effects require a later outbox/idempotency design;
 local-state atomicity does not imply universal rollback.
+
+## Independent component experiment
+
+The scalar ABI now separates each module's model, operation metadata, source path
+relations, finite domain, seed and training lineage. Models observe only own state,
+argument and own operation index. They do not receive peer IDs/states or joint
+training. A shared runtime routes successful int64 returns through prior-result
+bindings, confines writes to the bound instance slot, and publishes all affected
+frames once. Rejection aborts the full transaction, including earlier successful
+primitive calls.
+
+This is owned state plus dataflow in one transaction, not shared-cell aliases.
+The compiler lowers guarded branches rather than maintaining hand-coded
+Accumulator semantics in the runtime. Certificates store admission intervals for
+accepted inputs, not computed transition outputs. The models learn only accepted
+transitions; no learned nonlinear rejection or planner is claimed. Separate
+source/contract/model comparisons and checker/application-work counters are in
+the recorded report. The new worker imports no compiler or reference package.
 
 ## Evaluation and falsification
 
