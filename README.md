@@ -16,9 +16,13 @@ instances, shared object identity, checked arithmetic, real execution traces and
 transaction rollback. Compiler-derived operational contracts check exact returns,
 state relations and ordered writes before publication.
 
-**No trained model, learned executor or symbolic term verifier exists yet.**
-Reference execution is the oracle for that experiment. Dynamic variables,
-reference-cell aliases and eval remain unimplemented runtime obligations.
+**The first bounded learned Counter experiment now runs from frozen weights
+without source.** It matches the oracle on 4,216 held-out integer transitions;
+structural lookup also matches all cases, and the exact checker still repeats
+the arithmetic. This is a small numerical result, not a general learned runtime
+or efficiency gain. [Results and reproduction](experiments/counter/README.md).
+Symbolic term verification, dynamic variables, reference-cell aliases and eval
+remain unimplemented.
 
 Read the [project brief](PHLAM_Codex_Project_Brief.md),
 [learned executor/exact boundary](docs/learned-runtime.md),
@@ -53,7 +57,7 @@ Implemented: documented classes, properties, init/methods, parameters/defaults,
 integer/string/bool/null literals, arrays, variables/indirect variables, alias
 syntax, calls/new, arithmetic/comparisons, if/else, return, optional semicolons.
 Those are frontend features. The [execution guide](docs/reference-execution.md)
-defines the smaller subset that actually runs. Manifests, loops, dynamic member-name syntax, effect analysis and
+defines the smaller subset that actually runs. Manifests, loops, dynamic member-name syntax, general effect analysis and
 full name/type checking are not implemented.
 
 ## Structure
@@ -62,18 +66,20 @@ full name/type checking are not implemented.
 - `compiler/contracts`: restricted operational contract derivation and checking.
 - `semantics`: exact values and checked integer primitives.
 - `runtime/reference`: local snapshot-based oracle; `runtime/trace`: observed events.
+- `runtime/learned`: bounded trained predictor, frozen loader and checked transitions.
+- `cmd/phlam-counter-experiment`, `cmd/phlam-counter-worker`: training/evaluation
+  parent and independently invoked source-free executor.
 - `examples/counter`: first source example.
 - `tests/syntax`: valid/invalid corpus with expected diagnostic codes.
-- `tests/differential`: skipped runtime obligations and proposed scenarios.
+- `tests/differential`: frozen-model/oracle/lookup comparison plus two skipped
+  dynamic-language runtime obligations.
 - `docs/decisions`, `reference/php4`: evidence and recorded architectural choices.
 
-The skeleton creates only used directories. Future `runtime/learned`, `runtime/effects`, training, stdlib, gateway and debugger
-packages will follow their first actual implementation.
-
-The oracle and concrete contract checker now support designing the bounded
-learned transition experiment. It still needs learned parameters, independent
-inference, and honest accounting for all exact-checker work. Phase 2 aliases and
-eval also remain open. Do not quietly replace that experiment with an index VM.
+The next research question is whether learned execution can contribute beyond
+this affine numeric family while reducing the exact boundary's duplicated work.
+Symbolic checking, generalization across programs/compositions, capability
+discovery, stdlib/effects, gateways and debugging remain open. Phase 2 aliases and
+eval also remain open. The learned substrate remains the architectural target.
 
 ## Licensing
 

@@ -1,10 +1,12 @@
 # Learned runtime: first experiment contract
 
-Status: proposed learned architecture, 2026-10-25. A restricted Counter reference
-evaluator, actual traces and concrete operational contract checker now exist; see
-[reference-execution.md](reference-execution.md). No trained model, learned
-deployment artifact or symbolic term verifier exists. `phlam inspect` still emits
-a compiler AST. The learned-execution claims below remain experiment goals.
+Status: first bounded numerical experiment implemented, 2026-10-25. It trains,
+freezes, reloads and invokes a Counter model without source; see the
+[recorded results](../experiments/counter/run-0001/REPORT.md). Held-out numeric
+accuracy and weight dependence pass, but exact checking repeats the computation
+and lookup is equally accurate. Unseen programs/compositions and symbolic term
+verification remain unproven. The sections below describe the broader target,
+not properties established by this small affine experiment.
 
 ## Architectural destination
 

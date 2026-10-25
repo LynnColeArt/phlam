@@ -1,0 +1,524 @@
+{
+  "schema": "phlam.counter.experiment.v0",
+  "seed": 20261025,
+  "source_sha256": "fd26a7823ae1fd39b10f99a48ca42c99208acf36e598c7c46cd9b69ea0450d9e",
+  "artifact_sha256": "7073fa5e197930d01a17e806f89a6603aefb2efa08c44e70bb28b5b513297b07",
+  "training_sha256": "20b2bdfab486878e6ce4cae682ef28ef670929393dff378804bd32280da2344b",
+  "splits_sha256": "ee39c2b64e022e3ad89705ed4bf07956c56e11f8d23f72e14fe00ee457e24404",
+  "implementation_sha256": "5cc94faace7aaadcbcde2521d236ea60c385c432851803493544474a22972df3",
+  "toolchain": "go1.26.4",
+  "platform": "linux/amd64",
+  "worker_gomaxprocs": 1,
+  "training_cases": 170,
+  "test_cases": 4216,
+  "learned_parameters": 12,
+  "initial_normalized_mse": 0.37635796784990944,
+  "final_normalized_mse": 1.2904965240348561e-27,
+  "oracle_data_generation_ns": 311930484,
+  "training_ns": 56371999,
+  "bit_identical_retraining": true,
+  "source_free_worker": true,
+  "source_free_directory_files": [
+    "artifact.json",
+    "trusted-key.hex",
+    "worker"
+  ],
+  "worker_binary_sha256": "b0e05c79976d5f7c6169bd1cf90570f523d14b4c831f5902dd9d29f639b5a28c",
+  "artifact_bytes": 3018,
+  "timing_repeats": 10,
+  "oracle_invoke_including_internal_checker": {
+    "samples": 4216,
+    "mean_ns": 4954.537713472486,
+    "p50_ns": 3490,
+    "p95_ns": 10410
+  },
+  "engines": {
+    "learned": {
+      "checker_work_total": {
+        "term_evaluations": 493600,
+        "integer_primitives": 164160,
+        "argument_checks": 41040,
+        "field_checks": 84320,
+        "ordered_write_checks": 41040
+      },
+      "accuracy": {
+        "cases": 4216,
+        "raw_correct": 4216,
+        "accepted": 4216,
+        "accepted_wrong": 0,
+        "rejected": 0
+      },
+      "splits": {
+        "extrapolation": {
+          "cases": 3216,
+          "raw_correct": 3216,
+          "accepted": 3216,
+          "accepted_wrong": 0,
+          "rejected": 0
+        },
+        "interpolation": {
+          "cases": 1000,
+          "raw_correct": 1000,
+          "accepted": 1000,
+          "accepted_wrong": 0,
+          "rejected": 0
+        }
+      },
+      "timings": {
+        "candidate": {
+          "samples": 42160,
+          "mean_ns": 149.39428368121443,
+          "p50_ns": 120,
+          "p95_ns": 200
+        },
+        "checker": {
+          "samples": 42160,
+          "mean_ns": 490.71674573055026,
+          "p50_ns": 450,
+          "p95_ns": 500
+        },
+        "commit": {
+          "samples": 42160,
+          "mean_ns": 22.476043643263758,
+          "p50_ns": 20,
+          "p95_ns": 30
+        },
+        "overhead": {
+          "samples": 42160,
+          "mean_ns": 211.83569734345352,
+          "p50_ns": 210,
+          "p95_ns": 230
+        },
+        "proposal": {
+          "samples": 42160,
+          "mean_ns": 55.56316413662239,
+          "p50_ns": 60,
+          "p95_ns": 60
+        },
+        "total": {
+          "samples": 42160,
+          "mean_ns": 929.9859345351043,
+          "p50_ns": 860,
+          "p95_ns": 970
+        }
+      },
+      "checker_calls": 42160,
+      "load_ns": 524726,
+      "load_allocated_bytes": 87512
+    },
+    "lookup": {
+      "checker_work_total": {
+        "term_evaluations": 493600,
+        "integer_primitives": 164160,
+        "argument_checks": 41040,
+        "field_checks": 84320,
+        "ordered_write_checks": 41040
+      },
+      "accuracy": {
+        "cases": 4216,
+        "raw_correct": 4216,
+        "accepted": 4216,
+        "accepted_wrong": 0,
+        "rejected": 0
+      },
+      "splits": {
+        "extrapolation": {
+          "cases": 3216,
+          "raw_correct": 3216,
+          "accepted": 3216,
+          "accepted_wrong": 0,
+          "rejected": 0
+        },
+        "interpolation": {
+          "cases": 1000,
+          "raw_correct": 1000,
+          "accepted": 1000,
+          "accepted_wrong": 0,
+          "rejected": 0
+        }
+      },
+      "timings": {
+        "candidate": {
+          "samples": 42160,
+          "mean_ns": 138.92820208728654,
+          "p50_ns": 110,
+          "p95_ns": 190
+        },
+        "checker": {
+          "samples": 42160,
+          "mean_ns": 445.7386622390892,
+          "p50_ns": 440,
+          "p95_ns": 480
+        },
+        "commit": {
+          "samples": 42160,
+          "mean_ns": 22.654459203036055,
+          "p50_ns": 20,
+          "p95_ns": 30
+        },
+        "overhead": {
+          "samples": 42160,
+          "mean_ns": 242.94551707779885,
+          "p50_ns": 210,
+          "p95_ns": 220
+        },
+        "proposal": {
+          "samples": 42160,
+          "mean_ns": 44.037998102466794,
+          "p50_ns": 40,
+          "p95_ns": 50
+        },
+        "total": {
+          "samples": 42160,
+          "mean_ns": 894.3048387096774,
+          "p50_ns": 830,
+          "p95_ns": 930
+        }
+      },
+      "checker_calls": 42160,
+      "load_ns": 597375,
+      "load_allocated_bytes": 87512
+    },
+    "shuffled": {
+      "checker_work_total": {
+        "term_evaluations": 21456,
+        "integer_primitives": 7152,
+        "argument_checks": 4104,
+        "field_checks": 4248,
+        "ordered_write_checks": 3048
+      },
+      "accuracy": {
+        "cases": 4216,
+        "raw_correct": 0,
+        "accepted": 0,
+        "accepted_wrong": 0,
+        "rejected": 4216
+      },
+      "splits": {
+        "extrapolation": {
+          "cases": 3216,
+          "raw_correct": 0,
+          "accepted": 0,
+          "accepted_wrong": 0,
+          "rejected": 3216
+        },
+        "interpolation": {
+          "cases": 1000,
+          "raw_correct": 0,
+          "accepted": 0,
+          "accepted_wrong": 0,
+          "rejected": 1000
+        }
+      },
+      "timings": {
+        "candidate": {
+          "samples": 4216,
+          "mean_ns": 232.60863377609107,
+          "p50_ns": 150,
+          "p95_ns": 280
+        },
+        "checker": {
+          "samples": 4216,
+          "mean_ns": 456.0398481973435,
+          "p50_ns": 380,
+          "p95_ns": 680
+        },
+        "commit": {
+          "samples": 4216,
+          "mean_ns": 0,
+          "p50_ns": 0,
+          "p95_ns": 0
+        },
+        "overhead": {
+          "samples": 4216,
+          "mean_ns": 180.4639468690702,
+          "p50_ns": 170,
+          "p95_ns": 220
+        },
+        "proposal": {
+          "samples": 4216,
+          "mean_ns": 74.4423624288425,
+          "p50_ns": 70,
+          "p95_ns": 90
+        },
+        "total": {
+          "samples": 4216,
+          "mean_ns": 943.5547912713472,
+          "p50_ns": 770,
+          "p95_ns": 1480
+        }
+      },
+      "checker_calls": 4216,
+      "load_ns": 552955,
+      "load_allocated_bytes": 86552,
+      "first_rejections": [
+        {
+          "checker_work": {
+            "term_evaluations": 0,
+            "integer_primitives": 0,
+            "argument_checks": 0,
+            "field_checks": 2,
+            "ordered_write_checks": 0
+          },
+          "id": "Counter.read:-64:0",
+          "accepted": false,
+          "rejection": "contract_rejected",
+          "state": -64,
+          "result": 0,
+          "version": 1,
+          "write": false,
+          "scores": [
+            5.532241331707155e-13,
+            2.105509059731074e-15,
+            5.937472735695337e-13
+          ],
+          "timing": {
+            "overhead_ns": 590,
+            "proposal_ns": 650,
+            "candidate_ns": 1339,
+            "checker_ns": 6590,
+            "commit_ns": 0,
+            "total_ns": 9169,
+            "checker_calls": 1
+          }
+        },
+        {
+          "checker_work": {
+            "term_evaluations": 3,
+            "integer_primitives": 1,
+            "argument_checks": 1,
+            "field_checks": 1,
+            "ordered_write_checks": 0
+          },
+          "id": "Counter.increment:-64:-16",
+          "accepted": false,
+          "rejection": "contract_rejected",
+          "state": -64,
+          "result": 0,
+          "version": 1,
+          "write": false,
+          "scores": [
+            5.532241331706631e-13,
+            -0.24999999999999736,
+            5.9374727356948e-13
+          ],
+          "timing": {
+            "overhead_ns": 1300,
+            "proposal_ns": 130,
+            "candidate_ns": 330,
+            "checker_ns": 1170,
+            "commit_ns": 0,
+            "total_ns": 2930,
+            "checker_calls": 1
+          }
+        },
+        {
+          "checker_work": {
+            "term_evaluations": 3,
+            "integer_primitives": 1,
+            "argument_checks": 1,
+            "field_checks": 1,
+            "ordered_write_checks": 0
+          },
+          "id": "Counter.increment:-64:-15",
+          "accepted": false,
+          "rejection": "contract_rejected",
+          "state": -64,
+          "result": 0,
+          "version": 1,
+          "write": false,
+          "scores": [
+            5.532241331706633e-13,
+            -0.23437499999999736,
+            5.937472735694802e-13
+          ],
+          "timing": {
+            "overhead_ns": 200,
+            "proposal_ns": 90,
+            "candidate_ns": 100,
+            "checker_ns": 380,
+            "commit_ns": 0,
+            "total_ns": 770,
+            "checker_calls": 1
+          }
+        }
+      ]
+    },
+    "zero": {
+      "checker_work_total": {
+        "term_evaluations": 12312,
+        "integer_primitives": 4104,
+        "argument_checks": 4104,
+        "field_checks": 4328,
+        "ordered_write_checks": 0
+      },
+      "accuracy": {
+        "cases": 4216,
+        "raw_correct": 0,
+        "accepted": 0,
+        "accepted_wrong": 0,
+        "rejected": 4216
+      },
+      "splits": {
+        "extrapolation": {
+          "cases": 3216,
+          "raw_correct": 0,
+          "accepted": 0,
+          "accepted_wrong": 0,
+          "rejected": 3216
+        },
+        "interpolation": {
+          "cases": 1000,
+          "raw_correct": 0,
+          "accepted": 0,
+          "accepted_wrong": 0,
+          "rejected": 1000
+        }
+      },
+      "timings": {
+        "candidate": {
+          "samples": 4216,
+          "mean_ns": 120.53012333965845,
+          "p50_ns": 90,
+          "p95_ns": 180
+        },
+        "checker": {
+          "samples": 4216,
+          "mean_ns": 241.91674573055028,
+          "p50_ns": 220,
+          "p95_ns": 320
+        },
+        "commit": {
+          "samples": 4216,
+          "mean_ns": 0,
+          "p50_ns": 0,
+          "p95_ns": 0
+        },
+        "overhead": {
+          "samples": 4216,
+          "mean_ns": 171.07566413662238,
+          "p50_ns": 170,
+          "p95_ns": 190
+        },
+        "proposal": {
+          "samples": 4216,
+          "mean_ns": 51.251660341555976,
+          "p50_ns": 50,
+          "p95_ns": 60
+        },
+        "total": {
+          "samples": 4216,
+          "mean_ns": 584.7741935483871,
+          "p50_ns": 530,
+          "p95_ns": 710
+        }
+      },
+      "checker_calls": 4216,
+      "load_ns": 542426,
+      "load_allocated_bytes": 86232,
+      "first_rejections": [
+        {
+          "checker_work": {
+            "term_evaluations": 0,
+            "integer_primitives": 0,
+            "argument_checks": 0,
+            "field_checks": 2,
+            "ordered_write_checks": 0
+          },
+          "id": "Counter.read:-64:0",
+          "accepted": false,
+          "rejection": "contract_rejected",
+          "state": -64,
+          "result": 0,
+          "version": 1,
+          "write": false,
+          "scores": [
+            0,
+            0,
+            0
+          ],
+          "timing": {
+            "overhead_ns": 340,
+            "proposal_ns": 420,
+            "candidate_ns": 860,
+            "checker_ns": 2780,
+            "commit_ns": 0,
+            "total_ns": 4400,
+            "checker_calls": 1
+          }
+        },
+        {
+          "checker_work": {
+            "term_evaluations": 3,
+            "integer_primitives": 1,
+            "argument_checks": 1,
+            "field_checks": 1,
+            "ordered_write_checks": 0
+          },
+          "id": "Counter.increment:-64:-16",
+          "accepted": false,
+          "rejection": "contract_rejected",
+          "state": -64,
+          "result": 0,
+          "version": 1,
+          "write": false,
+          "scores": [
+            0,
+            0,
+            0
+          ],
+          "timing": {
+            "overhead_ns": 260,
+            "proposal_ns": 80,
+            "candidate_ns": 230,
+            "checker_ns": 720,
+            "commit_ns": 0,
+            "total_ns": 1290,
+            "checker_calls": 1
+          }
+        },
+        {
+          "checker_work": {
+            "term_evaluations": 3,
+            "integer_primitives": 1,
+            "argument_checks": 1,
+            "field_checks": 1,
+            "ordered_write_checks": 0
+          },
+          "id": "Counter.increment:-64:-15",
+          "accepted": false,
+          "rejection": "contract_rejected",
+          "state": -64,
+          "result": 0,
+          "version": 1,
+          "write": false,
+          "scores": [
+            0,
+            0,
+            0
+          ],
+          "timing": {
+            "overhead_ns": 200,
+            "proposal_ns": 80,
+            "candidate_ns": 110,
+            "checker_ns": 310,
+            "commit_ns": 0,
+            "total_ns": 700,
+            "checker_calls": 1
+          }
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "One Counter program; no held-out program templates or compositions.",
+    "Four engineered features include operation ID; reads encode absent delta as zero.",
+    "Numeric predictions are rounded; safety/correctness depends on concrete exact checking.",
+    "The checker repeats the operational arithmetic; there is no symbolic term proof or efficiency claim.",
+    "Bounded exhaustive domain excludes int64 extremes, eval, aliases, tenants and external effects.",
+    "Structural lookup + exact primitives already solves this task without learning.",
+    "Signing uses a publicly reproducible research key, not a production trust root.",
+    "Checker instrumentation and in-process stage timers add overhead; load allocation is TotalAlloc delta, not RSS/peak memory.",
+    "Oracle invoke includes its internal checker, trace and heap overhead; parse/construction excluded."
+  ]
+}

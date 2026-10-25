@@ -275,7 +275,23 @@ func Constant(n *frontend.Node) (int64, bool) {
 // Validate compares one concrete result/state delta with the derived relation.
 // It never mutates its inputs, invokes an AST evaluator, or grants authority.
 // The caller must supply normalized effective arguments and complete state maps.
-func Validate(c Contract, transition Transition) error {
+// Work counts actual relation-evaluation work, including repeated arithmetic.
+// These are implementation counters, not abstract program complexity estimates.
+type Work struct {
+	TermEvaluations    uint64 `json:"term_evaluations"`
+	IntegerPrimitives  uint64 `json:"integer_primitives"`
+	ArgumentChecks     uint64 `json:"argument_checks"`
+	FieldChecks        uint64 `json:"field_checks"`
+	OrderedWriteChecks uint64 `json:"ordered_write_checks"`
+}
+
+func Validate(c Contract, transition Transition) error { return validate(c, transition, nil) }
+func ValidateMeasured(c Contract, transition Transition) (Work, error) {
+	var work Work
+	err := validate(c, transition, &work)
+	return work, err
+}
+func validate(c Contract, transition Transition, work *Work) error {
 	before, after, args, result := transition.Before, transition.After, transition.Args, transition.Result
 	if c.Status != "inferred" || c.Domain != "int64_state_and_arguments" {
 		return fmt.Errorf("unsupported contract: %s", c.Reason)
@@ -284,6 +300,9 @@ func Validate(c Contract, transition Transition) error {
 		return fmt.Errorf("argument frame mismatch")
 	}
 	for _, p := range c.Parameters {
+		if work != nil {
+			work.ArgumentChecks++
+		}
 		v, ok := args[p.Name]
 		if !ok || !v.Valid() || v.Kind != "int" {
 			return fmt.Errorf("argument %s must be int64", p.Name)
@@ -293,6 +312,9 @@ func Validate(c Contract, transition Transition) error {
 		return fmt.Errorf("state frame mismatch")
 	}
 	for _, name := range c.Fields {
+		if work != nil {
+			work.FieldChecks++
+		}
 		a, ok := before[name]
 		b, exists := after[name]
 		if !ok || !exists || !a.Valid() || !b.Valid() || a.Kind != "int" || b.Kind != "int" {
@@ -301,6 +323,9 @@ func Validate(c Contract, transition Transition) error {
 	}
 	var eval func(*Term) (semantics.Value, error)
 	eval = func(t *Term) (semantics.Value, error) {
+		if work != nil {
+			work.TermEvaluations++
+		}
 		if t == nil {
 			return semantics.Value{}, fmt.Errorf("missing relation term")
 		}
@@ -341,6 +366,9 @@ func Validate(c Contract, transition Transition) error {
 			return b, fmt.Errorf("integer relation operand required")
 		}
 		var v int64
+		if work != nil {
+			work.IntegerPrimitives++
+		}
 		switch t.Op {
 		case "add":
 			v, err = semantics.Add(a.Int, b.Int)
@@ -362,6 +390,9 @@ func Validate(c Contract, transition Transition) error {
 		return fmt.Errorf("write history length mismatch")
 	}
 	for i, update := range c.Updates {
+		if work != nil {
+			work.OrderedWriteChecks++
+		}
 		want, err := eval(update.Value)
 		if err != nil {
 			return err
@@ -372,6 +403,9 @@ func Validate(c Contract, transition Transition) error {
 		}
 	}
 	for _, name := range c.Fields {
+		if work != nil {
+			work.FieldChecks++
+		}
 		want := before[name]
 		if term, ok := c.Post[name]; ok {
 			v, err := eval(term)

@@ -1,0 +1,7 @@
+{
+  "cases": [
+    {"id": "held-out-increment", "operation": "Counter.increment", "state": 63, "delta": 15},
+    {"id": "held-out-read", "operation": "Counter.read", "state": -63, "delta": 0}
+  ],
+  "repeats": 1
+}

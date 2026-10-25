@@ -30,7 +30,8 @@
     {
       "name": "learned-invalid-proposal",
       "expected": "reject without committing state or invoking reference fallback",
-      "status": "pending"
+      "status": "implemented_bounded_counter",
+      "note": "Zero/shuffled learned candidates reject without mutation; no symbolic term verification or general learned executor is claimed."
     },
     {
       "name": "eval-overlay",

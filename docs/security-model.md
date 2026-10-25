@@ -2,8 +2,11 @@
 
 Status: required design boundaries, not implemented security guarantees. Mission 1
 has a local parser, integer Counter reference oracle, observed traces and a
-concrete operational contract checker. It has no production loader, learned term
-verification, authentication, external effect adapters, eval runtime or tenant isolation.
+concrete operational contract checker. A bounded learned Counter loader now
+checks artifact hashes/signatures, size/shape/domain and primitive bindings, using
+an explicitly public research signing key. That is not a production trust root.
+It has no production loader, symbolic learned-term verification, authentication,
+external effect adapters, eval runtime or tenant isolation.
 
 ## Trust and execution boundaries
 
@@ -54,7 +57,9 @@ The concrete integer tests reject wrong returns/deltas, frame mutations,
 extra/reordered writes, overflow and partial state publication. Runtime init
 rejection, step/depth errors and rollback are also tested. The table’s tenant,
 model, loader, dependency, eval and external-effect controls remain pending.
-These local oracle checks are not production sandbox or gateway evidence.
+Frozen-model tests additionally reject payload tampering, wrong keys, invalid
+shapes/ABIs and out-of-domain requests; zeroed/shuffled proposals fail without
+commits. These local checks are not production sandbox or gateway evidence.
 
 ## Limits that need explicit designs
 

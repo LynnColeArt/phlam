@@ -1,8 +1,9 @@
 # Counter oracle, observed traces, and concrete contracts
 
 Implemented slice, 2026-10-25. This is reference execution and a concrete contract
-checker. There are no learned weights, learned proposals, artifact loader, or
-symbolic equivalence checker yet.
+checker. A separate [bounded learned experiment](../experiments/counter/README.md)
+now uses this oracle and checker. The oracle itself remains source-based; symbolic
+equivalence checking is still unimplemented.
 
 ## Run a real scenario
 
@@ -149,9 +150,9 @@ Both values and metadata may be sensitive. No agent observation endpoint exists.
 
 These are observations, not automatically verified training examples for the
 whole language. Their integer relationships are checked against contracts where
-supported, and tests compare expected outcomes with independent oracles. Data
-splits, datasets, frozen learned artifacts and training lineage still need to be
-built before any model experiment.
+supported, and tests compare expected outcomes with independent oracles. The first bounded experiment now records numeric splits, observed training
+labels, frozen learned artifacts and lineage separately. General language
+training and program/composition generalization remain unproven.
 
 ## Failure example
 
