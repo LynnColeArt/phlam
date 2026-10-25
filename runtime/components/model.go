@@ -12,6 +12,7 @@ const Rate = 0.3
 
 type Model struct {
 	Weights [][]float64 `json:"weights"`
+	Hidden  [][]float64 `json:"hidden,omitempty"`
 }
 type Sample struct {
 	Operation  int        `json:"operation_index"`
@@ -31,6 +32,14 @@ func features(count, index int, state, arg int64) []float64 {
 }
 func (m Model) Predict(count, index int, state, arg int64) (out [3]float64) {
 	x := features(count, index, state, arg)
+	base := len(x)
+	for _, row := range m.Hidden {
+		v := 0.0
+		for j := 0; j < base; j++ {
+			v += row[j] * x[j]
+		}
+		x = append(x, math.Max(0, v))
+	}
 	for h := range out {
 		for j, v := range x {
 			out[h] += m.Weights[h][j] * v

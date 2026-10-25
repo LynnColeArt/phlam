@@ -23,10 +23,16 @@ cross-component transactions match the oracle; another 416 native rejections and
 146 uncertified-scope cases roll back both states. The generic source-free worker
 imports no compiler or oracle. [Results and reproduction](experiments/components/README.md).
 
-The models learn accepted affine transitions; source-derived contracts enforce
-rejection. Certification removes warm relation arithmetic, but did not improve
-total latency in the latest run. Supplied schedules are not learned planning.
-The [earlier Counter composition study](experiments/counter-compositions/README.md)
+**The next slice learns nonlinear saturation.** A 143-parameter ReLU executor
+trained on 102 primitive examples gets all 492 held-out accumulator inputs right,
+including both saturation regions and exact thresholds. With the independently
+trained Counter, all 224 supported compositions match the oracle and lookup;
+526 outside-domain schedules roll back. Warm certification runs no contract
+arithmetic or predicates. [Results and reproduction](experiments/saturating-accumulator/README.md).
+
+Certified learned execution is faster than concrete checking in this run, but
+lookup remains faster. Supplied schedules are not learned planning. The
+[earlier Counter composition study](experiments/counter-compositions/README.md)
 and [first numerical experiment](experiments/counter/README.md) remain available.
 General symbolic verification, dynamic variables, reference-cell aliases and eval
 remain unimplemented.
@@ -82,7 +88,8 @@ full name/type checking are not implemented.
   parent and independently invoked source-free executor.
 - `cmd/phlam-counter-compositions`, `cmd/phlam-counter-compose-worker`: held-out
   composition study and source-free worker with concrete/certified boundaries.
-- `examples/counter`, `examples/accumulator`: independent source examples.
+- `examples/counter`, `examples/accumulator`, `examples/saturating-accumulator`:
+  independent affine, rejecting and saturating source examples.
 - `cmd/phlame-components-experiment`, `cmd/phlame-components-worker`: independent
   module training, source-free execution and oracle/lookup measurements.
 - `tests/syntax`: valid/invalid corpus with expected diagnostic codes.
@@ -90,9 +97,9 @@ full name/type checking are not implemented.
   dynamic-language runtime obligations.
 - `docs/decisions`, `reference/php4`: evidence and recorded architectural choices.
 
-The next research question is whether learned modules can contribute beyond
-accepted affine transitions and supplied schedules, with a checker that scales
-beyond finite domain enumeration and demonstrates an end-to-end benefit.
+The next research questions concern richer state and control flow, a checker
+that scales beyond finite domain enumeration, and an end-to-end benefit over
+strong deterministic baselines.
 Symbolic checking, generalization across programs/compositions, capability
 discovery, stdlib/effects, gateways and debugging remain open. Phase 2 aliases and
 eval also remain open. The learned substrate remains the architectural target.

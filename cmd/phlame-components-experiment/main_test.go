@@ -110,6 +110,10 @@ func TestIndependentTrainingAndReplacementCertificates(t *testing.T) {
 }
 func TestSourceFreeGenericWorker(t *testing.T) {
 	artifacts, _ := studies(t)
+	testSourceFreeGenericWorker(t, artifacts)
+}
+func testSourceFreeGenericWorker(t *testing.T, artifacts map[string]abi.Artifact) {
+	t.Helper()
 	deps, err := exec.Command("go", "list", "-deps", "../phlame-components-worker").Output()
 	if err != nil {
 		t.Fatal(err)
@@ -182,4 +186,95 @@ func TestSourceFreeGenericWorker(t *testing.T) {
 	if _, err := worker(dir, "learned", "certified", []abi.Transaction{success}, 1); err == nil {
 		t.Fatal("registry accepted a swapped module root")
 	}
+}
+
+func TestLearnedSaturatingBranchesCompositionsAndRollback(t *testing.T) {
+	artifacts := map[string]abi.Artifact{}
+	source := ""
+	cfgs := []config{configs[0], branchingConfig()}
+	for _, c := range cfgs {
+		c.Source = "../../" + c.Source
+		a, _, _, info, err := trainModule(c, abi.Hash([]byte("branching regression")))
+		if err != nil {
+			t.Fatal(err)
+		}
+		if !info.BitIdentical || info.RawTrainingCorrect != info.TrainingSamples || info.RawHeldoutCorrect != info.HeldoutCases {
+			t.Fatal("raw prediction failure", info)
+		}
+		if c.Branching {
+			if info.TrainingSamples != 102 || info.HeldoutCases != 492 || info.Parameters != 143 || info.AffineHeldoutCorrect >= info.RawHeldoutCorrect {
+				t.Fatal("unexpected task or baseline", info)
+			}
+			for _, label := range []string{"interior", "lower_saturation", "upper_saturation", "threshold", "read"} {
+				if info.BranchCases[label] == 0 || info.BranchCorrect[label] != info.BranchCases[label] {
+					t.Fatal("branch not learned", label, info)
+				}
+			}
+			if info.MaxHeldoutIntegerError >= .5 {
+				t.Fatal("rounding margin lost")
+			}
+		}
+		artifacts[c.Alias] = a
+		b, err := os.ReadFile(c.Source)
+		if err != nil {
+			t.Fatal(err)
+		}
+		source += string(b) + "\n"
+	}
+	// A saturation is a successful write, including when it preserves the value.
+	// The third call then fails after BOTH components have staged writes.
+	rollback := abi.Transaction{ID: "saturate-then-rollback", Instances: map[string]abi.Instance{"c": {Component: "counter", Value: 0, Version: 1}, "a": {Component: "accumulator", Value: 16, Version: 1}}, Steps: []abi.Step{{Target: "c", Operation: "increment", Argument: literal(1)}, {Target: "a", Operation: "add", Argument: prior(0)}, {Target: "c", Operation: "increment", Argument: prior(1)}}}
+	for _, engine := range []string{"learned", "lookup"} {
+		for _, boundary := range []string{"concrete", "certified"} {
+			r, _, err := abi.NewRegistry(artifacts, engine, boundary)
+			if err != nil {
+				t.Fatal(err)
+			}
+			accepted, rejected := 0, 0
+			for _, tx := range append(transactions(), rollback) {
+				o, _, err := observe(source, artifacts, tx)
+				if err != nil {
+					t.Fatal(err)
+				}
+				out := r.Run(tx)
+				if _, err := summarize(response{Outcomes: []abi.Outcome{out}}, []observation{o}); err != nil {
+					t.Fatal(engine, boundary, err)
+				}
+				if (o.Category == "accepted") != out.Accepted {
+					t.Fatal("unexpected disposition", tx.ID, out)
+				}
+				if boundary == "certified" && out.Work.Relations != (abi.Work{}) {
+					t.Fatal("warm checker evaluated relations")
+				}
+				if tx.ID == rollback.ID {
+					if out.Accepted || out.FailedStep != 2 || !reflect.DeepEqual(out.States, tx.Instances) || len(out.Results) != 0 || len(out.Writes) != 0 {
+						t.Fatal("partial saturation escaped rollback", out)
+					}
+				} else if out.Accepted {
+					accepted++
+				} else {
+					rejected++
+				}
+			}
+			if accepted != 224 || rejected != 526 {
+				t.Fatal("composition coverage changed", accepted, rejected)
+			}
+		}
+	}
+	for _, engine := range []string{"zero", "shuffled"} {
+		if _, _, err := abi.NewRegistry(artifacts, engine, "certified"); err == nil {
+			t.Fatal("ablation certified", engine)
+		}
+	}
+	// Removing the nonlinear layer is not repaired by the certificate.
+	linear := artifacts["accumulator"]
+	linear.Model.Weights = append([][]float64(nil), linear.Model.Weights...)
+	linear.Model.Hidden = nil
+	for h := range linear.Model.Weights {
+		linear.Model.Weights[h] = linear.Model.Weights[h][:5]
+	}
+	if _, _, err := abi.NewRegistry(map[string]abi.Artifact{"accumulator": linear}, "learned", "certified"); err == nil {
+		t.Fatal("nonlinear layer was dispensable")
+	}
+	testSourceFreeGenericWorker(t, artifacts)
 }

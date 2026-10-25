@@ -42,7 +42,7 @@ func predict(a Artifact, index int, state, arg int64, engine string) (Prediction
 		}
 		return Decode(m.Predict(len(a.Contract.Operations), index, state, arg))
 	case "shuffled":
-		m := Model{Weights: make([][]float64, 3)}
+		m := Model{Weights: make([][]float64, 3), Hidden: a.Model.Hidden}
 		for h := range m.Weights {
 			m.Weights[h] = make([]float64, len(a.Model.Weights[h]))
 			for j := range m.Weights[h] {

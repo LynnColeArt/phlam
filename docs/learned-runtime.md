@@ -1,14 +1,15 @@
 # Learned runtime: first experiment contract
 
-Status: bounded numerical, composition and independent-component experiments
-implemented, 2026-10-25. The newest
-[module experiment](../experiments/components/run-0001/REPORT.md) trains Counter
-and Accumulator separately and composes their typed returns under a generic
-source-free scalar ABI. Exact source-derived guards enforce rejection and shared
-transaction rollback. Accepted numerical models remain affine. Finite startup
-certification removes warm relation evaluation, but the latest workload shows no
-end-to-end latency improvement. Learned planning, richer data/control flow and
-unbounded symbolic equivalence remain unproven. The broader target follows.
+Status: bounded numerical, composition, independent-component and nonlinear
+saturation experiments implemented, 2026-10-25. The newest
+[saturation experiment](../experiments/saturating-accumulator/run-0001/REPORT.md)
+trains a residual ReLU executor on 102 observed primitives and predicts all 492
+held-out accumulator inputs exactly after integer decoding. Counter trains
+independently; 224 supported cross-component schedules match the oracle and
+526 outside-domain schedules roll back. Startup certification removes warm
+contract arithmetic and predicates. This run improves learned latency relative
+to concrete checking; lookup remains faster. Learned planning, richer data/control
+flow and unbounded symbolic equivalence remain unproven. The broader target follows.
 
 ## Architectural destination
 
@@ -177,6 +178,31 @@ accepted inputs, not computed transition outputs. The models learn only accepted
 transitions; no learned nonlinear rejection or planner is claimed. Separate
 source/contract/model comparisons and checker/application-work counters are in
 the recorded report. The new worker imports no compiler or reference package.
+
+## Saturating learned transitions
+
+The saturation experiment retains that scalar ABI and learns a nonlinear
+accepted transition rather than moving a clamp implementation into admission.
+Its generic residual network has 16 learned ReLU units and three output heads.
+State, argument and own operation indicators are the only inputs; source paths,
+branch labels and peer state never enter training or inference. A sparse subset
+of source-observed numerical transitions supplies targets. The 492 held-out
+primitive cases include lower/upper saturation, exact thresholds, interior
+updates and reads. The same-data affine baseline is substantially less accurate.
+
+Every primitive is checked against real source execution and an independently
+stated mathematical fixture specification. Startup exhaustively certifies the
+frozen decoded model. Warm execution retains only domain admission intervals;
+source relations, including clamp predicates, do not run in the certified checker.
+The model learns a piecewise numerical function, not symbolic source-branch IDs
+or control-flow plans. Approximate floating-point scores become exact decoded
+integer transitions only inside the exhaustively checked finite domain.
+
+Raw predictions, source traces, rollback examples and separate lookup/checker
+measurements accompany the report. Existing affine models remain supported;
+optional hidden weights are dimension-bounded, signed, sealed and certified
+with the rest of the module. A public research key still supplies no production
+tenant identity or effects authorization.
 
 ## Evaluation and falsification
 

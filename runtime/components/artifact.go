@@ -134,12 +134,25 @@ func ValidateArtifact(a Artifact) error {
 		return fmt.Errorf("model output shape mismatch")
 	}
 	for _, row := range a.Model.Weights {
-		if len(row) != 3+len(c.Operations) {
+		if len(row) != 3+len(c.Operations)+len(a.Model.Hidden) {
 			return fmt.Errorf("model feature shape mismatch")
 		}
 		for _, w := range row {
 			if math.IsNaN(w) || math.IsInf(w, 0) || math.Abs(w) > 100 {
 				return fmt.Errorf("invalid model weight")
+			}
+		}
+	}
+	if len(a.Model.Hidden) > 32 {
+		return fmt.Errorf("hidden layer budget")
+	}
+	for _, row := range a.Model.Hidden {
+		if len(row) != 3+len(c.Operations) {
+			return fmt.Errorf("hidden feature shape mismatch")
+		}
+		for _, w := range row {
+			if math.IsNaN(w) || math.IsInf(w, 0) || math.Abs(w) > 100 {
+				return fmt.Errorf("invalid hidden weight")
 			}
 		}
 	}

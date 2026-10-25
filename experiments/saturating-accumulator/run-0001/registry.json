@@ -1,0 +1,13 @@
+{
+  "abi": "phlame.scalar-components.v0",
+  "modules": {
+    "accumulator": {
+      "file": "accumulator.json",
+      "module_sha256": "dc7f4157157e1c655d207c45335f45f70870043bd22dcfdf0d5ba9af25c2d021"
+    },
+    "counter": {
+      "file": "counter.json",
+      "module_sha256": "1be91c575b054ee2be476bf41c6369c2e49ec7d41dbc31c659f8b4166b6c76ce"
+    }
+  }
+}

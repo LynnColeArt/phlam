@@ -57,3 +57,33 @@ func TestSymbolicGrowthIsBounded(t *testing.T) {
 		t.Fatal("unbounded symbolic expansion accepted")
 	}
 }
+
+func TestSaturatingPathsAgainstMathematicalSpecification(t *testing.T) {
+	source, err := os.ReadFile("../../examples/saturating-accumulator/saturating-accumulator.phlam")
+	if err != nil {
+		t.Fatal(err)
+	}
+	contract, err := Compile(string(source), "SaturatingAccumulator")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(contract.Operations[0].Paths) != 3 {
+		t.Fatal("expected lower, upper and interior paths")
+	}
+	for state := int64(-20); state <= 20; state++ {
+		for arg := int64(-12); arg <= 12; arg++ {
+			want := state + arg
+			if want < -16 {
+				want = -16
+			}
+			if want > 16 {
+				want = 16
+			}
+			var work abi.Work
+			got, err := contract.Operations[0].Evaluate(state, arg, &work)
+			if err != nil || !got.Accepted || got.Prediction != (abi.Prediction{Next: want, Result: want, Write: true}) {
+				t.Fatal(state, arg, got, err)
+			}
+		}
+	}
+}

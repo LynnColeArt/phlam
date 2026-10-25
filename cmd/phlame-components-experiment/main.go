@@ -21,6 +21,7 @@ import (
 	compile "github.com/LynnColeArt/phlam/compiler/components"
 	abi "github.com/LynnColeArt/phlam/runtime/components"
 	"github.com/LynnColeArt/phlam/runtime/reference"
+	"github.com/LynnColeArt/phlam/runtime/trace"
 	"github.com/LynnColeArt/phlam/semantics"
 )
 
@@ -29,11 +30,16 @@ type config struct {
 	Domain                 abi.Domain
 	Seed                   int64
 	StateStride, ArgStride int64
+	Branching              bool
 }
 
 var configs = []config{
-	{"counter", "Counter", "examples/counter/counter.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -4, ArgMax: 4}, 101, 8, 2},
-	{"accumulator", "Accumulator", "examples/accumulator/accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 202, 4, 4},
+	{"counter", "Counter", "examples/counter/counter.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -4, ArgMax: 4}, 101, 8, 2, false},
+	{"accumulator", "Accumulator", "examples/accumulator/accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 202, 4, 4, false},
+}
+
+func branchingConfig() config {
+	return config{"accumulator", "SaturatingAccumulator", "examples/saturating-accumulator/saturating-accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 404, 2, 4, true}
 }
 
 type primitive struct {
@@ -45,32 +51,72 @@ type primitive struct {
 	Training   bool           `json:"training"`
 	TraceHash  string         `json:"observed_trace_sha256"`
 }
+type rawPrediction struct {
+	Operation int            `json:"operation_index"`
+	State     int64          `json:"state"`
+	Arg       int64          `json:"argument"`
+	Training  bool           `json:"training"`
+	Target    abi.Prediction `json:"source_target"`
+	Scores    [3]float64     `json:"raw_scores"`
+	Decoded   abi.Prediction `json:"decoded_prediction"`
+	Correct   bool           `json:"correct"`
+	Error     string         `json:"error,omitempty"`
+}
+
+func rawPredictions(a abi.Artifact, observations []primitive) []rawPrediction {
+	out := []rawPrediction{}
+	for _, o := range observations {
+		if !o.Accepted {
+			continue
+		}
+		scores := a.Model.Predict(len(a.Contract.Operations), o.Operation, o.State, o.Arg)
+		p, err := abi.Decode(scores)
+		row := rawPrediction{Operation: o.Operation, State: o.State, Arg: o.Arg, Training: o.Training, Target: o.Prediction, Scores: scores, Decoded: p, Correct: err == nil && p == o.Prediction}
+		if err != nil {
+			row.Error = err.Error()
+		}
+		out = append(out, row)
+	}
+	return out
+}
+
 type moduleReport struct {
-	Parameters       int     `json:"learned_parameters"`
-	SourceHash       string  `json:"source_sha256"`
-	Root             string  `json:"module_sha256"`
-	TrainingHash     string  `json:"training_sha256"`
-	VerificationHash string  `json:"oracle_domain_sha256"`
-	Seed             int64   `json:"seed"`
-	TrainingSamples  int     `json:"training_samples"`
-	PrimitiveCases   int     `json:"primitive_cases"`
-	RejectedInputs   int     `json:"source_rejected_inputs"`
-	InitialLoss      float64 `json:"initial_mse"`
-	FinalLoss        float64 `json:"final_mse"`
-	TrainingNS       int64   `json:"training_ns"`
-	BitIdentical     bool    `json:"bit_identical_retraining"`
-	Bytes            int     `json:"artifact_bytes"`
+	RawPredictionsHash     string         `json:"raw_predictions_sha256"`
+	ModelKind              string         `json:"model_kind"`
+	MaxHeldoutIntegerError float64        `json:"max_heldout_integer_score_error"`
+	RawTrainingCorrect     int            `json:"raw_training_correct"`
+	RawHeldoutCorrect      int            `json:"raw_heldout_correct"`
+	HeldoutCases           int            `json:"heldout_cases"`
+	BranchCorrect          map[string]int `json:"raw_branch_correct"`
+	BranchCases            map[string]int `json:"branch_cases"`
+	AffineHeldoutCorrect   int            `json:"affine_baseline_heldout_correct"`
+	Parameters             int            `json:"learned_parameters"`
+	SourceHash             string         `json:"source_sha256"`
+	Root                   string         `json:"module_sha256"`
+	TrainingHash           string         `json:"training_sha256"`
+	VerificationHash       string         `json:"oracle_domain_sha256"`
+	Seed                   int64          `json:"seed"`
+	TrainingSamples        int            `json:"training_samples"`
+	PrimitiveCases         int            `json:"primitive_cases"`
+	RejectedInputs         int            `json:"source_rejected_inputs"`
+	InitialLoss            float64        `json:"initial_mse"`
+	FinalLoss              float64        `json:"final_mse"`
+	TrainingNS             int64          `json:"training_ns"`
+	BitIdentical           bool           `json:"bit_identical_retraining"`
+	Bytes                  int            `json:"artifact_bytes"`
 }
 type observation struct {
-	Transaction    abi.Transaction         `json:"transaction"`
-	Category       string                  `json:"category"`
-	OracleAccepted bool                    `json:"oracle_accepted"`
-	InScope        bool                    `json:"within_certified_coarse_domains"`
-	OracleStates   map[string]abi.Instance `json:"oracle_states"`
-	OracleResults  []abi.Return            `json:"oracle_results,omitempty"`
-	OracleWrites   []abi.Write             `json:"oracle_writes,omitempty"`
-	TraceHash      string                  `json:"observed_trace_sha256"`
-	OracleError    string                  `json:"oracle_error,omitempty"`
+	Events           []trace.Event           `json:"source_trace_events,omitempty"`
+	ObservedBranches map[string]int          `json:"observed_saturation_branches,omitempty"`
+	Transaction      abi.Transaction         `json:"transaction"`
+	Category         string                  `json:"category"`
+	OracleAccepted   bool                    `json:"oracle_accepted"`
+	InScope          bool                    `json:"within_certified_coarse_domains"`
+	OracleStates     map[string]abi.Instance `json:"oracle_states"`
+	OracleResults    []abi.Return            `json:"oracle_results,omitempty"`
+	OracleWrites     []abi.Write             `json:"oracle_writes,omitempty"`
+	TraceHash        string                  `json:"observed_trace_sha256"`
+	OracleError      string                  `json:"oracle_error,omitempty"`
 }
 type metric struct {
 	N    int     `json:"samples"`
@@ -247,7 +293,14 @@ func trainModule(c config, implementation string) (abi.Artifact, []abi.Sample, [
 				nativeOK := true
 				if op.Arity == 1 {
 					want += arg
-					if c.Alias == "accumulator" {
+					if c.Branching {
+						if want < -16 {
+							want = -16
+						}
+						if want > 16 {
+							want = 16
+						}
+					} else if c.Alias == "accumulator" {
 						nativeOK = arg >= -8 && arg <= 8 && want >= -16 && want <= 16
 					}
 				}
@@ -280,19 +333,86 @@ func trainModule(c config, implementation string) (abi.Artifact, []abi.Sample, [
 	info.TrainingSamples = len(samples)
 	info.PrimitiveCases = len(observed)
 	start := time.Now()
-	model, initial, final, err := abi.Train(samples, len(contract.Operations), c.Seed)
+	trainer := abi.Train
+	epochs := abi.Epochs
+	if c.Branching {
+		trainer = abi.TrainBranching
+		epochs = abi.BranchEpochs
+	}
+	model, initial, final, err := trainer(samples, len(contract.Operations), c.Seed)
 	info.TrainingNS = time.Since(start).Nanoseconds()
 	if err != nil {
 		return abi.Artifact{}, nil, nil, info, err
 	}
-	again, _, _, err := abi.Train(samples, len(contract.Operations), c.Seed)
+	again, _, _, err := trainer(samples, len(contract.Operations), c.Seed)
 	if err != nil {
 		return abi.Artifact{}, nil, nil, info, err
 	}
 	info.BitIdentical = reflect.DeepEqual(model, again)
 	info.InitialLoss = initial
 	info.FinalLoss = final
-	artifact := abi.Artifact{Schema: "phlame.scalar-module.v0", ABI: abi.ABI, Contract: contract, Domain: c.Domain, Model: model, Seed: c.Seed, Epochs: abi.Epochs, TrainingHash: info.TrainingHash, VerificationHash: info.VerificationHash, ImplementationHash: implementation, Toolchain: runtime.Version()}
+	artifact := abi.Artifact{Schema: "phlame.scalar-module.v0", ABI: abi.ABI, Contract: contract, Domain: c.Domain, Model: model, Seed: c.Seed, Epochs: epochs, TrainingHash: info.TrainingHash, VerificationHash: info.VerificationHash, ImplementationHash: implementation, Toolchain: runtime.Version()}
+	info.Parameters = 0
+	for _, row := range append(append([][]float64{}, model.Hidden...), model.Weights...) {
+		info.Parameters += len(row)
+	}
+	info.BranchCases, info.BranchCorrect = map[string]int{}, map[string]int{}
+	affine, _, _, err := abi.Train(samples, len(contract.Operations), c.Seed)
+	if err != nil {
+		return abi.Artifact{}, nil, nil, info, err
+	}
+	for _, o := range observed {
+		if !o.Accepted {
+			continue
+		}
+		p, err := abi.Decode(model.Predict(len(contract.Operations), o.Operation, o.State, o.Arg))
+		correct := err == nil && p == o.Prediction
+		if o.Training {
+			if correct {
+				info.RawTrainingCorrect++
+			}
+			continue
+		}
+		scores := model.Predict(len(contract.Operations), o.Operation, o.State, o.Arg)
+		info.MaxHeldoutIntegerError = math.Max(info.MaxHeldoutIntegerError, math.Max(math.Abs(scores[0]*abi.Scale-float64(o.Prediction.Next)), math.Abs(scores[1]*abi.Scale-float64(o.Prediction.Result))))
+		info.HeldoutCases++
+		if correct {
+			info.RawHeldoutCorrect++
+		}
+		label := "read"
+		if contract.Operations[o.Operation].Arity == 1 {
+			label = "add"
+			if c.Branching {
+				label = "interior"
+			}
+			if c.Branching && o.State+o.Arg < -16 {
+				label = "lower_saturation"
+			}
+			if c.Branching && o.State+o.Arg > 16 {
+				label = "upper_saturation"
+			}
+			if c.Branching && (o.State+o.Arg == -16 || o.State+o.Arg == 16) {
+				label = "threshold"
+			}
+		}
+		info.BranchCases[label]++
+		if correct {
+			info.BranchCorrect[label]++
+		}
+		ap, ae := abi.Decode(affine.Predict(len(contract.Operations), o.Operation, o.State, o.Arg))
+		if ae == nil && ap == o.Prediction {
+			info.AffineHeldoutCorrect++
+		}
+	}
+	info.ModelKind = "affine"
+	if c.Branching {
+		info.ModelKind = "residual ReLU, 16 hidden units"
+	}
+	rawBytes, err := lines(rawPredictions(artifact, observed))
+	if err != nil {
+		return abi.Artifact{}, nil, nil, info, err
+	}
+	info.RawPredictionsHash = abi.Hash(rawBytes)
 	info.Root = abi.Root(artifact)
 	return artifact, samples, observed, info, nil
 }
@@ -320,6 +440,9 @@ func transactions() []abi.Transaction {
 	return out
 }
 func observe(source string, artifacts map[string]abi.Artifact, tx abi.Transaction) (observation, int64, error) {
+	return observeCapture(source, artifacts, tx, false)
+}
+func observeCapture(source string, artifacts map[string]abi.Artifact, tx abi.Transaction, capture bool) (observation, int64, error) {
 	o := observation{Transaction: tx, InScope: true, OracleStates: map[string]abi.Instance{}}
 	r, err := reference.New(source, reference.Options{CaptureIntegers: true})
 	if err != nil {
@@ -366,6 +489,23 @@ func observe(source string, artifacts map[string]abi.Artifact, tx abi.Transactio
 		artifact := artifacts[tx.Instances[alias].Component]
 		d := artifact.Domain
 		state := attempt.Before[artifact.Contract.Slot].Int
+		if artifact.Contract.Class == "SaturatingAccumulator" && attempt.Method == "add" {
+			if o.ObservedBranches == nil {
+				o.ObservedBranches = map[string]int{}
+			}
+			label := "interior"
+			sum := state + attempt.Args[0].Int
+			if sum < -16 {
+				label = "lower_saturation"
+			}
+			if sum > 16 {
+				label = "upper_saturation"
+			}
+			if sum == -16 || sum == 16 {
+				label = "threshold"
+			}
+			o.ObservedBranches[label]++
+		}
 		if state < d.StateMin || state > d.StateMax {
 			o.InScope = false
 		}
@@ -390,6 +530,9 @@ func observe(source string, artifacts map[string]abi.Artifact, tx abi.Transactio
 		o.OracleStates[alias] = spec
 	}
 	events := r.Events()[offset:]
+	if capture {
+		o.Events = events
+	}
 	if o.OracleAccepted {
 		for _, event := range events {
 			if event.Operation == "stage_write" {
@@ -492,10 +635,20 @@ func summarize(w response, observations []observation) (engineReport, error) {
 	return s, nil
 }
 func run() error {
-	output := flag.String("out", "experiments/components/run-0001", "new result directory")
+	branching := flag.Bool("branching", false, "train the saturating accumulator with a ReLU executor")
+	output := flag.String("out", "", "new result directory")
 	workerPath := flag.String("worker", "bin/phlame-components-worker", "source-free worker")
 	repeats := flag.Int("repeats", 10, "timing repetitions")
 	flag.Parse()
+	if *output == "" {
+		*output = "experiments/components/run-0001"
+		if *branching {
+			*output = "experiments/saturating-accumulator/run-0001"
+		}
+	}
+	if *branching {
+		configs = []config{configs[0], branchingConfig()}
+	}
 	if *repeats < 1 || *repeats > 100 {
 		return fmt.Errorf("repeats bounds")
 	}
@@ -515,6 +668,9 @@ func run() error {
 		"Signing uses a public research key; no production tenant permissions, external effect adapters or durable storage exist.",
 		"Timing includes instrumentation; workers use GOMAXPROCS=1, without CPU pinning; oracle machinery differs from workers.",
 	}}
+	if *branching {
+		r.Limitations[0] = "A residual ReLU model learns accepted saturating transitions from sparse examples; finite certification proves only the declared integer domain, not real-valued or arbitrary program behavior."
+	}
 	artifacts := map[string]abi.Artifact{}
 	training := map[string][]abi.Sample{}
 	primitiveData := map[string][]primitive{}
@@ -649,6 +805,13 @@ func run() error {
 		}
 	}
 	for alias, data := range training {
+		rawPredictionsBytes, err := lines(rawPredictions(artifacts[alias], primitiveData[alias]))
+		if err != nil {
+			return err
+		}
+		if err := os.WriteFile(filepath.Join(*output, alias+"-predictions.jsonl"), rawPredictionsBytes, 0644); err != nil {
+			return err
+		}
 		if err := save(filepath.Join(*output, alias+"-training.json"), data); err != nil {
 			return err
 		}
@@ -665,6 +828,11 @@ func run() error {
 	}
 	if err := save(filepath.Join(*output, "report.json"), r); err != nil {
 		return err
+	}
+	if *branching {
+		if err := writeBranchExamples(*output, dir, combined, artifacts); err != nil {
+			return err
+		}
 	}
 	fmt.Printf("saved %s: counter train=%d accumulator train=%d transactions=%d categories=%v accepted=%d/%d\n", *output, len(training["counter"]), len(training["accumulator"]), len(cases), r.Categories, r.Engines["learned/concrete"].Counts.Accepted, r.Engines["learned/certified"].Counts.Accepted)
 	return nil

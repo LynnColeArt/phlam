@@ -8,6 +8,10 @@ transaction only after every call succeeds.
 [Recorded results](run-0001/REPORT.md) · [Machine report](run-0001/report.json) ·
 [Source accumulator](../../examples/accumulator/accumulator.phlam)
 
+A subsequent [saturation experiment](../saturating-accumulator/README.md) retains
+this ABI and tests learned nonlinear transitions. The results below describe the
+original rejecting accumulator and remain unchanged.
+
 ## What this tests
 
 Counter trains on 30 accepted single-operation examples; Accumulator on 48, using

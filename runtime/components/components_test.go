@@ -128,3 +128,28 @@ func TestSignedArtifactTamperShapeAndBinding(t *testing.T) {
 		t.Fatal("extra tensor dimension accepted")
 	}
 }
+
+func TestHiddenModelValidationAndSeal(t *testing.T) {
+	a := syntheticArtifact()
+	a.Model.Hidden = [][]float64{{0, 1, 0, 0, 0}}
+	for h := range a.Model.Weights {
+		a.Model.Weights[h] = append(a.Model.Weights[h], 0)
+	}
+	registry, _, err := NewRegistry(map[string]Artifact{"a": a}, "learned", "certified")
+	if err != nil {
+		t.Fatal(err)
+	}
+	a.Model.Hidden[0][1] = 99
+	// Deep copying must include hidden parameters, not just the output heads.
+	if registry.modules["a"].artifact.Model.Hidden[0][1] != 1 {
+		t.Fatal("hidden layer was not sealed")
+	}
+	a.Model.Hidden[0] = nil
+	if ValidateArtifact(a) == nil {
+		t.Fatal("invalid hidden input shape accepted")
+	}
+	a.Model.Hidden = make([][]float64, 33)
+	if ValidateArtifact(a) == nil {
+		t.Fatal("oversized hidden layer accepted")
+	}
+}
