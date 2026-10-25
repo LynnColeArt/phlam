@@ -1,0 +1,12 @@
+/// Exercises syntax, without runtime claims.
+class Demo {
+$items = ["a" => 1, 2]
+function run($x = 0) {
+$c = new Counter(1)
+if ($x > 0) {
+return $c->increment(
+$x,
+)
+} else { return null }
+}
+}

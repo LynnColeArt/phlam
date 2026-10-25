@@ -1,0 +1,2 @@
+/// Stores values.
+class Store {$value = 0; function read() {return $this->value;}}

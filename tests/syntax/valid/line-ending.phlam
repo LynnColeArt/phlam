@@ -1,0 +1,4 @@
+/// CRLF input.
+class Windows {
+$value = 1
+}

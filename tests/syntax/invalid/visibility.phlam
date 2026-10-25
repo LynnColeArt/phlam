@@ -1,0 +1,2 @@
+/// C.
+class Counter {public $x;}

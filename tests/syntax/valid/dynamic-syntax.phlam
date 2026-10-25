@@ -1,0 +1,8 @@
+/// Dynamic syntax only; evaluator pending.
+class Dynamic {function run() {
+$name = "value"
+$$name = 10
+$alias = &$value
+eval('$alias += 2')
+return $value
+}}

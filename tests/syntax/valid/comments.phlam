@@ -1,0 +1,6 @@
+/// Comment handling.
+class Comments {function run() {
+$x = 1 /* comment
+keeps newline */
+return $x // done
+}}

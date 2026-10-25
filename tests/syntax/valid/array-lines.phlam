@@ -1,0 +1,6 @@
+/// Multiline arrays.
+class ArrayCase {function run() {
+return [1
++2, "key" => (4
+*5),]
+}}

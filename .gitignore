@@ -1,0 +1,4 @@
+/work/
+/bin/
+*.test
+/coverage.out

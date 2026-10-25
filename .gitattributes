@@ -1,0 +1,3 @@
+# These fixtures deliberately exercise whitespace and CRLF handling.
+tests/syntax/invalid/empty-purpose.phlam -whitespace
+tests/syntax/valid/line-ending.phlam whitespace=cr-at-eol

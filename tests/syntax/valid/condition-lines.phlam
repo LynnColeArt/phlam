@@ -1,0 +1,5 @@
+/// Multiline predicates.
+class Conditions {function run($x) {
+if ($x
+> 0) {return true} else {return false}
+}}
