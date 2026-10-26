@@ -44,6 +44,12 @@ certified transactions without clocks measure 1.656 µs for 8 units, 1.894 µs
 for the frozen 16-unit model and 1.547 µs for lookup. Architecture selection uses
 the finite certification domain; this does not establish a minimum network size.
 
+The [bounded seed sweep](experiments/seed-sweep/README.md) tests seeds 0–7 and
+404 for widths 2 and 4. None of the 18 configurations certifies; every signed
+artifact and counterexample is retained. The unchanged 8-unit model remains the
+smallest established success. Failed models publish no certified transactions,
+and concrete checking preserves safe partial coverage and rollback.
+
 Certified learned execution is faster than concrete checking in the saturation run, but
 lookup remains faster. Supplied schedules are not learned planning. The
 [earlier Counter composition study](experiments/counter-compositions/README.md)

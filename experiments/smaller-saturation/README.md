@@ -30,6 +30,10 @@ transaction and identical checker work, including zero warm contract arithmetic
 or predicates. This is a model-size experiment on the existing optimized runtime;
 no inference, transaction or checker logic was changed.
 
+A subsequent [bounded seed sweep](../seed-sweep/README.md) tests eight additional
+seeds plus the 404 control for widths 2 and 4, retaining all failures. The frozen
+8-unit artifact here remains its successful control.
+
 ## Reproduce
 
 Run from the repository root, with Go and Python 3 and no external packages:

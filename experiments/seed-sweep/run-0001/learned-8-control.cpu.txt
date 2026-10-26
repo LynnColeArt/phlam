@@ -1,0 +1,34 @@
+File: phlame-components-profile
+Build ID: 574944420813f4bcdf5edc107f5a2bdb2fd3d67b
+Type: cpu
+Time: 2026-10-25 23:45:24 CDT
+Duration: 2.60s, Total samples = 2.61s (100.25%)
+Showing nodes accounting for 2.10s, 80.46% of 2.61s total
+Dropped 57 nodes (cum <= 0.01s)
+Showing top 25 nodes out of 96
+      flat  flat%   sum%        cum   cum%
+     0.43s 16.48% 16.48%      0.48s 18.39%  github.com/LynnColeArt/phlam/runtime/components.Model.Predict
+     0.32s 12.26% 28.74%      2.46s 94.25%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+     0.17s  6.51% 35.25%      0.20s  7.66%  runtime.tryDeferToSpanScan
+     0.14s  5.36% 40.61%      0.14s  5.36%  aeshashbody
+     0.11s  4.21% 44.83%      0.12s  4.60%  github.com/LynnColeArt/phlam/runtime/components.Decode
+     0.10s  3.83% 48.66%      0.19s  7.28%  internal/runtime/maps.(*Iter).Next
+     0.08s  3.07% 51.72%      0.08s  3.07%  runtime.memclrNoHeapPointers
+     0.07s  2.68% 54.41%      2.59s 99.23%  main.run
+     0.07s  2.68% 57.09%      0.25s  9.58%  runtime.wbBufFlush1
+     0.06s  2.30% 59.39%      0.66s 25.29%  github.com/LynnColeArt/phlam/runtime/components.predict
+     0.06s  2.30% 61.69%      0.15s  5.75%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+     0.05s  1.92% 63.60%      0.13s  4.98%  internal/runtime/maps.(*Map).putSlotSmallFastStr
+     0.05s  1.92% 65.52%      0.05s  1.92%  internal/runtime/maps.(*groupReference).key (inline)
+     0.05s  1.92% 67.43%      0.05s  1.92%  math.archMax
+     0.05s  1.92% 69.35%      0.13s  4.98%  runtime.mapaccess1_fast64
+     0.04s  1.53% 70.88%      0.04s  1.53%  internal/runtime/maps.ctrlGroup.matchH2 (inline)
+     0.04s  1.53% 72.41%      0.42s 16.09%  runtime.mapassign_faststr
+     0.04s  1.53% 73.95%      0.04s  1.53%  runtime.spanOf (inline)
+     0.03s  1.15% 75.10%      0.03s  1.15%  internal/runtime/maps.h2 (inline)
+     0.03s  1.15% 76.25%      0.03s  1.15%  runtime.heapArenaOf (inline)
+     0.03s  1.15% 77.39%      0.03s  1.15%  runtime.typePointers.nextFast (inline)
+     0.02s  0.77% 78.16%      0.12s  4.60%  internal/runtime/maps.(*Iter).Init
+     0.02s  0.77% 78.93%      0.02s  0.77%  internal/runtime/maps.(*groupReference).elem (inline)
+     0.02s  0.77% 79.69%      0.02s  0.77%  internal/runtime/maps.h1 (inline)
+     0.02s  0.77% 80.46%      0.43s 16.48%  runtime.mallocgc

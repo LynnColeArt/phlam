@@ -641,11 +641,15 @@ func summarize(w response, observations []observation) (engineReport, error) {
 }
 func run() error {
 	branching := flag.Bool("branching", false, "train the saturating accumulator with a ReLU executor")
+	branchSeed := flag.Int64("branch-seed", 404, "saturating model training seed")
 	hiddenWidth := flag.Int("hidden-width", abi.BranchWidth, "hidden units for the saturating model, 1..32")
 	output := flag.String("out", "", "new result directory")
 	workerPath := flag.String("worker", "bin/phlame-components-worker", "source-free worker")
 	repeats := flag.Int("repeats", 10, "timing repetitions")
 	flag.Parse()
+	if !*branching && *branchSeed != 404 {
+		return fmt.Errorf("branch-seed requires branching")
+	}
 	if *hiddenWidth < 1 || *hiddenWidth > 32 || !*branching && *hiddenWidth != abi.BranchWidth {
 		return fmt.Errorf("hidden-width requires branching and must be 1..32")
 	}
@@ -658,6 +662,7 @@ func run() error {
 	if *branching {
 		c := branchingConfig()
 		c.HiddenWidth = *hiddenWidth
+		c.Seed = *branchSeed
 		configs = []config{configs[0], c}
 	}
 	if *repeats < 1 || *repeats > 100 {

@@ -1,16 +1,14 @@
 # Learned runtime: first experiment contract
 
 Status: bounded numerical, composition, independent-component, nonlinear
-saturation, profiling and smaller-model experiments implemented, 2026-10-25.
-The newest [width survey](../experiments/smaller-saturation/run-0001/REPORT.md)
-selects an 8-unit, 79-parameter learned accumulator from fixed widths 2, 4 and 8.
-All 492 nontraining primitive inputs and 224 supported compositions match the
-oracle; 526 outside-domain schedules roll back. Widths 2 and 4 fail certification.
-Selection uses the full finite domain, without an independent architecture holdout.
-Warm certified checking evaluates no contract arithmetic or predicates. Smaller
-learned execution reduces median successful latency, but lookup remains faster.
-Learned planning, richer data/control flow and unbounded symbolic equivalence
-remain unproven. The broader target follows.
+saturation, profiling, smaller-model and seed-sweep experiments implemented,
+2026-10-25. The newest [seed sweep](../experiments/seed-sweep/run-0001/REPORT.md)
+freezes and tests widths 2 and 4 with nine predeclared seeds each. None certifies;
+all artifacts and failures are retained. The 8-unit, 79-parameter model remains
+the smallest established success, with 224 supported compositions and 526 domain
+rollbacks. These failures establish no minimum representational capacity.
+Certified checking retains zero warm contract arithmetic/predicates. Learned
+planning, richer control flow and unbounded equivalence remain unproven.
 
 ## Architectural destination
 
@@ -251,6 +249,22 @@ Runtime semantics, inference, checker logic and allocation counts are unchanged.
 The smaller model reduces median successful latency but lookup remains faster
 in this run. Startup certificate construction, warm checker work and numerical
 proposal costs remain separate. Atomic rollback and owned outputs still apply.
+
+## Bounded seed search
+
+The seed sweep fixes widths 2/4, seeds 0–7 and 404, and the existing 102-example,
+24,000-epoch protocol before running. Each signed model reloads source-free and
+must satisfy the unchanged full finite domain; first-counterexample failure
+prevents every certified transaction. Every candidate fails, including training
+inputs, so the result concerns this training setup rather than a proven capacity
+limit. All raw predictions and certificate prefix work are retained.
+
+Exact concrete checking still admits only correct complete schedules and rolls
+back failed proposals. Lookup and the frozen 8-unit model remain operational
+controls, with separate startup, checker and application measurements. No failed
+candidate's short rejection path is presented as a successful-execution speedup.
+The domain and checker remain unchanged. Candidate selection uses certification
+inputs and claims no independent seed-selection test set.
 
 ## Evaluation and falsification
 

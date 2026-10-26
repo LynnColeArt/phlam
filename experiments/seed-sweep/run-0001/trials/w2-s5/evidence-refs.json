@@ -1,0 +1,34 @@
+{
+  "accumulator-primitive.jsonl": {
+    "file": "../../common/accumulator-primitive.jsonl",
+    "sha256": "e60409c995fa4000adabaec91ba64fe76859d40c81236f4969bd8192cc5240e2"
+  },
+  "accumulator-training.json": {
+    "file": "../../common/accumulator-training.json",
+    "sha256": "99c5e078f2c4d6ddcda49105f67d2afb66dee6ce4ceedd25190e667078b69124"
+  },
+  "counter-predictions.jsonl": {
+    "file": "../../common/counter-predictions.jsonl",
+    "sha256": "d1de4886c8b250a2f0426018ab823f1f49260bcd4a5aebc2e871ee43239399b1"
+  },
+  "counter-primitive.jsonl": {
+    "file": "../../common/counter-primitive.jsonl",
+    "sha256": "ce8b76024e2f5717b67ae6dcbed635f48f5dabf0c08b2091c52e4c6c5b1d7c11"
+  },
+  "counter-training.json": {
+    "file": "../../common/counter-training.json",
+    "sha256": "e986fd51e7146963dbcfa36c82d96d5a4f8d0e8f4e583f20ad0ffd4a1057b490"
+  },
+  "oracle-traces.json": {
+    "file": "../../common/oracle-traces.json",
+    "sha256": "abd41ca3e8e5fffd7eb0381c26eb152c71202fd8b7e8315391fba65de6497e9f"
+  },
+  "request.json": {
+    "file": "../../common/request.json",
+    "sha256": "207c1bc037e70c93c9e45b06018ce430425fd2881ba49e2eb34f2f0131d00584"
+  },
+  "transactions.jsonl": {
+    "file": "../../common/transactions.jsonl",
+    "sha256": "08dcbdc0bb48ddca2de07244ceb63a63dc9ed2b994c56866ad40185c0a14c003"
+  }
+}
