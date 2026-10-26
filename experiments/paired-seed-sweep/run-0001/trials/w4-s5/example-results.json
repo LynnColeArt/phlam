@@ -1,0 +1,24 @@
+{
+  "schema": "phlame.components.worker.v0",
+  "load_ns": 664266,
+  "certificates": {
+    "accumulator": {
+      "key": "8628654556b4772e89b05af783b236c3b242ab4a4c628c0191de8f4508c4eff9",
+      "module_sha256": "a67178680e9bf1e2798c6e5afcabfdf675d3077d5c2cedfa848d723b2e288d3c",
+      "certified": false,
+      "cases": 1,
+      "accepted_inputs": 1,
+      "contract_rejected_inputs": 0,
+      "build_ns": 90240,
+      "checker_work": {
+        "expressions": 31,
+        "integer_arithmetic": 4,
+        "predicates": 10,
+        "output_comparisons": 3
+      },
+      "failure": "model differs from contract at operation add state -16 arg -8"
+    }
+  },
+  "preflight_error": "model differs from contract at operation add state -16 arg -8",
+  "outcomes": null
+}

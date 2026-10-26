@@ -1,0 +1,34 @@
+File: phlame-components-profile
+Build ID: 4bead0da490197e263f57a8639750a201e5991dd
+Type: cpu
+Time: 2026-10-26 00:14:42 CDT
+Duration: 2.31s, Total samples = 2.32s (100.55%)
+Showing nodes accounting for 1.94s, 83.62% of 2.32s total
+Dropped 31 nodes (cum <= 0.01s)
+Showing top 25 nodes out of 72
+      flat  flat%   sum%        cum   cum%
+     0.46s 19.83% 19.83%      0.47s 20.26%  github.com/LynnColeArt/phlam/runtime/components.Model.Predict
+     0.36s 15.52% 35.34%      2.24s 96.55%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+     0.15s  6.47% 41.81%      0.15s  6.47%  aeshashbody
+     0.10s  4.31% 46.12%      0.10s  4.31%  github.com/LynnColeArt/phlam/runtime/components.Decode
+     0.10s  4.31% 50.43%      0.25s 10.78%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+     0.10s  4.31% 54.74%      0.14s  6.03%  internal/runtime/maps.(*Map).putSlotSmallFastStr
+     0.09s  3.88% 58.62%      0.16s  6.90%  internal/runtime/maps.(*Iter).Next
+     0.07s  3.02% 61.64%      0.08s  3.45%  runtime.tryDeferToSpanScan
+     0.06s  2.59% 64.22%      0.63s 27.16%  github.com/LynnColeArt/phlam/runtime/components.predict
+     0.04s  1.72% 65.95%      2.32s   100%  main.run
+     0.04s  1.72% 67.67%      0.04s  1.72%  runtime.mapaccess1_fast64
+     0.04s  1.72% 69.40%      0.04s  1.72%  runtime.spanOf (inline)
+     0.03s  1.29% 70.69%      0.11s  4.74%  gcWriteBarrier
+     0.03s  1.29% 71.98%      0.03s  1.29%  internal/chacha8rand.block
+     0.03s  1.29% 73.28%      0.03s  1.29%  internal/runtime/maps.(*groupReference).key (inline)
+     0.03s  1.29% 74.57%      0.05s  2.16%  runtime.(*mspan).writeHeapBitsSmall
+     0.03s  1.29% 75.86%      0.06s  2.59%  runtime.findObject
+     0.03s  1.29% 77.16%      0.20s  8.62%  runtime.mallocgcSmallScanNoHeader
+     0.03s  1.29% 78.45%      0.03s  1.29%  runtime.memclrNoHeapPointers
+     0.02s  0.86% 79.31%      0.02s  0.86%  internal/runtime/maps.(*groupReference).elem (inline)
+     0.02s  0.86% 80.17%      0.02s  0.86%  runtime.getMCache (inline)
+     0.02s  0.86% 81.03%      0.15s  6.47%  runtime.growslice
+     0.02s  0.86% 81.90%      0.34s 14.66%  runtime.mallocgc
+     0.02s  0.86% 82.76%      0.30s 12.93%  runtime.mapassign_faststr
+     0.02s  0.86% 83.62%      0.02s  0.86%  runtime.nextFreeFast (inline)

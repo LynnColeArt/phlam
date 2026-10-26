@@ -20,6 +20,10 @@ four-unit realization of the finite task, not a minimum possible width.
 
 ![Training loss at fixed checkpoints](run-0001/training-loss.png)
 
+A follow-up [paired seed sweep](../paired-seed-sweep/README.md) tests seeds 0–7
+and 404 at widths 2/4. It adds a certifying four-unit seed while retaining all
+failures and the seed-404 control.
+
 ## Fixed investigation
 
 After reproducing legacy dynamics, the two target widths use three arms at seed

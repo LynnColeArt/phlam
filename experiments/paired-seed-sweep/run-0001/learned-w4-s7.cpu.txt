@@ -1,0 +1,34 @@
+File: phlame-components-profile
+Build ID: 4bead0da490197e263f57a8639750a201e5991dd
+Type: cpu
+Time: 2026-10-26 00:14:47 CDT
+Duration: 2.45s, Total samples = 2.47s (100.61%)
+Showing nodes accounting for 2.02s, 81.78% of 2.47s total
+Dropped 39 nodes (cum <= 0.01s)
+Showing top 25 nodes out of 86
+      flat  flat%   sum%        cum   cum%
+     0.41s 16.60% 16.60%      2.34s 94.74%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+     0.37s 14.98% 31.58%      0.40s 16.19%  github.com/LynnColeArt/phlam/runtime/components.Model.Predict
+     0.11s  4.45% 36.03%      0.11s  4.45%  aeshashbody
+     0.11s  4.45% 40.49%      0.61s 24.70%  github.com/LynnColeArt/phlam/runtime/components.predict
+     0.11s  4.45% 44.94%      0.16s  6.48%  runtime.tryDeferToSpanScan
+     0.08s  3.24% 48.18%      0.13s  5.26%  internal/runtime/maps.(*Map).putSlotSmallFastStr
+     0.07s  2.83% 51.01%      0.10s  4.05%  github.com/LynnColeArt/phlam/runtime/components.Decode
+     0.07s  2.83% 53.85%      0.16s  6.48%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+     0.07s  2.83% 56.68%      2.46s 99.60%  main.run
+     0.06s  2.43% 59.11%      0.06s  2.43%  runtime.(*mspan).writeHeapBitsSmall
+     0.05s  2.02% 61.13%      0.05s  2.02%  github.com/LynnColeArt/phlam/runtime/components.phaseStart (inline)
+     0.05s  2.02% 63.16%      0.05s  2.02%  runtime.heapArenaOf (inline)
+     0.05s  2.02% 65.18%      0.39s 15.79%  runtime.mapassign_faststr
+     0.05s  2.02% 67.21%      0.05s  2.02%  runtime.memclrNoHeapPointers
+     0.05s  2.02% 69.23%      0.08s  3.24%  runtime.scanObjectsSmall
+     0.04s  1.62% 70.85%      0.06s  2.43%  runtime.rand
+     0.04s  1.62% 72.47%      0.06s  2.43%  runtime.typePointers.next
+     0.03s  1.21% 73.68%      0.08s  3.24%  internal/runtime/maps.(*Iter).Next
+     0.03s  1.21% 74.90%      0.03s  1.21%  math.archMax
+     0.03s  1.21% 76.11%      0.03s  1.21%  memeqbody
+     0.03s  1.21% 77.33%      0.03s  1.21%  runtime.(*mspan).base (inline)
+     0.03s  1.21% 78.54%      0.06s  2.43%  runtime.gcmarknewobject
+     0.03s  1.21% 79.76%      0.28s 11.34%  runtime.mallocgcSmallScanNoHeader
+     0.03s  1.21% 80.97%      0.04s  1.62%  runtime.mapaccess1_fast64
+     0.02s  0.81% 81.78%      0.39s 15.79%  github.com/LynnColeArt/phlam/runtime/components.cloneInstances (inline)

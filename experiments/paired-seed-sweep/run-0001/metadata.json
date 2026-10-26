@@ -1,0 +1,29 @@
+{
+  "common_counter_module_sha256": "51d2bf0bf344142e094d64b25b2c28151589c0e1348b6e251aa420162e0918a3",
+  "counter_control": "one common frozen Counter for all variants; weights and contract match the earlier control",
+  "iterations": 100000,
+  "module_sha256": {
+    "control": "aa4a59ecf32103fc5376eda9de69b5f475dc1f98c7ac0c9ca7ab69d3b6fe2f8e",
+    "w4-s7": "7778ca1c136a0c060a081f207276c11a53db8f571e4c8bf9223f72d808b45d52"
+  },
+  "oracle_observations_sha256": "08dcbdc0bb48ddca2de07244ceb63a63dc9ed2b994c56866ad40185c0a14c003",
+  "order_seed": 20261025,
+  "profile_binary_sha256": "1d06eaf5356f1317776f9244b40e477569bece7995105c63dac984da144b6df5",
+  "profile_comparison_role": "successful sweep candidates, if any, plus frozen four-unit and lookup controls",
+  "profile_iterations": 1500000,
+  "repetitions": 5,
+  "selected_by_width": {
+    "2": null,
+    "4": "w4-s7"
+  },
+  "source_free_files": [
+    "accumulator-control.json",
+    "accumulator-w4-s7.json",
+    "counter.json",
+    "registry-control.json",
+    "registry-w4-s7.json",
+    "transactions.jsonl",
+    "trusted-key.hex",
+    "worker"
+  ]
+}

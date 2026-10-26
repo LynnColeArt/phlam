@@ -57,6 +57,12 @@ transitions, 224 supported compositions and 526 rollbacks. Two-unit treatments
 still fail. Logged gradients pass independent checks; timing remains noisy and
 lookup retains the lowest median.
 
+The [centered, paired seed sweep](experiments/paired-seed-sweep/README.md)
+finds four-unit successes at seeds 7 and 404 across the fixed nine-seed grid;
+all two-unit runs fail. Both 47-parameter successes retain all finite transitions,
+supported compositions and atomic rollbacks. Convergence remains fragile;
+matched timing ranges overlap and establish no speed improvement.
+
 Certified learned execution is faster than concrete checking in the saturation run, but
 lookup remains faster. Supplied schedules are not learned planning. The
 [earlier Counter composition study](experiments/counter-compositions/README.md)

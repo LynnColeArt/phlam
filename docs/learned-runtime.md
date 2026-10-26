@@ -1,16 +1,15 @@
 # Learned runtime: first experiment contract
 
 Status: bounded numerical, composition, independent-component, nonlinear
-saturation, profiling, size/seed and training-dynamics experiments implemented,
-2026-10-26. The newest [initialization study](../experiments/training-dynamics/run-0001/REPORT.md)
-reproduces legacy training failures and obtains a certifiable 4-unit,
-47-parameter model from centered, opposing random directions. All 594 primitive
-inputs, 224 supported compositions and 526 domain rollbacks retain exact decoded
-behavior. Two-unit treatments still fail; no minimum possible width is proved.
-Warm checking still evaluates zero contract arithmetic/predicates. Timing is
-noisy and establishes no clear speed improvement over the 8-unit control;
-lookup retains the lowest median. Learned planning and unbounded equivalence
-remain unproven.
+saturation, profiling, size/seed and initialization experiments implemented,
+2026-10-26. The newest [paired-initialization sweep](../experiments/paired-seed-sweep/run-0001/REPORT.md)
+tests seeds 0–7 and 404 at widths 2/4. Seeds 7 and 404 certify with four units;
+none certify with two. The new seed-7 artifact has 47 parameters and preserves
+all 594 primitives, 224 supported compositions and 526 domain rollbacks.
+Convergence remains fragile, and no minimum possible width is established.
+Warm checking still evaluates zero contract arithmetic/predicates. Matched
+runtime ranges overlap and establish no speed improvement. Learned planning
+and unbounded equivalence remain unproven.
 
 ## Architectural destination
 
@@ -285,6 +284,21 @@ and independently recertified source-free, with full source/lookup comparisons,
 atomic rollback and separate checker measurements. Initializer/prefit provenance
 is signed metadata; runtime inference is unchanged. Selection uses certification
 data and demonstrates no universal optimizer or capacity result.
+
+## Centered paired initialization across seeds
+
+A fixed nine-seed sweep repeats the centered, opposing-direction initializer
+without affine prefit, extra epochs or altered examples. Four-unit seeds 7 and
+404 fully certify; the eight new seeds contribute one new success, while 404
+reproduces the known model. No two-unit seed passes. This demonstrates an
+additional successful finite realization without establishing general optimizer
+reliability or a minimum capacity. Every failure remains archived.
+
+The first certifying seed per width is selected before timing and compared with
+the prior frozen four-unit control and lookup. Full recertification, source-free
+execution, oracle comparison, rollback and separate exact work counters remain.
+Nontraining certification inputs also serve seed selection; runtime differences
+have overlapping ranges and are not presented as a seed-based speed improvement.
 
 ## Evaluation and falsification
 
