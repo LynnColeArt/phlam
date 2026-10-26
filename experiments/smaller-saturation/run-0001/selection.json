@@ -1,0 +1,203 @@
+{
+  "binary_sha256": {
+    "profiler": "15e22ddde4ae533e06427a70e0b69fc7cd209a6d5f9efa27978e8263aa57a877",
+    "trainer": "f3baf4f6f4a0ce4b834ed5dfdcd8def709e55a42b129be70d381a54f6a527bf3",
+    "worker": "5dce5d157467e10c771b87d80a2df342e60f0c5946d8db5a9589106242445cfe"
+  },
+  "candidate_widths": [
+    2,
+    4,
+    8
+  ],
+  "candidates": [
+    {
+      "certified_accuracy": {
+        "accepted": 0,
+        "evaluated": 0,
+        "native_rejected": 0,
+        "scheduled": 750,
+        "scope_rejected": 0,
+        "supported_rejected": 0,
+        "wrong_accepted": 0
+      },
+      "concrete_accuracy": {
+        "accepted": 105,
+        "evaluated": 750,
+        "native_rejected": 0,
+        "scheduled": 750,
+        "scope_rejected": 526,
+        "supported_rejected": 119,
+        "wrong_accepted": 0
+      },
+      "fully_certified": false,
+      "module": {
+        "affine_baseline_heldout_correct": 200,
+        "artifact_bytes": 3434,
+        "bit_identical_retraining": true,
+        "branch_cases": {
+          "interior": 404,
+          "lower_saturation": 30,
+          "read": 16,
+          "threshold": 12,
+          "upper_saturation": 30
+        },
+        "final_mse": 0.0006488392967962946,
+        "heldout_cases": 492,
+        "hidden_width": 2,
+        "initial_mse": 0.3512672566602107,
+        "learned_parameters": 31,
+        "max_heldout_integer_score_error": 5.4539300039338094,
+        "model_kind": "residual ReLU, 2 hidden units",
+        "module_sha256": "0ee8fe4508c0a4f6ce830208eb79a89ec4f141d7fb3a1f6a49eb9053822555be",
+        "oracle_domain_sha256": "e60409c995fa4000adabaec91ba64fe76859d40c81236f4969bd8192cc5240e2",
+        "primitive_cases": 594,
+        "raw_branch_correct": {
+          "interior": 262,
+          "lower_saturation": 30,
+          "read": 10,
+          "upper_saturation": 8
+        },
+        "raw_heldout_correct": 310,
+        "raw_predictions_sha256": "d058a21e0e24a64c04b992fe5705e3d1f47ac35ed8728b37b0f1ae73a3bda386",
+        "raw_training_correct": 60,
+        "seed": 404,
+        "source_rejected_inputs": 0,
+        "source_sha256": "8c75c3cb73c83d670a26266fca83f94d6f73b844b2c4063e1c74aab17e9cffbb",
+        "training_ns": 210698402,
+        "training_samples": 102,
+        "training_sha256": "99c5e078f2c4d6ddcda49105f67d2afb66dee6ce4ceedd25190e667078b69124"
+      },
+      "preflight_error": "model differs from contract at operation add state -15 arg -1",
+      "width": 2
+    },
+    {
+      "certified_accuracy": {
+        "accepted": 0,
+        "evaluated": 0,
+        "native_rejected": 0,
+        "scheduled": 750,
+        "scope_rejected": 0,
+        "supported_rejected": 0,
+        "wrong_accepted": 0
+      },
+      "concrete_accuracy": {
+        "accepted": 105,
+        "evaluated": 750,
+        "native_rejected": 0,
+        "scheduled": 750,
+        "scope_rejected": 526,
+        "supported_rejected": 119,
+        "wrong_accepted": 0
+      },
+      "fully_certified": false,
+      "module": {
+        "affine_baseline_heldout_correct": 200,
+        "artifact_bytes": 3759,
+        "bit_identical_retraining": true,
+        "branch_cases": {
+          "interior": 404,
+          "lower_saturation": 30,
+          "read": 16,
+          "threshold": 12,
+          "upper_saturation": 30
+        },
+        "final_mse": 0.0006488392970161243,
+        "heldout_cases": 492,
+        "hidden_width": 4,
+        "initial_mse": 0.2764720246421541,
+        "learned_parameters": 47,
+        "max_heldout_integer_score_error": 5.453902092828905,
+        "model_kind": "residual ReLU, 4 hidden units",
+        "module_sha256": "764afc9fb7235db8f9455632eeb850a60a57b97dd84955e7e1fd4c01b3978076",
+        "oracle_domain_sha256": "e60409c995fa4000adabaec91ba64fe76859d40c81236f4969bd8192cc5240e2",
+        "primitive_cases": 594,
+        "raw_branch_correct": {
+          "interior": 262,
+          "lower_saturation": 8,
+          "read": 10,
+          "upper_saturation": 30
+        },
+        "raw_heldout_correct": 310,
+        "raw_predictions_sha256": "c2ade036c861603eab4d93d2c4d02ff183abf2cd343a83c4c5926e91db4d421b",
+        "raw_training_correct": 60,
+        "seed": 404,
+        "source_rejected_inputs": 0,
+        "source_sha256": "8c75c3cb73c83d670a26266fca83f94d6f73b844b2c4063e1c74aab17e9cffbb",
+        "training_ns": 285488534,
+        "training_samples": 102,
+        "training_sha256": "99c5e078f2c4d6ddcda49105f67d2afb66dee6ce4ceedd25190e667078b69124"
+      },
+      "preflight_error": "model differs from contract at operation add state -16 arg -8",
+      "width": 4
+    },
+    {
+      "certified_accuracy": {
+        "accepted": 224,
+        "evaluated": 750,
+        "native_rejected": 0,
+        "scheduled": 750,
+        "scope_rejected": 526,
+        "supported_rejected": 0,
+        "wrong_accepted": 0
+      },
+      "concrete_accuracy": {
+        "accepted": 224,
+        "evaluated": 750,
+        "native_rejected": 0,
+        "scheduled": 750,
+        "scope_rejected": 526,
+        "supported_rejected": 0,
+        "wrong_accepted": 0
+      },
+      "fully_certified": true,
+      "module": {
+        "affine_baseline_heldout_correct": 200,
+        "artifact_bytes": 4389,
+        "bit_identical_retraining": true,
+        "branch_cases": {
+          "interior": 404,
+          "lower_saturation": 30,
+          "read": 16,
+          "threshold": 12,
+          "upper_saturation": 30
+        },
+        "final_mse": 1.5492576278061378e-12,
+        "heldout_cases": 492,
+        "hidden_width": 8,
+        "initial_mse": 0.39907789181235376,
+        "learned_parameters": 79,
+        "max_heldout_integer_score_error": 0.00015333427914399067,
+        "model_kind": "residual ReLU, 8 hidden units",
+        "module_sha256": "1da6d69e0d46a1bf3b47530c08b7f0395cdb4e8d8365e770bf9de67386f29241",
+        "oracle_domain_sha256": "e60409c995fa4000adabaec91ba64fe76859d40c81236f4969bd8192cc5240e2",
+        "primitive_cases": 594,
+        "raw_branch_correct": {
+          "interior": 404,
+          "lower_saturation": 30,
+          "read": 16,
+          "threshold": 12,
+          "upper_saturation": 30
+        },
+        "raw_heldout_correct": 492,
+        "raw_predictions_sha256": "177e696bab8fdede2a6af15e0863aac429a60218afc69207379490377226027c",
+        "raw_training_correct": 102,
+        "seed": 404,
+        "source_rejected_inputs": 0,
+        "source_sha256": "8c75c3cb73c83d670a26266fca83f94d6f73b844b2c4063e1c74aab17e9cffbb",
+        "training_ns": 481305186,
+        "training_samples": 102,
+        "training_sha256": "99c5e078f2c4d6ddcda49105f67d2afb66dee6ce4ceedd25190e667078b69124"
+      },
+      "preflight_error": null,
+      "width": 8
+    }
+  ],
+  "epochs": 24000,
+  "schema": "phlame.smaller-saturation.v0",
+  "seed": 404,
+  "selected_width": 8,
+  "selection_rule": "smallest predeclared width that fully certifies and matches all supported oracle compositions",
+  "selection_uses_full_domain": true,
+  "toolchain": "go version go1.26.4 linux/amd64",
+  "training_samples": 102
+}

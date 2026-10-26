@@ -1,0 +1,1694 @@
+[
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 1568.12177,
+      "median": 1434.41182,
+      "min": 1332.13483
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 0,
+      "domain_checks": 298593,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 3876616,
+        "integer_arithmetic": 761023,
+        "output_comparisons": 685293,
+        "predicates": 738207
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 2194.49329,
+      "median": 2037.65835,
+      "min": 1947.63095
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 0,
+      "domain_checks": 462500,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 7843650,
+        "integer_arithmetic": 1472742,
+        "output_comparisons": 1387500,
+        "predicates": 1591054
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1338.59998,
+      "median": 1158.88654,
+      "min": 1065.87323
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 0,
+      "domain_checks": 228888,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 2190300,
+        "integer_arithmetic": 458484,
+        "output_comparisons": 386664,
+        "predicates": 375754
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 2309.74352,
+      "median": 2235.86283,
+      "min": 2121.36837
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 178.13726,
+      "checker_ns": 393.13084,
+      "commit_ns": 45.22535,
+      "overhead_ns": 1201.90474,
+      "proposal_ns": 298.61275,
+      "total_ns": 2118.96963
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 0,
+      "domain_checks": 298593,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 3876616,
+        "integer_arithmetic": 761023,
+        "output_comparisons": 685293,
+        "predicates": 738207
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 3399.39145,
+      "median": 3395.37855,
+      "min": 3230.96384
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 277.66237,
+      "checker_ns": 638.75645,
+      "commit_ns": 138.41144,
+      "overhead_ns": 1560.71174,
+      "proposal_ns": 630.65175,
+      "total_ns": 3275.97441
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 0,
+      "domain_checks": 462500,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 7843650,
+        "integer_arithmetic": 1472742,
+        "output_comparisons": 1387500,
+        "predicates": 1591054
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1776.63124,
+      "median": 1746.18682,
+      "min": 1639.29156
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 138.83925,
+      "checker_ns": 299.14483,
+      "commit_ns": 0.0,
+      "overhead_ns": 1019.0088,
+      "proposal_ns": 166.20917,
+      "total_ns": 1628.7954
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 0,
+      "domain_checks": 228888,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 2190300,
+        "integer_arithmetic": 458484,
+        "output_comparisons": 386664,
+        "predicates": 375754
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 1497.71967,
+      "median": 1372.56844,
+      "min": 1278.42456
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 228431,
+      "domain_checks": 527024,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 2250.63918,
+      "median": 1655.64458,
+      "min": 1594.02236
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 462500,
+      "domain_checks": 925000,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1286.24537,
+      "median": 1053.34372,
+      "min": 1020.32743
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 128888,
+      "domain_checks": 357776,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 2560.7249,
+      "median": 2155.73594,
+      "min": 2084.54442
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 184.31364,
+      "checker_ns": 279.75784,
+      "commit_ns": 46.12854,
+      "overhead_ns": 1229.40764,
+      "proposal_ns": 299.64682,
+      "total_ns": 2037.09646
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 228431,
+      "domain_checks": 527024,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 3067.51755,
+      "median": 3050.83064,
+      "min": 2942.63253
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 267.15588,
+      "checker_ns": 393.46483,
+      "commit_ns": 132.70175,
+      "overhead_ns": 1519.85662,
+      "proposal_ns": 614.91899,
+      "total_ns": 2932.09704
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 462500,
+      "domain_checks": 925000,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 2595.78307,
+      "median": 1666.07145,
+      "min": 1558.67882
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 141.43995,
+      "checker_ns": 226.53198,
+      "commit_ns": 0.0,
+      "overhead_ns": 1016.96237,
+      "proposal_ns": 164.58374,
+      "total_ns": 1549.51804
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 128888,
+      "domain_checks": 357776,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-8"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 1842.08687,
+      "median": 1566.32315,
+      "min": 1458.54511
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 0,
+      "domain_checks": 298593,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 3876616,
+        "integer_arithmetic": 761023,
+        "output_comparisons": 685293,
+        "predicates": 738207
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 2990.71967,
+      "median": 2245.87918,
+      "min": 2131.4274
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 0,
+      "domain_checks": 462500,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 7843650,
+        "integer_arithmetic": 1472742,
+        "output_comparisons": 1387500,
+        "predicates": 1591054
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1291.40217,
+      "median": 1160.57101,
+      "min": 1128.18588
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 0,
+      "domain_checks": 228888,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 2190300,
+        "integer_arithmetic": 458484,
+        "output_comparisons": 386664,
+        "predicates": 375754
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 2508.24888,
+      "median": 2390.99196,
+      "min": 2368.57259
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 183.38548,
+      "checker_ns": 397.86121,
+      "commit_ns": 45.97642,
+      "overhead_ns": 1234.09108,
+      "proposal_ns": 416.59986,
+      "total_ns": 2274.98788
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 0,
+      "domain_checks": 298593,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 3876616,
+        "integer_arithmetic": 761023,
+        "output_comparisons": 685293,
+        "predicates": 738207
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 3988.94662,
+      "median": 3690.39982,
+      "min": 3486.94495
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 281.7087,
+      "checker_ns": 644.06388,
+      "commit_ns": 145.29946,
+      "overhead_ns": 1591.99567,
+      "proposal_ns": 898.47894,
+      "total_ns": 3570.9853
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 0,
+      "domain_checks": 462500,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 7843650,
+        "integer_arithmetic": 1472742,
+        "output_comparisons": 1387500,
+        "predicates": 1591054
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1835.95423,
+      "median": 1728.60484,
+      "min": 1693.52398
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 136.13403,
+      "checker_ns": 287.1053,
+      "commit_ns": 0.0,
+      "overhead_ns": 972.40783,
+      "proposal_ns": 220.89029,
+      "total_ns": 1616.45647
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 0,
+      "domain_checks": 228888,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 2190300,
+        "integer_arithmetic": 458484,
+        "output_comparisons": 386664,
+        "predicates": 375754
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 1754.50187,
+      "median": 1442.71569,
+      "min": 1348.11523
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 228431,
+      "domain_checks": 527024,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 1925.02687,
+      "median": 1893.6928,
+      "min": 1808.67613
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 462500,
+      "domain_checks": 925000,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1174.2191,
+      "median": 1101.54276,
+      "min": 1037.56859
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 128888,
+      "domain_checks": 357776,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 2802.33045,
+      "median": 2251.31139,
+      "min": 2156.40432
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 180.4741,
+      "checker_ns": 280.21558,
+      "commit_ns": 45.62269,
+      "overhead_ns": 1215.05305,
+      "proposal_ns": 415.78286,
+      "total_ns": 2133.78421
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 228431,
+      "domain_checks": 527024,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 3554.50319,
+      "median": 3361.82889,
+      "min": 3253.3315
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 272.49375,
+      "checker_ns": 399.42924,
+      "commit_ns": 140.82607,
+      "overhead_ns": 1551.47142,
+      "proposal_ns": 876.18834,
+      "total_ns": 3244.23857
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 462500,
+      "domain_checks": 925000,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1987.70723,
+      "median": 1741.76339,
+      "min": 1652.49012
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 135.32273,
+      "checker_ns": 219.68133,
+      "commit_ns": 0.0,
+      "overhead_ns": 1056.30717,
+      "proposal_ns": 215.24604,
+      "total_ns": 1625.47067
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 128888,
+      "domain_checks": 357776,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "learned-16"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 1141.14444,
+      "median": 1128.28595,
+      "min": 1121.86768
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 0,
+      "domain_checks": 298593,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 3876616,
+        "integer_arithmetic": 761023,
+        "output_comparisons": 685293,
+        "predicates": 738207
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 1574.82603,
+      "median": 1451.13658,
+      "min": 1376.08263
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 0,
+      "domain_checks": 462500,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 7843650,
+        "integer_arithmetic": 1472742,
+        "output_comparisons": 1387500,
+        "predicates": 1591054
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1010.993,
+      "median": 948.12435,
+      "min": 919.87516
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 0,
+      "domain_checks": 228888,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 2190300,
+        "integer_arithmetic": 458484,
+        "output_comparisons": 386664,
+        "predicates": 375754
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 2342.26662,
+      "median": 1940.80489,
+      "min": 1912.39477
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 177.69783,
+      "checker_ns": 384.32814,
+      "commit_ns": 44.79343,
+      "overhead_ns": 1172.56951,
+      "proposal_ns": 54.2642,
+      "total_ns": 1826.21235
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 0,
+      "domain_checks": 298593,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 3876616,
+        "integer_arithmetic": 761023,
+        "output_comparisons": 685293,
+        "predicates": 738207
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 2931.65771,
+      "median": 2785.27098,
+      "min": 2658.13793
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 266.45408,
+      "checker_ns": 629.79775,
+      "commit_ns": 136.8827,
+      "overhead_ns": 1517.02023,
+      "proposal_ns": 111.66233,
+      "total_ns": 2667.74167
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 0,
+      "domain_checks": 462500,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 7843650,
+        "integer_arithmetic": 1472742,
+        "output_comparisons": 1387500,
+        "predicates": 1591054
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "concrete",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1797.20012,
+      "median": 1524.67473,
+      "min": 1477.59518
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 136.28395,
+      "checker_ns": 281.93896,
+      "commit_ns": 0.0,
+      "overhead_ns": 962.45514,
+      "proposal_ns": 30.67666,
+      "total_ns": 1408.63654
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 0,
+      "domain_checks": 228888,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 2190300,
+        "integer_arithmetic": 458484,
+        "output_comparisons": 386664,
+        "predicates": 375754
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "output_comparisons": 0,
+      "predicates": 0
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 1566.39272,
+      "median": 1305.58487,
+      "min": 1194.38614
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 228431,
+      "domain_checks": 527024,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 3876616,
+      "integer_arithmetic": 761023,
+      "output_comparisons": 0,
+      "predicates": 738207
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.31251,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 828.07136,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 1638.5352,
+      "median": 1547.28279,
+      "min": 1410.38758
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 462500,
+      "domain_checks": 925000,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 7843650,
+      "integer_arithmetic": 1472742,
+      "output_comparisons": 0,
+      "predicates": 1591054
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84022,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1163.06496,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1019.89347,
+      "median": 977.22306,
+      "min": 967.85492
+    },
+    "phase_clocks": false,
+    "phase_mean_ns": {
+      "binding_ns": 0.0,
+      "checker_ns": 0.0,
+      "commit_ns": 0.0,
+      "overhead_ns": 0.0,
+      "proposal_ns": 0.0,
+      "total_ns": 0.0
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 128888,
+      "domain_checks": 357776,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 2190300,
+      "integer_arithmetic": 458484,
+      "output_comparisons": 0,
+      "predicates": 375754
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.68273,
+      "median": 5.68273,
+      "min": 5.68273
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1063.10384,
+      "median": 1063.10384,
+      "min": 1063.10384
+    },
+    "group": "mixed",
+    "ns_per_transaction": {
+      "max": 2690.43968,
+      "median": 2049.44114,
+      "min": 1879.07754
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 182.92302,
+      "checker_ns": 282.78969,
+      "commit_ns": 47.26836,
+      "overhead_ns": 1212.42161,
+      "proposal_ns": 205.83923,
+      "total_ns": 1931.24191
+    },
+    "total_checker_work": {
+      "binding_checks": 298593,
+      "certificate_uses": 228431,
+      "domain_checks": 527024,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 3876616,
+      "integer_arithmetic": 761023,
+      "output_comparisons": 0,
+      "predicates": 738207
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.3125,
+      "median": 5.3125,
+      "min": 5.3125
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 828.0712,
+      "median": 828.0712,
+      "min": 828.0712
+    },
+    "group": "accepted",
+    "ns_per_transaction": {
+      "max": 2970.08941,
+      "median": 2857.76447,
+      "min": 2793.98096
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 269.9601,
+      "checker_ns": 400.62838,
+      "commit_ns": 136.90879,
+      "overhead_ns": 1531.85548,
+      "proposal_ns": 403.76527,
+      "total_ns": 2738.25806
+    },
+    "total_checker_work": {
+      "binding_checks": 462500,
+      "certificate_uses": 462500,
+      "domain_checks": 925000,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 7843650,
+      "integer_arithmetic": 1472742,
+      "output_comparisons": 0,
+      "predicates": 1591054
+    },
+    "variant": "lookup"
+  },
+  {
+    "allocations_per_transaction": {
+      "max": 5.84021,
+      "median": 5.84021,
+      "min": 5.84021
+    },
+    "boundary": "certified",
+    "bytes_per_transaction": {
+      "max": 1163.0648,
+      "median": 1163.0648,
+      "min": 1163.0648
+    },
+    "group": "scope_rejected",
+    "ns_per_transaction": {
+      "max": 1889.62164,
+      "median": 1635.36345,
+      "min": 1500.76951
+    },
+    "phase_clocks": true,
+    "phase_mean_ns": {
+      "binding_ns": 139.5449,
+      "checker_ns": 225.95336,
+      "commit_ns": 0.0,
+      "overhead_ns": 1034.1199,
+      "proposal_ns": 119.59239,
+      "total_ns": 1519.21055
+    },
+    "total_checker_work": {
+      "binding_checks": 228888,
+      "certificate_uses": 128888,
+      "domain_checks": 357776,
+      "frame_checks": 200000,
+      "relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      }
+    },
+    "total_lookup_application_work": {
+      "expressions": 2190300,
+      "integer_arithmetic": 458484,
+      "output_comparisons": 0,
+      "predicates": 375754
+    },
+    "variant": "lookup"
+  }
+]

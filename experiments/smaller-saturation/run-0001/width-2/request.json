@@ -1,0 +1,160 @@
+{
+  "transactions": [
+    {
+      "id": "upper",
+      "instances": {
+        "a": {
+          "component": "accumulator",
+          "value": 15,
+          "version": 1
+        },
+        "c": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "literal": 3
+          }
+        },
+        {
+          "target": "a",
+          "operation": "add",
+          "argument": {
+            "from_result": 0
+          }
+        },
+        {
+          "target": "c",
+          "operation": "read"
+        },
+        {
+          "target": "a",
+          "operation": "read"
+        }
+      ]
+    },
+    {
+      "id": "lower",
+      "instances": {
+        "a": {
+          "component": "accumulator",
+          "value": -15,
+          "version": 1
+        },
+        "c": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "literal": -3
+          }
+        },
+        {
+          "target": "a",
+          "operation": "add",
+          "argument": {
+            "from_result": 0
+          }
+        },
+        {
+          "target": "c",
+          "operation": "read"
+        },
+        {
+          "target": "a",
+          "operation": "read"
+        }
+      ]
+    },
+    {
+      "id": "threshold",
+      "instances": {
+        "a": {
+          "component": "accumulator",
+          "value": 15,
+          "version": 1
+        },
+        "c": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "literal": 0
+          }
+        },
+        {
+          "target": "a",
+          "operation": "add",
+          "argument": {
+            "from_result": 0
+          }
+        },
+        {
+          "target": "c",
+          "operation": "read"
+        },
+        {
+          "target": "a",
+          "operation": "read"
+        }
+      ]
+    },
+    {
+      "id": "saturate-then-rollback",
+      "instances": {
+        "a": {
+          "component": "accumulator",
+          "value": 16,
+          "version": 1
+        },
+        "c": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "literal": 1
+          }
+        },
+        {
+          "target": "a",
+          "operation": "add",
+          "argument": {
+            "from_result": 0
+          }
+        },
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "from_result": 1
+          }
+        }
+      ]
+    }
+  ],
+  "repeats": 1
+}

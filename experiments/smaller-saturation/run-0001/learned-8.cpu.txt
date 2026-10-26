@@ -1,0 +1,34 @@
+File: phlame-components-profile
+Build ID: 574944420813f4bcdf5edc107f5a2bdb2fd3d67b
+Type: cpu
+Time: 2026-10-25 23:29:28 CDT
+Duration: 2.60s, Total samples = 2610ms (100.25%)
+Showing nodes accounting for 1990ms, 76.25% of 2610ms total
+Dropped 44 nodes (cum <= 13.05ms)
+Showing top 25 nodes out of 91
+      flat  flat%   sum%        cum   cum%
+     380ms 14.56% 14.56%     2510ms 96.17%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+     360ms 13.79% 28.35%      430ms 16.48%  github.com/LynnColeArt/phlam/runtime/components.Model.Predict
+     130ms  4.98% 33.33%      130ms  4.98%  aeshashbody
+     130ms  4.98% 38.31%      180ms  6.90%  internal/runtime/maps.(*Iter).Next
+     110ms  4.21% 42.53%      120ms  4.60%  runtime.tryDeferToSpanScan
+     100ms  3.83% 46.36%      120ms  4.60%  github.com/LynnColeArt/phlam/runtime/components.Decode
+      70ms  2.68% 49.04%       70ms  2.68%  math.archMax
+      70ms  2.68% 51.72%      430ms 16.48%  runtime.mapassign_faststr
+      60ms  2.30% 54.02%      200ms  7.66%  runtime.wbBufFlush1
+      50ms  1.92% 55.94%      160ms  6.13%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+      50ms  1.92% 57.85%       50ms  1.92%  internal/runtime/maps.(*groupReference).key (inline)
+      50ms  1.92% 59.77%      360ms 13.79%  runtime.mallocgcSmallScanNoHeader
+      40ms  1.53% 61.30%       40ms  1.53%  internal/chacha8rand.block
+      40ms  1.53% 62.84%       40ms  1.53%  runtime.(*mspan).base (inline)
+      40ms  1.53% 64.37%       40ms  1.53%  runtime.memclrNoHeapPointers
+      40ms  1.53% 65.90%       70ms  2.68%  runtime.scanObjectsSmall
+      30ms  1.15% 67.05%      580ms 22.22%  github.com/LynnColeArt/phlam/runtime/components.predict
+      30ms  1.15% 68.20%      150ms  5.75%  internal/runtime/maps.(*Map).putSlotSmallFastStr
+      30ms  1.15% 69.35%     2570ms 98.47%  main.run
+      30ms  1.15% 70.50%       30ms  1.15%  memeqbody
+      30ms  1.15% 71.65%       30ms  1.15%  runtime.(*mspan).writeHeapBitsSmall
+      30ms  1.15% 72.80%       80ms  3.07%  runtime.bulkBarrierPreWrite
+      30ms  1.15% 73.95%      110ms  4.21%  runtime.mapaccess1_faststr
+      30ms  1.15% 75.10%       30ms  1.15%  runtime.nextFreeFast (inline)
+      30ms  1.15% 76.25%       50ms  1.92%  runtime.typePointers.next

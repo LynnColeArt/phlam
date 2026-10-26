@@ -16,6 +16,10 @@ source-valid schedules leave the chosen domains and roll back. There is no nativ
 false-return rejection in this saturating fixture. The previous rejecting
 accumulator remains in its own experiment.
 
+A later [smaller-model study](../smaller-saturation/README.md) retains this
+16-unit artifact as its frozen control, and records both passing and failing
+smaller candidates. The results below describe the original model.
+
 ## Reproduce
 
 ```sh

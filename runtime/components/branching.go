@@ -13,10 +13,16 @@ const BranchWidth = 16
 // Adam. Only sample inputs and targets reach the optimizer: no contract paths,
 // thresholds, certification observations, or peer model enter its features.
 func TrainBranching(samples []Sample, count int, seed int64) (Model, float64, float64, error) {
-	if len(samples) == 0 || count < 1 || count > 8 {
+	return TrainBranchingWidth(samples, count, seed, BranchWidth)
+}
+
+// TrainBranchingWidth uses the fixed optimizer and budget with an explicitly
+// selected hidden width. Width selection never changes input features or targets.
+func TrainBranchingWidth(samples []Sample, count int, seed int64, width int) (Model, float64, float64, error) {
+	if len(samples) == 0 || count < 1 || count > 8 || width < 1 || width > 32 {
 		return Model{}, 0, 0, fmt.Errorf("invalid training task")
 	}
-	base, width := 3+count, BranchWidth
+	base := 3 + count
 	random := rand.New(rand.NewSource(seed))
 	m := Model{Hidden: make([][]float64, width), Weights: make([][]float64, 3)}
 	for h := range m.Hidden {

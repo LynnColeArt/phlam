@@ -4,6 +4,7 @@ import (
 	"crypto/ed25519"
 	"crypto/sha256"
 	"encoding/hex"
+	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -189,9 +190,16 @@ func testSourceFreeGenericWorker(t *testing.T, artifacts map[string]abi.Artifact
 }
 
 func TestLearnedSaturatingBranchesCompositionsAndRollback(t *testing.T) {
+	for _, width := range []int{8, 16} {
+		t.Run(fmt.Sprintf("width-%d", width), func(t *testing.T) { testSaturatingBranches(t, width) })
+	}
+}
+func testSaturatingBranches(t *testing.T, width int) {
 	artifacts := map[string]abi.Artifact{}
 	source := ""
-	cfgs := []config{configs[0], branchingConfig()}
+	cfg := branchingConfig()
+	cfg.HiddenWidth = width
+	cfgs := []config{configs[0], cfg}
 	for _, c := range cfgs {
 		c.Source = "../../" + c.Source
 		a, _, _, info, err := trainModule(c, abi.Hash([]byte("branching regression")))
@@ -202,7 +210,7 @@ func TestLearnedSaturatingBranchesCompositionsAndRollback(t *testing.T) {
 			t.Fatal("raw prediction failure", info)
 		}
 		if c.Branching {
-			if info.TrainingSamples != 102 || info.HeldoutCases != 492 || info.Parameters != 143 || info.AffineHeldoutCorrect >= info.RawHeldoutCorrect {
+			if info.TrainingSamples != 102 || info.HeldoutCases != 492 || info.Parameters != 15+8*width || info.HiddenWidth != width || info.AffineHeldoutCorrect >= info.RawHeldoutCorrect {
 				t.Fatal("unexpected task or baseline", info)
 			}
 			for _, label := range []string{"interior", "lower_saturation", "upper_saturation", "threshold", "read"} {

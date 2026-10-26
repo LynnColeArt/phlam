@@ -31,15 +31,16 @@ type config struct {
 	Seed                   int64
 	StateStride, ArgStride int64
 	Branching              bool
+	HiddenWidth            int
 }
 
 var configs = []config{
-	{"counter", "Counter", "examples/counter/counter.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -4, ArgMax: 4}, 101, 8, 2, false},
-	{"accumulator", "Accumulator", "examples/accumulator/accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 202, 4, 4, false},
+	{"counter", "Counter", "examples/counter/counter.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -4, ArgMax: 4}, 101, 8, 2, false, 0},
+	{"accumulator", "Accumulator", "examples/accumulator/accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 202, 4, 4, false, 0},
 }
 
 func branchingConfig() config {
-	return config{"accumulator", "SaturatingAccumulator", "examples/saturating-accumulator/saturating-accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 404, 2, 4, true}
+	return config{"accumulator", "SaturatingAccumulator", "examples/saturating-accumulator/saturating-accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 404, 2, 4, true, abi.BranchWidth}
 }
 
 type primitive struct {
@@ -82,6 +83,7 @@ func rawPredictions(a abi.Artifact, observations []primitive) []rawPrediction {
 
 type moduleReport struct {
 	RawPredictionsHash     string         `json:"raw_predictions_sha256"`
+	HiddenWidth            int            `json:"hidden_width"`
 	ModelKind              string         `json:"model_kind"`
 	MaxHeldoutIntegerError float64        `json:"max_heldout_integer_score_error"`
 	RawTrainingCorrect     int            `json:"raw_training_correct"`
@@ -336,7 +338,9 @@ func trainModule(c config, implementation string) (abi.Artifact, []abi.Sample, [
 	trainer := abi.Train
 	epochs := abi.Epochs
 	if c.Branching {
-		trainer = abi.TrainBranching
+		trainer = func(samples []abi.Sample, count int, seed int64) (abi.Model, float64, float64, error) {
+			return abi.TrainBranchingWidth(samples, count, seed, c.HiddenWidth)
+		}
 		epochs = abi.BranchEpochs
 	}
 	model, initial, final, err := trainer(samples, len(contract.Operations), c.Seed)
@@ -406,7 +410,8 @@ func trainModule(c config, implementation string) (abi.Artifact, []abi.Sample, [
 	}
 	info.ModelKind = "affine"
 	if c.Branching {
-		info.ModelKind = "residual ReLU, 16 hidden units"
+		info.HiddenWidth = len(model.Hidden)
+		info.ModelKind = fmt.Sprintf("residual ReLU, %d hidden units", info.HiddenWidth)
 	}
 	rawBytes, err := lines(rawPredictions(artifact, observed))
 	if err != nil {
@@ -636,10 +641,14 @@ func summarize(w response, observations []observation) (engineReport, error) {
 }
 func run() error {
 	branching := flag.Bool("branching", false, "train the saturating accumulator with a ReLU executor")
+	hiddenWidth := flag.Int("hidden-width", abi.BranchWidth, "hidden units for the saturating model, 1..32")
 	output := flag.String("out", "", "new result directory")
 	workerPath := flag.String("worker", "bin/phlame-components-worker", "source-free worker")
 	repeats := flag.Int("repeats", 10, "timing repetitions")
 	flag.Parse()
+	if *hiddenWidth < 1 || *hiddenWidth > 32 || !*branching && *hiddenWidth != abi.BranchWidth {
+		return fmt.Errorf("hidden-width requires branching and must be 1..32")
+	}
 	if *output == "" {
 		*output = "experiments/components/run-0001"
 		if *branching {
@@ -647,7 +656,9 @@ func run() error {
 		}
 	}
 	if *branching {
-		configs = []config{configs[0], branchingConfig()}
+		c := branchingConfig()
+		c.HiddenWidth = *hiddenWidth
+		configs = []config{configs[0], c}
 	}
 	if *repeats < 1 || *repeats > 100 {
 		return fmt.Errorf("repeats bounds")
@@ -783,6 +794,9 @@ func run() error {
 	}
 	for _, engine := range []string{"learned", "lookup"} {
 		concrete, certified := r.Engines[engine+"/concrete"], r.Engines[engine+"/certified"]
+		if concrete.PreflightError != "" || certified.PreflightError != "" {
+			continue
+		}
 		cost := int64(0)
 		for _, c := range certified.Certificates {
 			cost += c.BuildNS

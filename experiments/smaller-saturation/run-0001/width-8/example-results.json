@@ -1,0 +1,314 @@
+{
+  "schema": "phlame.components.worker.v0",
+  "load_ns": 678766,
+  "certificates": {
+    "accumulator": {
+      "key": "ec74ece5049730d8fcaef20d7ea58cef8161a865456ace92b540c2577690c661",
+      "module_sha256": "1da6d69e0d46a1bf3b47530c08b7f0395cdb4e8d8365e770bf9de67386f29241",
+      "certified": true,
+      "cases": 594,
+      "accepted_inputs": 594,
+      "contract_rejected_inputs": 0,
+      "build_ns": 305788,
+      "checker_work": {
+        "expressions": 26199,
+        "integer_arithmetic": 4761,
+        "predicates": 7185,
+        "output_comparisons": 1782
+      }
+    },
+    "counter": {
+      "key": "33bd57c25968de835d5b8038ddf471044af040894bbbbd331ab1df3b132cc36f",
+      "module_sha256": "b8282781122ac63e901033b30e8a886ad4125c1ff9133e203ebedbaffe707e9d",
+      "certified": true,
+      "cases": 330,
+      "accepted_inputs": 330,
+      "contract_rejected_inputs": 0,
+      "build_ns": 78279,
+      "checker_work": {
+        "expressions": 3960,
+        "integer_arithmetic": 1188,
+        "predicates": 0,
+        "output_comparisons": 990
+      }
+    }
+  },
+  "preflight_error": "",
+  "outcomes": [
+    {
+      "id": "upper",
+      "accepted": true,
+      "failed_step": -1,
+      "states": {
+        "a": {
+          "component": "accumulator",
+          "value": 16,
+          "version": 2
+        },
+        "c": {
+          "component": "counter",
+          "value": 5,
+          "version": 2
+        }
+      },
+      "results": [
+        {
+          "type": "int64",
+          "value": 5,
+          "producer": "c"
+        },
+        {
+          "type": "int64",
+          "value": 16,
+          "producer": "a"
+        },
+        {
+          "type": "int64",
+          "value": 5,
+          "producer": "c"
+        },
+        {
+          "type": "int64",
+          "value": 16,
+          "producer": "a"
+        }
+      ],
+      "writes": [
+        {
+          "target": "c",
+          "slot": "value",
+          "value": 5
+        },
+        {
+          "target": "a",
+          "slot": "total",
+          "value": 16
+        }
+      ],
+      "checker_work": {
+        "binding_checks": 4,
+        "frame_checks": 2,
+        "domain_checks": 8,
+        "certificate_uses": 4,
+        "relations": {
+          "expressions": 0,
+          "integer_arithmetic": 0,
+          "predicates": 0,
+          "output_comparisons": 0
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      },
+      "timing": {
+        "proposal_ns": 610,
+        "binding_ns": 560,
+        "checker_ns": 980,
+        "commit_ns": 200,
+        "overhead_ns": 1580,
+        "total_ns": 3930
+      }
+    },
+    {
+      "id": "lower",
+      "accepted": true,
+      "failed_step": -1,
+      "states": {
+        "a": {
+          "component": "accumulator",
+          "value": -16,
+          "version": 2
+        },
+        "c": {
+          "component": "counter",
+          "value": -5,
+          "version": 2
+        }
+      },
+      "results": [
+        {
+          "type": "int64",
+          "value": -5,
+          "producer": "c"
+        },
+        {
+          "type": "int64",
+          "value": -16,
+          "producer": "a"
+        },
+        {
+          "type": "int64",
+          "value": -5,
+          "producer": "c"
+        },
+        {
+          "type": "int64",
+          "value": -16,
+          "producer": "a"
+        }
+      ],
+      "writes": [
+        {
+          "target": "c",
+          "slot": "value",
+          "value": -5
+        },
+        {
+          "target": "a",
+          "slot": "total",
+          "value": -16
+        }
+      ],
+      "checker_work": {
+        "binding_checks": 4,
+        "frame_checks": 2,
+        "domain_checks": 8,
+        "certificate_uses": 4,
+        "relations": {
+          "expressions": 0,
+          "integer_arithmetic": 0,
+          "predicates": 0,
+          "output_comparisons": 0
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      },
+      "timing": {
+        "proposal_ns": 500,
+        "binding_ns": 440,
+        "checker_ns": 470,
+        "commit_ns": 150,
+        "overhead_ns": 1640,
+        "total_ns": 3200
+      }
+    },
+    {
+      "id": "threshold",
+      "accepted": true,
+      "failed_step": -1,
+      "states": {
+        "a": {
+          "component": "accumulator",
+          "value": 16,
+          "version": 2
+        },
+        "c": {
+          "component": "counter",
+          "value": 1,
+          "version": 2
+        }
+      },
+      "results": [
+        {
+          "type": "int64",
+          "value": 1,
+          "producer": "c"
+        },
+        {
+          "type": "int64",
+          "value": 16,
+          "producer": "a"
+        },
+        {
+          "type": "int64",
+          "value": 1,
+          "producer": "c"
+        },
+        {
+          "type": "int64",
+          "value": 16,
+          "producer": "a"
+        }
+      ],
+      "writes": [
+        {
+          "target": "c",
+          "slot": "value",
+          "value": 1
+        },
+        {
+          "target": "a",
+          "slot": "total",
+          "value": 16
+        }
+      ],
+      "checker_work": {
+        "binding_checks": 4,
+        "frame_checks": 2,
+        "domain_checks": 8,
+        "certificate_uses": 4,
+        "relations": {
+          "expressions": 0,
+          "integer_arithmetic": 0,
+          "predicates": 0,
+          "output_comparisons": 0
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      },
+      "timing": {
+        "proposal_ns": 520,
+        "binding_ns": 360,
+        "checker_ns": 360,
+        "commit_ns": 170,
+        "overhead_ns": 1120,
+        "total_ns": 2530
+      }
+    },
+    {
+      "id": "saturate-then-rollback",
+      "accepted": false,
+      "rejection": "outside_component_domain",
+      "failed_step": 2,
+      "states": {
+        "a": {
+          "component": "accumulator",
+          "value": 16,
+          "version": 1
+        },
+        "c": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "checker_work": {
+        "binding_checks": 3,
+        "frame_checks": 2,
+        "domain_checks": 5,
+        "certificate_uses": 2,
+        "relations": {
+          "expressions": 0,
+          "integer_arithmetic": 0,
+          "predicates": 0,
+          "output_comparisons": 0
+        }
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "predicates": 0,
+        "output_comparisons": 0
+      },
+      "timing": {
+        "proposal_ns": 250,
+        "binding_ns": 270,
+        "checker_ns": 340,
+        "commit_ns": 0,
+        "overhead_ns": 1080,
+        "total_ns": 1940
+      }
+    }
+  ]
+}

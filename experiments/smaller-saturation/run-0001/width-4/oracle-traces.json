@@ -1,0 +1,3943 @@
+[
+  {
+    "source_trace_events": [
+      {
+        "transaction": 3,
+        "sequence": 24,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:class:103:382",
+        "span": {
+          "start": 103,
+          "end": 382,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_begin"
+      },
+      {
+        "transaction": 3,
+        "sequence": 25,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 26,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:parameter:245:246",
+        "span": {
+          "start": 245,
+          "end": 255,
+          "line": 10,
+          "column": 24
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 3
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 27,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:267:272",
+        "span": {
+          "start": 267,
+          "end": 272,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 28,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:267:279",
+        "span": {
+          "start": 267,
+          "end": 279,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 2
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 29,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:283:289",
+        "span": {
+          "start": 283,
+          "end": 289,
+          "line": 11,
+          "column": 25
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 3
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 30,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "left": 2,
+          "result": 5,
+          "right": 3
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 31,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 32,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:305:310",
+        "span": {
+          "start": 305,
+          "end": 310,
+          "line": 12,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 33,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:305:317",
+        "span": {
+          "start": 305,
+          "end": 317,
+          "line": 12,
+          "column": 16
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 34,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:298:318",
+        "span": {
+          "start": 298,
+          "end": 318,
+          "line": 12,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 35,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 36,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 37,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 38,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:parameter:672:673",
+        "span": {
+          "start": 672,
+          "end": 679,
+          "line": 29,
+          "column": 18
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 39,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:699:704",
+        "span": {
+          "start": 699,
+          "end": 704,
+          "line": 30,
+          "column": 17
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 40,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:699:711",
+        "span": {
+          "start": 699,
+          "end": 711,
+          "line": 30,
+          "column": 17
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 15
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 41,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:714:721",
+        "span": {
+          "start": 714,
+          "end": 721,
+          "line": 30,
+          "column": 32
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 42,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:binary:699:721",
+        "span": {
+          "start": 699,
+          "end": 721,
+          "line": 30,
+          "column": 17
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "left": 15,
+          "result": 20,
+          "right": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 43,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:691:722",
+        "span": {
+          "start": 691,
+          "end": 722,
+          "line": 30,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_write",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 20
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 44,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:734:739",
+        "span": {
+          "start": 734,
+          "end": 739,
+          "line": 31,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 20
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 45,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:unary:742:745",
+        "span": {
+          "start": 742,
+          "end": 745,
+          "line": 31,
+          "column": 21
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 46,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:if:730:822",
+        "span": {
+          "start": 730,
+          "end": 822,
+          "line": 31,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "branch",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "taken": 0
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 47,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:834:839",
+        "span": {
+          "start": 834,
+          "end": 839,
+          "line": 35,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 20
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 48,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:literal:842:844",
+        "span": {
+          "start": 842,
+          "end": 844,
+          "line": 35,
+          "column": 21
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 49,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:if:830:920",
+        "span": {
+          "start": 830,
+          "end": 920,
+          "line": 35,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "branch",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "taken": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 50,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:860:865",
+        "span": {
+          "start": 860,
+          "end": 865,
+          "line": 36,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 51,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:literal:875:877",
+        "span": {
+          "start": 875,
+          "end": 877,
+          "line": 36,
+          "column": 28
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 52,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:860:878",
+        "span": {
+          "start": 860,
+          "end": 878,
+          "line": 36,
+          "column": 13
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 53,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:897:902",
+        "span": {
+          "start": 897,
+          "end": 902,
+          "line": 37,
+          "column": 20
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 54,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:897:909",
+        "span": {
+          "start": 897,
+          "end": 909,
+          "line": 37,
+          "column": 20
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 55,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:890:910",
+        "span": {
+          "start": 890,
+          "end": 910,
+          "line": 37,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 56,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "contract_unknown",
+        "contract_id": "SaturatingAccumulator.add",
+        "code": "UNKNOWN_CONTRACT"
+      },
+      {
+        "transaction": 3,
+        "sequence": 57,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 58,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:329:380",
+        "span": {
+          "start": 329,
+          "end": 380,
+          "line": 15,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Counter.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 59,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:362:367",
+        "span": {
+          "start": 362,
+          "end": 367,
+          "line": 16,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 60,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:362:374",
+        "span": {
+          "start": 362,
+          "end": 374,
+          "line": 16,
+          "column": 16
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.read",
+        "integers": {
+          "value": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 61,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:355:375",
+        "span": {
+          "start": 355,
+          "end": 375,
+          "line": 16,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Counter.read",
+        "integers": {
+          "value": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 62,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:329:380",
+        "span": {
+          "start": 329,
+          "end": 380,
+          "line": 15,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Counter.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 63,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:329:380",
+        "span": {
+          "start": 329,
+          "end": 380,
+          "line": 15,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Counter.read",
+        "integers": {
+          "value": 5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 64,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:988:1039",
+        "span": {
+          "start": 988,
+          "end": 1039,
+          "line": 43,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 65,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:1021:1026",
+        "span": {
+          "start": 1021,
+          "end": 1026,
+          "line": 44,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 66,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:1021:1033",
+        "span": {
+          "start": 1021,
+          "end": 1033,
+          "line": 44,
+          "column": 16
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.read",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 67,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:1014:1034",
+        "span": {
+          "start": 1014,
+          "end": 1034,
+          "line": 44,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "SaturatingAccumulator.read",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 68,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:988:1039",
+        "span": {
+          "start": 988,
+          "end": 1039,
+          "line": 43,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 69,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:988:1039",
+        "span": {
+          "start": 988,
+          "end": 1039,
+          "line": 43,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "SaturatingAccumulator.read",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 70,
+        "phase": "committed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:860:878",
+        "span": {
+          "start": 860,
+          "end": 878,
+          "line": 36,
+          "column": 13
+        },
+        "object": 1,
+        "state_version": 2,
+        "operation": "state_commit",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 71,
+        "phase": "committed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 2,
+        "operation": "state_commit",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 72,
+        "phase": "committed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:class:103:382",
+        "span": {
+          "start": 103,
+          "end": 382,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_commit",
+        "contract_id": "SaturatingAccumulator.read"
+      }
+    ],
+    "observed_saturation_branches": {
+      "upper_saturation": 1
+    },
+    "transaction": {
+      "id": "upper",
+      "instances": {
+        "a": {
+          "component": "accumulator",
+          "value": 15,
+          "version": 1
+        },
+        "c": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "literal": 3
+          }
+        },
+        {
+          "target": "a",
+          "operation": "add",
+          "argument": {
+            "from_result": 0
+          }
+        },
+        {
+          "target": "c",
+          "operation": "read"
+        },
+        {
+          "target": "a",
+          "operation": "read"
+        }
+      ]
+    },
+    "category": "accepted",
+    "oracle_accepted": true,
+    "within_certified_coarse_domains": true,
+    "oracle_states": {
+      "a": {
+        "component": "accumulator",
+        "value": 16,
+        "version": 2
+      },
+      "c": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "oracle_results": [
+      {
+        "type": "int64",
+        "value": 5,
+        "producer": "c"
+      },
+      {
+        "type": "int64",
+        "value": 16,
+        "producer": "a"
+      },
+      {
+        "type": "int64",
+        "value": 5,
+        "producer": "c"
+      },
+      {
+        "type": "int64",
+        "value": 16,
+        "producer": "a"
+      }
+    ],
+    "oracle_writes": [
+      {
+        "target": "c",
+        "slot": "value",
+        "value": 5
+      },
+      {
+        "target": "a",
+        "slot": "total",
+        "value": 16
+      }
+    ],
+    "observed_trace_sha256": "c5238ef203b0161fc982528b42b35bf5a45c1c39647c9c0c8773fb8ef33a674d"
+  },
+  {
+    "source_trace_events": [
+      {
+        "transaction": 3,
+        "sequence": 24,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:class:103:382",
+        "span": {
+          "start": 103,
+          "end": 382,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_begin"
+      },
+      {
+        "transaction": 3,
+        "sequence": 25,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 26,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:parameter:245:246",
+        "span": {
+          "start": 245,
+          "end": 255,
+          "line": 10,
+          "column": 24
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": -3
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 27,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:267:272",
+        "span": {
+          "start": 267,
+          "end": 272,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 28,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:267:279",
+        "span": {
+          "start": 267,
+          "end": 279,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": -2
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 29,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:283:289",
+        "span": {
+          "start": 283,
+          "end": 289,
+          "line": 11,
+          "column": 25
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": -3
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 30,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "left": -2,
+          "result": -5,
+          "right": -3
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 31,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 32,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:305:310",
+        "span": {
+          "start": 305,
+          "end": 310,
+          "line": 12,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 33,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:305:317",
+        "span": {
+          "start": 305,
+          "end": 317,
+          "line": 12,
+          "column": 16
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 34,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:298:318",
+        "span": {
+          "start": 298,
+          "end": 318,
+          "line": 12,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 35,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 36,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 37,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 38,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:parameter:672:673",
+        "span": {
+          "start": 672,
+          "end": 679,
+          "line": 29,
+          "column": 18
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 39,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:699:704",
+        "span": {
+          "start": 699,
+          "end": 704,
+          "line": 30,
+          "column": 17
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 40,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:699:711",
+        "span": {
+          "start": 699,
+          "end": 711,
+          "line": 30,
+          "column": 17
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -15
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 41,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:714:721",
+        "span": {
+          "start": 714,
+          "end": 721,
+          "line": 30,
+          "column": 32
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 42,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:binary:699:721",
+        "span": {
+          "start": 699,
+          "end": 721,
+          "line": 30,
+          "column": 17
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "left": -15,
+          "result": -20,
+          "right": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 43,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:691:722",
+        "span": {
+          "start": 691,
+          "end": 722,
+          "line": 30,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_write",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -20
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 44,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:734:739",
+        "span": {
+          "start": 734,
+          "end": 739,
+          "line": 31,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -20
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 45,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:unary:742:745",
+        "span": {
+          "start": 742,
+          "end": 745,
+          "line": 31,
+          "column": 21
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 46,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:if:730:822",
+        "span": {
+          "start": 730,
+          "end": 822,
+          "line": 31,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "branch",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "taken": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 47,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:761:766",
+        "span": {
+          "start": 761,
+          "end": 766,
+          "line": 32,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 48,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:unary:776:779",
+        "span": {
+          "start": 776,
+          "end": 779,
+          "line": 32,
+          "column": 28
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 49,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:761:780",
+        "span": {
+          "start": 761,
+          "end": 780,
+          "line": 32,
+          "column": 13
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 50,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:799:804",
+        "span": {
+          "start": 799,
+          "end": 804,
+          "line": 33,
+          "column": 20
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 51,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:799:811",
+        "span": {
+          "start": 799,
+          "end": 811,
+          "line": 33,
+          "column": 20
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 52,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:792:812",
+        "span": {
+          "start": 792,
+          "end": 812,
+          "line": 33,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 53,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "contract_unknown",
+        "contract_id": "SaturatingAccumulator.add",
+        "code": "UNKNOWN_CONTRACT"
+      },
+      {
+        "transaction": 3,
+        "sequence": 54,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 55,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:329:380",
+        "span": {
+          "start": 329,
+          "end": 380,
+          "line": 15,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Counter.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 56,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:362:367",
+        "span": {
+          "start": 362,
+          "end": 367,
+          "line": 16,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 57,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:362:374",
+        "span": {
+          "start": 362,
+          "end": 374,
+          "line": 16,
+          "column": 16
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.read",
+        "integers": {
+          "value": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 58,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:355:375",
+        "span": {
+          "start": 355,
+          "end": 375,
+          "line": 16,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Counter.read",
+        "integers": {
+          "value": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 59,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:329:380",
+        "span": {
+          "start": 329,
+          "end": 380,
+          "line": 15,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Counter.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 60,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:329:380",
+        "span": {
+          "start": 329,
+          "end": 380,
+          "line": 15,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Counter.read",
+        "integers": {
+          "value": -5
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 61,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:988:1039",
+        "span": {
+          "start": 988,
+          "end": 1039,
+          "line": 43,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 62,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:1021:1026",
+        "span": {
+          "start": 1021,
+          "end": 1026,
+          "line": 44,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 63,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:1021:1033",
+        "span": {
+          "start": 1021,
+          "end": 1033,
+          "line": 44,
+          "column": 16
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.read",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 64,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:1014:1034",
+        "span": {
+          "start": 1014,
+          "end": 1034,
+          "line": 44,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "SaturatingAccumulator.read",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 65,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:988:1039",
+        "span": {
+          "start": 988,
+          "end": 1039,
+          "line": 43,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 66,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:988:1039",
+        "span": {
+          "start": 988,
+          "end": 1039,
+          "line": 43,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "SaturatingAccumulator.read",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 67,
+        "phase": "committed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:761:780",
+        "span": {
+          "start": 761,
+          "end": 780,
+          "line": 32,
+          "column": 13
+        },
+        "object": 1,
+        "state_version": 2,
+        "operation": "state_commit",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 68,
+        "phase": "committed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 2,
+        "operation": "state_commit",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 69,
+        "phase": "committed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:class:103:382",
+        "span": {
+          "start": 103,
+          "end": 382,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_commit",
+        "contract_id": "SaturatingAccumulator.read"
+      }
+    ],
+    "observed_saturation_branches": {
+      "lower_saturation": 1
+    },
+    "transaction": {
+      "id": "lower",
+      "instances": {
+        "a": {
+          "component": "accumulator",
+          "value": -15,
+          "version": 1
+        },
+        "c": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "literal": -3
+          }
+        },
+        {
+          "target": "a",
+          "operation": "add",
+          "argument": {
+            "from_result": 0
+          }
+        },
+        {
+          "target": "c",
+          "operation": "read"
+        },
+        {
+          "target": "a",
+          "operation": "read"
+        }
+      ]
+    },
+    "category": "accepted",
+    "oracle_accepted": true,
+    "within_certified_coarse_domains": true,
+    "oracle_states": {
+      "a": {
+        "component": "accumulator",
+        "value": -16,
+        "version": 2
+      },
+      "c": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "oracle_results": [
+      {
+        "type": "int64",
+        "value": -5,
+        "producer": "c"
+      },
+      {
+        "type": "int64",
+        "value": -16,
+        "producer": "a"
+      },
+      {
+        "type": "int64",
+        "value": -5,
+        "producer": "c"
+      },
+      {
+        "type": "int64",
+        "value": -16,
+        "producer": "a"
+      }
+    ],
+    "oracle_writes": [
+      {
+        "target": "c",
+        "slot": "value",
+        "value": -5
+      },
+      {
+        "target": "a",
+        "slot": "total",
+        "value": -16
+      }
+    ],
+    "observed_trace_sha256": "4be7f22ab1d5057867b6190491d887771e504db6866c6229d8c8498fe6285317"
+  },
+  {
+    "source_trace_events": [
+      {
+        "transaction": 3,
+        "sequence": 24,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:class:103:382",
+        "span": {
+          "start": 103,
+          "end": 382,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_begin"
+      },
+      {
+        "transaction": 3,
+        "sequence": 25,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 26,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:parameter:245:246",
+        "span": {
+          "start": 245,
+          "end": 255,
+          "line": 10,
+          "column": 24
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 0
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 27,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:267:272",
+        "span": {
+          "start": 267,
+          "end": 272,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 28,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:267:279",
+        "span": {
+          "start": 267,
+          "end": 279,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 29,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:283:289",
+        "span": {
+          "start": 283,
+          "end": 289,
+          "line": 11,
+          "column": 25
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 0
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 30,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "left": 1,
+          "result": 1,
+          "right": 0
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 31,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 32,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:305:310",
+        "span": {
+          "start": 305,
+          "end": 310,
+          "line": 12,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 33,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:305:317",
+        "span": {
+          "start": 305,
+          "end": 317,
+          "line": 12,
+          "column": 16
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 34,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:298:318",
+        "span": {
+          "start": 298,
+          "end": 318,
+          "line": 12,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 35,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 36,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 37,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 38,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:parameter:672:673",
+        "span": {
+          "start": 672,
+          "end": 679,
+          "line": 29,
+          "column": 18
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 39,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:699:704",
+        "span": {
+          "start": 699,
+          "end": 704,
+          "line": 30,
+          "column": 17
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 40,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:699:711",
+        "span": {
+          "start": 699,
+          "end": 711,
+          "line": 30,
+          "column": 17
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 15
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 41,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:714:721",
+        "span": {
+          "start": 714,
+          "end": 721,
+          "line": 30,
+          "column": 32
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 42,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:binary:699:721",
+        "span": {
+          "start": 699,
+          "end": 721,
+          "line": 30,
+          "column": 17
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "left": 15,
+          "result": 16,
+          "right": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 43,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:691:722",
+        "span": {
+          "start": 691,
+          "end": 722,
+          "line": 30,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_write",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 44,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:734:739",
+        "span": {
+          "start": 734,
+          "end": 739,
+          "line": 31,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 45,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:unary:742:745",
+        "span": {
+          "start": 742,
+          "end": 745,
+          "line": 31,
+          "column": 21
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 46,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:if:730:822",
+        "span": {
+          "start": 730,
+          "end": 822,
+          "line": 31,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "branch",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "taken": 0
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 47,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:834:839",
+        "span": {
+          "start": 834,
+          "end": 839,
+          "line": 35,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 48,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:literal:842:844",
+        "span": {
+          "start": 842,
+          "end": 844,
+          "line": 35,
+          "column": 21
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 49,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:if:830:920",
+        "span": {
+          "start": 830,
+          "end": 920,
+          "line": 35,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "branch",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "taken": 0
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 50,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:928:933",
+        "span": {
+          "start": 928,
+          "end": 933,
+          "line": 39,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 51,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:943:948",
+        "span": {
+          "start": 943,
+          "end": 948,
+          "line": 39,
+          "column": 24
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 52,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:928:949",
+        "span": {
+          "start": 928,
+          "end": 949,
+          "line": 39,
+          "column": 9
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 53,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:964:969",
+        "span": {
+          "start": 964,
+          "end": 969,
+          "line": 40,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 54,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:964:976",
+        "span": {
+          "start": 964,
+          "end": 976,
+          "line": 40,
+          "column": 16
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 55,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:957:977",
+        "span": {
+          "start": 957,
+          "end": 977,
+          "line": 40,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 56,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "contract_unknown",
+        "contract_id": "SaturatingAccumulator.add",
+        "code": "UNKNOWN_CONTRACT"
+      },
+      {
+        "transaction": 3,
+        "sequence": 57,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 58,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:329:380",
+        "span": {
+          "start": 329,
+          "end": 380,
+          "line": 15,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Counter.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 59,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:362:367",
+        "span": {
+          "start": 362,
+          "end": 367,
+          "line": 16,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 60,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:362:374",
+        "span": {
+          "start": 362,
+          "end": 374,
+          "line": 16,
+          "column": 16
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.read",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 61,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:355:375",
+        "span": {
+          "start": 355,
+          "end": 375,
+          "line": 16,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Counter.read",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 62,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:329:380",
+        "span": {
+          "start": 329,
+          "end": 380,
+          "line": 15,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Counter.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 63,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:329:380",
+        "span": {
+          "start": 329,
+          "end": 380,
+          "line": 15,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Counter.read",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 64,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:988:1039",
+        "span": {
+          "start": 988,
+          "end": 1039,
+          "line": 43,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 65,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:1021:1026",
+        "span": {
+          "start": 1021,
+          "end": 1026,
+          "line": 44,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 66,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:1021:1033",
+        "span": {
+          "start": 1021,
+          "end": 1033,
+          "line": 44,
+          "column": 16
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.read",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 67,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:1014:1034",
+        "span": {
+          "start": 1014,
+          "end": 1034,
+          "line": 44,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "SaturatingAccumulator.read",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 68,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:988:1039",
+        "span": {
+          "start": 988,
+          "end": 1039,
+          "line": 43,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 69,
+        "phase": "observed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:988:1039",
+        "span": {
+          "start": 988,
+          "end": 1039,
+          "line": 43,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "SaturatingAccumulator.read",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 70,
+        "phase": "committed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:928:949",
+        "span": {
+          "start": 928,
+          "end": 949,
+          "line": 39,
+          "column": 9
+        },
+        "object": 1,
+        "state_version": 2,
+        "operation": "state_commit",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 71,
+        "phase": "committed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 2,
+        "operation": "state_commit",
+        "contract_id": "SaturatingAccumulator.read"
+      },
+      {
+        "transaction": 3,
+        "sequence": 72,
+        "phase": "committed",
+        "invocation": 6,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:class:103:382",
+        "span": {
+          "start": 103,
+          "end": 382,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_commit",
+        "contract_id": "SaturatingAccumulator.read"
+      }
+    ],
+    "observed_saturation_branches": {
+      "threshold": 1
+    },
+    "transaction": {
+      "id": "threshold",
+      "instances": {
+        "a": {
+          "component": "accumulator",
+          "value": 15,
+          "version": 1
+        },
+        "c": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "literal": 0
+          }
+        },
+        {
+          "target": "a",
+          "operation": "add",
+          "argument": {
+            "from_result": 0
+          }
+        },
+        {
+          "target": "c",
+          "operation": "read"
+        },
+        {
+          "target": "a",
+          "operation": "read"
+        }
+      ]
+    },
+    "category": "accepted",
+    "oracle_accepted": true,
+    "within_certified_coarse_domains": true,
+    "oracle_states": {
+      "a": {
+        "component": "accumulator",
+        "value": 16,
+        "version": 2
+      },
+      "c": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "oracle_results": [
+      {
+        "type": "int64",
+        "value": 1,
+        "producer": "c"
+      },
+      {
+        "type": "int64",
+        "value": 16,
+        "producer": "a"
+      },
+      {
+        "type": "int64",
+        "value": 1,
+        "producer": "c"
+      },
+      {
+        "type": "int64",
+        "value": 16,
+        "producer": "a"
+      }
+    ],
+    "oracle_writes": [
+      {
+        "target": "c",
+        "slot": "value",
+        "value": 1
+      },
+      {
+        "target": "a",
+        "slot": "total",
+        "value": 16
+      }
+    ],
+    "observed_trace_sha256": "b5f5e5ceecef17be7473ea84c207830afbe43f7aa9e7e545b71b5378b4bde0a9"
+  },
+  {
+    "source_trace_events": [
+      {
+        "transaction": 3,
+        "sequence": 24,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:class:103:382",
+        "span": {
+          "start": 103,
+          "end": 382,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_begin"
+      },
+      {
+        "transaction": 3,
+        "sequence": 25,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 26,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:parameter:245:246",
+        "span": {
+          "start": 245,
+          "end": 255,
+          "line": 10,
+          "column": 24
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 27,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:267:272",
+        "span": {
+          "start": 267,
+          "end": 272,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 28,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:267:279",
+        "span": {
+          "start": 267,
+          "end": 279,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 0
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 29,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:283:289",
+        "span": {
+          "start": 283,
+          "end": 289,
+          "line": 11,
+          "column": 25
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 30,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "left": 0,
+          "result": 1,
+          "right": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 31,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 32,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:305:310",
+        "span": {
+          "start": 305,
+          "end": 310,
+          "line": 12,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 33,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:305:317",
+        "span": {
+          "start": 305,
+          "end": 317,
+          "line": 12,
+          "column": 16
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 34,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:298:318",
+        "span": {
+          "start": 298,
+          "end": 318,
+          "line": 12,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 35,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 36,
+        "phase": "observed",
+        "invocation": 3,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 37,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 38,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:parameter:672:673",
+        "span": {
+          "start": 672,
+          "end": 679,
+          "line": 29,
+          "column": 18
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 39,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:699:704",
+        "span": {
+          "start": 699,
+          "end": 704,
+          "line": 30,
+          "column": 17
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 40,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:699:711",
+        "span": {
+          "start": 699,
+          "end": 711,
+          "line": 30,
+          "column": 17
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 41,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:714:721",
+        "span": {
+          "start": 714,
+          "end": 721,
+          "line": 30,
+          "column": 32
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 42,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:binary:699:721",
+        "span": {
+          "start": 699,
+          "end": 721,
+          "line": 30,
+          "column": 17
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "left": 16,
+          "result": 17,
+          "right": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 43,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:691:722",
+        "span": {
+          "start": 691,
+          "end": 722,
+          "line": 30,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_write",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 17
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 44,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:734:739",
+        "span": {
+          "start": 734,
+          "end": 739,
+          "line": 31,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 17
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 45,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:unary:742:745",
+        "span": {
+          "start": 742,
+          "end": 745,
+          "line": 31,
+          "column": 21
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 46,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:if:730:822",
+        "span": {
+          "start": 730,
+          "end": 822,
+          "line": 31,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "branch",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "taken": 0
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 47,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:834:839",
+        "span": {
+          "start": 834,
+          "end": 839,
+          "line": 35,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 17
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 48,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:literal:842:844",
+        "span": {
+          "start": 842,
+          "end": 844,
+          "line": 35,
+          "column": 21
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 49,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:if:830:920",
+        "span": {
+          "start": 830,
+          "end": 920,
+          "line": 35,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "branch",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "taken": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 50,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:860:865",
+        "span": {
+          "start": 860,
+          "end": 865,
+          "line": 36,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 51,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:literal:875:877",
+        "span": {
+          "start": 875,
+          "end": 877,
+          "line": 36,
+          "column": 28
+        },
+        "state_version": 0,
+        "operation": "literal",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 52,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:860:878",
+        "span": {
+          "start": 860,
+          "end": 878,
+          "line": 36,
+          "column": 13
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 53,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:897:902",
+        "span": {
+          "start": 897,
+          "end": 902,
+          "line": 37,
+          "column": 20
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "SaturatingAccumulator.add"
+      },
+      {
+        "transaction": 3,
+        "sequence": 54,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:897:909",
+        "span": {
+          "start": 897,
+          "end": 909,
+          "line": 37,
+          "column": 20
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 55,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:890:910",
+        "span": {
+          "start": 890,
+          "end": 910,
+          "line": 37,
+          "column": 13
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 56,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "contract_unknown",
+        "contract_id": "SaturatingAccumulator.add",
+        "code": "UNKNOWN_CONTRACT"
+      },
+      {
+        "transaction": 3,
+        "sequence": 57,
+        "phase": "observed",
+        "invocation": 4,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:659:982",
+        "span": {
+          "start": 659,
+          "end": 982,
+          "line": 29,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "SaturatingAccumulator.add",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 58,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 59,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:parameter:245:246",
+        "span": {
+          "start": 245,
+          "end": 255,
+          "line": 10,
+          "column": 24
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 60,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:267:272",
+        "span": {
+          "start": 267,
+          "end": 272,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 61,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:267:279",
+        "span": {
+          "start": 267,
+          "end": 279,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 1
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 62,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:283:289",
+        "span": {
+          "start": 283,
+          "end": 289,
+          "line": 11,
+          "column": 25
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 63,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "left": 1,
+          "result": 17,
+          "right": 16
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 64,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 17
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 65,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:variable:305:310",
+        "span": {
+          "start": 305,
+          "end": 310,
+          "line": 12,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 66,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:property_access:305:317",
+        "span": {
+          "start": 305,
+          "end": 317,
+          "line": 12,
+          "column": 16
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 17
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 67,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:return:298:318",
+        "span": {
+          "start": 298,
+          "end": 318,
+          "line": 12,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 17
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 68,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 69,
+        "phase": "observed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:method:226:323",
+        "span": {
+          "start": 226,
+          "end": 323,
+          "line": 10,
+          "column": 5
+        },
+        "object": 2,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Counter.increment",
+        "integers": {
+          "value": 17
+        }
+      },
+      {
+        "transaction": 3,
+        "sequence": 70,
+        "phase": "committed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:860:878",
+        "span": {
+          "start": 860,
+          "end": 878,
+          "line": 36,
+          "column": 13
+        },
+        "object": 1,
+        "state_version": 2,
+        "operation": "state_commit",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 71,
+        "phase": "committed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:assign:267:290",
+        "span": {
+          "start": 267,
+          "end": 290,
+          "line": 11,
+          "column": 9
+        },
+        "object": 2,
+        "state_version": 2,
+        "operation": "state_commit",
+        "contract_id": "Counter.increment"
+      },
+      {
+        "transaction": 3,
+        "sequence": 72,
+        "phase": "committed",
+        "invocation": 5,
+        "node_id": "7b8bbb072f159c0ce838ecf17320b921fd87d7510a77b8f5a63e39bfdc229de4:class:103:382",
+        "span": {
+          "start": 103,
+          "end": 382,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_commit",
+        "contract_id": "Counter.increment"
+      }
+    ],
+    "observed_saturation_branches": {
+      "upper_saturation": 1
+    },
+    "transaction": {
+      "id": "saturate-then-rollback",
+      "instances": {
+        "a": {
+          "component": "accumulator",
+          "value": 16,
+          "version": 1
+        },
+        "c": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "literal": 1
+          }
+        },
+        {
+          "target": "a",
+          "operation": "add",
+          "argument": {
+            "from_result": 0
+          }
+        },
+        {
+          "target": "c",
+          "operation": "increment",
+          "argument": {
+            "from_result": 1
+          }
+        }
+      ]
+    },
+    "category": "outside_certified_scope",
+    "oracle_accepted": true,
+    "within_certified_coarse_domains": false,
+    "oracle_states": {
+      "a": {
+        "component": "accumulator",
+        "value": 16,
+        "version": 2
+      },
+      "c": {
+        "component": "counter",
+        "value": 17,
+        "version": 2
+      }
+    },
+    "oracle_results": [
+      {
+        "type": "int64",
+        "value": 1,
+        "producer": "c"
+      },
+      {
+        "type": "int64",
+        "value": 16,
+        "producer": "a"
+      },
+      {
+        "type": "int64",
+        "value": 17,
+        "producer": "c"
+      }
+    ],
+    "oracle_writes": [
+      {
+        "target": "c",
+        "slot": "value",
+        "value": 1
+      },
+      {
+        "target": "a",
+        "slot": "total",
+        "value": 16
+      },
+      {
+        "target": "c",
+        "slot": "value",
+        "value": 17
+      }
+    ],
+    "observed_trace_sha256": "9a2f9b8df3d2ed17aec962afbc948d11ea92f4660e1931544a34978924ebe25d"
+  }
+]

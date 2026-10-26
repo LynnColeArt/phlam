@@ -1,15 +1,16 @@
 # Learned runtime: first experiment contract
 
-Status: bounded numerical, composition, independent-component and nonlinear
-saturation experiments implemented, 2026-10-25. The newest
-[saturation experiment](../experiments/saturating-accumulator/run-0001/REPORT.md)
-trains a residual ReLU executor on 102 observed primitives and predicts all 492
-held-out accumulator inputs exactly after integer decoding. Counter trains
-independently; 224 supported cross-component schedules match the oracle and
-526 outside-domain schedules roll back. Startup certification removes warm
-contract arithmetic and predicates. This run improves learned latency relative
-to concrete checking; lookup remains faster. Learned planning, richer data/control
-flow and unbounded symbolic equivalence remain unproven. The broader target follows.
+Status: bounded numerical, composition, independent-component, nonlinear
+saturation, profiling and smaller-model experiments implemented, 2026-10-25.
+The newest [width survey](../experiments/smaller-saturation/run-0001/REPORT.md)
+selects an 8-unit, 79-parameter learned accumulator from fixed widths 2, 4 and 8.
+All 492 nontraining primitive inputs and 224 supported compositions match the
+oracle; 526 outside-domain schedules roll back. Widths 2 and 4 fail certification.
+Selection uses the full finite domain, without an independent architecture holdout.
+Warm certified checking evaluates no contract arithmetic or predicates. Smaller
+learned execution reduces median successful latency, but lookup remains faster.
+Learned planning, richer data/control flow and unbounded symbolic equivalence
+remain unproven. The broader target follows.
 
 ## Architectural destination
 
@@ -227,6 +228,29 @@ prediction/decoding. Shared instance-map/output allocation and substantial
 phase-clock overhead also remain visible. Finite certificate construction is
 reported outside the warm loop; no weaker boundary or exact-result substitution
 is used to improve timings.
+
+## Smaller learned artifacts
+
+The [fixed-width survey](../experiments/smaller-saturation/README.md) changes only
+training width, retaining the source, 102 training examples, seed and optimizer
+budget. Every width freezes before source-free certification. Widths 2 and 4
+miss training and nontraining cases and fail startup; width 8 certifies with 79
+parameters, compared with 143 for the original 16-unit model. It preserves all
+594 primitive transitions and all supported supplied compositions.
+
+The smallest fully certified candidate is selected using the full finite domain;
+nontraining accuracy is not an independent architecture-selection holdout. These
+fixed-seed failures establish no minimum representational capacity. The retained
+failed artifacts show that signatures and smaller models do not bypass exact
+certification. Concrete checking rejects their incorrect proposals rather than
+repairing outputs; certified failure executes no transactions.
+
+One current source-free binary and one common frozen Counter compare the smaller
+model, historical larger model and lookup in randomized fresh-process order.
+Runtime semantics, inference, checker logic and allocation counts are unchanged.
+The smaller model reduces median successful latency but lookup remains faster
+in this run. Startup certificate construction, warm checker work and numerical
+proposal costs remain separate. Atomic rollback and owned outputs still apply.
 
 ## Evaluation and falsification
 

@@ -36,6 +36,14 @@ Bounded stack scratch and one state copy on success reduce learned allocations
 to match lookup. Successful certified execution without phase clocks improves
 from 2.495 to 1.801 µs; lookup remains faster at 1.408 µs in the matched study.
 
+The [smaller-model study](experiments/smaller-saturation/README.md) trains and
+freezes widths 2, 4 and 8. The 8-unit model certifies with 79 parameters, preserving
+all 492 nontraining primitive inputs and 224 supported compositions. Widths 2 and
+4 fail certification and are retained. In a matched comparison, successful
+certified transactions without clocks measure 1.656 µs for 8 units, 1.894 µs
+for the frozen 16-unit model and 1.547 µs for lookup. Architecture selection uses
+the finite certification domain; this does not establish a minimum network size.
+
 Certified learned execution is faster than concrete checking in the saturation run, but
 lookup remains faster. Supplied schedules are not learned planning. The
 [earlier Counter composition study](experiments/counter-compositions/README.md)
