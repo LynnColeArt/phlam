@@ -1,0 +1,190 @@
+{
+  "schema": "phlame.feasibility-ledger.v0",
+  "date": "2026-10-26",
+  "status_note": "Plan only. G00 records the scoped baseline and written plan; it does not establish any later gate.",
+  "verdicts": {
+    "bounded_learned_execution": {
+      "status": "established_for_recorded_scalar_domain",
+      "evidence": "experiments/paired-seed-sweep/run-0001/REPORT.md"
+    },
+    "broad_compiler_application": {
+      "status": "unresolved",
+      "requires": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10"
+      ]
+    },
+    "full_brief_research": {
+      "status": "unresolved",
+      "requires": [
+        "G10",
+        "R01"
+      ]
+    }
+  },
+  "gates": [
+    {
+      "id": "G00",
+      "title": "Bounded execution baseline and broad-feasibility plan",
+      "status": "complete",
+      "depends_on": [],
+      "report": "docs/broad-feasibility-plan.md"
+    },
+    {
+      "id": "G01",
+      "title": "Reusable source-to-frozen-artifact build",
+      "status": "not_started",
+      "depends_on": [
+        "G00"
+      ],
+      "report": "docs/broad-feasibility-next-slice.md"
+    },
+    {
+      "id": "G02",
+      "title": "Training reliability",
+      "status": "not_started",
+      "depends_on": [
+        "G01"
+      ],
+      "report": null
+    },
+    {
+      "id": "G03",
+      "title": "Rich state and learned internal control",
+      "status": "not_started",
+      "depends_on": [
+        "G01"
+      ],
+      "report": null
+    },
+    {
+      "id": "G04",
+      "title": "Non-enumerating exact certification",
+      "status": "not_started",
+      "depends_on": [
+        "G03"
+      ],
+      "report": null
+    },
+    {
+      "id": "G05",
+      "title": "Previously uninspected program acceptance",
+      "status": "not_started",
+      "depends_on": [
+        "G02",
+        "G04"
+      ],
+      "report": null
+    },
+    {
+      "id": "G06",
+      "title": "Required dynamic-language semantics",
+      "status": "not_started",
+      "depends_on": [
+        "G03"
+      ],
+      "report": null
+    },
+    {
+      "id": "G07",
+      "title": "Durable application and effects",
+      "status": "not_started",
+      "depends_on": [
+        "G05",
+        "G06"
+      ],
+      "report": null
+    },
+    {
+      "id": "G08",
+      "title": "Shared web/agent gateway and learned discovery",
+      "status": "not_started",
+      "depends_on": [
+        "G07"
+      ],
+      "report": null
+    },
+    {
+      "id": "G09",
+      "title": "Evidence-backed debugger",
+      "status": "not_started",
+      "depends_on": [
+        "G07"
+      ],
+      "report": null
+    },
+    {
+      "id": "G10",
+      "title": "Integrated broad-feasibility verdict",
+      "status": "not_started",
+      "depends_on": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09"
+      ],
+      "report": null
+    },
+    {
+      "id": "R01",
+      "title": "Development-only source-free capability authorship",
+      "status": "not_started",
+      "depends_on": [
+        "G10"
+      ],
+      "report": null
+    }
+  ],
+  "initial_acceptance_profile": {
+    "status": "proposed_thresholds_lock_before_campaign",
+    "static_families": 6,
+    "development_programs_per_family": 2,
+    "acceptance_programs_per_family": 1,
+    "minimum_exercised_sizes": {
+      "state_slots": 4,
+      "array_length": 8,
+      "string_bytes": 64,
+      "live_instances": 16,
+      "loop_iterations": 32
+    },
+    "fresh_seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "historical_seed_controls": [
+      404
+    ],
+    "required_fresh_certifications": 4,
+    "training_cpu_seconds_per_candidate": 600,
+    "proof_cpu_seconds_per_candidate": 600,
+    "peak_bytes_per_candidate": 4294967296,
+    "total_build_seconds_per_program": 7200,
+    "local_accepted_operation_p95_ms": 5,
+    "maximum_equivalent_baseline_ratio": 10,
+    "resident_runtime_bytes": 1073741824,
+    "deployed_component_bundle_bytes": 26214400,
+    "cold_verification_activation_seconds": 5,
+    "discovery_selection_queries": 50,
+    "discovery_held_out_queries": 50,
+    "discovery_recall_at_3": 0.9,
+    "allowed_incorrect_accepted_transitions": 0,
+    "allowed_unauthorized_invocations_or_disclosures": 0,
+    "full_brief_requires_direct_authorship": true
+  }
+}

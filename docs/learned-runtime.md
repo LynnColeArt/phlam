@@ -11,6 +11,12 @@ Warm checking still evaluates zero contract arithmetic/predicates. Matched
 runtime ranges overlap and establish no speed improvement. Learned planning
 and unbounded equivalence remain unproven.
 
+The [broad-feasibility plan](broad-feasibility-plan.md) defines the remaining
+acceptance profile, training/proof budgets, richer program corpus and systems
+gates. Bounded execution is established; broad compiler/application feasibility
+and full-brief research feasibility remain unresolved. Its first implementation
+slice is the [general build pipeline](broad-feasibility-next-slice.md).
+
 ## Architectural destination
 
 Source -> frontend -> semantic contracts + reference traces -> training -> frozen

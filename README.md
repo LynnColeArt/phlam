@@ -8,6 +8,17 @@ execution; independent exact contracts, primitives and effect gates preserve
 correctness. ASTs and graph IR support compilation, training and baselines.
 They are not the target deployed runtime.
 
+## Broad-feasibility roadmap
+
+The [broad-feasibility plan](docs/broad-feasibility-plan.md) separates established
+bounded execution from the remaining compiler/application and full-brief research
+questions. It defines ten implementation gates, budgets, acceptance/failure
+criteria and the final development-only authorship experiment. The
+[first slice](docs/broad-feasibility-next-slice.md) is a reusable build/freeze/run
+pipeline; the [gate ledger](docs/feasibility-gates.json) currently records all new
+implementation gates as not started. This is a plan, not a completed feasibility
+claim.
+
 ## Current state
 
 The Go frontend parses Counter and emits deterministic ASTs and diagnostics.
