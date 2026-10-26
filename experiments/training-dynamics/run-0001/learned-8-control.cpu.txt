@@ -1,0 +1,34 @@
+File: phlame-components-profile
+Build ID: 4bead0da490197e263f57a8639750a201e5991dd
+Type: cpu
+Time: 2026-10-26 00:02:53 CDT
+Duration: 3.56s, Total samples = 3.53s (99.16%)
+Showing nodes accounting for 2.71s, 76.77% of 3.53s total
+Dropped 61 nodes (cum <= 0.02s)
+Showing top 25 nodes out of 101
+      flat  flat%   sum%        cum   cum%
+     0.55s 15.58% 15.58%      3.47s 98.30%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+     0.52s 14.73% 30.31%      0.60s 17.00%  github.com/LynnColeArt/phlam/runtime/components.Model.Predict
+     0.17s  4.82% 35.13%      0.23s  6.52%  internal/runtime/maps.(*Iter).Next
+     0.15s  4.25% 39.38%      0.15s  4.25%  aeshashbody
+     0.15s  4.25% 43.63%      0.27s  7.65%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+     0.12s  3.40% 47.03%      0.80s 22.66%  github.com/LynnColeArt/phlam/runtime/components.predict
+     0.12s  3.40% 50.42%      0.26s  7.37%  internal/runtime/maps.(*Map).putSlotSmallFastStr
+     0.11s  3.12% 53.54%      0.18s  5.10%  runtime.tryDeferToSpanScan
+     0.08s  2.27% 55.81%      0.08s  2.27%  math.archMax
+     0.08s  2.27% 58.07%      0.08s  2.27%  runtime.nextFreeFast (inline)
+     0.06s  1.70% 59.77%      0.08s  2.27%  github.com/LynnColeArt/phlam/runtime/components.Decode
+     0.06s  1.70% 61.47%      0.59s 16.71%  runtime.mapassign_faststr
+     0.05s  1.42% 62.89%      0.14s  3.97%  gcWriteBarrier
+     0.05s  1.42% 64.31%      0.05s  1.42%  runtime.(*mspan).writeHeapBitsSmall
+     0.05s  1.42% 65.72%      0.25s  7.08%  runtime.growslice
+     0.05s  1.42% 67.14%      0.49s 13.88%  runtime.mallocgcSmallScanNoHeader
+     0.05s  1.42% 68.56%      0.05s  1.42%  runtime.memclrNoHeapPointers
+     0.04s  1.13% 69.69%      0.09s  2.55%  internal/runtime/maps.(*Iter).Init
+     0.04s  1.13% 70.82%      0.04s  1.13%  internal/runtime/maps.(*groupReference).key (inline)
+     0.04s  1.13% 71.95%      0.04s  1.13%  internal/runtime/maps.ctrlGroup.matchH2 (inline)
+     0.04s  1.13% 73.09%      3.52s 99.72%  main.run
+     0.04s  1.13% 74.22%      0.17s  4.82%  runtime.wbBufFlush1
+     0.03s  0.85% 75.07%      0.03s  0.85%  internal/runtime/maps.h2 (inline)
+     0.03s  0.85% 75.92%      0.03s  0.85%  memeqbody
+     0.03s  0.85% 76.77%      0.05s  1.42%  runtime.heapArenaOf (inline)

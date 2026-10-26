@@ -1,0 +1,13 @@
+File: phlame-components-profile
+Build ID: 4bead0da490197e263f57a8639750a201e5991dd
+Type: alloc_space
+Time: 2026-10-26 00:03:03 CDT
+Showing nodes accounting for 1182.84MB, 99.56% of 1188.04MB total
+Dropped 27 nodes (cum <= 5.94MB)
+      flat  flat%   sum%        cum   cum%
+  671.24MB 56.50% 56.50%   671.24MB 56.50%  github.com/LynnColeArt/phlam/runtime/components.cloneInstances (inline)
+  510.07MB 42.93% 99.43%  1181.31MB 99.43%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+    1.53MB  0.13% 99.56%  1186.63MB 99.88%  main.run
+         0     0% 99.56%  1178.81MB 99.22%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).RunUninstrumented
+         0     0% 99.56%  1186.63MB 99.88%  main.main
+         0     0% 99.56%  1186.63MB 99.88%  runtime.main

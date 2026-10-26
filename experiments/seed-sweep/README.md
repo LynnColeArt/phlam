@@ -28,6 +28,10 @@ transaction restores original state and publishes no staged returns or writes.
 An 8-unit/lookup control comparison separately preserves all 224 supported
 successes and 526 domain rollbacks, with identical exact checker work.
 
+A later [training-dynamics study](../training-dynamics/README.md) reproduces
+these failures and tests two fixed initialization interventions. Its centered
+4-unit treatment certifies; the negative seed sweep below remains unchanged.
+
 ## Reproduce
 
 From the repository root, with Go and Python 3:

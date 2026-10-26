@@ -1,0 +1,34 @@
+File: phlame-components-profile
+Build ID: 4bead0da490197e263f57a8639750a201e5991dd
+Type: cpu
+Time: 2026-10-26 00:02:57 CDT
+Duration: 2.74s, Total samples = 2.75s (100.40%)
+Showing nodes accounting for 2.11s, 76.73% of 2.75s total
+Dropped 44 nodes (cum <= 0.01s)
+Showing top 25 nodes out of 92
+      flat  flat%   sum%        cum   cum%
+     0.38s 13.82% 13.82%      0.39s 14.18%  github.com/LynnColeArt/phlam/runtime/components.(*Expr).eval
+     0.28s 10.18% 24.00%      2.62s 95.27%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+     0.18s  6.55% 30.55%      0.27s  9.82%  internal/runtime/maps.(*Iter).Next
+     0.15s  5.45% 36.00%      0.15s  5.45%  aeshashbody
+     0.12s  4.36% 40.36%      0.51s 18.55%  github.com/LynnColeArt/phlam/runtime/components.Operation.Evaluate
+     0.11s  4.00% 44.36%      0.57s 20.73%  runtime.mapassign_faststr
+     0.11s  4.00% 48.36%      0.16s  5.82%  runtime.tryDeferToSpanScan
+     0.07s  2.55% 50.91%      0.13s  4.73%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+     0.07s  2.55% 53.45%      2.74s 99.64%  main.run
+     0.07s  2.55% 56.00%      0.07s  2.55%  runtime.memclrNoHeapPointers
+     0.06s  2.18% 58.18%      0.06s  2.18%  runtime.(*mspan).writeHeapBitsSmall
+     0.06s  2.18% 60.36%      0.47s 17.09%  runtime.mallocgcSmallScanNoHeader
+     0.05s  1.82% 62.18%      0.12s  4.36%  internal/runtime/maps.(*Map).putSlotSmallFastStr
+     0.05s  1.82% 64.00%      0.05s  1.82%  runtime.rand
+     0.04s  1.45% 65.45%      0.04s  1.45%  internal/runtime/maps.(*groupReference).key (inline)
+     0.04s  1.45% 66.91%      0.04s  1.45%  runtime.nextFreeFast (inline)
+     0.04s  1.45% 68.36%      0.23s  8.36%  runtime.wbBufFlush1
+     0.03s  1.09% 69.45%      0.03s  1.09%  github.com/LynnColeArt/phlam/runtime/components.phaseStart (inline)
+     0.03s  1.09% 70.55%      0.03s  1.09%  runtime.(*mspan).base (inline)
+     0.03s  1.09% 71.64%      0.04s  1.45%  runtime.(*spanSet).push
+     0.03s  1.09% 72.73%      0.04s  1.45%  runtime.findObject
+     0.03s  1.09% 73.82%      0.24s  8.73%  runtime.growslice
+     0.03s  1.09% 74.91%      0.58s 21.09%  runtime.mallocgc
+     0.03s  1.09% 76.00%      0.08s  2.91%  runtime.mapaccess1_fast64
+     0.02s  0.73% 76.73%      0.15s  5.45%  gcWriteBarrier

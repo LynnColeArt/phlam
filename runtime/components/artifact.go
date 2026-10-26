@@ -14,6 +14,8 @@ import (
 )
 
 type Artifact struct {
+	Initialization     string   `json:"training_initialization,omitempty"`
+	PrefitEpochs       int      `json:"prefit_epochs,omitempty"`
 	VerificationHash   string   `json:"oracle_domain_sha256"`
 	Schema             string   `json:"schema"`
 	ABI                string   `json:"abi"`
@@ -115,6 +117,18 @@ func PublicKey(path string) (ed25519.PublicKey, error) {
 func ValidateArtifact(a Artifact) error {
 	if a.Schema != "phlame.scalar-module.v0" || a.ABI != ABI {
 		return fmt.Errorf("unknown module schema or ABI")
+	}
+	switch a.Initialization {
+	case "", "legacy", "paired-centered":
+		if a.PrefitEpochs != 0 {
+			return fmt.Errorf("unexpected prefit epoch count")
+		}
+	case "paired-affine":
+		if a.PrefitEpochs != Epochs {
+			return fmt.Errorf("invalid affine prefit lineage")
+		}
+	default:
+		return fmt.Errorf("unknown training initialization")
 	}
 	d := a.Domain
 	if d.StateMin < -64 || d.StateMax > 64 || d.StateMin > d.StateMax || d.ArgMin < -16 || d.ArgMax > 16 || d.ArgMin > d.ArgMax {

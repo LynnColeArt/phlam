@@ -191,14 +191,16 @@ func testSourceFreeGenericWorker(t *testing.T, artifacts map[string]abi.Artifact
 
 func TestLearnedSaturatingBranchesCompositionsAndRollback(t *testing.T) {
 	for _, width := range []int{8, 16} {
-		t.Run(fmt.Sprintf("width-%d", width), func(t *testing.T) { testSaturatingBranches(t, width) })
+		t.Run(fmt.Sprintf("width-%d", width), func(t *testing.T) { testSaturatingBranches(t, width, "legacy") })
 	}
+	t.Run("width-4-paired-centered", func(t *testing.T) { testSaturatingBranches(t, 4, "paired-centered") })
 }
-func testSaturatingBranches(t *testing.T, width int) {
+func testSaturatingBranches(t *testing.T, width int, initialization string) {
 	artifacts := map[string]abi.Artifact{}
 	source := ""
 	cfg := branchingConfig()
 	cfg.HiddenWidth = width
+	cfg.Initialization = initialization
 	cfgs := []config{configs[0], cfg}
 	for _, c := range cfgs {
 		c.Source = "../../" + c.Source

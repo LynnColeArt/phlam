@@ -50,6 +50,13 @@ artifact and counterexample is retained. The unchanged 8-unit model remains the
 smallest established success. Failed models publish no certified transactions,
 and concrete checking preserves safe partial coverage and rollback.
 
+[Training-dynamics investigation](experiments/training-dynamics/README.md)
+reproduces the failure and finds a certifiable **4-unit, 47-parameter model** by
+centering and pairing random initial directions. It preserves all 594 primitive
+transitions, 224 supported compositions and 526 rollbacks. Two-unit treatments
+still fail. Logged gradients pass independent checks; timing remains noisy and
+lookup retains the lowest median.
+
 Certified learned execution is faster than concrete checking in the saturation run, but
 lookup remains faster. Supplied schedules are not learned planning. The
 [earlier Counter composition study](experiments/counter-compositions/README.md)

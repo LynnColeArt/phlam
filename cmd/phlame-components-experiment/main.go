@@ -32,15 +32,17 @@ type config struct {
 	StateStride, ArgStride int64
 	Branching              bool
 	HiddenWidth            int
+	Initialization         string
+	CaptureDynamics        bool
 }
 
 var configs = []config{
-	{"counter", "Counter", "examples/counter/counter.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -4, ArgMax: 4}, 101, 8, 2, false, 0},
-	{"accumulator", "Accumulator", "examples/accumulator/accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 202, 4, 4, false, 0},
+	{"counter", "Counter", "examples/counter/counter.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -4, ArgMax: 4}, 101, 8, 2, false, 0, "legacy", false},
+	{"accumulator", "Accumulator", "examples/accumulator/accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 202, 4, 4, false, 0, "legacy", false},
 }
 
 func branchingConfig() config {
-	return config{"accumulator", "SaturatingAccumulator", "examples/saturating-accumulator/saturating-accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 404, 2, 4, true, abi.BranchWidth}
+	return config{"accumulator", "SaturatingAccumulator", "examples/saturating-accumulator/saturating-accumulator.phlam", abi.Domain{StateMin: -16, StateMax: 16, ArgMin: -8, ArgMax: 8}, 404, 2, 4, true, abi.BranchWidth, "legacy", false}
 }
 
 type primitive struct {
@@ -82,30 +84,33 @@ func rawPredictions(a abi.Artifact, observations []primitive) []rawPrediction {
 }
 
 type moduleReport struct {
-	RawPredictionsHash     string         `json:"raw_predictions_sha256"`
-	HiddenWidth            int            `json:"hidden_width"`
-	ModelKind              string         `json:"model_kind"`
-	MaxHeldoutIntegerError float64        `json:"max_heldout_integer_score_error"`
-	RawTrainingCorrect     int            `json:"raw_training_correct"`
-	RawHeldoutCorrect      int            `json:"raw_heldout_correct"`
-	HeldoutCases           int            `json:"heldout_cases"`
-	BranchCorrect          map[string]int `json:"raw_branch_correct"`
-	BranchCases            map[string]int `json:"branch_cases"`
-	AffineHeldoutCorrect   int            `json:"affine_baseline_heldout_correct"`
-	Parameters             int            `json:"learned_parameters"`
-	SourceHash             string         `json:"source_sha256"`
-	Root                   string         `json:"module_sha256"`
-	TrainingHash           string         `json:"training_sha256"`
-	VerificationHash       string         `json:"oracle_domain_sha256"`
-	Seed                   int64          `json:"seed"`
-	TrainingSamples        int            `json:"training_samples"`
-	PrimitiveCases         int            `json:"primitive_cases"`
-	RejectedInputs         int            `json:"source_rejected_inputs"`
-	InitialLoss            float64        `json:"initial_mse"`
-	FinalLoss              float64        `json:"final_mse"`
-	TrainingNS             int64          `json:"training_ns"`
-	BitIdentical           bool           `json:"bit_identical_retraining"`
-	Bytes                  int            `json:"artifact_bytes"`
+	Initialization         string                 `json:"training_initialization"`
+	PrefitEpochs           int                    `json:"prefit_epochs"`
+	Dynamics               []abi.TrainingSnapshot `json:"training_dynamics,omitempty"`
+	RawPredictionsHash     string                 `json:"raw_predictions_sha256"`
+	HiddenWidth            int                    `json:"hidden_width"`
+	ModelKind              string                 `json:"model_kind"`
+	MaxHeldoutIntegerError float64                `json:"max_heldout_integer_score_error"`
+	RawTrainingCorrect     int                    `json:"raw_training_correct"`
+	RawHeldoutCorrect      int                    `json:"raw_heldout_correct"`
+	HeldoutCases           int                    `json:"heldout_cases"`
+	BranchCorrect          map[string]int         `json:"raw_branch_correct"`
+	BranchCases            map[string]int         `json:"branch_cases"`
+	AffineHeldoutCorrect   int                    `json:"affine_baseline_heldout_correct"`
+	Parameters             int                    `json:"learned_parameters"`
+	SourceHash             string                 `json:"source_sha256"`
+	Root                   string                 `json:"module_sha256"`
+	TrainingHash           string                 `json:"training_sha256"`
+	VerificationHash       string                 `json:"oracle_domain_sha256"`
+	Seed                   int64                  `json:"seed"`
+	TrainingSamples        int                    `json:"training_samples"`
+	PrimitiveCases         int                    `json:"primitive_cases"`
+	RejectedInputs         int                    `json:"source_rejected_inputs"`
+	InitialLoss            float64                `json:"initial_mse"`
+	FinalLoss              float64                `json:"final_mse"`
+	TrainingNS             int64                  `json:"training_ns"`
+	BitIdentical           bool                   `json:"bit_identical_retraining"`
+	Bytes                  int                    `json:"artifact_bytes"`
 }
 type observation struct {
 	Events           []trace.Event           `json:"source_trace_events,omitempty"`
@@ -335,11 +340,16 @@ func trainModule(c config, implementation string) (abi.Artifact, []abi.Sample, [
 	info.TrainingSamples = len(samples)
 	info.PrimitiveCases = len(observed)
 	start := time.Now()
+	capture := true
 	trainer := abi.Train
 	epochs := abi.Epochs
 	if c.Branching {
 		trainer = func(samples []abi.Sample, count int, seed int64) (abi.Model, float64, float64, error) {
-			return abi.TrainBranchingWidth(samples, count, seed, c.HiddenWidth)
+			var observe func(abi.TrainingSnapshot)
+			if c.CaptureDynamics && capture {
+				observe = func(s abi.TrainingSnapshot) { info.Dynamics = append(info.Dynamics, s) }
+			}
+			return abi.TrainBranchingObserved(samples, count, seed, c.HiddenWidth, c.Initialization, observe)
 		}
 		epochs = abi.BranchEpochs
 	}
@@ -348,6 +358,7 @@ func trainModule(c config, implementation string) (abi.Artifact, []abi.Sample, [
 	if err != nil {
 		return abi.Artifact{}, nil, nil, info, err
 	}
+	capture = false
 	again, _, _, err := trainer(samples, len(contract.Operations), c.Seed)
 	if err != nil {
 		return abi.Artifact{}, nil, nil, info, err
@@ -356,6 +367,16 @@ func trainModule(c config, implementation string) (abi.Artifact, []abi.Sample, [
 	info.InitialLoss = initial
 	info.FinalLoss = final
 	artifact := abi.Artifact{Schema: "phlame.scalar-module.v0", ABI: abi.ABI, Contract: contract, Domain: c.Domain, Model: model, Seed: c.Seed, Epochs: epochs, TrainingHash: info.TrainingHash, VerificationHash: info.VerificationHash, ImplementationHash: implementation, Toolchain: runtime.Version()}
+	if c.Branching {
+		info.Initialization = c.Initialization
+		if c.Initialization != "legacy" {
+			artifact.Initialization = c.Initialization
+		}
+		if c.Initialization == "paired-affine" {
+			artifact.PrefitEpochs = abi.Epochs
+			info.PrefitEpochs = abi.Epochs
+		}
+	}
 	info.Parameters = 0
 	for _, row := range append(append([][]float64{}, model.Hidden...), model.Weights...) {
 		info.Parameters += len(row)
@@ -641,13 +662,18 @@ func summarize(w response, observations []observation) (engineReport, error) {
 }
 func run() error {
 	branching := flag.Bool("branching", false, "train the saturating accumulator with a ReLU executor")
+	initialization := flag.String("branch-init", "legacy", "legacy, paired-centered or paired-affine")
+	dynamics := flag.Bool("training-dynamics", false, "capture training-only activation/gradient checkpoints")
 	branchSeed := flag.Int64("branch-seed", 404, "saturating model training seed")
 	hiddenWidth := flag.Int("hidden-width", abi.BranchWidth, "hidden units for the saturating model, 1..32")
 	output := flag.String("out", "", "new result directory")
 	workerPath := flag.String("worker", "bin/phlame-components-worker", "source-free worker")
 	repeats := flag.Int("repeats", 10, "timing repetitions")
 	flag.Parse()
-	if !*branching && *branchSeed != 404 {
+	if *initialization != "legacy" && *initialization != "paired-centered" && *initialization != "paired-affine" {
+		return fmt.Errorf("unknown branch-init")
+	}
+	if !*branching && (*branchSeed != 404 || *initialization != "legacy" || *dynamics) {
 		return fmt.Errorf("branch-seed requires branching")
 	}
 	if *hiddenWidth < 1 || *hiddenWidth > 32 || !*branching && *hiddenWidth != abi.BranchWidth {
@@ -663,6 +689,8 @@ func run() error {
 		c := branchingConfig()
 		c.HiddenWidth = *hiddenWidth
 		c.Seed = *branchSeed
+		c.Initialization = *initialization
+		c.CaptureDynamics = *dynamics
 		configs = []config{configs[0], c}
 	}
 	if *repeats < 1 || *repeats > 100 {

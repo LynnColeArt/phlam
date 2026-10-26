@@ -1,14 +1,16 @@
 # Learned runtime: first experiment contract
 
 Status: bounded numerical, composition, independent-component, nonlinear
-saturation, profiling, smaller-model and seed-sweep experiments implemented,
-2026-10-25. The newest [seed sweep](../experiments/seed-sweep/run-0001/REPORT.md)
-freezes and tests widths 2 and 4 with nine predeclared seeds each. None certifies;
-all artifacts and failures are retained. The 8-unit, 79-parameter model remains
-the smallest established success, with 224 supported compositions and 526 domain
-rollbacks. These failures establish no minimum representational capacity.
-Certified checking retains zero warm contract arithmetic/predicates. Learned
-planning, richer control flow and unbounded equivalence remain unproven.
+saturation, profiling, size/seed and training-dynamics experiments implemented,
+2026-10-26. The newest [initialization study](../experiments/training-dynamics/run-0001/REPORT.md)
+reproduces legacy training failures and obtains a certifiable 4-unit,
+47-parameter model from centered, opposing random directions. All 594 primitive
+inputs, 224 supported compositions and 526 domain rollbacks retain exact decoded
+behavior. Two-unit treatments still fail; no minimum possible width is proved.
+Warm checking still evaluates zero contract arithmetic/predicates. Timing is
+noisy and establishes no clear speed improvement over the 8-unit control;
+lookup retains the lowest median. Learned planning and unbounded equivalence
+remain unproven.
 
 ## Architectural destination
 
@@ -265,6 +267,24 @@ controls, with separate startup, checker and application measurements. No failed
 candidate's short rejection path is presented as a successful-execution speedup.
 The domain and checker remain unchanged. Candidate selection uses certification
 inputs and claims no independent seed-selection test set.
+
+## Training dynamics and initialization
+
+At fixed seed 404, passive checkpoints reproduce historical 2-, 4- and 8-unit
+weights exactly. Legacy low-width failures lose useful nonlinear boundaries;
+being dead at initialization is not the sole explanation. An offline audit
+recomputes activation counts, MSE and gradients and checks legacy initialization
+derivatives by finite differences. It does not feed back into training.
+
+Two bounded initialization interventions retain training examples and joint
+optimizer settings. Centered opposing random directions certify with four units
+and no extra optimization budget. An affine-prefit variant also certifies four
+units but explicitly adds 12,000 linear fitting epochs before joint training.
+Both two-unit treatments fail. The selected first certifying treatment is frozen
+and independently recertified source-free, with full source/lookup comparisons,
+atomic rollback and separate checker measurements. Initializer/prefit provenance
+is signed metadata; runtime inference is unchanged. Selection uses certification
+data and demonstrates no universal optimizer or capacity result.
 
 ## Evaluation and falsification
 
