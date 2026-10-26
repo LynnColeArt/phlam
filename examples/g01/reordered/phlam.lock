@@ -1,0 +1,9 @@
+{
+  "schema": "phlame.lock.v0",
+  "files": {
+    "counter.phlam": "054cca58b574c5b13f6329fdcb9b84ab92974b8afe5ea4b50e3506dea2dddeac",
+    "accumulator.phlam": "36972a0f0f60d1d78584220801519c112b8433efc88c79f4899601409be2a512",
+    "saturating.phlam": "d1b2ea5bd91b0d8f07210164d8f37c9265fc315df5e9b45e5407ae1164133d6d",
+    "training.json": "9a19186a3e9aed193212029df28e821b3677ee14b527ed049e3fa082a04bac52"
+  }
+}

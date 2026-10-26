@@ -41,12 +41,13 @@ func Compile(source, className string) (contract abi.Contract, err error) {
 	if class == nil {
 		return contract, fmt.Errorf("class not found")
 	}
+	at := class
 	contract = abi.Contract{Class: class.Name, Purpose: class.Text, SourceHash: program.SourceHash, Operations: []abi.Operation{}}
 	defer func() {
 		if r := recover(); r != nil {
 			if e, ok := r.(compileError); ok {
 				contract = abi.Contract{}
-				err = fmt.Errorf("component contract: %s", e)
+				err = &frontend.Diagnostic{Code: "B_UNSUPPORTED", Message: fmt.Sprintf("component contract: %s", e), Hint: "G01 supports the declared scalar subset; unsupported behavior is not interpreted as learned execution", Span: at.Span}
 			} else {
 				panic(r)
 			}
@@ -55,6 +56,7 @@ func Compile(source, className string) (contract abi.Contract, err error) {
 	propertyCount := 0
 	var init *frontend.Node
 	for _, n := range class.Children {
+		at = n
 		if n.Kind == "property" {
 			propertyCount++
 			contract.Slot = n.Name
@@ -77,6 +79,7 @@ func Compile(source, className string) (contract abi.Contract, err error) {
 		if method.Kind != "method" || method.Name == "init" {
 			continue
 		}
+		at = method
 		arity := len(method.Children) - 1
 		if arity > 1 {
 			panic(compileError("at most one integer argument per operation"))
@@ -92,6 +95,7 @@ func Compile(source, className string) (contract abi.Contract, err error) {
 		exprDepth := 0
 		var expr func(*frontend.Node, *symbolic) *abi.Expr
 		expr = func(n *frontend.Node, p *symbolic) *abi.Expr {
+			at = n
 			exprDepth++
 			defer func() { exprDepth-- }()
 			if exprDepth > 32 {
@@ -143,6 +147,7 @@ func Compile(source, className string) (contract abi.Contract, err error) {
 		var block func([]*frontend.Node, []symbolic) []symbolic
 		block = func(statements []*frontend.Node, paths []symbolic) []symbolic {
 			for _, s := range statements {
+				at = s
 				if len(op.Paths)+len(paths) > 16 {
 					panic(compileError("path budget exceeded"))
 				}

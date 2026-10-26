@@ -1,0 +1,708 @@
+{
+  "behavior_sha256": "ed3bbbaf9837845f61f768bee27a1f316904c6ad966ee8519dac16ea45a1f11c",
+  "deployment_sha256": {
+    "accumulator.json": "82d121bd67224948408a221004f15f51701631c498acc8538d5e7c8db9a0008e",
+    "bundle.json": "2536f9af65cf73b6c01778d826e62a28e31213584426517774adaba4d7562d62",
+    "counter.json": "2c5531c06d48eb77973eacf067c5339f33d4700d52ca4c7785ecffbf34ee7d6c",
+    "saturating.json": "8f7e3ee85d0d55aa9f3336d2b411094c232026018be97bad2f3470e757b3ac00"
+  },
+  "metrics": {
+    "learned/certified/clocks=False": {
+      "accepted": 1447,
+      "cases": 1526,
+      "certificates": {
+        "accumulator": {
+          "accepted_inputs": 522,
+          "build_ns": 403105,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 36261,
+            "integer_arithmetic": 4200,
+            "output_comparisons": 1566,
+            "predicates": 12831
+          },
+          "contract_rejected_inputs": 72,
+          "key": "605c4e4c416502cb95ea4418605331adac7bfaf898abf2606d44c0f46d378218",
+          "module_sha256": "dcff389b2ac1e1e98b559dbf1a1b17936e5c723f3a037056b620cba7daa745fc"
+        },
+        "counter": {
+          "accepted_inputs": 330,
+          "build_ns": 92389,
+          "cases": 330,
+          "certified": true,
+          "checker_work": {
+            "expressions": 3960,
+            "integer_arithmetic": 1188,
+            "output_comparisons": 990,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "5a58618ab382f9e5647a42a1eebb01bc876f4ddab7f5cb79594b0f6c378ad98b",
+          "module_sha256": "56006442b8d60c18e49b7fa7e5adf2c876ab87347b40385fbb60c4166eb2fa46"
+        },
+        "saturating": {
+          "accepted_inputs": 594,
+          "build_ns": 276366,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 26199,
+            "integer_arithmetic": 4761,
+            "output_comparisons": 1782,
+            "predicates": 7185
+          },
+          "contract_rejected_inputs": 0,
+          "key": "851df75b11e5166974c4597334ece257c0fa17a5810f33d31d4c75f85f531abc",
+          "module_sha256": "b331434c49fabbf8cdb0f99a847cc1b5a0fcd124d4e634b5842584f425baff2e"
+        }
+      },
+      "checker_relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "entry_check_ns_mean": 0,
+      "entry_checks": {
+        "entry_comparisons": 8155,
+        "instance_bindings": 7645,
+        "step_targets": 7650
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_mean_ns": {
+        "binding_ns": 0,
+        "checker_ns": 0,
+        "commit_ns": 0,
+        "overhead_ns": 0,
+        "proposal_ns": 0,
+        "total_ns": 0
+      },
+      "rejected": 79,
+      "runtime_load_ns": 1017287,
+      "source_free_files": [
+        "accumulator.json",
+        "bundle.json",
+        "counter.json",
+        "runtime",
+        "saturating.json",
+        "trusted-key.hex"
+      ]
+    },
+    "learned/certified/clocks=True": {
+      "accepted": 1447,
+      "cases": 1526,
+      "certificates": {
+        "accumulator": {
+          "accepted_inputs": 522,
+          "build_ns": 397744,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 36261,
+            "integer_arithmetic": 4200,
+            "output_comparisons": 1566,
+            "predicates": 12831
+          },
+          "contract_rejected_inputs": 72,
+          "key": "605c4e4c416502cb95ea4418605331adac7bfaf898abf2606d44c0f46d378218",
+          "module_sha256": "dcff389b2ac1e1e98b559dbf1a1b17936e5c723f3a037056b620cba7daa745fc"
+        },
+        "counter": {
+          "accepted_inputs": 330,
+          "build_ns": 91489,
+          "cases": 330,
+          "certified": true,
+          "checker_work": {
+            "expressions": 3960,
+            "integer_arithmetic": 1188,
+            "output_comparisons": 990,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "5a58618ab382f9e5647a42a1eebb01bc876f4ddab7f5cb79594b0f6c378ad98b",
+          "module_sha256": "56006442b8d60c18e49b7fa7e5adf2c876ab87347b40385fbb60c4166eb2fa46"
+        },
+        "saturating": {
+          "accepted_inputs": 594,
+          "build_ns": 364705,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 26199,
+            "integer_arithmetic": 4761,
+            "output_comparisons": 1782,
+            "predicates": 7185
+          },
+          "contract_rejected_inputs": 0,
+          "key": "851df75b11e5166974c4597334ece257c0fa17a5810f33d31d4c75f85f531abc",
+          "module_sha256": "b331434c49fabbf8cdb0f99a847cc1b5a0fcd124d4e634b5842584f425baff2e"
+        }
+      },
+      "checker_relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "entry_check_ns_mean": 145.31874180865006,
+      "entry_checks": {
+        "entry_comparisons": 8155,
+        "instance_bindings": 7645,
+        "step_targets": 7650
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_mean_ns": {
+        "binding_ns": 59.415989515072084,
+        "checker_ns": 154.21048492791613,
+        "commit_ns": 102.84311926605504,
+        "overhead_ns": 991.2777195281783,
+        "proposal_ns": 106.02450851900393,
+        "total_ns": 1413.7718217562253
+      },
+      "rejected": 79,
+      "runtime_load_ns": 967947,
+      "source_free_files": [
+        "accumulator.json",
+        "bundle.json",
+        "counter.json",
+        "runtime",
+        "saturating.json",
+        "trusted-key.hex"
+      ]
+    },
+    "learned/concrete/clocks=False": {
+      "accepted": 1447,
+      "cases": 1526,
+      "certificates": {
+        "accumulator": {
+          "accepted_inputs": 0,
+          "build_ns": 255106,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "605c4e4c416502cb95ea4418605331adac7bfaf898abf2606d44c0f46d378218",
+          "module_sha256": "dcff389b2ac1e1e98b559dbf1a1b17936e5c723f3a037056b620cba7daa745fc"
+        },
+        "counter": {
+          "accepted_inputs": 0,
+          "build_ns": 41820,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "5a58618ab382f9e5647a42a1eebb01bc876f4ddab7f5cb79594b0f6c378ad98b",
+          "module_sha256": "56006442b8d60c18e49b7fa7e5adf2c876ab87347b40385fbb60c4166eb2fa46"
+        },
+        "saturating": {
+          "accepted_inputs": 0,
+          "build_ns": 98718,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "851df75b11e5166974c4597334ece257c0fa17a5810f33d31d4c75f85f531abc",
+          "module_sha256": "b331434c49fabbf8cdb0f99a847cc1b5a0fcd124d4e634b5842584f425baff2e"
+        }
+      },
+      "checker_relations": {
+        "expressions": 333010,
+        "integer_arithmetic": 50890,
+        "output_comparisons": 21765,
+        "predicates": 100325
+      },
+      "entry_check_ns_mean": 0,
+      "entry_checks": {
+        "entry_comparisons": 8155,
+        "instance_bindings": 7645,
+        "step_targets": 7650
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_mean_ns": {
+        "binding_ns": 0,
+        "checker_ns": 0,
+        "commit_ns": 0,
+        "overhead_ns": 0,
+        "proposal_ns": 0,
+        "total_ns": 0
+      },
+      "rejected": 79,
+      "runtime_load_ns": 967727,
+      "source_free_files": [
+        "accumulator.json",
+        "bundle.json",
+        "counter.json",
+        "runtime",
+        "saturating.json",
+        "trusted-key.hex"
+      ]
+    },
+    "learned/concrete/clocks=True": {
+      "accepted": 1447,
+      "cases": 1526,
+      "certificates": {
+        "accumulator": {
+          "accepted_inputs": 0,
+          "build_ns": 243097,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "605c4e4c416502cb95ea4418605331adac7bfaf898abf2606d44c0f46d378218",
+          "module_sha256": "dcff389b2ac1e1e98b559dbf1a1b17936e5c723f3a037056b620cba7daa745fc"
+        },
+        "counter": {
+          "accepted_inputs": 0,
+          "build_ns": 50899,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "5a58618ab382f9e5647a42a1eebb01bc876f4ddab7f5cb79594b0f6c378ad98b",
+          "module_sha256": "56006442b8d60c18e49b7fa7e5adf2c876ab87347b40385fbb60c4166eb2fa46"
+        },
+        "saturating": {
+          "accepted_inputs": 0,
+          "build_ns": 97219,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "851df75b11e5166974c4597334ece257c0fa17a5810f33d31d4c75f85f531abc",
+          "module_sha256": "b331434c49fabbf8cdb0f99a847cc1b5a0fcd124d4e634b5842584f425baff2e"
+        }
+      },
+      "checker_relations": {
+        "expressions": 333010,
+        "integer_arithmetic": 50890,
+        "output_comparisons": 21765,
+        "predicates": 100325
+      },
+      "entry_check_ns_mean": 133.8519003931848,
+      "entry_checks": {
+        "entry_comparisons": 8155,
+        "instance_bindings": 7645,
+        "step_targets": 7650
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_mean_ns": {
+        "binding_ns": 56.050720838794234,
+        "checker_ns": 295.7138925294889,
+        "commit_ns": 103.2427260812582,
+        "overhead_ns": 1004.1104849279161,
+        "proposal_ns": 102.48374836173001,
+        "total_ns": 1561.6015727391875
+      },
+      "rejected": 79,
+      "runtime_load_ns": 954797,
+      "source_free_files": [
+        "accumulator.json",
+        "bundle.json",
+        "counter.json",
+        "runtime",
+        "saturating.json",
+        "trusted-key.hex"
+      ]
+    },
+    "lookup/certified/clocks=False": {
+      "accepted": 1447,
+      "cases": 1526,
+      "certificates": {
+        "accumulator": {
+          "accepted_inputs": 522,
+          "build_ns": 457324,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 36261,
+            "integer_arithmetic": 4200,
+            "output_comparisons": 1566,
+            "predicates": 12831
+          },
+          "contract_rejected_inputs": 72,
+          "key": "39347ebae4a657ff9f4c80c176e71032c104fd7c09cfb9f5058ae3defd40220a",
+          "module_sha256": "dcff389b2ac1e1e98b559dbf1a1b17936e5c723f3a037056b620cba7daa745fc"
+        },
+        "counter": {
+          "accepted_inputs": 330,
+          "build_ns": 92658,
+          "cases": 330,
+          "certified": true,
+          "checker_work": {
+            "expressions": 3960,
+            "integer_arithmetic": 1188,
+            "output_comparisons": 990,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "64b97f59b89e5402b09d281eb0de85001dafab0124281613cfcf90270fe25a9c",
+          "module_sha256": "56006442b8d60c18e49b7fa7e5adf2c876ab87347b40385fbb60c4166eb2fa46"
+        },
+        "saturating": {
+          "accepted_inputs": 594,
+          "build_ns": 349456,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 26199,
+            "integer_arithmetic": 4761,
+            "output_comparisons": 1782,
+            "predicates": 7185
+          },
+          "contract_rejected_inputs": 0,
+          "key": "bc4f2c96370f8bd7b1355f9fe5f3d197ff81b49130801966b625b64354bafca2",
+          "module_sha256": "b331434c49fabbf8cdb0f99a847cc1b5a0fcd124d4e634b5842584f425baff2e"
+        }
+      },
+      "checker_relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "entry_check_ns_mean": 0,
+      "entry_checks": {
+        "entry_comparisons": 8155,
+        "instance_bindings": 7645,
+        "step_targets": 7650
+      },
+      "lookup_application_work": {
+        "expressions": 313275,
+        "integer_arithmetic": 49425,
+        "output_comparisons": 0,
+        "predicates": 92290
+      },
+      "phase_mean_ns": {
+        "binding_ns": 0,
+        "checker_ns": 0,
+        "commit_ns": 0,
+        "overhead_ns": 0,
+        "proposal_ns": 0,
+        "total_ns": 0
+      },
+      "rejected": 79,
+      "runtime_load_ns": 1048546,
+      "source_free_files": [
+        "accumulator.json",
+        "bundle.json",
+        "counter.json",
+        "runtime",
+        "saturating.json",
+        "trusted-key.hex"
+      ]
+    },
+    "lookup/certified/clocks=True": {
+      "accepted": 1447,
+      "cases": 1526,
+      "certificates": {
+        "accumulator": {
+          "accepted_inputs": 522,
+          "build_ns": 368774,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 36261,
+            "integer_arithmetic": 4200,
+            "output_comparisons": 1566,
+            "predicates": 12831
+          },
+          "contract_rejected_inputs": 72,
+          "key": "39347ebae4a657ff9f4c80c176e71032c104fd7c09cfb9f5058ae3defd40220a",
+          "module_sha256": "dcff389b2ac1e1e98b559dbf1a1b17936e5c723f3a037056b620cba7daa745fc"
+        },
+        "counter": {
+          "accepted_inputs": 330,
+          "build_ns": 94489,
+          "cases": 330,
+          "certified": true,
+          "checker_work": {
+            "expressions": 3960,
+            "integer_arithmetic": 1188,
+            "output_comparisons": 990,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "64b97f59b89e5402b09d281eb0de85001dafab0124281613cfcf90270fe25a9c",
+          "module_sha256": "56006442b8d60c18e49b7fa7e5adf2c876ab87347b40385fbb60c4166eb2fa46"
+        },
+        "saturating": {
+          "accepted_inputs": 594,
+          "build_ns": 314516,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 26199,
+            "integer_arithmetic": 4761,
+            "output_comparisons": 1782,
+            "predicates": 7185
+          },
+          "contract_rejected_inputs": 0,
+          "key": "bc4f2c96370f8bd7b1355f9fe5f3d197ff81b49130801966b625b64354bafca2",
+          "module_sha256": "b331434c49fabbf8cdb0f99a847cc1b5a0fcd124d4e634b5842584f425baff2e"
+        }
+      },
+      "checker_relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "entry_check_ns_mean": 129.04102228047182,
+      "entry_checks": {
+        "entry_comparisons": 8155,
+        "instance_bindings": 7645,
+        "step_targets": 7650
+      },
+      "lookup_application_work": {
+        "expressions": 313275,
+        "integer_arithmetic": 49425,
+        "output_comparisons": 0,
+        "predicates": 92290
+      },
+      "phase_mean_ns": {
+        "binding_ns": 48.67575360419397,
+        "checker_ns": 146.8961992136304,
+        "commit_ns": 102.84914809960682,
+        "overhead_ns": 874.591874180865,
+        "proposal_ns": 168.08636959370904,
+        "total_ns": 1341.0993446920052
+      },
+      "rejected": 79,
+      "runtime_load_ns": 928017,
+      "source_free_files": [
+        "accumulator.json",
+        "bundle.json",
+        "counter.json",
+        "runtime",
+        "saturating.json",
+        "trusted-key.hex"
+      ]
+    },
+    "lookup/concrete/clocks=False": {
+      "accepted": 1447,
+      "cases": 1526,
+      "certificates": {
+        "accumulator": {
+          "accepted_inputs": 0,
+          "build_ns": 225767,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "39347ebae4a657ff9f4c80c176e71032c104fd7c09cfb9f5058ae3defd40220a",
+          "module_sha256": "dcff389b2ac1e1e98b559dbf1a1b17936e5c723f3a037056b620cba7daa745fc"
+        },
+        "counter": {
+          "accepted_inputs": 0,
+          "build_ns": 41219,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "64b97f59b89e5402b09d281eb0de85001dafab0124281613cfcf90270fe25a9c",
+          "module_sha256": "56006442b8d60c18e49b7fa7e5adf2c876ab87347b40385fbb60c4166eb2fa46"
+        },
+        "saturating": {
+          "accepted_inputs": 0,
+          "build_ns": 92029,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "bc4f2c96370f8bd7b1355f9fe5f3d197ff81b49130801966b625b64354bafca2",
+          "module_sha256": "b331434c49fabbf8cdb0f99a847cc1b5a0fcd124d4e634b5842584f425baff2e"
+        }
+      },
+      "checker_relations": {
+        "expressions": 333010,
+        "integer_arithmetic": 50890,
+        "output_comparisons": 21765,
+        "predicates": 100325
+      },
+      "entry_check_ns_mean": 0,
+      "entry_checks": {
+        "entry_comparisons": 8155,
+        "instance_bindings": 7645,
+        "step_targets": 7650
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_mean_ns": {
+        "binding_ns": 0,
+        "checker_ns": 0,
+        "commit_ns": 0,
+        "overhead_ns": 0,
+        "proposal_ns": 0,
+        "total_ns": 0
+      },
+      "rejected": 79,
+      "runtime_load_ns": 1098765,
+      "source_free_files": [
+        "accumulator.json",
+        "bundle.json",
+        "counter.json",
+        "runtime",
+        "saturating.json",
+        "trusted-key.hex"
+      ]
+    },
+    "lookup/concrete/clocks=True": {
+      "accepted": 1447,
+      "cases": 1526,
+      "certificates": {
+        "accumulator": {
+          "accepted_inputs": 0,
+          "build_ns": 230507,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "39347ebae4a657ff9f4c80c176e71032c104fd7c09cfb9f5058ae3defd40220a",
+          "module_sha256": "dcff389b2ac1e1e98b559dbf1a1b17936e5c723f3a037056b620cba7daa745fc"
+        },
+        "counter": {
+          "accepted_inputs": 0,
+          "build_ns": 41550,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "64b97f59b89e5402b09d281eb0de85001dafab0124281613cfcf90270fe25a9c",
+          "module_sha256": "56006442b8d60c18e49b7fa7e5adf2c876ab87347b40385fbb60c4166eb2fa46"
+        },
+        "saturating": {
+          "accepted_inputs": 0,
+          "build_ns": 101188,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "bc4f2c96370f8bd7b1355f9fe5f3d197ff81b49130801966b625b64354bafca2",
+          "module_sha256": "b331434c49fabbf8cdb0f99a847cc1b5a0fcd124d4e634b5842584f425baff2e"
+        }
+      },
+      "checker_relations": {
+        "expressions": 333010,
+        "integer_arithmetic": 50890,
+        "output_comparisons": 21765,
+        "predicates": 100325
+      },
+      "entry_check_ns_mean": 125.46238532110091,
+      "entry_checks": {
+        "entry_comparisons": 8155,
+        "instance_bindings": 7645,
+        "step_targets": 7650
+      },
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_mean_ns": {
+        "binding_ns": 53.46330275229358,
+        "checker_ns": 300.34849279161205,
+        "commit_ns": 96.08754914809961,
+        "overhead_ns": 961.2334207077326,
+        "proposal_ns": 22.9564875491481,
+        "total_ns": 1434.089252948886
+      },
+      "rejected": 79,
+      "runtime_load_ns": 988956,
+      "source_free_files": [
+        "accumulator.json",
+        "bundle.json",
+        "counter.json",
+        "runtime",
+        "saturating.json",
+        "trusted-key.hex"
+      ]
+    }
+  },
+  "two_clean_builds_identical": true
+}

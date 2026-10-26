@@ -1,6 +1,8 @@
 # G01 next slice: reusable build and frozen execution
 
-Date: 2026-10-26. Status: planned; implementation has not started.
+Date: 2026-10-26. Status: implemented and accepted for the existing scalar subset.
+[Recorded G01 verdict](../experiments/g01/run-0001/REPORT.md) ·
+[Commands and format](../experiments/g01/README.md).
 Parent: [broad-feasibility plan](broad-feasibility-plan.md), gate G01.
 
 ## Concrete outcome
@@ -37,11 +39,11 @@ in the runtime. Independent fixture mathematics remains an external test oracle.
 - A development trust-key input and a documented signature policy. The fixture
   key is allowed for tests; production-principal trust is still a later gate.
 
-Proposed command names below are **not implemented**:
+The implemented command contract is:
 
 ```text
-phlam build <manifest> --training-plan <plan> --out <new-bundle-directory>
-phlam-runtime run <bundle> --request <typed-request>
+phlam build <manifest> --out <new-bundle-directory> --evidence <new-evidence-directory> --signing-key <seed.hex>
+phlam-runtime run <bundle> --key <trusted-public-key.hex> --request <typed-request>
 phlam build-report <report>
 ```
 
@@ -106,6 +108,7 @@ work is G02 plus the G03 semantic/ABI design, with corpus commitments made befor
 acceptance feedback. If G01 needs per-application custom code, keep the gate open
 and report the coupling rather than broadening the success claim.
 
-No implementation results, new CLI commands or completed gates are claimed by
-this planning document. Its fixture/command manifest and ledger become the entry
-contract for the first implementation turn.
+The original slice contract above is now backed by the locked G01 campaign,
+recorded artifacts and acceptance report. The training plan is referenced in the
+manifest and lock rather than overridden by a CLI flag. JSON is the first schema
+encoding per ADR 0003. G01 is passed; later broad-feasibility gates remain open.

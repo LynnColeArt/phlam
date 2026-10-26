@@ -1,0 +1,11 @@
+{
+  "test_pass_events": 129,
+  "skipped_tests": [
+    "TestDynamicVariablesAndAliases",
+    "TestEvalCallerScopeAndFrozenArtifact"
+  ],
+  "tests_sha256": "47d5981fd1d0644cdd7a26c121c6d11879f2ba8a39676cf4f583f1122168e9f3",
+  "go_vet": "passed",
+  "runtime_changes": "generic bundle loader and measured signed-entry guard; scalar inference/transaction engine unchanged",
+  "gate_verdict": "passed_for_existing_scalar_subset"
+}

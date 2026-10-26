@@ -1,0 +1,20 @@
+/// Holds a counter and supports controlled increments.
+/// Each Counter instance owns separate state.
+class Counter {
+    $value = 0
+
+    function init($starting_value = 0) {
+        $this->value = $starting_value
+    }
+
+    function read() {
+        return $this->value
+    }
+
+    function increment($delta = 1) {
+        $this->value += $delta
+        return $this->value
+    }
+
+
+}

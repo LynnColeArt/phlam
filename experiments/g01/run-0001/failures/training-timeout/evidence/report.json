@@ -1,0 +1,220 @@
+{
+  "schema": "phlame.build-report.v0",
+  "status": "failed",
+  "error": "counter.phlam: all bounded candidates failed certification; see counter",
+  "manifest_sha256": "45356b36df8ae3d0534c51295c76f2b63824692cd9f8d3a76949885e38c894fe",
+  "plan_sha256": "d5f7a721bdbd01761154b6af7a4f9284ca95b66641d281138eecff469794fa5a",
+  "implementation_sha256": "342a1d3c0e54d3b9eb2a6572e14130d6918ef060ace0e5f3f62ce73daa1885e9",
+  "toolchain": "go1.26.4",
+  "argument_policy": "explicit-int64-v0",
+  "components": {
+    "counter": {
+      "source": "counter.phlam",
+      "class": "Counter",
+      "source_sha256": "fd26a7823ae1fd39b10f99a48ca42c99208acf36e598c7c46cd9b69ea0450d9e",
+      "training_sha256": "39ff43ce6808f0b0496e15049fe62f2c915197392f18e638e9632893560a7892",
+      "oracle_domain_sha256": "63474f010456a1c7f4fbd2a1280a08bd7a15a0bc81620e2cc38ffeb75aff334a",
+      "oracle_wall_ns": 24935794,
+      "oracle_cases": 330,
+      "training_cases": 68,
+      "attempts": [
+        {
+          "runtime_load_ns": 0,
+          "runtime_verification_process_wall_ns": 0,
+          "runtime_verification_process_cpu_ns": 0,
+          "recipe": {
+            "kind": "affine",
+            "width": 0,
+            "initialization": "legacy",
+            "seeds": [
+              7
+            ]
+          },
+          "seed": 7,
+          "training_wall_ns": 1278043,
+          "training_cpu_ns": 1148000,
+          "trainer_managed_bytes_at_end": 0,
+          "initial_mse": 0,
+          "final_mse": 0,
+          "raw_training_correct": 0,
+          "raw_nontraining_correct": 0,
+          "certificate": {
+            "key": "",
+            "module_sha256": "",
+            "certified": false,
+            "cases": 0,
+            "accepted_inputs": 0,
+            "contract_rejected_inputs": 0,
+            "build_ns": 0,
+            "checker_work": {
+              "expressions": 0,
+              "integer_arithmetic": 0,
+              "predicates": 0,
+              "output_comparisons": 0
+            }
+          },
+          "error": "training failed: signal: killed context deadline exceeded "
+        },
+        {
+          "runtime_load_ns": 0,
+          "runtime_verification_process_wall_ns": 0,
+          "runtime_verification_process_cpu_ns": 0,
+          "recipe": {
+            "kind": "relu",
+            "width": 4,
+            "initialization": "paired-centered",
+            "seeds": [
+              7,
+              404
+            ]
+          },
+          "seed": 7,
+          "training_wall_ns": 2303939,
+          "training_cpu_ns": 2310000,
+          "trainer_managed_bytes_at_end": 0,
+          "initial_mse": 0,
+          "final_mse": 0,
+          "raw_training_correct": 0,
+          "raw_nontraining_correct": 0,
+          "certificate": {
+            "key": "",
+            "module_sha256": "",
+            "certified": false,
+            "cases": 0,
+            "accepted_inputs": 0,
+            "contract_rejected_inputs": 0,
+            "build_ns": 0,
+            "checker_work": {
+              "expressions": 0,
+              "integer_arithmetic": 0,
+              "predicates": 0,
+              "output_comparisons": 0
+            }
+          },
+          "error": "training failed: signal: killed context deadline exceeded "
+        },
+        {
+          "runtime_load_ns": 0,
+          "runtime_verification_process_wall_ns": 0,
+          "runtime_verification_process_cpu_ns": 0,
+          "recipe": {
+            "kind": "relu",
+            "width": 4,
+            "initialization": "paired-centered",
+            "seeds": [
+              7,
+              404
+            ]
+          },
+          "seed": 404,
+          "training_wall_ns": 2209030,
+          "training_cpu_ns": 2224000,
+          "trainer_managed_bytes_at_end": 0,
+          "initial_mse": 0,
+          "final_mse": 0,
+          "raw_training_correct": 0,
+          "raw_nontraining_correct": 0,
+          "certificate": {
+            "key": "",
+            "module_sha256": "",
+            "certified": false,
+            "cases": 0,
+            "accepted_inputs": 0,
+            "contract_rejected_inputs": 0,
+            "build_ns": 0,
+            "checker_work": {
+              "expressions": 0,
+              "integer_arithmetic": 0,
+              "predicates": 0,
+              "output_comparisons": 0
+            }
+          },
+          "error": "training failed: signal: killed context deadline exceeded "
+        },
+        {
+          "runtime_load_ns": 0,
+          "runtime_verification_process_wall_ns": 0,
+          "runtime_verification_process_cpu_ns": 0,
+          "recipe": {
+            "kind": "relu",
+            "width": 8,
+            "initialization": "paired-centered",
+            "seeds": [
+              7,
+              404
+            ]
+          },
+          "seed": 7,
+          "training_wall_ns": 2203131,
+          "training_cpu_ns": 2215000,
+          "trainer_managed_bytes_at_end": 0,
+          "initial_mse": 0,
+          "final_mse": 0,
+          "raw_training_correct": 0,
+          "raw_nontraining_correct": 0,
+          "certificate": {
+            "key": "",
+            "module_sha256": "",
+            "certified": false,
+            "cases": 0,
+            "accepted_inputs": 0,
+            "contract_rejected_inputs": 0,
+            "build_ns": 0,
+            "checker_work": {
+              "expressions": 0,
+              "integer_arithmetic": 0,
+              "predicates": 0,
+              "output_comparisons": 0
+            }
+          },
+          "error": "training failed: signal: killed context deadline exceeded "
+        },
+        {
+          "runtime_load_ns": 0,
+          "runtime_verification_process_wall_ns": 0,
+          "runtime_verification_process_cpu_ns": 0,
+          "recipe": {
+            "kind": "relu",
+            "width": 8,
+            "initialization": "paired-centered",
+            "seeds": [
+              7,
+              404
+            ]
+          },
+          "seed": 404,
+          "training_wall_ns": 2254739,
+          "training_cpu_ns": 2256000,
+          "trainer_managed_bytes_at_end": 0,
+          "initial_mse": 0,
+          "final_mse": 0,
+          "raw_training_correct": 0,
+          "raw_nontraining_correct": 0,
+          "certificate": {
+            "key": "",
+            "module_sha256": "",
+            "certified": false,
+            "cases": 0,
+            "accepted_inputs": 0,
+            "contract_rejected_inputs": 0,
+            "build_ns": 0,
+            "checker_work": {
+              "expressions": 0,
+              "integer_arithmetic": 0,
+              "predicates": 0,
+              "output_comparisons": 0
+            }
+          },
+          "error": "training failed: signal: killed context deadline exceeded "
+        }
+      ],
+      "selected_attempt": -1
+    }
+  },
+  "limitations": [
+    "Finite scalar domains; no arrays/loops/eval/gateway or production authority.",
+    "Explicit int64 arguments: source method defaults are not inserted by the scalar ABI.",
+    "Training subprocess wall timeout is enforced; Go managed-memory metric/soft limit is not an OS RSS sandbox.",
+    "Finite certification repeats at runtime; a signed candidate/report is not an accepted proof bit."
+  ]
+}

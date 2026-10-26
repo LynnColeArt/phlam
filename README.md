@@ -15,11 +15,17 @@ bounded execution from the remaining compiler/application and full-brief researc
 questions. It defines ten implementation gates, budgets, acceptance/failure
 criteria and the final development-only authorship experiment. The
 [first slice](docs/broad-feasibility-next-slice.md) is a reusable build/freeze/run
-pipeline; the [gate ledger](docs/feasibility-gates.json) currently records all new
-implementation gates as not started. This is a plan, not a completed feasibility
-claim.
+pipeline. [G01 now passes](experiments/g01/README.md) for the finite scalar subset,
+with reproducible signed bundles and source-free execution across original,
+renamed and reordered programs. The [gate ledger](docs/feasibility-gates.json)
+keeps all later implementation gates unstarted and broad feasibility unresolved.
 
 ## Current state
+
+**A reusable build pipeline now runs the existing scalar programs.**
+`phlam build` uses locked manifests/recipes and an external development signing
+key; `phlam-runtime` independently loads, recertifies and executes the frozen
+bundle. [G01 commands, results and limits](experiments/g01/README.md).
 
 The Go frontend parses Counter and emits deterministic ASTs and diagnostics.
 The reference oracle now executes integer Counter methods with independent

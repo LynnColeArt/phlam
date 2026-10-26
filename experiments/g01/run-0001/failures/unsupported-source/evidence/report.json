@@ -1,0 +1,30 @@
+{
+  "schema": "phlame.build-report.v0",
+  "status": "failed",
+  "error": "error[B_UNSUPPORTED]: component contract: unsupported expression call\n --\u003e counter.phlam:11:24\n 11 |         $this-\u003evalue = eval('1')\n   |                        ^\n help: G01 supports the declared scalar subset; unsupported behavior is not interpreted as learned execution\n",
+  "manifest_sha256": "45356b36df8ae3d0534c51295c76f2b63824692cd9f8d3a76949885e38c894fe",
+  "plan_sha256": "973fc67b0567c76af68e62c958b85ad8152e0c9803771463b11c231649f974cc",
+  "implementation_sha256": "342a1d3c0e54d3b9eb2a6572e14130d6918ef060ace0e5f3f62ce73daa1885e9",
+  "toolchain": "go1.26.4",
+  "argument_policy": "explicit-int64-v0",
+  "components": {
+    "counter": {
+      "source": "counter.phlam",
+      "class": "Counter",
+      "source_sha256": "",
+      "training_sha256": "",
+      "oracle_domain_sha256": "",
+      "oracle_wall_ns": 0,
+      "oracle_cases": 0,
+      "training_cases": 0,
+      "attempts": null,
+      "selected_attempt": -1
+    }
+  },
+  "limitations": [
+    "Finite scalar domains; no arrays/loops/eval/gateway or production authority.",
+    "Explicit int64 arguments: source method defaults are not inserted by the scalar ABI.",
+    "Training subprocess wall timeout is enforced; Go managed-memory metric/soft limit is not an OS RSS sandbox.",
+    "Finite certification repeats at runtime; a signed candidate/report is not an accepted proof bit."
+  ]
+}

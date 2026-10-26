@@ -1,0 +1,27 @@
+/// Accumulates bounded integer amounts while keeping its total in [-16,16].
+/// Rejected updates return false and leave the instance unchanged.
+class Accumulator {
+    $total = 0
+
+    function init($starting_total = 0) {
+        $this->total = $starting_total
+    }
+
+    function read() {
+        return $this->total
+    }
+
+    function add($amount) {
+        if ($amount < -8 || $amount > 8) {
+            return false
+        }
+        $next = $this->total + $amount
+        if ($next < -16 || $next > 16) {
+            return false
+        }
+        $this->total = $next
+        return $this->total
+    }
+
+
+}

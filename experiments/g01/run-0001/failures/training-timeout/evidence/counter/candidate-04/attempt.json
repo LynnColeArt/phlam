@@ -1,0 +1,38 @@
+{
+  "runtime_load_ns": 0,
+  "runtime_verification_process_wall_ns": 0,
+  "runtime_verification_process_cpu_ns": 0,
+  "recipe": {
+    "kind": "relu",
+    "width": 8,
+    "initialization": "paired-centered",
+    "seeds": [
+      7,
+      404
+    ]
+  },
+  "seed": 404,
+  "training_wall_ns": 2254739,
+  "training_cpu_ns": 2256000,
+  "trainer_managed_bytes_at_end": 0,
+  "initial_mse": 0,
+  "final_mse": 0,
+  "raw_training_correct": 0,
+  "raw_nontraining_correct": 0,
+  "certificate": {
+    "key": "",
+    "module_sha256": "",
+    "certified": false,
+    "cases": 0,
+    "accepted_inputs": 0,
+    "contract_rejected_inputs": 0,
+    "build_ns": 0,
+    "checker_work": {
+      "expressions": 0,
+      "integer_arithmetic": 0,
+      "predicates": 0,
+      "output_comparisons": 0
+    }
+  },
+  "error": "training failed: signal: killed context deadline exceeded "
+}

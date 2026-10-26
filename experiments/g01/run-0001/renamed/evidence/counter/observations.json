@@ -1,0 +1,5127 @@
+[
+  {
+    "trace_events": [
+      {
+        "transaction": 1,
+        "sequence": 0,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_begin"
+      },
+      {
+        "transaction": 1,
+        "sequence": 1,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "allocate"
+      },
+      {
+        "transaction": 1,
+        "sequence": 2,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:property:119:120",
+        "span": {
+          "start": 119,
+          "end": 134,
+          "line": 4,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "property_default",
+        "integers": {
+          "value": 0
+        }
+      },
+      {
+        "transaction": 1,
+        "sequence": 3,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:138:222",
+        "span": {
+          "start": 138,
+          "end": 222,
+          "line": 6,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "call_enter",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 4,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:parameter:152:153",
+        "span": {
+          "start": 152,
+          "end": 171,
+          "line": 6,
+          "column": 19
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "bind_argument",
+        "contract_id": "Tally.init",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 1,
+        "sequence": 5,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:variable:183:188",
+        "span": {
+          "start": 183,
+          "end": 188,
+          "line": 7,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 6,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:variable:201:216",
+        "span": {
+          "start": 201,
+          "end": 216,
+          "line": 7,
+          "column": 27
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Tally.init",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 1,
+        "sequence": 7,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:assign:183:217",
+        "span": {
+          "start": 183,
+          "end": 217,
+          "line": 7,
+          "column": 9
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "stage_write",
+        "contract_id": "Tally.init",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 1,
+        "sequence": 8,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:138:222",
+        "span": {
+          "start": 138,
+          "end": 222,
+          "line": 6,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "contract_validated",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 9,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:138:222",
+        "span": {
+          "start": 138,
+          "end": 222,
+          "line": 6,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "call_return",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 10,
+        "phase": "committed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:assign:183:217",
+        "span": {
+          "start": 183,
+          "end": 217,
+          "line": 7,
+          "column": 9
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_commit",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 11,
+        "phase": "committed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_commit",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 2,
+        "sequence": 12,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_begin"
+      },
+      {
+        "transaction": 2,
+        "sequence": 13,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:228:331",
+        "span": {
+          "start": 228,
+          "end": 331,
+          "line": 10,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Tally.increment"
+      },
+      {
+        "transaction": 2,
+        "sequence": 14,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:parameter:247:248",
+        "span": {
+          "start": 247,
+          "end": 257,
+          "line": 10,
+          "column": 24
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "bind_argument",
+        "contract_id": "Tally.increment",
+        "integers": {
+          "value": -4
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 15,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:variable:269:274",
+        "span": {
+          "start": 269,
+          "end": 274,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Tally.increment"
+      },
+      {
+        "transaction": 2,
+        "sequence": 16,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:property_access:269:284",
+        "span": {
+          "start": 269,
+          "end": 284,
+          "line": 11,
+          "column": 9
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Tally.increment",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 17,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:variable:288:294",
+        "span": {
+          "start": 288,
+          "end": 294,
+          "line": 11,
+          "column": 28
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Tally.increment",
+        "integers": {
+          "value": -4
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 18,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:assign:269:295",
+        "span": {
+          "start": 269,
+          "end": 295,
+          "line": 11,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "integer_add",
+        "contract_id": "Tally.increment",
+        "integers": {
+          "left": -16,
+          "result": -20,
+          "right": -4
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 19,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:assign:269:295",
+        "span": {
+          "start": 269,
+          "end": 295,
+          "line": 11,
+          "column": 9
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "stage_write",
+        "contract_id": "Tally.increment",
+        "integers": {
+          "value": -20
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 20,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:variable:310:315",
+        "span": {
+          "start": 310,
+          "end": 315,
+          "line": 12,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Tally.increment"
+      },
+      {
+        "transaction": 2,
+        "sequence": 21,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:property_access:310:325",
+        "span": {
+          "start": 310,
+          "end": 325,
+          "line": 12,
+          "column": 16
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Tally.increment",
+        "integers": {
+          "value": -20
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 22,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:return:303:326",
+        "span": {
+          "start": 303,
+          "end": 326,
+          "line": 12,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Tally.increment",
+        "integers": {
+          "value": -20
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 23,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:228:331",
+        "span": {
+          "start": 228,
+          "end": 331,
+          "line": 10,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Tally.increment"
+      },
+      {
+        "transaction": 2,
+        "sequence": 24,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:228:331",
+        "span": {
+          "start": 228,
+          "end": 331,
+          "line": 10,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Tally.increment",
+        "integers": {
+          "value": -20
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 25,
+        "phase": "committed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:assign:269:295",
+        "span": {
+          "start": 269,
+          "end": 295,
+          "line": 11,
+          "column": 9
+        },
+        "object": 1,
+        "state_version": 2,
+        "operation": "state_commit",
+        "contract_id": "Tally.increment"
+      },
+      {
+        "transaction": 2,
+        "sequence": 26,
+        "phase": "committed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_commit",
+        "contract_id": "Tally.increment"
+      }
+    ],
+    "operation_index": 0,
+    "state": -16,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -20,
+      "result": -20,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "7f967326fd0a39ed843d027c402d1cc4c46df798783dbe3c836df19ff7d0c44f"
+  },
+  {
+    "operation_index": 0,
+    "state": -16,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -19,
+      "result": -19,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ba91e2bf21c818bf4dd199c781cdfa458d4b7b1a1e1ae1fb28dcaa0c2d28221d"
+  },
+  {
+    "operation_index": 0,
+    "state": -16,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -18,
+      "result": -18,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "957d2760b74b6fa8f2e939cd4c5ba4c00c753cfe440dcacf09e6e7deb0d5f826"
+  },
+  {
+    "operation_index": 0,
+    "state": -16,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -17,
+      "result": -17,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0ffbd05f4a655dffb50675e36c5be154ee13ffb9f972d4cc00e36ffbc963e83f"
+  },
+  {
+    "operation_index": 0,
+    "state": -16,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "25ed80814a23a3139988b5e814c1ab9915ab5d1e30db63eb5f9155b0e70f7aeb"
+  },
+  {
+    "operation_index": 0,
+    "state": -16,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "39bcc78703b6237a603c720cc78df85144f5968c45cef4a2e96c395c3d60b33e"
+  },
+  {
+    "operation_index": 0,
+    "state": -16,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f763b7b1ce5617903c555bdd2d76d706bb86a7a8c56bdbceda3e9b7897a35f0b"
+  },
+  {
+    "operation_index": 0,
+    "state": -16,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0cc746f75f7409770c6861944b9fef18ca97263f928bbe55486f3561095a9c5c"
+  },
+  {
+    "operation_index": 0,
+    "state": -16,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "03022999593fafe7db1aa85924095cd72d36011062f9ee593232a8be203d2fd0"
+  },
+  {
+    "operation_index": 0,
+    "state": -15,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -19,
+      "result": -19,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "c7c3993e6929e6709b4b0a569935da529db5735eb578771ad5e38244a408c745"
+  },
+  {
+    "operation_index": 0,
+    "state": -15,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -18,
+      "result": -18,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "61bd3a67305cad897cd5a6bef8cddcfe0d2605fcc750727f8e8ecb22458c63ee"
+  },
+  {
+    "operation_index": 0,
+    "state": -15,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -17,
+      "result": -17,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "792f891ba4c56e79ea96784dfa0e165e88ada079ebfebde51ea0cb7b1d7cd88c"
+  },
+  {
+    "operation_index": 0,
+    "state": -15,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "e3ac8fc55af5cdd534d1a41f7b16b5adcf87d53de4a8f262e9e1df0e45dda086"
+  },
+  {
+    "operation_index": 0,
+    "state": -15,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "49346bc2f03d15aee61cf6a8f7c23a73e97db9776d8a259a4953f69542808d93"
+  },
+  {
+    "operation_index": 0,
+    "state": -15,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "02bdd4ef0455f0bdeebb810f90d9ec5ca1f8e9d0453f9cff0caff21905890171"
+  },
+  {
+    "operation_index": 0,
+    "state": -15,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "aa0e17577f5693a734b3bc2a8bcbefaae108eb2094f2d9e9625df77c5771c80c"
+  },
+  {
+    "operation_index": 0,
+    "state": -15,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "962ba7d75f122acc430b67f9f92aa59cf0c0a346c59e848ccd8711f7d226cf4e"
+  },
+  {
+    "operation_index": 0,
+    "state": -15,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "a8fe3b105e25102ddf478e2960df57a2fd4a2a203b1c227b952707cd31192025"
+  },
+  {
+    "operation_index": 0,
+    "state": -14,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -18,
+      "result": -18,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "06567a0055dd976382f16230eb51e8e21bd9f563fe01aef96a45c6b335f095e3"
+  },
+  {
+    "operation_index": 0,
+    "state": -14,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -17,
+      "result": -17,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "de6115ec1c92d34d8c3cad46f859633c91fee8887e9c3513874a5c3e0441dab9"
+  },
+  {
+    "operation_index": 0,
+    "state": -14,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f4bed76d9b57f4cc9abc8c9166b8a660121b2ff6f1807511aa8648889013605a"
+  },
+  {
+    "operation_index": 0,
+    "state": -14,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "3e41c2bb2019b078a7e499d4b908db624cd4a4274ca8dfdfafb6cf9d902b56bd"
+  },
+  {
+    "operation_index": 0,
+    "state": -14,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "9f47eb06f170040575365702702db1e98d6f4c19a47512dc8721ef7101c96d97"
+  },
+  {
+    "operation_index": 0,
+    "state": -14,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "29a3c24877b178fb23b2d46905efc1d0f4a02b9ca3110b381a05aa10006f9b58"
+  },
+  {
+    "operation_index": 0,
+    "state": -14,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "c178e94107e1650846e27a77ebc56fa8f65eb6e343e2b15bf3f55bc438c3b9f3"
+  },
+  {
+    "operation_index": 0,
+    "state": -14,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "eaa92c1d389bae1cbe7297a58f89f5bf8ade067805ff1e06251a75a7364b855b"
+  },
+  {
+    "operation_index": 0,
+    "state": -14,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "696fd62a0b756a64ecf3d6cf3b4f074f3839d15e8c233a69aef9149e963dbe9d"
+  },
+  {
+    "operation_index": 0,
+    "state": -13,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -17,
+      "result": -17,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "e05d85802caae871e69029e6fe8f0fde875260d434690a5372c8b72c9f271277"
+  },
+  {
+    "operation_index": 0,
+    "state": -13,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "d33730c59a6d961f383c01045dfa8e5987896554759db7a32263f4133236d016"
+  },
+  {
+    "operation_index": 0,
+    "state": -13,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "baa1eedac6d1d5b57e2188471d386acb77ac226754e3a9c21946d7f75f86325e"
+  },
+  {
+    "operation_index": 0,
+    "state": -13,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "a156317632d12e8af19f1a854ab6160411188695e5e86234aa3a584a6236aedf"
+  },
+  {
+    "operation_index": 0,
+    "state": -13,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "d5502a758003ce572fcfcb1c258b428b8f3a916fc5d5a1efabe4924d48544afe"
+  },
+  {
+    "operation_index": 0,
+    "state": -13,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "29297a2fa0fa6a1f2d1d4146991e0565d1e732847a2c8fb344f9b18650b67411"
+  },
+  {
+    "operation_index": 0,
+    "state": -13,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "c606141e0da7c2af933328c5daee2038d8c386aa7def583b1c51706c8c31afba"
+  },
+  {
+    "operation_index": 0,
+    "state": -13,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "60ef02f515dd7f34e254fcf82e150160c26d7371c594c9392dda520bbb675e10"
+  },
+  {
+    "operation_index": 0,
+    "state": -13,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "e9444058b5557ffea955045f508f48ce025ae699894179deec070fe94cd14bab"
+  },
+  {
+    "operation_index": 0,
+    "state": -12,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "e8e14dba59f9e825de0f0e2d4b256fa15a6f617c1311032a1d76bfeaca5a74cf"
+  },
+  {
+    "operation_index": 0,
+    "state": -12,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "8c44d2a086f61d78ffb698ad9f648be1b647c3c52f5c79cc04d3b9d67cbae767"
+  },
+  {
+    "operation_index": 0,
+    "state": -12,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "09850f2e6b12640f2eb0eda10ae8a5a69430b8739213f88330be375a6e0f1fc3"
+  },
+  {
+    "operation_index": 0,
+    "state": -12,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "11666975252834ca1f73a672d80f31ee8faace9e56625d9f2b869189f034f503"
+  },
+  {
+    "operation_index": 0,
+    "state": -12,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "99fa2182deb1749479f5ac24d97911252d8f03f88af25d69b6dd1fa47100ab3b"
+  },
+  {
+    "operation_index": 0,
+    "state": -12,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "809b0ad549b8b22e491882e4f58e26392a37b8cb65225ad1c2b4f106a13c99f9"
+  },
+  {
+    "operation_index": 0,
+    "state": -12,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "c0a29a2a34dec47a04aee82af68ae3ae56d52b34c20b95d3b2c578b13a682529"
+  },
+  {
+    "operation_index": 0,
+    "state": -12,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "63019581f385b2bb80e69ec16c156046ea242a70b31c205094256cb3ad387794"
+  },
+  {
+    "operation_index": 0,
+    "state": -12,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "cd39fc284ceedcaa75ed93879c9878e285f5d8cd64500de18a3ba52e52e3fb11"
+  },
+  {
+    "operation_index": 0,
+    "state": -11,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "a4ea7b4a6d149e81dbec584199ef6556410ac23581445851c1617890cca25899"
+  },
+  {
+    "operation_index": 0,
+    "state": -11,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "3a403b08cc7bcb44b92e99841ca653dbbc2a28be82eba4032d06190ed635d438"
+  },
+  {
+    "operation_index": 0,
+    "state": -11,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "63443b89ef8c7096a2251752d9d750a0da1aa1b69b11cb7bc4a9eefad2666767"
+  },
+  {
+    "operation_index": 0,
+    "state": -11,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "996bc2307ff999a7b789b5176093239fb6d3749135c7613ac853e4b4b34554be"
+  },
+  {
+    "operation_index": 0,
+    "state": -11,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "4027e5cd8fda548e13e55470494beb8952e1f0dd80f7d5a9f9a9889cd891589f"
+  },
+  {
+    "operation_index": 0,
+    "state": -11,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "cefbd136ba3d7b02c5f84d3cc1cb2d18948b3f40d6fae5602bd555a6bb301d1d"
+  },
+  {
+    "operation_index": 0,
+    "state": -11,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "99b508afc2cb7a29d45ccd009223fb662ffb7b5d9dcce31f36b5990e13866407"
+  },
+  {
+    "operation_index": 0,
+    "state": -11,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f53532407b086a3797a518881ff71f9d91ea8863bcf234b8dcbcdb4b4f3ca228"
+  },
+  {
+    "operation_index": 0,
+    "state": -11,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "8000311bb5df203a8bd6de6b7657109122bd0939da2bc92dbdd394f8954a84fd"
+  },
+  {
+    "operation_index": 0,
+    "state": -10,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "402eadd05a692265f94a838203c4f5c5f73c5ced2d28c5b1eceb6df5abc83f2c"
+  },
+  {
+    "operation_index": 0,
+    "state": -10,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "160cec4a770a1ebc7af2d972b4e15ebd17b9d84ff6c196f56128933518a91f4a"
+  },
+  {
+    "operation_index": 0,
+    "state": -10,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "abea36b4308d89ac020416d030c48aa7d2064c338f5bbb6357a32082e60c04a1"
+  },
+  {
+    "operation_index": 0,
+    "state": -10,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "b2b05b6d382de88750485dc1439d6d665a623c5f79edeb0bf8d83ec9419f79a7"
+  },
+  {
+    "operation_index": 0,
+    "state": -10,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "3f5c2afaf3b500ea3c103f9f5fbaa8c3f8dcc98b168fe689d85482c9707028dd"
+  },
+  {
+    "operation_index": 0,
+    "state": -10,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "3607a6de45c7db1f1b10af27a5123084b8af33cc35c5e2894eeb53418933cbc3"
+  },
+  {
+    "operation_index": 0,
+    "state": -10,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "886ab6e51619012b5f9b1921c69e5118275d24793fef50af26d1f1605f00b077"
+  },
+  {
+    "operation_index": 0,
+    "state": -10,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "be263658ecae279f1fa587b1c4413583467255004e47cdc76c91e6dea4f1dcfd"
+  },
+  {
+    "operation_index": 0,
+    "state": -10,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "1e1c790a07b52bcb1126129a697a3e04f2f529633a315ce130bdb3c129353adf"
+  },
+  {
+    "operation_index": 0,
+    "state": -9,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "6463636b126aa321c1d2056d1c60cc23d0d763e9c3a20ef6c50810671b629e96"
+  },
+  {
+    "operation_index": 0,
+    "state": -9,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "55a7e1c46db8ae15320cfba68d6ba217f2fad8c77be836d5b6bc043995bf3089"
+  },
+  {
+    "operation_index": 0,
+    "state": -9,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "a5a631775c5ddd3cd3a84f2ab576b1688e45de9f3577e0d560cab3fbd8a6bc64"
+  },
+  {
+    "operation_index": 0,
+    "state": -9,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "381f1d52b12ff1d76ef9d833eb0ca5c51be6e97f3294a57145c0a8a580171d1f"
+  },
+  {
+    "operation_index": 0,
+    "state": -9,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "89053d45b2272674160402f97f014a01e2532b1625506fa03f5076cf5dace904"
+  },
+  {
+    "operation_index": 0,
+    "state": -9,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "64ec77a382575a9717e99b35cecc173879c291577225647cf36a5404b12fd97e"
+  },
+  {
+    "operation_index": 0,
+    "state": -9,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0380e0d4180059ed64a3995759337adc1d6f3d878403e6510fe91ee09817a580"
+  },
+  {
+    "operation_index": 0,
+    "state": -9,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "04114246f75902b22e58e181ee608ab75515877e8114ffc5a90221add517222c"
+  },
+  {
+    "operation_index": 0,
+    "state": -9,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "07424037fa60579b75b501722cbe0c857716d5a8716427b72fc50a04f6b6f7d4"
+  },
+  {
+    "operation_index": 0,
+    "state": -8,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "6a82f88a2e06d5648d00c9af3cb93a84f9f111691dc6040f3717b5db11cd7b93"
+  },
+  {
+    "operation_index": 0,
+    "state": -8,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7230b0ae703745908ddde605e5572b0da1bd2ed8486a6e7e03c584255335be7f"
+  },
+  {
+    "operation_index": 0,
+    "state": -8,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "87f85a1bf01a3a8c1c6d6d72992363134d7d121ac4be29e332449f1038d61969"
+  },
+  {
+    "operation_index": 0,
+    "state": -8,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "6aad1dc8ecc9ffbe4a47e08aa65f6cce5c3a3b1cb9f34985f31b94ab040d3de5"
+  },
+  {
+    "operation_index": 0,
+    "state": -8,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "486cbc3f2506533fd39ed4ffde01ace29a0bd07f47a59c4ce7ed43802383ed88"
+  },
+  {
+    "operation_index": 0,
+    "state": -8,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "35c41ffed5cf56a8f4186a53abfe0fae247a90cfe33ae81b6bd4ecb9bfaaed36"
+  },
+  {
+    "operation_index": 0,
+    "state": -8,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "3edc62d7d66fbb2bf0905cfa6a8c2463ce96c5f8bbff50ecf1730813825bd2e0"
+  },
+  {
+    "operation_index": 0,
+    "state": -8,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "40b41e163f357c14c9ca44218932c4cfe9a7b236e73d228d7f5d9ed546d9bab4"
+  },
+  {
+    "operation_index": 0,
+    "state": -8,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "0d48257f2ae8a48eb38b63c9c54f99207011b60c4dfd7cdbd7548565b52471eb"
+  },
+  {
+    "operation_index": 0,
+    "state": -7,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "77aa5a78337ee0466fc1ad7232f25e985720e10836247a7254127d42094acd14"
+  },
+  {
+    "operation_index": 0,
+    "state": -7,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "dae4c34a74a1129ad76048e3940f9779719bec1d28157da41e7d149f1feb18c4"
+  },
+  {
+    "operation_index": 0,
+    "state": -7,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "a647729abb6853dd4f7e62e4c1a1fa83e980621a8ee0e8c8c3ce25d7f19ef0c5"
+  },
+  {
+    "operation_index": 0,
+    "state": -7,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7775056af05496ae27b813c40451b747d8221b13d7c49c8397f435d6fbe188e6"
+  },
+  {
+    "operation_index": 0,
+    "state": -7,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "9700ca3332bf22c861339a815b6fc904ea79a30a1b4de4ea77e00e4b06401bae"
+  },
+  {
+    "operation_index": 0,
+    "state": -7,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "9f5d9cc2af0e7dfd694cf4ee7031654b0810dc31bbfb39c474196d88d7bd8632"
+  },
+  {
+    "operation_index": 0,
+    "state": -7,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "3dd42da1d167185907a11e2303738914873620fee2a5cd55d2f32eaddd2538d4"
+  },
+  {
+    "operation_index": 0,
+    "state": -7,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0e0c3bf299e3c99a6b733c8d15df56c4974fcd16c0baa8fa93c25d80bef64c66"
+  },
+  {
+    "operation_index": 0,
+    "state": -7,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "bb5829cd2e1c83fac62c0cadb9ca75ecf57c34541fb71ce14d007be3f940779a"
+  },
+  {
+    "operation_index": 0,
+    "state": -6,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "434a5e782eb228f1ab22f46c7b3334bec5f4361b9249f91c2c44472ae691e349"
+  },
+  {
+    "operation_index": 0,
+    "state": -6,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "01691f9208e69f19117ec1e71b9eca1b80f66c357fddd98505985685259253ce"
+  },
+  {
+    "operation_index": 0,
+    "state": -6,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7567bfc5df67422fa0ec9ef6f5a5f8b4e184e601c819d314060b6229c7cab1e8"
+  },
+  {
+    "operation_index": 0,
+    "state": -6,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7eba1e782b3e8ba364623361f7669c1e0de22becb3bd53035755fded75556993"
+  },
+  {
+    "operation_index": 0,
+    "state": -6,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "03225729ed7aa62a243e9bc32135733f5f94a282e1114a9b3909afb782e6d429"
+  },
+  {
+    "operation_index": 0,
+    "state": -6,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ddf8d9af11ffab068f5ca5f6729bec31183766abcece45b0db962ad3bcbb75b1"
+  },
+  {
+    "operation_index": 0,
+    "state": -6,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "da7681ca7805a4938c84bd6c94ff7928788099a9c2412c0fd68b1736cb85047c"
+  },
+  {
+    "operation_index": 0,
+    "state": -6,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7de7b1bbefa292624dddfa64ada12a6c87241eab7feb18c2fbc6c1cb3e8cf443"
+  },
+  {
+    "operation_index": 0,
+    "state": -6,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "e496a113eec65a19bb1f69e9a6ff09d4ae6f8bfc7c07e927622036aa07bb083b"
+  },
+  {
+    "operation_index": 0,
+    "state": -5,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "c58e60c07371885deaaea9570b2450102c4cfab995c7be0d0d264dfdc1d4604e"
+  },
+  {
+    "operation_index": 0,
+    "state": -5,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "e31ff0c3366336353c63866b39fde3d4f80eb96ab4a7b939088b51cdbedcaaf6"
+  },
+  {
+    "operation_index": 0,
+    "state": -5,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "3039aee7d25c57b9e015328c30d1b73177c141afcb61f7bbfe1c3cf15dc85d59"
+  },
+  {
+    "operation_index": 0,
+    "state": -5,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "613a5917135a56772b969a5ba2fc714cf4c59323de7b7ccd00f2a67826c1af7f"
+  },
+  {
+    "operation_index": 0,
+    "state": -5,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ea4fae1906f8f5913a0ede239f44753e8a82e5c6f41548e3368cfbec059a6895"
+  },
+  {
+    "operation_index": 0,
+    "state": -5,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "fcbe807ea29b67270d8a4b25b119574d9fa1f140ecb86ce4c7f058001aaadff9"
+  },
+  {
+    "operation_index": 0,
+    "state": -5,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "b1b99fd138f98923001be6cfaba3ba543e8275b51b6c3565ddf66c9148660308"
+  },
+  {
+    "operation_index": 0,
+    "state": -5,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "9cc114d5df81bf2ec450e0f1f58b44dfe3ddaa676a1c6e21d63a9a38aa207925"
+  },
+  {
+    "operation_index": 0,
+    "state": -5,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "2c47c3727b5cc7fd12148c740cf3b47aba6e7fa5b4370d1b75676ae13bd1d544"
+  },
+  {
+    "operation_index": 0,
+    "state": -4,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "659a52a208aeb0234f6aff83bb4f685162bd63409e6d3ad44a7e395425a7a988"
+  },
+  {
+    "operation_index": 0,
+    "state": -4,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0b110ff8440c61c1a4993402277959958b8264fafe479fc3832c7c42c36eafc6"
+  },
+  {
+    "operation_index": 0,
+    "state": -4,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "050008aab20c85285c693320bd5e95e3ce20c723a6cb4bb1d664f82273474558"
+  },
+  {
+    "operation_index": 0,
+    "state": -4,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "43b4df0eda89789d97389416088a64860bc1583492a194766ee587d385f6b12b"
+  },
+  {
+    "operation_index": 0,
+    "state": -4,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "6e712009f66ba18e21f0ffcd559b0eb39472a98b5f810c4bacb2c9c616d5fc54"
+  },
+  {
+    "operation_index": 0,
+    "state": -4,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "78b09de58601cd45e0fcb568182dc5b525c3d26c4a357dd97237379400f5c746"
+  },
+  {
+    "operation_index": 0,
+    "state": -4,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7b93b93802b3df10c7216c8d164f0a6d37793930f2777cca036b19fbd5c0faa7"
+  },
+  {
+    "operation_index": 0,
+    "state": -4,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "899c6c1af9ea0ca77297b9d458ea5f70702786e978e6c30b20bdf2c85ab1d98e"
+  },
+  {
+    "operation_index": 0,
+    "state": -4,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "ad7f15adc3afd162869d4ff2581f00209739ff1432bf27c864d61f99f4a84ca5"
+  },
+  {
+    "operation_index": 0,
+    "state": -3,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "6d5dc5ff7bbbae3e75c289757ccdeb7c942f33138a6713190d2a96cb38c1e4e6"
+  },
+  {
+    "operation_index": 0,
+    "state": -3,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "73605eb14dbdbe71819249e2791223b9c644d544a980bdb2d0ba4e5338002154"
+  },
+  {
+    "operation_index": 0,
+    "state": -3,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "2af478faaef53748e9aa596a54ee4c1ab5d5e1c8c5bda34cdfd83c7241be4b1e"
+  },
+  {
+    "operation_index": 0,
+    "state": -3,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "df4030fb9940365e388124fe4a42660256a1383fe05b0d6a178a5ce41d436a50"
+  },
+  {
+    "operation_index": 0,
+    "state": -3,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "6d35f7320feaabbacd23a2994c5422e0da83421c924716fc54f52b41d3e4b2de"
+  },
+  {
+    "operation_index": 0,
+    "state": -3,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "efdb8d8fa458e7afaf8e65647abfd85a1bba2523778e6a5d4e23028467b0eb40"
+  },
+  {
+    "operation_index": 0,
+    "state": -3,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ca5ca61f21c8761536dda82ef519a4e6992a98a31ddb12d3c198f6d4f025263c"
+  },
+  {
+    "operation_index": 0,
+    "state": -3,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0c5f4d45fb8f48aec131235a23349460cd523d03b8d09b036bb2ef41da3e1e49"
+  },
+  {
+    "operation_index": 0,
+    "state": -3,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "77ac317a42132cadeebe39602f2277078d9b80a61c9343614d0e118e94e34cb5"
+  },
+  {
+    "operation_index": 0,
+    "state": -2,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "88e37f9cd445fbd79c26f92bfdc090ca63a5dbd46f523937e27ed93790a93c94"
+  },
+  {
+    "operation_index": 0,
+    "state": -2,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "d84557519b85db514ac51452e0329d423ba0654b59ebde04fefa870f78fedae8"
+  },
+  {
+    "operation_index": 0,
+    "state": -2,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "dd8d8210528b33321e77de89c4a4d97f0f0f93d778c29138dac4aed87bcf4a20"
+  },
+  {
+    "operation_index": 0,
+    "state": -2,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "23b87007fc62142f61d24ea00cfc018cc59819818bb495d04cbdde8fbeb76320"
+  },
+  {
+    "operation_index": 0,
+    "state": -2,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "94afb04b27d4c76c5e13779b7db4200e6f0ff475c18c9e904c4ff64de917adaa"
+  },
+  {
+    "operation_index": 0,
+    "state": -2,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "fd87cf705559739c691e6fa362ff4751680d7980071e6e7c8c50690ed789ee29"
+  },
+  {
+    "operation_index": 0,
+    "state": -2,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "d5665554e66ffb5b1d9d1c1d2e63ef4006bc90eebb77132d322d6b3587d9ca28"
+  },
+  {
+    "operation_index": 0,
+    "state": -2,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "68cfec296ca15bb98cfd6bb013845eb74fcd60e02c9816dda8c4fc8fd1c95e5d"
+  },
+  {
+    "operation_index": 0,
+    "state": -2,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "beef5008271f1ea0daa76754d62e179e3c4a0191f83ac378b1dac547e6369d18"
+  },
+  {
+    "operation_index": 0,
+    "state": -1,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ec54cb8e3c962127a5323b974fe4cf9b823887dc0197eafd0b31664e7c81040c"
+  },
+  {
+    "operation_index": 0,
+    "state": -1,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "d5d934175c76bd07beb6fe50537db00780c24181aae5b42aa81280aed53fc668"
+  },
+  {
+    "operation_index": 0,
+    "state": -1,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "b33dd47a2d5cf66222a8a2a3f1471ae814be84dbbf69564cac3d629154944cf4"
+  },
+  {
+    "operation_index": 0,
+    "state": -1,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "8cdedf0f4f7ee1c8f7b8ddf1adeea06fce7373a9baeec652370ff1e23810b492"
+  },
+  {
+    "operation_index": 0,
+    "state": -1,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f7088e7319436f56e4769c0547f87fe4d39dd9202ef8182f45bfff421f69985a"
+  },
+  {
+    "operation_index": 0,
+    "state": -1,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "dfa1e0c8fcf2f91431da2a901181fd1042fdb5b3f75509b7dad0a5b8ef7b1db8"
+  },
+  {
+    "operation_index": 0,
+    "state": -1,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "b82ec50bae7f22cda2a7a7ea44a3c5a196cf03c300854ad0a54a352a1f5560ec"
+  },
+  {
+    "operation_index": 0,
+    "state": -1,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "023f5d53c82a7236fe0db8063ae8497d49db4bb3d523c2665470a5c2df366d2b"
+  },
+  {
+    "operation_index": 0,
+    "state": -1,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "06b518736fbcd660b7784870ada0b5dd1a1f2d778528e0ac7aa476b65d27220c"
+  },
+  {
+    "operation_index": 0,
+    "state": 0,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "0c0abcaa8d7c080547061972d90e0a2c67621f2d5187635de71fb8e561ad3e29"
+  },
+  {
+    "operation_index": 0,
+    "state": 0,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "20bfd9fd340c9be0b8adef09aedefd9a5f50d713a2d05a7f888cdffc5afb2779"
+  },
+  {
+    "operation_index": 0,
+    "state": 0,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "08c1228dc982c1c034ed061df7c9f30f3becfd4068a93c763737642448874406"
+  },
+  {
+    "operation_index": 0,
+    "state": 0,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "2cddea256495775fb4468d73c0ee5129b96041eb79d8859484b9008d1c226671"
+  },
+  {
+    "operation_index": 0,
+    "state": 0,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "3e14d63a78db0d5383819013df725c9ef02bc5af892705ac43b2fd96efb3da52"
+  },
+  {
+    "operation_index": 0,
+    "state": 0,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "23a5a5a836a0c74c771c50acdb01f64857e0cc04266ae21fb10b0fc0459865ca"
+  },
+  {
+    "operation_index": 0,
+    "state": 0,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "334a5fc0bac77e066bb5b70a32bd6365a57c6c2e422a5bbad541ec5bc5a2ec35"
+  },
+  {
+    "operation_index": 0,
+    "state": 0,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "4fec57a1cfcf4b3e99eef6d860a0ba010c3011b18e4fb321b8dd65960f830a85"
+  },
+  {
+    "operation_index": 0,
+    "state": 0,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "1d7c8f844e6aed4bed25d20fa20e0fd21f8c8dfca80502a4776842adf5b376b7"
+  },
+  {
+    "operation_index": 0,
+    "state": 1,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "04d05163cfac1c2b4c310aa4de514df6383ded3eb1a4f30982191e60d150f97c"
+  },
+  {
+    "operation_index": 0,
+    "state": 1,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ef4289dbf9d51c74983cd17ef2fc2fcd63d239b87b3e49d1fb3a0d74079effa7"
+  },
+  {
+    "operation_index": 0,
+    "state": 1,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "5cf0c453f77cb325fd298dedb473f51222cd34582ca45d585f028d048b65bb35"
+  },
+  {
+    "operation_index": 0,
+    "state": 1,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "541d2b44dcbf43ddb32e189a27378a89f811e65103efbf1eda5029136331d28b"
+  },
+  {
+    "operation_index": 0,
+    "state": 1,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "17c27e0487d4c644afbbefab693dfdb943248abf51efda221040cb229a566914"
+  },
+  {
+    "operation_index": 0,
+    "state": 1,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "5d5ac04136f290e8d1180bae2c234f83f80f79c0e69a571a8d74dca11f4142fa"
+  },
+  {
+    "operation_index": 0,
+    "state": 1,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "adaf325e8b4936342b6643edbcb8bb58848ab1227638f423b01229cee59401c8"
+  },
+  {
+    "operation_index": 0,
+    "state": 1,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "9af457752ffca1e1a0bd669b242fc9d29f59677027b31ad6d45c60c0ae554b38"
+  },
+  {
+    "operation_index": 0,
+    "state": 1,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f15ca312281d70fa258aed21722ef5118ec331360f7ddc3262147243bd62ddab"
+  },
+  {
+    "operation_index": 0,
+    "state": 2,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "c68bf33c0062e580336c0ac91c5fee51717ae258413b28edffb8839581d5499f"
+  },
+  {
+    "operation_index": 0,
+    "state": 2,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "b8261d368df1105b968b633369b5d2baa1f02fa6fdcb2c69a7ec64adcb49f500"
+  },
+  {
+    "operation_index": 0,
+    "state": 2,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "9a7fea533067e014a1c351c21136fb584c1e228d544ae22a40e458c4bdb6d5e0"
+  },
+  {
+    "operation_index": 0,
+    "state": 2,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "cebff3491451968e869f9f3015884c82a5ef290030403fc58d13de7c6ae97558"
+  },
+  {
+    "operation_index": 0,
+    "state": 2,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "076e20d6b9d223961a4986bed69c621dd869989389dd664e84eb285add3f3dbe"
+  },
+  {
+    "operation_index": 0,
+    "state": 2,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0b34a76c4c98ce1a1382ba5b632ef5faf86a912227a86262aad3f324d3fb6185"
+  },
+  {
+    "operation_index": 0,
+    "state": 2,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "bdbde926060359f3b9af4d86a35f8caeaaa678118581e54b1ede49c1c9d30515"
+  },
+  {
+    "operation_index": 0,
+    "state": 2,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "2068045314cab44a62986676472336d0eb4fe8a1bb86481a0d273f036343c219"
+  },
+  {
+    "operation_index": 0,
+    "state": 2,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "2a4fdffcd394d1a6ec74b8ddce99276da8a343b3173d8788dcf5b6ea8132317a"
+  },
+  {
+    "operation_index": 0,
+    "state": 3,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "8ebb7a39b068318be775a11396688100f8edd6ecbbaef58fbd444c4a4521f479"
+  },
+  {
+    "operation_index": 0,
+    "state": 3,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "db7cea4248f23749432f3eed9d47094e332f0a42b8e761dab9a16c420eacf55d"
+  },
+  {
+    "operation_index": 0,
+    "state": 3,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "406a0631680353ce1fadbf5fc591aa0b9af98bd29c6bded6356199eddd3592e7"
+  },
+  {
+    "operation_index": 0,
+    "state": 3,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "b4ff5e56e9d4eb0474a349f48bff9a568368c4d2aff4f5b8320672e70a065ec3"
+  },
+  {
+    "operation_index": 0,
+    "state": 3,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "315a649e77f09f33e991c02f5aced73803756c2b1ceefa78dacf26f75dc490f7"
+  },
+  {
+    "operation_index": 0,
+    "state": 3,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0fc260a1321b4add274bc2e4f7684de20091aa1aa21cb4ceebabe73f7e7076b0"
+  },
+  {
+    "operation_index": 0,
+    "state": 3,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "04b24549bf594271de102a883920fde7834d3b6abecbba32d2fde8cda5033961"
+  },
+  {
+    "operation_index": 0,
+    "state": 3,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "cdbe742822ab1e0deb6d2f86dbac24b56a7c29d7b58bd3f5e972904a985f46c7"
+  },
+  {
+    "operation_index": 0,
+    "state": 3,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0c17ff82cd9865b5868b81ac863f3d3c35ca4990875882c83f87f73f3416aef8"
+  },
+  {
+    "operation_index": 0,
+    "state": 4,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "64697fef53757b4b13066ad9c94b3c8e306f8520394e2c02aa4332db8793ce15"
+  },
+  {
+    "operation_index": 0,
+    "state": 4,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7b7bdaba810813a824de433f036533adbeba53ab6e74d6da5361649e43b8a693"
+  },
+  {
+    "operation_index": 0,
+    "state": 4,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ee44c854d157da45f1c847bec9927f7a894797579297cad6845ef87a9864d874"
+  },
+  {
+    "operation_index": 0,
+    "state": 4,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "63d46aa5ad463d6fdd8189ffb9e69d70bf58c0f8940f7d92a28803b47ce833ff"
+  },
+  {
+    "operation_index": 0,
+    "state": 4,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "d24d38889c3532bee4732e3dc46f8a0c17f06bf2ff0a2c0474354086bfd536fa"
+  },
+  {
+    "operation_index": 0,
+    "state": 4,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "4121c3781fd6bacd07a72c0331636a0b29d12b7e78a89523b93d0ddc8173bd41"
+  },
+  {
+    "operation_index": 0,
+    "state": 4,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "432b64a6906b33ef8a79e1facaecc1d5c6435e32fb60d8ab96d42f9278c3ba5b"
+  },
+  {
+    "operation_index": 0,
+    "state": 4,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "edeb18b0a96c8aac312feddd1c392ea547947cad614e5c4be265729b1a0ea63d"
+  },
+  {
+    "operation_index": 0,
+    "state": 4,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "1300a5b42e375e4e8ca7c9ac1fa6fb0f399c828de3c4bb7f43d38dffb3f93a9c"
+  },
+  {
+    "operation_index": 0,
+    "state": 5,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "03e0444d70528098993626a96f4e5b28ac2372eb4a25ed4dbe7fb9db2199693d"
+  },
+  {
+    "operation_index": 0,
+    "state": 5,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "28f61c278fddcfe6bae757f8902c812af661c84204e50b4129c9fcb5ebbba413"
+  },
+  {
+    "operation_index": 0,
+    "state": 5,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "adf7fd2c21d7428822fc4c610226ec04a9535665c5668c60e19b31203c996422"
+  },
+  {
+    "operation_index": 0,
+    "state": 5,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "faed7b588580e6fa01049c0cd52faa6b8a1c79acf40c8d60e5745509f4de7f10"
+  },
+  {
+    "operation_index": 0,
+    "state": 5,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "e0f61bd079cd3425a2a62618dcd82b37cc419909f69267b47f741606f5126f94"
+  },
+  {
+    "operation_index": 0,
+    "state": 5,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "52ef106f2b43e203e8ecae61dbf1415474e699d4395b2a4bf2a46c317a41271e"
+  },
+  {
+    "operation_index": 0,
+    "state": 5,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "e6c072a7a46fab9251203e3866d70ff3180a8e3eb663b6902b19b6ed164b6be3"
+  },
+  {
+    "operation_index": 0,
+    "state": 5,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "38787b77fff0c1beab9ac15ff8adc3c93052f18dc7905909c50d9e09d649cdbf"
+  },
+  {
+    "operation_index": 0,
+    "state": 5,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "9675842e0820c3d68e206bc57ced32a0a30fb9053145b1239bbe112e2cc43e78"
+  },
+  {
+    "operation_index": 0,
+    "state": 6,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "be591895e8d8d4b0802d50371231025c9cebb74b2511f3cb4f60577a01dddfe9"
+  },
+  {
+    "operation_index": 0,
+    "state": 6,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0ae2e54948c3e71f28a393a3b2c5afe058967fc6fe45da4d939d5f90d03ad7d1"
+  },
+  {
+    "operation_index": 0,
+    "state": 6,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "aab84a8d1bcfddafba3470fa523b7575354377df69351248ea012fa502abc95a"
+  },
+  {
+    "operation_index": 0,
+    "state": 6,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7fc2c26bd02522bad93f560e1b32b3fa21f10d41b7175f52480d51858fd58f85"
+  },
+  {
+    "operation_index": 0,
+    "state": 6,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "3215b1e3527cef482e1a09e3aaa90fb23ead8c8ce0e767f2bad91b37f038a683"
+  },
+  {
+    "operation_index": 0,
+    "state": 6,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "e8fe475e7fca541692019f02b2a21d732d656dc1e0b0170b418eff637ce256cf"
+  },
+  {
+    "operation_index": 0,
+    "state": 6,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "e83313ed741472a547bd175c590887c0ef10914c82d29be95932d27f3ca789d3"
+  },
+  {
+    "operation_index": 0,
+    "state": 6,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "c1cfad02e3fa9c7a107a955b50f6bc975ff1dc2b9c4055d3a6f2ddaa1d461207"
+  },
+  {
+    "operation_index": 0,
+    "state": 6,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "1c3e722d03444f74e22c69af0f03a9dad67ef84f6f389d5ade05bbfcc5c31348"
+  },
+  {
+    "operation_index": 0,
+    "state": 7,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "dc73f7812d7e1608f7797e211a9a957eb1398685a6c1bfa586da1f10c1142181"
+  },
+  {
+    "operation_index": 0,
+    "state": 7,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "285b99eef6323eae56706fef469bf3e6afc5564f14bf03230d00cea24c2f1560"
+  },
+  {
+    "operation_index": 0,
+    "state": 7,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "384ef395db1d05d4b96251d36c48f89621e1d0d00e46a889d5cd0d2e083300ab"
+  },
+  {
+    "operation_index": 0,
+    "state": 7,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "c30671573ae7e496669a8a83fa3e114cff35d5a4556cc82020fbc772885021ac"
+  },
+  {
+    "operation_index": 0,
+    "state": 7,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "abe8eaaed0fe3729377c91dda9892168f5d23755abe861a767816038dbd10320"
+  },
+  {
+    "operation_index": 0,
+    "state": 7,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "df0dbcae25a34e769e11f934107ae52d7109dcf255558665e1c71f0e05e0a7b3"
+  },
+  {
+    "operation_index": 0,
+    "state": 7,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7abcc4b0e8ce7594a4cd12cbad11ebfefe03504c8045f9278abbec5758165cfa"
+  },
+  {
+    "operation_index": 0,
+    "state": 7,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7471c713b9593d3e1b5df579ccbab53e0e9de239bdb0798e9796417037d59540"
+  },
+  {
+    "operation_index": 0,
+    "state": 7,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "1ae073bd48e37d50b82023c794577a3c94b8cb1026ffabd61c49fd3e776afa33"
+  },
+  {
+    "operation_index": 0,
+    "state": 8,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "06c78cd634d3e05a22ffdda29cec897ea4447c9b30272696e5137c56225cd6dc"
+  },
+  {
+    "operation_index": 0,
+    "state": 8,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "38863b79788aa2c164e1c366d2fb42a55dc679bf5ec0070f49e8c578808a0061"
+  },
+  {
+    "operation_index": 0,
+    "state": 8,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "b0cee32ca455e17aad20901668e527baaca67cb896976faf74e529af3afae257"
+  },
+  {
+    "operation_index": 0,
+    "state": 8,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "52522798152236a56044ec76fe058ce7af6aa7758f444a0fb40aea7d009501ab"
+  },
+  {
+    "operation_index": 0,
+    "state": 8,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "ccdbc123f66a6890ebe90f0bd4a0839a9a2f0ec19e9951a806602680e4da6e44"
+  },
+  {
+    "operation_index": 0,
+    "state": 8,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0a19474859a49aad95f0c2d0f9b5329fd319e834f9481ae268c9d1bdaf6eb361"
+  },
+  {
+    "operation_index": 0,
+    "state": 8,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "1bc2a148957650f12b222eacf503cb65a4cc76d0c755990797eae16172284143"
+  },
+  {
+    "operation_index": 0,
+    "state": 8,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "d6a50a0dab93f37859ddc6de03ef3bca4a44e359085ccd5e97dd8b2e3f51ef1a"
+  },
+  {
+    "operation_index": 0,
+    "state": 8,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "1361d0181c133f1982876fb20f27ac5cc281cbc753613a6a8afc1cfb21d57397"
+  },
+  {
+    "operation_index": 0,
+    "state": 9,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ea4921f0a58ad6aa31e094c837f54197c8afa9a6bd5c843f9386b2c894f3e04e"
+  },
+  {
+    "operation_index": 0,
+    "state": 9,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f124e71a581452a3e07d3cf6e321e8194fc3970d3fd0cba99043014a00144f5a"
+  },
+  {
+    "operation_index": 0,
+    "state": 9,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f67bc2431fc77112c33d1d6e492beaff4fec199a559ed478c2439f3a901a7b56"
+  },
+  {
+    "operation_index": 0,
+    "state": 9,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "befddbca3cd844f8aa61caa87c52202b44d7d9caf4901c7ade3664e7ecf6e590"
+  },
+  {
+    "operation_index": 0,
+    "state": 9,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "e548f99af0a9b85e731474752f1e0104005054fbde965df9d68c3dbf0eb43326"
+  },
+  {
+    "operation_index": 0,
+    "state": 9,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "47604d4b2c726e0be6699d680b5db7207b4037e5c5a5382f91916b460d45eb5a"
+  },
+  {
+    "operation_index": 0,
+    "state": 9,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "284c7c65c050f683f53b21398c80aeb5176ca82c283ca486c030452dc16f3aff"
+  },
+  {
+    "operation_index": 0,
+    "state": 9,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "6bb126fc3188fadb5f3ec271669196a4de324673a1dcf9359756c1f8583a9f56"
+  },
+  {
+    "operation_index": 0,
+    "state": 9,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "1e33d7a2fd607a0f473cf984ba32273a360121673be943c2e7a09f42622357d0"
+  },
+  {
+    "operation_index": 0,
+    "state": 10,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "6225c0587c37b23ecf537ec04af25a920e1cec7d16b3668ecb092f93f0a28948"
+  },
+  {
+    "operation_index": 0,
+    "state": 10,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "0589a1f4a7bf7fcfb2bf43574b06946e004ebd12e402b733d79d23b769ae0e54"
+  },
+  {
+    "operation_index": 0,
+    "state": 10,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "89113a584c4ef8a3eb410406037cc67ccb485e08fa6aef9a59fa61bc66d2e53d"
+  },
+  {
+    "operation_index": 0,
+    "state": 10,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "9231ba23720fec215f77ab62ae4de4193c4607a53ad84e44295f229275fc5694"
+  },
+  {
+    "operation_index": 0,
+    "state": 10,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "819cab8a5bb00dd8942055307982db139d6c6b726ca52b4eb0fb892773dc4d60"
+  },
+  {
+    "operation_index": 0,
+    "state": 10,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f317dbc21369488add46249da4acb958281d2116bdc6ba9b5f682b8e354a7e8c"
+  },
+  {
+    "operation_index": 0,
+    "state": 10,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "75dade75b145dc61bfb6098fbfe04fbe3dacd0ee4f2f1904dec6b8280c833f79"
+  },
+  {
+    "operation_index": 0,
+    "state": 10,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "1b2404184026a6307edbf2da91528032ed8f6c13a3f147765954b4368fc970fd"
+  },
+  {
+    "operation_index": 0,
+    "state": 10,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "4ce6b022507606428281a856e4480a26e4a4a544019d22d248c1d2ce410a6385"
+  },
+  {
+    "operation_index": 0,
+    "state": 11,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "54b15b1713434c0cba958598007d464f2bbd529cbdaa24800dec29c29b75cddf"
+  },
+  {
+    "operation_index": 0,
+    "state": 11,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "d35468debd7546627a7e3fd85f133e1717f778645bb100142a57f41082a20c83"
+  },
+  {
+    "operation_index": 0,
+    "state": 11,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "689650fcc2bac76dc376b096c713dd6e2fd8005581ad3c1e981f5157b7c4f95e"
+  },
+  {
+    "operation_index": 0,
+    "state": 11,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "eecb387354e668bc30fd4978b1fe502fb7f7e53c52cf260d840eeb2d62a3cc95"
+  },
+  {
+    "operation_index": 0,
+    "state": 11,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "9622991d0d3d33f4049aaaf83e53b251be1545a3d4c93532f12c2f5a56603437"
+  },
+  {
+    "operation_index": 0,
+    "state": 11,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f0166a053e3c9b836d2ddedf4a377a877e7e639a7e31535e20e6a55bd9fe8bb1"
+  },
+  {
+    "operation_index": 0,
+    "state": 11,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "467728aa428983aed9e95ed0eac18b529e74650ea3c89766e9d2983507080005"
+  },
+  {
+    "operation_index": 0,
+    "state": 11,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "efd9083295f308759a83986326d1d4269846fbb039e10389998fada02b49ab22"
+  },
+  {
+    "operation_index": 0,
+    "state": 11,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ac9c9aa22235ca5edeacd73cf2ab249853dd84a3c861cefa936505d8d4c624f5"
+  },
+  {
+    "operation_index": 0,
+    "state": 12,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "23fb8c7837bb05a212798c5fe6c144640f3764416066d50697c018000d667411"
+  },
+  {
+    "operation_index": 0,
+    "state": 12,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "7183201e350ec863ad6fd8799b99d15e154c1f22b4ec8a91c73f3ea719724061"
+  },
+  {
+    "operation_index": 0,
+    "state": 12,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "57ba63d97b30de4122466b9849d79fe09a38187e9a0a267095999742dccd29f6"
+  },
+  {
+    "operation_index": 0,
+    "state": 12,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "a80722d8ddb145d7298e86662b67d5255652dc80b7818071501219c03f6e23ab"
+  },
+  {
+    "operation_index": 0,
+    "state": 12,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "4f13199ccdcb8d89c509322393a0c1352de40aa1ee855bed9446b266f9ca2cff"
+  },
+  {
+    "operation_index": 0,
+    "state": 12,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "cf7e78c6923cb458ac42773c95084b69431d1e77133720b38aabb310c36eb1f8"
+  },
+  {
+    "operation_index": 0,
+    "state": 12,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "fa9b336a5931a2e4fcd78fdf612662971aec5c77a1facda61863a5746e31bef1"
+  },
+  {
+    "operation_index": 0,
+    "state": 12,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "a8275b0be004fb76a58bea643e651455da189cb2246230b8fab4c18359480980"
+  },
+  {
+    "operation_index": 0,
+    "state": 12,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "4d081d8f412f309ec3cf5ab1d7fe6cd8738355df6565dbd6fd8aff2b07713ea4"
+  },
+  {
+    "operation_index": 0,
+    "state": 13,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "45f13f388083e159f0cf26c2dff19ee671085d58500013784d4d1d210f38ab5a"
+  },
+  {
+    "operation_index": 0,
+    "state": 13,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "377a2544b2eb10cd895979fc07c46524e5b247ad91d3a4d57546c55d8b6f36d2"
+  },
+  {
+    "operation_index": 0,
+    "state": 13,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "511921595d78e65ac95af84fec287be357ca72e7de8e796c1d6c68b73b94a2f1"
+  },
+  {
+    "operation_index": 0,
+    "state": 13,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f1e99d72ea4c061cf3415f0dd8835716918ef6bb95cd1f4a750ad67b7db45d05"
+  },
+  {
+    "operation_index": 0,
+    "state": 13,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "a5712689845ec5cd008d83dcd9c953fc8d61c3bdfac622d62ddc03078aa472bb"
+  },
+  {
+    "operation_index": 0,
+    "state": 13,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "bfad5e37890e6874e59c973cff4f5da90b61e6462f19de27de427753c2210b82"
+  },
+  {
+    "operation_index": 0,
+    "state": 13,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "481f02b7b38393749b4ed51fbd99ce42fa1a4e7cf9935b8716ef7acf4dc445fc"
+  },
+  {
+    "operation_index": 0,
+    "state": 13,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "b8b5c5655e6c680574aa5e796f9207185c9962158ced889fcaaa03394dac5d1b"
+  },
+  {
+    "operation_index": 0,
+    "state": 13,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 17,
+      "result": 17,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "c822209ff14234a4dad015ac7faf96cf8624a0f05ae5d58995197b8212768a03"
+  },
+  {
+    "operation_index": 0,
+    "state": 14,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "bf068add261f5528f12aedac3fb5b9fdc8ee269669491ccc7a408b64d0f532c8"
+  },
+  {
+    "operation_index": 0,
+    "state": 14,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "25cd279a5789616cc3c17e0008261b3d12897210e525e6986e134bc9c63078ea"
+  },
+  {
+    "operation_index": 0,
+    "state": 14,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f074246550dddd3475b9488a1a6616e92f9233d974e80c0b583aa05ec7e7233c"
+  },
+  {
+    "operation_index": 0,
+    "state": 14,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "4bed2139da04a65527e5f49abd8c59613d394151e2587945e2c9875c2b3a1c1b"
+  },
+  {
+    "operation_index": 0,
+    "state": 14,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "cddc96c84a0062f5c7c04a0bd95ffb2e7d6d6c6d2fb8fb43d3a111f5de699731"
+  },
+  {
+    "operation_index": 0,
+    "state": 14,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "dbb5ba3ea52ea320514cba81c2844437bdabc80fb6a95261423dfda7f4a2bc18"
+  },
+  {
+    "operation_index": 0,
+    "state": 14,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "22dd8670a7f8a89eec1c2e366e1dc940b5aa3a30948dc1829cda18880fb40eaa"
+  },
+  {
+    "operation_index": 0,
+    "state": 14,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 17,
+      "result": 17,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "cdc071c2d4f2186207bd5a971202ff34d4d3b15ebe867603e2c0a199a6efacbb"
+  },
+  {
+    "operation_index": 0,
+    "state": 14,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 18,
+      "result": 18,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "d6db5b96f6a3b3089dbeb79d6bfd5779093636bade65493e79678d84209933b3"
+  },
+  {
+    "operation_index": 0,
+    "state": 15,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ce03907218f732b83653622c67ca64c1564f25f91815a66394a61069371d938c"
+  },
+  {
+    "operation_index": 0,
+    "state": 15,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "1155d666442d01adab348e6dd6fb9c66efed5fc07177a1ce479fc286476a1cdc"
+  },
+  {
+    "operation_index": 0,
+    "state": 15,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "988be4abe60e108efaa47ab9bbb198a98563911b5222144a1504fc9b9e2f3177"
+  },
+  {
+    "operation_index": 0,
+    "state": 15,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "45a689994553ead4907ee542034d5d15453a3fb3c34012e00695fd9bb8faa32c"
+  },
+  {
+    "operation_index": 0,
+    "state": 15,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "6e421425fd95a7fbe2f7abfd13cd6b4e9b5903ff58ad1467fc79346ad6b3eda9"
+  },
+  {
+    "operation_index": 0,
+    "state": 15,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "49b2567fdc3467015e62bef6b862f7567fcf33a450848e68bcd8eccd9a94afa0"
+  },
+  {
+    "operation_index": 0,
+    "state": 15,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 17,
+      "result": 17,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "b364f44849f87940392eae431ac3b132cf8ab1078cb103aa9df2eef104a04aed"
+  },
+  {
+    "operation_index": 0,
+    "state": 15,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 18,
+      "result": 18,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "c9bf3b0704b7ea1cf6fcafad3b6d7050e18d658dbf0d468a0b04568f99419524"
+  },
+  {
+    "operation_index": 0,
+    "state": 15,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 19,
+      "result": 19,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "774c7cc83475c71aa8ff62ad3f6ec1909e47ab65d95c22310708e38ac494c4d0"
+  },
+  {
+    "operation_index": 0,
+    "state": 16,
+    "argument": -4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "a76b9210657f93c614eebeb198d617fec659c127d42beb6c443ea87c812ba925"
+  },
+  {
+    "operation_index": 0,
+    "state": 16,
+    "argument": -3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f3e4511608e203e71d2c80fbf8e4ca334c45658cfe68fc78f7c742bc9c6827f4"
+  },
+  {
+    "operation_index": 0,
+    "state": 16,
+    "argument": -2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "f66d470544e77926196eb9f1127db569ac8d4fc97e45852268202b92205ca2e8"
+  },
+  {
+    "operation_index": 0,
+    "state": 16,
+    "argument": -1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "6b954da264e58392ef8279739e89461f05655a3585ae009126f3cfa2aedc1cd7"
+  },
+  {
+    "operation_index": 0,
+    "state": 16,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "7dd7320dde4ac968475414557fc0b2e4ae807b59f2678a87bcdc3fbd1035177e"
+  },
+  {
+    "operation_index": 0,
+    "state": 16,
+    "argument": 1,
+    "source_accepted": true,
+    "prediction": {
+      "next": 17,
+      "result": 17,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "5d2a2f25c10b783c3682673975fb2be0a88690e5b548a7cc2d51ea9b70ff0bc6"
+  },
+  {
+    "operation_index": 0,
+    "state": 16,
+    "argument": 2,
+    "source_accepted": true,
+    "prediction": {
+      "next": 18,
+      "result": 18,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "ab20e33519ac75d69541c7476db62c172a57fd4c89e35228616795f60451fd95"
+  },
+  {
+    "operation_index": 0,
+    "state": 16,
+    "argument": 3,
+    "source_accepted": true,
+    "prediction": {
+      "next": 19,
+      "result": 19,
+      "write": true
+    },
+    "training": false,
+    "observed_trace_sha256": "1f05a8cedb8837150d8ea0bc2fe5307251b0e1fd8615b099c69228ce2275363e"
+  },
+  {
+    "operation_index": 0,
+    "state": 16,
+    "argument": 4,
+    "source_accepted": true,
+    "prediction": {
+      "next": 20,
+      "result": 20,
+      "write": true
+    },
+    "training": true,
+    "observed_trace_sha256": "cdab56380ed77161e98e4c6a813ce3f382897922969f416ddc9214e02dfd8ec2"
+  },
+  {
+    "trace_events": [
+      {
+        "transaction": 1,
+        "sequence": 0,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_begin"
+      },
+      {
+        "transaction": 1,
+        "sequence": 1,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "allocate"
+      },
+      {
+        "transaction": 1,
+        "sequence": 2,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:property:119:120",
+        "span": {
+          "start": 119,
+          "end": 134,
+          "line": 4,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "property_default",
+        "integers": {
+          "value": 0
+        }
+      },
+      {
+        "transaction": 1,
+        "sequence": 3,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:138:222",
+        "span": {
+          "start": 138,
+          "end": 222,
+          "line": 6,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "call_enter",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 4,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:parameter:152:153",
+        "span": {
+          "start": 152,
+          "end": 171,
+          "line": 6,
+          "column": 19
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "bind_argument",
+        "contract_id": "Tally.init",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 1,
+        "sequence": 5,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:variable:183:188",
+        "span": {
+          "start": 183,
+          "end": 188,
+          "line": 7,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 6,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:variable:201:216",
+        "span": {
+          "start": 201,
+          "end": 216,
+          "line": 7,
+          "column": 27
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Tally.init",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 1,
+        "sequence": 7,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:assign:183:217",
+        "span": {
+          "start": 183,
+          "end": 217,
+          "line": 7,
+          "column": 9
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "stage_write",
+        "contract_id": "Tally.init",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 1,
+        "sequence": 8,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:138:222",
+        "span": {
+          "start": 138,
+          "end": 222,
+          "line": 6,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "contract_validated",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 9,
+        "phase": "observed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:138:222",
+        "span": {
+          "start": 138,
+          "end": 222,
+          "line": 6,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 0,
+        "operation": "call_return",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 10,
+        "phase": "committed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:assign:183:217",
+        "span": {
+          "start": 183,
+          "end": 217,
+          "line": 7,
+          "column": 9
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_commit",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 1,
+        "sequence": 11,
+        "phase": "committed",
+        "invocation": 1,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_commit",
+        "contract_id": "Tally.init"
+      },
+      {
+        "transaction": 2,
+        "sequence": 12,
+        "phase": "observed",
+        "invocation": 0,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_begin"
+      },
+      {
+        "transaction": 2,
+        "sequence": 13,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:337:391",
+        "span": {
+          "start": 337,
+          "end": 391,
+          "line": 15,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_enter",
+        "contract_id": "Tally.read"
+      },
+      {
+        "transaction": 2,
+        "sequence": 14,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:variable:370:375",
+        "span": {
+          "start": 370,
+          "end": 375,
+          "line": 16,
+          "column": 16
+        },
+        "state_version": 0,
+        "operation": "local_read",
+        "contract_id": "Tally.read"
+      },
+      {
+        "transaction": 2,
+        "sequence": 15,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:property_access:370:385",
+        "span": {
+          "start": 370,
+          "end": 385,
+          "line": 16,
+          "column": 16
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "state_read",
+        "contract_id": "Tally.read",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 16,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:return:363:386",
+        "span": {
+          "start": 363,
+          "end": 386,
+          "line": 16,
+          "column": 9
+        },
+        "state_version": 0,
+        "operation": "return",
+        "contract_id": "Tally.read",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 17,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:337:391",
+        "span": {
+          "start": 337,
+          "end": 391,
+          "line": 15,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "contract_validated",
+        "contract_id": "Tally.read"
+      },
+      {
+        "transaction": 2,
+        "sequence": 18,
+        "phase": "observed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:method:337:391",
+        "span": {
+          "start": 337,
+          "end": 391,
+          "line": 15,
+          "column": 5
+        },
+        "object": 1,
+        "state_version": 1,
+        "operation": "call_return",
+        "contract_id": "Tally.read",
+        "integers": {
+          "value": -16
+        }
+      },
+      {
+        "transaction": 2,
+        "sequence": 19,
+        "phase": "committed",
+        "invocation": 2,
+        "node_id": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112:class:101:393",
+        "span": {
+          "start": 101,
+          "end": 393,
+          "line": 3,
+          "column": 1
+        },
+        "state_version": 0,
+        "operation": "transaction_commit",
+        "contract_id": "Tally.read"
+      }
+    ],
+    "operation_index": 1,
+    "state": -16,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -16,
+      "result": -16,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "9a24a3ed4b8e28420663d2fdbe7cfc924e1c5b6459115b442d9a850c3b2d7048"
+  },
+  {
+    "operation_index": 1,
+    "state": -15,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -15,
+      "result": -15,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "f9bdfba3e2b1ef668cd5961046e8614576917edb6a373fddee8f356a714019dd"
+  },
+  {
+    "operation_index": 1,
+    "state": -14,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -14,
+      "result": -14,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "d07fbc2f0f84f1aa1c2daf6bbb3dba928b19b51f0fa9223e1109e704c83d6346"
+  },
+  {
+    "operation_index": 1,
+    "state": -13,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -13,
+      "result": -13,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "daa5fd78d809ecfe1f13f88e23028354f564d0da0b0d3720ec4a3cac2a853898"
+  },
+  {
+    "operation_index": 1,
+    "state": -12,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -12,
+      "result": -12,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "732586babfac007d13093e55503fd1cbd2406e4b04035eac979bb0159040b19a"
+  },
+  {
+    "operation_index": 1,
+    "state": -11,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -11,
+      "result": -11,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "afb615a741ad77371ffb036a1154e810776ff7b5a9e574140279e7bbcd506be8"
+  },
+  {
+    "operation_index": 1,
+    "state": -10,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -10,
+      "result": -10,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "58abe3d63e37e0077151fe4d5f875b458f48a978f9ed104f8a8c8f1b95b567dc"
+  },
+  {
+    "operation_index": 1,
+    "state": -9,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -9,
+      "result": -9,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "4c34b2b0a274034b767de7628e73a94416ccf5e9a34beea35d269e8d318b1d0c"
+  },
+  {
+    "operation_index": 1,
+    "state": -8,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -8,
+      "result": -8,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "64e73841f5d7a8ecc07fb9a5a2620d5e2bffd103ba7321c8759b525d9a3c6ccb"
+  },
+  {
+    "operation_index": 1,
+    "state": -7,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -7,
+      "result": -7,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "6431b3476858f21ed67fd23564ef6d46adbb2d0006c574d5a6965f9cb6310068"
+  },
+  {
+    "operation_index": 1,
+    "state": -6,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -6,
+      "result": -6,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "f56ceda0efe33d80e8be3fdeeb3931c8190d429265c318daabfaf2b71b21986c"
+  },
+  {
+    "operation_index": 1,
+    "state": -5,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -5,
+      "result": -5,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "4bed869c3c47d4605d30651710c08f45b719fd5cb473e0e0b9ebeb2065d26c18"
+  },
+  {
+    "operation_index": 1,
+    "state": -4,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -4,
+      "result": -4,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "7bfe7eab53928b2aff699938e09f71b887f98148ca14ac4b461fd770c06c1908"
+  },
+  {
+    "operation_index": 1,
+    "state": -3,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -3,
+      "result": -3,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "4d74f8a330352b127e03aba4f4adb9ef00985966c99e777cf6f6bfc015e5c2ba"
+  },
+  {
+    "operation_index": 1,
+    "state": -2,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -2,
+      "result": -2,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "951fa487fe62d8bc339cad739989b4a1cb10176dad3d26fab85bc771bd893bd6"
+  },
+  {
+    "operation_index": 1,
+    "state": -1,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": -1,
+      "result": -1,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "fd617fae1d691dac4430efe38498f7675a589005dfa2af74694304aaf1bad436"
+  },
+  {
+    "operation_index": 1,
+    "state": 0,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 0,
+      "result": 0,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "f83439c919c24f0b757f346f07c05f978a5b1a97cbbd4d55f4058672356ef517"
+  },
+  {
+    "operation_index": 1,
+    "state": 1,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 1,
+      "result": 1,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "b860e05ad740c638804f0186b2ec9254930f6b33a7e432bc37286d04bb574e28"
+  },
+  {
+    "operation_index": 1,
+    "state": 2,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 2,
+      "result": 2,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "f535e3e806a12ae504c2b747512b5d4ec81d0bcc0f805d20447bbffe55f2b0bd"
+  },
+  {
+    "operation_index": 1,
+    "state": 3,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 3,
+      "result": 3,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "1e91e2fb4fbaf77143db1eabff38af765982dbbdce40bf7da95acb8f351bf1f3"
+  },
+  {
+    "operation_index": 1,
+    "state": 4,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 4,
+      "result": 4,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "c6a041582409a5f7e774ac955cc78c5fe61f260b76ae30378ef527aa7cf6eb8a"
+  },
+  {
+    "operation_index": 1,
+    "state": 5,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 5,
+      "result": 5,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "49f00e1d618ddf71933a04a6318b37b54213b055ef8f5ea7e1edfe6d9c216e2c"
+  },
+  {
+    "operation_index": 1,
+    "state": 6,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 6,
+      "result": 6,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "30e61a0793b7733d94e8f11d44fc8960d479e197a0c6cce0e0842a0a40fe99ea"
+  },
+  {
+    "operation_index": 1,
+    "state": 7,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 7,
+      "result": 7,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "fd43fd1e1d3a99d9d8b23b5beb88d160238c29d4c0cf556178866bbea694be78"
+  },
+  {
+    "operation_index": 1,
+    "state": 8,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 8,
+      "result": 8,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "81e4e1dc5ac376d2a32dff6ba67927339a45967d65087aa42948225aa92bfd45"
+  },
+  {
+    "operation_index": 1,
+    "state": 9,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 9,
+      "result": 9,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "50e8f44ba08585d74dfda6700b062f215e932c9d9a55cc67263a21b97269cf96"
+  },
+  {
+    "operation_index": 1,
+    "state": 10,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 10,
+      "result": 10,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "4badb13f6174cb2a4a2fc113f0c00af8c19fdd8fbcd5737ff69f29ca6b28a04a"
+  },
+  {
+    "operation_index": 1,
+    "state": 11,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 11,
+      "result": 11,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "9d9959d007bdc034c8c818b15406f26ab4ebddc01f0bc9aa8e205a3e0424644c"
+  },
+  {
+    "operation_index": 1,
+    "state": 12,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 12,
+      "result": 12,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "a528d191b9fe832e9dea6345ef3c17c4b783943c0cbc8febc290e2ba93c5b3fa"
+  },
+  {
+    "operation_index": 1,
+    "state": 13,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 13,
+      "result": 13,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "acaa2470ae48fcf56e5d6e22d95be49038bcd72ac97bc15e97c7bfadd13f3a0e"
+  },
+  {
+    "operation_index": 1,
+    "state": 14,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 14,
+      "result": 14,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "24e3b68d3808ab2f1b5a346b460829342897de4f602ba0e6b25fc422b41bf506"
+  },
+  {
+    "operation_index": 1,
+    "state": 15,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 15,
+      "result": 15,
+      "write": false
+    },
+    "training": false,
+    "observed_trace_sha256": "520a18921ac3a71da50c0b3d8be19caaf5088aa21f15fe49c7e14b419d1833e8"
+  },
+  {
+    "operation_index": 1,
+    "state": 16,
+    "argument": 0,
+    "source_accepted": true,
+    "prediction": {
+      "next": 16,
+      "result": 16,
+      "write": false
+    },
+    "training": true,
+    "observed_trace_sha256": "cef0fd718dfca96b33a7dbd635197bd16e3f0243305bd5ac2590ce0e40369aae"
+  }
+]

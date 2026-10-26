@@ -1,0 +1,102 @@
+{
+  "kind": "training-timeout",
+  "manifest": {
+    "components": [
+      {
+        "alias": "counter",
+        "class": "Counter",
+        "domain": {
+          "arg_max": 4,
+          "arg_min": -4,
+          "state_max": 16,
+          "state_min": -16
+        },
+        "entries": [
+          "increment",
+          "read"
+        ],
+        "source": "counter.phlam"
+      },
+      {
+        "alias": "accumulator",
+        "class": "Accumulator",
+        "domain": {
+          "arg_max": 8,
+          "arg_min": -8,
+          "state_max": 16,
+          "state_min": -16
+        },
+        "entries": [
+          "add",
+          "read"
+        ],
+        "source": "accumulator.phlam"
+      },
+      {
+        "alias": "saturating",
+        "class": "SaturatingAccumulator",
+        "domain": {
+          "arg_max": 8,
+          "arg_min": -8,
+          "state_max": 16,
+          "state_min": -16
+        },
+        "entries": [
+          "add",
+          "read"
+        ],
+        "source": "saturating.phlam"
+      }
+    ],
+    "lock": "phlam.lock",
+    "module": {
+      "name": "g01/original",
+      "version": "0.1.0"
+    },
+    "schema": "phlame.build.v0",
+    "sources": [
+      "counter.phlam",
+      "accumulator.phlam",
+      "saturating.phlam"
+    ],
+    "training_plan": "training.json"
+  },
+  "training_plan": {
+    "build_timeout_ms": 180000,
+    "candidate_timeout_ms": 1,
+    "candidates": [
+      {
+        "initialization": "legacy",
+        "kind": "affine",
+        "seeds": [
+          7
+        ],
+        "width": 0
+      },
+      {
+        "initialization": "paired-centered",
+        "kind": "relu",
+        "seeds": [
+          7,
+          404
+        ],
+        "width": 4
+      },
+      {
+        "initialization": "paired-centered",
+        "kind": "relu",
+        "seeds": [
+          7,
+          404
+        ],
+        "width": 8
+      }
+    ],
+    "max_primitive_cases": 5000,
+    "sampling": {
+      "argument_stride": 4,
+      "state_stride": 2
+    },
+    "schema": "phlame.training-plan.v0"
+  }
+}

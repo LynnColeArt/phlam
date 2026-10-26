@@ -1,0 +1,25 @@
+/// Accumulates bounded integer amounts while keeping its total in [-16,16].
+/// Rejected updates return false and leave the instance unchanged.
+class Reservoir {
+    $quantity = 0
+
+    function init($starting_total = 0) {
+        $this->quantity = $starting_total
+    }
+
+    function add($amount) {
+        if ($amount < -8 || $amount > 8) {
+            return false
+        }
+        $next = $this->quantity + $amount
+        if ($next < -16 || $next > 16) {
+            return false
+        }
+        $this->quantity = $next
+        return $this->quantity
+    }
+
+    function read() {
+        return $this->quantity
+    }
+}

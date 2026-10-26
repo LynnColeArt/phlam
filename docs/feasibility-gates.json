@@ -1,7 +1,7 @@
 {
   "schema": "phlame.feasibility-ledger.v0",
   "date": "2026-10-26",
-  "status_note": "Plan only. G00 records the scoped baseline and written plan; it does not establish any later gate.",
+  "status_note": "G00 planning baseline and G01 scalar pipeline are complete/passed. All later implementation gates remain not started; broad/full-brief verdicts remain unresolved.",
   "verdicts": {
     "bounded_learned_execution": {
       "status": "established_for_recorded_scalar_domain",
@@ -41,11 +41,12 @@
     {
       "id": "G01",
       "title": "Reusable source-to-frozen-artifact build",
-      "status": "not_started",
+      "status": "passed",
       "depends_on": [
         "G00"
       ],
-      "report": "docs/broad-feasibility-next-slice.md"
+      "report": "experiments/g01/run-0001/REPORT.md",
+      "scope": "Existing finite scalar subset; three originals plus renamed/reordered variants; not broad compilation/reliability."
     },
     {
       "id": "G02",

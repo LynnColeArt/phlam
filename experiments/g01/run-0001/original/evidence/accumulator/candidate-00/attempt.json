@@ -1,0 +1,38 @@
+{
+  "runtime_load_ns": 725900,
+  "runtime_verification_process_wall_ns": 3501702,
+  "runtime_verification_process_cpu_ns": 3066000,
+  "recipe": {
+    "kind": "affine",
+    "width": 0,
+    "initialization": "legacy",
+    "seeds": [
+      7
+    ]
+  },
+  "seed": 7,
+  "module_sha256": "1d0a1d825a87a892e69a16722e9bc389e19968308c4e9d90a55b6ec8bc906b96",
+  "artifact": "accumulator/candidate-00/deployment/accumulator.json",
+  "training_wall_ns": 38554126,
+  "training_cpu_ns": 38327000,
+  "trainer_managed_bytes_at_end": 12015880,
+  "initial_mse": 0.31459679380230765,
+  "final_mse": 3.993234783215831e-31,
+  "raw_training_correct": 90,
+  "raw_nontraining_correct": 432,
+  "certificate": {
+    "key": "f4e660932e1dd6cb5378ea1d596704cd798156f10492ffbd754712f91974b20c",
+    "module_sha256": "1d0a1d825a87a892e69a16722e9bc389e19968308c4e9d90a55b6ec8bc906b96",
+    "certified": true,
+    "cases": 594,
+    "accepted_inputs": 522,
+    "contract_rejected_inputs": 72,
+    "build_ns": 362896,
+    "checker_work": {
+      "expressions": 36261,
+      "integer_arithmetic": 4200,
+      "predicates": 12831,
+      "output_comparisons": 1566
+    }
+  }
+}

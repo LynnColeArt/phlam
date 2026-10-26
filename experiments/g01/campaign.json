@@ -1,0 +1,87 @@
+{
+  "schema": "phlame.g01.campaign.v0",
+  "date": "2026-10-26",
+  "status": "locked_before_implementation",
+  "input_encoding": "versioned strict JSON in phlam.mod/phlam.lock",
+  "argument_policy": "explicit-int64-v0; no omitted-argument default insertion",
+  "trust": "externally supplied development key; signed bundle aliases and signed modules",
+  "training_plan": {
+    "schema": "phlame.training-plan.v0",
+    "sampling": {
+      "state_stride": 2,
+      "argument_stride": 4
+    },
+    "max_primitive_cases": 5000,
+    "candidate_timeout_ms": 15000,
+    "build_timeout_ms": 180000,
+    "candidates": [
+      {
+        "kind": "affine",
+        "width": 0,
+        "initialization": "legacy",
+        "seeds": [
+          7
+        ]
+      },
+      {
+        "kind": "relu",
+        "width": 4,
+        "initialization": "paired-centered",
+        "seeds": [
+          7,
+          404
+        ]
+      },
+      {
+        "kind": "relu",
+        "width": 8,
+        "initialization": "paired-centered",
+        "seeds": [
+          7,
+          404
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "manifest": "examples/g01/original/phlam.mod",
+      "manifest_sha256": "5d25c86a6e5daed6ee04ee6e0a2b18fb783f1bb948758908dd32b0e2598156b7",
+      "locked_files": {
+        "counter.phlam": "fd26a7823ae1fd39b10f99a48ca42c99208acf36e598c7c46cd9b69ea0450d9e",
+        "accumulator.phlam": "bda959bd8633e8f23b07db418c453df591ffa80659fd92aeff45844d97a81e36",
+        "saturating.phlam": "8c75c3cb73c83d670a26266fca83f94d6f73b844b2c4063e1c74aab17e9cffbb",
+        "training.json": "9a19186a3e9aed193212029df28e821b3677ee14b527ed049e3fa082a04bac52"
+      }
+    },
+    {
+      "manifest": "examples/g01/renamed/phlam.mod",
+      "manifest_sha256": "881f842af70162da6f5b2c16abf53e54770e8d5128f111093be8720b4d74bda2",
+      "locked_files": {
+        "counter.phlam": "6af7f21f13f1ff7688c19e9e360c878b59682658d77ba9c66a7820a633c67112",
+        "accumulator.phlam": "9d0dba78a818dd9ea358540c966f5db9c6a8bc48a41b413222d9db1b67ba4257",
+        "saturating.phlam": "dd511ae386707f5c88a2a40251ddcdded7a40582145e808f1a39eb0ae9be3d29",
+        "training.json": "9a19186a3e9aed193212029df28e821b3677ee14b527ed049e3fa082a04bac52"
+      }
+    },
+    {
+      "manifest": "examples/g01/reordered/phlam.mod",
+      "manifest_sha256": "13f2d05dc273ec88970e9cb7a587941da1f9fb0a3c866d9342f8abaa606ce572",
+      "locked_files": {
+        "counter.phlam": "054cca58b574c5b13f6329fdcb9b84ab92974b8afe5ea4b50e3506dea2dddeac",
+        "accumulator.phlam": "36972a0f0f60d1d78584220801519c112b8433efc88c79f4899601409be2a512",
+        "saturating.phlam": "d1b2ea5bd91b0d8f07210164d8f37c9265fc315df5e9b45e5407ae1164133d6d",
+        "training.json": "9a19186a3e9aed193212029df28e821b3677ee14b527ed049e3fa082a04bac52"
+      }
+    }
+  ],
+  "required_checks": [
+    "two clean builds per project, byte-identical deployment files",
+    "source-oracle and independent mathematical fixtures",
+    "learned/lookup x concrete/certified",
+    "atomic late rollback, owned outputs, tamper/root/key/ABI/binding/domain denials",
+    "known failing recipe retains evidence, publishes no bundle",
+    "runtime dependency graph excludes compiler/reference",
+    "interrupted build publishes no bundle"
+  ]
+}

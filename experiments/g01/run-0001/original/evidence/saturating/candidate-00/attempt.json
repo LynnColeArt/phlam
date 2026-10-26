@@ -1,0 +1,40 @@
+{
+  "runtime_load_ns": 651361,
+  "runtime_verification_process_wall_ns": 2330599,
+  "runtime_verification_process_cpu_ns": 2288000,
+  "recipe": {
+    "kind": "affine",
+    "width": 0,
+    "initialization": "legacy",
+    "seeds": [
+      7
+    ]
+  },
+  "seed": 7,
+  "module_sha256": "2de4ae47c68fc203302202e4c893dbe5afaa5cdf0275a637d126267d630d6112",
+  "artifact": "saturating/candidate-00/deployment/saturating.json",
+  "training_wall_ns": 42219107,
+  "training_cpu_ns": 42352000,
+  "trainer_managed_bytes_at_end": 7821576,
+  "initial_mse": 0.33562964104655485,
+  "final_mse": 0.0011085730247981527,
+  "raw_training_correct": 40,
+  "raw_nontraining_correct": 200,
+  "certificate": {
+    "key": "7b23f6cc7a673ac1308d662dedd032b5f0793cc9d8a94c928d1c6351115969a8",
+    "module_sha256": "2de4ae47c68fc203302202e4c893dbe5afaa5cdf0275a637d126267d630d6112",
+    "certified": false,
+    "cases": 1,
+    "accepted_inputs": 1,
+    "contract_rejected_inputs": 0,
+    "build_ns": 112668,
+    "checker_work": {
+      "expressions": 31,
+      "integer_arithmetic": 4,
+      "predicates": 10,
+      "output_comparisons": 3
+    },
+    "failure": "model differs from contract at operation add state -16 arg -8"
+  },
+  "error": "model differs from contract at operation add state -16 arg -8"
+}

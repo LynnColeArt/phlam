@@ -1,0 +1,17 @@
+{
+  "schema": "phlame.build-report.v0",
+  "status": "failed",
+  "error": "counter.phlam: missing or mismatched lock hash",
+  "manifest_sha256": "",
+  "plan_sha256": "",
+  "implementation_sha256": "342a1d3c0e54d3b9eb2a6572e14130d6918ef060ace0e5f3f62ce73daa1885e9",
+  "toolchain": "go1.26.4",
+  "argument_policy": "explicit-int64-v0",
+  "components": {},
+  "limitations": [
+    "Finite scalar domains; no arrays/loops/eval/gateway or production authority.",
+    "Explicit int64 arguments: source method defaults are not inserted by the scalar ABI.",
+    "Training subprocess wall timeout is enforced; Go managed-memory metric/soft limit is not an OS RSS sandbox.",
+    "Finite certification repeats at runtime; a signed candidate/report is not an accepted proof bit."
+  ]
+}

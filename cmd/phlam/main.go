@@ -13,6 +13,9 @@ import (
 )
 
 func run(args []string, stdout, stderr io.Writer) int {
+	if len(args) > 0 && (args[0] == "build" || args[0] == "build-report") {
+		return runBuild(args, stdout, stderr)
+	}
 	if len(args) < 2 || (args[0] == "run" && len(args) != 3) || (args[0] != "run" && (len(args) != 2 || args[0] != "check" && args[0] != "inspect" && args[0] != "contracts")) {
 		fmt.Fprintln(stderr, "usage: phlam <check|inspect|contracts> <source.phlam> | phlam run <source.phlam> <scenario.json>")
 		return 2

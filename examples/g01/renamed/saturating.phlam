@@ -1,0 +1,27 @@
+/// Adds integer amounts, saturating the total at -16 and 16.
+/// Every add writes and returns the resulting total, including at a limit.
+class Limiter {
+    $quantity = 0
+
+    function init($starting_total = 0) {
+        $this->quantity = $starting_total
+    }
+
+    function add($amount) {
+        $next = $this->quantity + $amount
+        if ($next < -16) {
+            $this->quantity = -16
+            return $this->quantity
+        }
+        if ($next > 16) {
+            $this->quantity = 16
+            return $this->quantity
+        }
+        $this->quantity = $next
+        return $this->quantity
+    }
+
+    function read() {
+        return $this->quantity
+    }
+}

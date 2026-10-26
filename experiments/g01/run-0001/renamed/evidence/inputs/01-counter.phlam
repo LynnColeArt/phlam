@@ -1,0 +1,18 @@
+/// Holds a counter and supports controlled increments.
+/// Each Tally instance owns separate state.
+class Tally {
+    $quantity = 0
+
+    function init($starting_value = 0) {
+        $this->quantity = $starting_value
+    }
+
+    function increment($delta = 1) {
+        $this->quantity += $delta
+        return $this->quantity
+    }
+
+    function read() {
+        return $this->quantity
+    }
+}

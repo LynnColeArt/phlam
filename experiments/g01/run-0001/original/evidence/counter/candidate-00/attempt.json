@@ -1,0 +1,38 @@
+{
+  "runtime_load_ns": 640292,
+  "runtime_verification_process_wall_ns": 2599504,
+  "runtime_verification_process_cpu_ns": 2512000,
+  "recipe": {
+    "kind": "affine",
+    "width": 0,
+    "initialization": "legacy",
+    "seeds": [
+      7
+    ]
+  },
+  "seed": 7,
+  "module_sha256": "c29c0b22e8647883216cba7a360b18ce3a6d6ecbb9b290b9b96ae9737e516923",
+  "artifact": "counter/candidate-00/deployment/counter.json",
+  "training_wall_ns": 33327837,
+  "training_cpu_ns": 33432000,
+  "trainer_managed_bytes_at_end": 7821576,
+  "initial_mse": 0.3093412073883731,
+  "final_mse": 7.732045971471196e-31,
+  "raw_training_correct": 68,
+  "raw_nontraining_correct": 262,
+  "certificate": {
+    "key": "2d02384c939125dbc021bcb71468f0460cbe3518fdabbfba4d52a1d1f2d46711",
+    "module_sha256": "c29c0b22e8647883216cba7a360b18ce3a6d6ecbb9b290b9b96ae9737e516923",
+    "certified": true,
+    "cases": 330,
+    "accepted_inputs": 330,
+    "contract_rejected_inputs": 0,
+    "build_ns": 109409,
+    "checker_work": {
+      "expressions": 3960,
+      "integer_arithmetic": 1188,
+      "predicates": 0,
+      "output_comparisons": 990
+    }
+  }
+}

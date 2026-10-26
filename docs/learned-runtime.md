@@ -17,6 +17,11 @@ gates. Bounded execution is established; broad compiler/application feasibility
 and full-brief research feasibility remain unresolved. Its first implementation
 slice is the [general build pipeline](broad-feasibility-next-slice.md).
 
+The [G01 pipeline](../experiments/g01/README.md) is now implemented and accepted
+for the existing scalar subset: generic locked builds, reproducible signed
+bundles, independent source-free execution, retained candidate failures and
+separate signed-entry/scalar-checker measurements. Later gates remain open.
+
 ## Architectural destination
 
 Source -> frontend -> semantic contracts + reference traces -> training -> frozen

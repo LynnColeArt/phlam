@@ -1,0 +1,38 @@
+{
+  "schema": "phlame.training-plan.v0",
+  "sampling": {
+    "state_stride": 2,
+    "argument_stride": 4
+  },
+  "max_primitive_cases": 5000,
+  "candidate_timeout_ms": 15000,
+  "build_timeout_ms": 180000,
+  "candidates": [
+    {
+      "kind": "affine",
+      "width": 0,
+      "initialization": "legacy",
+      "seeds": [
+        7
+      ]
+    },
+    {
+      "kind": "relu",
+      "width": 4,
+      "initialization": "paired-centered",
+      "seeds": [
+        7,
+        404
+      ]
+    },
+    {
+      "kind": "relu",
+      "width": 8,
+      "initialization": "paired-centered",
+      "seeds": [
+        7,
+        404
+      ]
+    }
+  ]
+}

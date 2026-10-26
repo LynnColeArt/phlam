@@ -1,0 +1,38 @@
+{
+  "runtime_load_ns": 640032,
+  "runtime_verification_process_wall_ns": 2535456,
+  "runtime_verification_process_cpu_ns": 2508000,
+  "recipe": {
+    "kind": "relu",
+    "width": 2,
+    "initialization": "legacy",
+    "seeds": [
+      404
+    ]
+  },
+  "seed": 404,
+  "module_sha256": "1ce7e90e2ebadc1d1ec42f256910d0d6894139ccb9a82758e3f6950ccd2f2ab6",
+  "artifact": "counter/candidate-00/deployment/counter.json",
+  "training_wall_ns": 139098824,
+  "training_cpu_ns": 138873000,
+  "trainer_managed_bytes_at_end": 7821576,
+  "initial_mse": 0.3211279133957719,
+  "final_mse": 2.6062879258440882e-11,
+  "raw_training_correct": 68,
+  "raw_nontraining_correct": 262,
+  "certificate": {
+    "key": "d029f0ede506dc65868ffc691e227b54340132a493f7f052a8afa32a63ff5377",
+    "module_sha256": "1ce7e90e2ebadc1d1ec42f256910d0d6894139ccb9a82758e3f6950ccd2f2ab6",
+    "certified": true,
+    "cases": 330,
+    "accepted_inputs": 330,
+    "contract_rejected_inputs": 0,
+    "build_ns": 123648,
+    "checker_work": {
+      "expressions": 3960,
+      "integer_arithmetic": 1188,
+      "predicates": 0,
+      "output_comparisons": 990
+    }
+  }
+}
