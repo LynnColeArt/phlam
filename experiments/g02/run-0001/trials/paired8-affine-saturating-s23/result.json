@@ -1,0 +1,313 @@
+{
+  "builds": [
+    {
+      "attempt": {
+        "artifact": "saturating/candidate-00/deployment/saturating.json",
+        "certificate": {
+          "accepted_inputs": 594,
+          "build_ns": 373137,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 26199,
+            "integer_arithmetic": 4761,
+            "output_comparisons": 1782,
+            "predicates": 7185
+          },
+          "contract_rejected_inputs": 0,
+          "key": "61ce7e58e17cb6a0c16a23ffce5b51e9dced2b43e439aeb4f4c20c2556b30424",
+          "module_sha256": "6d110c7c7c55036669bec24f64794c3077a8b1db6937792ed6027930318e41e9"
+        },
+        "final_mse": 8.24807575638792e-12,
+        "initial_mse": 0.0011085730247981525,
+        "module_sha256": "6d110c7c7c55036669bec24f64794c3077a8b1db6937792ed6027930318e41e9",
+        "raw_nontraining_correct": 492,
+        "raw_training_correct": 102,
+        "recipe": {
+          "initialization": "paired-affine",
+          "kind": "relu",
+          "seeds": [
+            23
+          ],
+          "width": 8
+        },
+        "runtime_load_ns": 696716,
+        "runtime_verification_process_cpu_ns": 2666000,
+        "runtime_verification_process_wall_ns": 2711373,
+        "seed": 23,
+        "trainer_managed_bytes_at_end": 7821576,
+        "training_cpu_ns": 401969000,
+        "training_wall_ns": 419058017
+      },
+      "certified_within_budget": true,
+      "repetition": 0,
+      "report": "trials/paired8-affine-saturating-s23/evidence-0/report.json",
+      "resources": {
+        "budget_exceeded": null,
+        "exit_code": 0,
+        "sampled_process_tree_peak_rss_bytes": 16814080,
+        "wall_ns": 516903984
+      }
+    },
+    {
+      "attempt": {
+        "artifact": "saturating/candidate-00/deployment/saturating.json",
+        "certificate": {
+          "accepted_inputs": 594,
+          "build_ns": 323158,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 26199,
+            "integer_arithmetic": 4761,
+            "output_comparisons": 1782,
+            "predicates": 7185
+          },
+          "contract_rejected_inputs": 0,
+          "key": "61ce7e58e17cb6a0c16a23ffce5b51e9dced2b43e439aeb4f4c20c2556b30424",
+          "module_sha256": "6d110c7c7c55036669bec24f64794c3077a8b1db6937792ed6027930318e41e9"
+        },
+        "final_mse": 8.24807575638792e-12,
+        "initial_mse": 0.0011085730247981525,
+        "module_sha256": "6d110c7c7c55036669bec24f64794c3077a8b1db6937792ed6027930318e41e9",
+        "raw_nontraining_correct": 492,
+        "raw_training_correct": 102,
+        "recipe": {
+          "initialization": "paired-affine",
+          "kind": "relu",
+          "seeds": [
+            23
+          ],
+          "width": 8
+        },
+        "runtime_load_ns": 703026,
+        "runtime_verification_process_cpu_ns": 2814000,
+        "runtime_verification_process_wall_ns": 2877792,
+        "seed": 23,
+        "trainer_managed_bytes_at_end": 7821576,
+        "training_cpu_ns": 382740000,
+        "training_wall_ns": 388727481
+      },
+      "certified_within_budget": true,
+      "repetition": 1,
+      "report": "trials/paired8-affine-saturating-s23/evidence-1/report.json",
+      "resources": {
+        "budget_exceeded": null,
+        "exit_code": 0,
+        "sampled_process_tree_peak_rss_bytes": 16642048,
+        "wall_ns": 476957908
+      }
+    }
+  ],
+  "candidate_bytes_reproduce": true,
+  "comparisons": {
+    "learned/certified": {
+      "accepted": 594,
+      "certificates": {
+        "saturating": {
+          "accepted_inputs": 594,
+          "build_ns": 336608,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 26199,
+            "integer_arithmetic": 4761,
+            "output_comparisons": 1782,
+            "predicates": 7185
+          },
+          "contract_rejected_inputs": 0,
+          "key": "61ce7e58e17cb6a0c16a23ffce5b51e9dced2b43e439aeb4f4c20c2556b30424",
+          "module_sha256": "6d110c7c7c55036669bec24f64794c3077a8b1db6937792ed6027930318e41e9"
+        }
+      },
+      "checker_relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "correct_supported_rejected": 0,
+      "entry_check_ns": 83680,
+      "load_ns": 690425,
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_total_ns": {
+        "binding_ns": 37129,
+        "checker_ns": 78020,
+        "commit_ns": 46210,
+        "overhead_ns": 412397,
+        "proposal_ns": 110169,
+        "total_ns": 683925
+      },
+      "preflight_error": null,
+      "rejected": 1,
+      "source_free_files": [
+        "bundle.json",
+        "key.hex",
+        "runtime",
+        "saturating.json"
+      ]
+    },
+    "learned/concrete": {
+      "accepted": 594,
+      "certificates": {
+        "saturating": {
+          "accepted_inputs": 0,
+          "build_ns": 118970,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "61ce7e58e17cb6a0c16a23ffce5b51e9dced2b43e439aeb4f4c20c2556b30424",
+          "module_sha256": "6d110c7c7c55036669bec24f64794c3077a8b1db6937792ed6027930318e41e9"
+        }
+      },
+      "checker_relations": {
+        "expressions": 26247,
+        "integer_arithmetic": 4770,
+        "output_comparisons": 1785,
+        "predicates": 7198
+      },
+      "correct_supported_rejected": 0,
+      "entry_check_ns": 75170,
+      "load_ns": 768645,
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_total_ns": {
+        "binding_ns": 36160,
+        "checker_ns": 159759,
+        "commit_ns": 48180,
+        "overhead_ns": 422256,
+        "proposal_ns": 108688,
+        "total_ns": 775043
+      },
+      "preflight_error": null,
+      "rejected": 1,
+      "source_free_files": [
+        "bundle.json",
+        "key.hex",
+        "runtime",
+        "saturating.json"
+      ]
+    },
+    "lookup/certified": {
+      "accepted": 594,
+      "certificates": {
+        "saturating": {
+          "accepted_inputs": 594,
+          "build_ns": 349288,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 26199,
+            "integer_arithmetic": 4761,
+            "output_comparisons": 1782,
+            "predicates": 7185
+          },
+          "contract_rejected_inputs": 0,
+          "key": "8d4df466a123d7ed9501e69349d08052b64c9baa68cb44aeb40d00f6ee516b83",
+          "module_sha256": "6d110c7c7c55036669bec24f64794c3077a8b1db6937792ed6027930318e41e9"
+        }
+      },
+      "checker_relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "correct_supported_rejected": 0,
+      "entry_check_ns": 104500,
+      "load_ns": 674746,
+      "lookup_application_work": {
+        "expressions": 26247,
+        "integer_arithmetic": 4770,
+        "output_comparisons": 0,
+        "predicates": 7198
+      },
+      "phase_total_ns": {
+        "binding_ns": 43379,
+        "checker_ns": 85189,
+        "commit_ns": 53399,
+        "overhead_ns": 464596,
+        "proposal_ns": 124500,
+        "total_ns": 771063
+      },
+      "preflight_error": null,
+      "rejected": 1,
+      "source_free_files": [
+        "bundle.json",
+        "key.hex",
+        "runtime",
+        "saturating.json"
+      ]
+    },
+    "lookup/concrete": {
+      "accepted": 594,
+      "certificates": {
+        "saturating": {
+          "accepted_inputs": 0,
+          "build_ns": 131580,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "8d4df466a123d7ed9501e69349d08052b64c9baa68cb44aeb40d00f6ee516b83",
+          "module_sha256": "6d110c7c7c55036669bec24f64794c3077a8b1db6937792ed6027930318e41e9"
+        }
+      },
+      "checker_relations": {
+        "expressions": 26247,
+        "integer_arithmetic": 4770,
+        "output_comparisons": 1785,
+        "predicates": 7198
+      },
+      "correct_supported_rejected": 0,
+      "entry_check_ns": 98720,
+      "load_ns": 663266,
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_total_ns": {
+        "binding_ns": 40930,
+        "checker_ns": 184067,
+        "commit_ns": 52710,
+        "overhead_ns": 457667,
+        "proposal_ns": 15120,
+        "total_ns": 750494
+      },
+      "preflight_error": null,
+      "rejected": 1,
+      "source_free_files": [
+        "bundle.json",
+        "key.hex",
+        "runtime",
+        "saturating.json"
+      ]
+    }
+  },
+  "passed_both_builds": true,
+  "program": "saturating",
+  "seed": 23,
+  "strategy": "paired8-affine"
+}

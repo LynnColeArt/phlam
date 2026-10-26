@@ -1,0 +1,5942 @@
+[
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -20,
+      "result": -20,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.6250000015378864,
+      -0.6249929740875063,
+      1
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -19,
+      "result": -19,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5937500011533793,
+      -0.5937429740805973,
+      1
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -18,
+      "result": -18,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5625000007688723,
+      -0.5624929740736881,
+      1
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -17,
+      "result": -17,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5312500003843653,
+      -0.5312429740667791,
+      1
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4999999999998584,
+      -0.49999297405987,
+      1
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4687499996153514,
+      -0.4687429740529609,
+      1
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.43749999923084437,
+      -0.4374929740460518,
+      1
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4062499988463374,
+      -0.40624297403914267,
+      1
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.37499999846183035,
+      -0.37499297403223364,
+      1
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -19,
+      "result": -19,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5937500015378864,
+      -0.5937434132090907,
+      1
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -18,
+      "result": -18,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5625000011533793,
+      -0.5624934132021817,
+      1
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -17,
+      "result": -17,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5312500007688723,
+      -0.5312434131952726,
+      1
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5000000003843653,
+      -0.49999341318836354,
+      1
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4687499999998584,
+      -0.4687434131814544,
+      1
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4374999996153514,
+      -0.4374934131745453,
+      1
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.40624999923084437,
+      -0.40624341316763624,
+      1
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3749999988463374,
+      -0.3749934131607271,
+      1
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.34374999846183035,
+      -0.34374341315381807,
+      1
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -18,
+      "result": -18,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5625000015378864,
+      -0.5624938523306752,
+      1
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -17,
+      "result": -17,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5312500011533794,
+      -0.5312438523237661,
+      1
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5000000007688724,
+      -0.499993852316857,
+      1
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.46875000038436543,
+      -0.4687438523099479,
+      1
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.43749999999985845,
+      -0.43749385230303883,
+      1
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.40624999961535146,
+      -0.40624385229612975,
+      1
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3749999992308444,
+      -0.37499385228922066,
+      1
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.34374999884633745,
+      -0.3437438522823115,
+      1
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.31249999846183046,
+      -0.3124938522754025,
+      1
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -17,
+      "result": -17,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5312500015378865,
+      -0.5312442914522596,
+      1
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5000000011533795,
+      -0.49999429144535057,
+      1
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4687500007688725,
+      -0.46874429143844143,
+      1
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4375000003843655,
+      -0.43749429143153235,
+      1
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4062499999998585,
+      -0.40624429142462326,
+      1
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3749999996153515,
+      -0.3749942914177142,
+      1
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3437499992308445,
+      -0.3437442914108051,
+      1
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3124999988463375,
+      -0.31249429140389595,
+      1
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.28124999846183046,
+      -0.2812442913969869,
+      1
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -16,
+      "result": -16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.5000000015378865,
+      -0.499994730573844,
+      1
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4687500011533795,
+      -0.468744730566935,
+      1
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4375000007688725,
+      -0.43749473056002586,
+      1
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4062500003843655,
+      -0.4062447305531168,
+      1
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3749999999998585,
+      -0.3749947305462077,
+      1
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3437499996153515,
+      -0.3437447305392986,
+      1
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3124999992308445,
+      -0.3124947305323895,
+      1
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2812499988463375,
+      -0.2812447305254804,
+      1
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.24999999846183046,
+      -0.24999473051857138,
+      1
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -15,
+      "result": -15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.46875000153788654,
+      -0.46874516969542845,
+      1
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4375000011533795,
+      -0.4374951696885194,
+      1
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.4062500007688725,
+      -0.4062451696816103,
+      1
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3750000003843655,
+      -0.3749951696747012,
+      1
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3437499999998585,
+      -0.3437451696677921,
+      1
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3124999996153515,
+      -0.31249516966088303,
+      1
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2812499992308445,
+      -0.28124516965397395,
+      1
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2499999988463375,
+      -0.24999516964706484,
+      1
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.21874999846183046,
+      -0.21874516964015578,
+      1
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -14,
+      "result": -14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.43750000153788654,
+      -0.4374956088170129,
+      1
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.40625000115337956,
+      -0.40624560881010385,
+      1
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3750000007688726,
+      -0.3749956088031947,
+      1
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.34375000038436554,
+      -0.34374560879628563,
+      1
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.31249999999985856,
+      -0.31249560878937654,
+      1
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2812499996153516,
+      -0.28124560878246746,
+      1
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.24999999923084454,
+      -0.2499956087755584,
+      1
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.21874999884633756,
+      -0.2187456087686493,
+      1
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.18749999846183052,
+      -0.1874956087617402,
+      1
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -13,
+      "result": -13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.40625000153788665,
+      -0.4062460479385973,
+      1
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3750000011533796,
+      -0.3749960479316883,
+      1
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.34375000076887263,
+      -0.34374604792477914,
+      1
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3125000003843656,
+      -0.31249604791787006,
+      1
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2812499999998586,
+      -0.281246047910961,
+      1
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.24999999961535158,
+      -0.24999604790405192,
+      1
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2187499992308446,
+      -0.21874604789714283,
+      1
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.1874999988463376,
+      -0.18749604789023372,
+      1
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.15624999846183057,
+      -0.15624604788332463,
+      1
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3750000015378866,
+      -0.37499648706018174,
+      1
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.34375000115337956,
+      -0.3437464870532726,
+      1
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3125000007688726,
+      -0.3124964870463635,
+      1
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2812500003843656,
+      -0.28124648703945443,
+      1
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.24999999999985856,
+      -0.24999648703254537,
+      1
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.21874999961535158,
+      -0.2187464870256363,
+      1
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.1874999992308446,
+      -0.1874964870187272,
+      1
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.15624999884633756,
+      -0.1562464870118181,
+      1
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.12499999846183056,
+      -0.12499648700490901,
+      1
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.34375000153788665,
+      -0.34374692618176617,
+      1
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.3125000011533796,
+      -0.312496926174857,
+      1
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.28125000076887263,
+      -0.28124692616794794,
+      1
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2500000003843656,
+      -0.24999692616103888,
+      1
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2187499999998586,
+      -0.2187469261541298,
+      1
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.18749999961535158,
+      -0.18749692614722072,
+      1
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.1562499992308446,
+      -0.15624692614031163,
+      1
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.1249999988463376,
+      -0.12499692613340252,
+      1
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.09374999846183059,
+      -0.09374692612649344,
+      1
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.31250000153788665,
+      -0.3124973653033506,
+      1
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.28125000115337967,
+      -0.28124736529644145,
+      1
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.25000000076887263,
+      -0.2499973652895324,
+      1
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.21875000038436565,
+      -0.2187473652826233,
+      1
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.1874999999998586,
+      -0.18749736527571423,
+      1
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.15624999961535163,
+      -0.15624736526880514,
+      1
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.12499999923084462,
+      -0.12499736526189606,
+      1
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.09374999884633763,
+      -0.09374736525498695,
+      1
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.062499998461830616,
+      -0.06249736524807786,
+      1
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.28125000153788665,
+      -0.281247804424935,
+      1
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.25000000115337967,
+      -0.2499978044180259,
+      1
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2187500007688727,
+      -0.21874780441111683,
+      1
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.18750000038436565,
+      -0.18749780440420774,
+      1
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.15624999999985867,
+      -0.15624780439729866,
+      1
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.12499999961535165,
+      -0.12499780439038957,
+      1
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.09374999923084465,
+      -0.09374780438348047,
+      1
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.062499998846337654,
+      -0.062497804376571375,
+      1
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.031249998461830644,
+      -0.03124780436966229,
+      1
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2500000015378867,
+      -0.24999824354651948,
+      1
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.21875000115337967,
+      -0.21874824353961037,
+      1
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.1875000007688727,
+      -0.18749824353270125,
+      1
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.1562500003843657,
+      -0.15624824352579217,
+      1
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.12499999999985868,
+      -0.12499824351888308,
+      1
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.09374999961535167,
+      -0.093748243511974,
+      1
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.06249999923084468,
+      -0.0624982435050649,
+      1
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.03124999884633768,
+      -0.031248243498155803,
+      1
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      1.538169328019201e-9,
+      0.0000017565087532828844,
+      1
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.2187500015378867,
+      -0.21874868266810385,
+      1
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.18750000115337973,
+      -0.18749868266119477,
+      1
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.15625000076887274,
+      -0.15624868265428568,
+      1
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.1250000003843657,
+      -0.1249986826473766,
+      1
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.09374999999985871,
+      -0.0937486826404675,
+      1
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.06249999961535171,
+      -0.0624986826335584,
+      1
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.031249999230844705,
+      -0.031248682626649316,
+      1
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      1.153662290698243e-9,
+      0.0000013173802597844092,
+      1
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.0312500015381693,
+      0.03125131738716887,
+      1
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.18750000153788676,
+      -0.18749912178968828,
+      1
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.15625000115337973,
+      -0.1562491217827792,
+      1
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.12500000076887274,
+      -0.12499912177587011,
+      1
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.09375000038436575,
+      -0.09374912176896102,
+      1
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.06249999999985874,
+      -0.062499121762051926,
+      1
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.031249999615351735,
+      -0.031249121755142835,
+      1
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      7.691552672550728e-10,
+      8.782517662581785e-7,
+      1
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.03125000115366226,
+      0.031250878258675355,
+      1
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.06250000153816927,
+      0.06250087826558444,
+      1
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.15625000153788676,
+      -0.1562495609112727,
+      1
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.12500000115337978,
+      -0.12499956090436362,
+      1
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.09375000076887277,
+      -0.09374956089745454,
+      1
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.06250000038436578,
+      -0.06249956089054544,
+      1
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.03124999999985877,
+      -0.031249560883636347,
+      1
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      3.846482334035617e-10,
+      4.391232727458255e-7,
+      1
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.03125000076915524,
+      0.031250439130181835,
+      1
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.06250000115366224,
+      0.06250043913709094,
+      1
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.09375000153816924,
+      0.09375043914400003,
+      1
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.12500000153788682,
+      -0.12500000003285713,
+      1
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.0937500011533798,
+      -0.09375000002594805,
+      1
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.0625000007688728,
+      -0.06250000001903895,
+      1
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.0312500003843658,
+      -0.03125000001212987,
+      1
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      1.4120302149756014e-13,
+      -5.220772598957257e-12,
+      1
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.0312500003846482,
+      0.031250000001688316,
+      1
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.06250000076915521,
+      0.06250000000859741,
+      1
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.09375000115366221,
+      0.09375000001550651,
+      1
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.1250000015381692,
+      0.1250000000224156,
+      1
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.09375000153788683,
+      -0.09375043915444156,
+      1
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.06250000115337982,
+      -0.06250043914753248,
+      1
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.031250000768872827,
+      -0.03125043914062338,
+      1
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -3.843658238911196e-10,
+      -4.391337142892887e-7,
+      1
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.03125000000014118,
+      0.031249560873194804,
+      1
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.06250000038464819,
+      0.06249956088010389,
+      1
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.09375000076915518,
+      0.09374956088701299,
+      1
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.12500000115366217,
+      0.12499956089392208,
+      1
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.1562500015381692,
+      0.15624956090083117,
+      1
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.06250000153788686,
+      -0.06250087827602599,
+      1
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.03125000115337985,
+      -0.031250878269116905,
+      1
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -7.688728542731837e-10,
+      -8.782622078051111e-7,
+      1
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.03124999961563415,
+      0.031249121744701285,
+      1
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.06250000000014115,
+      0.062499121751610376,
+      1
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.09375000038464816,
+      0.09374912175851946,
+      1
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.12500000076915513,
+      0.12499912176542856,
+      1
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.15625000115366217,
+      0.15624912177233766,
+      1
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.18750000153816915,
+      0.18749912177924674,
+      1
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -0.03125000153788689,
+      -0.031251317397610404,
+      1
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -1.153379877716354e-9,
+      -0.000001317390701317464,
+      1
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.031249999231127118,
+      0.03124868261620778,
+      1
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.062499999615634114,
+      0.06249868262311687,
+      1
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.09375000000014112,
+      0.09374868263002596,
+      1
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.12500000038464815,
+      0.12499868263693506,
+      1
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.15625000076915513,
+      0.15624868264384414,
+      1
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.1875000011536621,
+      0.18749868265075323,
+      1
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.21875000153816915,
+      0.2187486826576623,
+      1
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      -1.537886915037312e-9,
+      -0.000001756519194829817,
+      1
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.031249998846620095,
+      0.031248243487714253,
+      1
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.06249999923112709,
+      0.06249824349462335,
+      1
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.09374999961563409,
+      0.09374824350153244,
+      1
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.1250000000001411,
+      0.12499824350844153,
+      1
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.1562500003846481,
+      0.15624824351535063,
+      1
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.18750000076915507,
+      0.18749824352225972,
+      1
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.2187500011536621,
+      0.2187482435291688,
+      1
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.2500000015381691,
+      0.24999824353607789,
+      1
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.031249998462113057,
+      0.031247804359220754,
+      1
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.06249999884662007,
+      0.06249780436612984,
+      1
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.09374999923112706,
+      0.09374780437303894,
+      1
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.12499999961563406,
+      0.12499780437994804,
+      1
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.15625000000014105,
+      0.15624780438685712,
+      1
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.1875000003846481,
+      0.1874978043937662,
+      1
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.21875000076915507,
+      0.2187478044006753,
+      1
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.25000000115366205,
+      0.2499978044075844,
+      1
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.2812500015381691,
+      0.2812478044144935,
+      1
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.06249999846211303,
+      0.062497365237636326,
+      1
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.09374999884662004,
+      0.09374736524454541,
+      1
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.12499999923112705,
+      0.12499736525145451,
+      1
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.15624999961563402,
+      0.1562473652583636,
+      1
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.18750000000014105,
+      0.1874973652652727,
+      1
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.21875000038464804,
+      0.21874736527218178,
+      1
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.250000000769155,
+      0.24999736527909086,
+      1
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.281250001153662,
+      0.28124736528600003,
+      1
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.31250000153816904,
+      0.31249736529290906,
+      1
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.093749998462113,
+      0.0937469261160519,
+      1
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.12499999884662001,
+      0.12499692612296098,
+      1
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.15624999923112698,
+      0.1562469261298701,
+      1
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.18749999961563402,
+      0.18749692613677918,
+      1
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.218750000000141,
+      0.21874692614368826,
+      1
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.250000000384648,
+      0.24999692615059735,
+      1
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.281250000769155,
+      0.28124692615750646,
+      1
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.312500001153662,
+      0.3124969261644156,
+      1
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.343750001538169,
+      0.34374692617132463,
+      1
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.12499999846211295,
+      0.12499648699446747,
+      1
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.15624999884661994,
+      0.15624648700137655,
+      1
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.18749999923112692,
+      0.18749648700828567,
+      1
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.21874999961563396,
+      0.21874648701519475,
+      1
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.25000000000014094,
+      0.24999648702210384,
+      1
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.2812500003846479,
+      0.28124648702901295,
+      1
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.31250000076915496,
+      0.31249648703592203,
+      1
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.34375000115366194,
+      0.3437464870428312,
+      1
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.375000001538169,
+      0.3749964870497402,
+      1
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.15624999846211296,
+      0.15624604787288304,
+      1
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.18749999884661994,
+      0.18749604787979213,
+      1
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.21874999923112692,
+      0.21874604788670124,
+      1
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.24999999961563396,
+      0.24999604789361032,
+      1
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.28125000000014094,
+      0.28124604790051944,
+      1
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3125000003846479,
+      0.3124960479074285,
+      1
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.34375000076915496,
+      0.3437460479143376,
+      1
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.37500000115366194,
+      0.37499604792124674,
+      1
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.406250001538169,
+      0.4062460479281558,
+      1
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.1874999984621129,
+      0.18749560875129861,
+      1
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.2187499988466199,
+      0.2187456087582077,
+      1
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.24999999923112687,
+      0.2499956087651168,
+      1
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.2812499996156339,
+      0.2812456087720259,
+      1
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3125000000001409,
+      0.312495608778935,
+      1
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.34375000038464787,
+      0.3437456087858441,
+      1
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3750000007691549,
+      0.3749956087927532,
+      1
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.4062500011536619,
+      0.4062456087996623,
+      1
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.43750000153816887,
+      0.43749560880657135,
+      1
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.21874999846211285,
+      0.2187451696297142,
+      1
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.24999999884661983,
+      0.24999516963662327,
+      1
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.2812499992311268,
+      0.2812451696435324,
+      1
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.31249999961563385,
+      0.3124951696504415,
+      1
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.34375000000014083,
+      0.3437451696573506,
+      1
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3750000003846478,
+      0.37499516966425966,
+      1
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.40625000076915485,
+      0.40624516967116875,
+      1
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.43750000115366183,
+      0.4374951696780779,
+      1
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.46875000153816887,
+      0.4687451696849869,
+      1
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.2499999984621128,
+      0.24999473050812976,
+      1
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.28124999884661983,
+      0.28124473051503884,
+      1
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3124999992311268,
+      0.312494730521948,
+      1
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.34374999961563385,
+      0.34374473052885707,
+      1
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.37500000000014083,
+      0.37499473053576615,
+      1
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.4062500003846478,
+      0.40624473054267524,
+      1
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.43750000076915485,
+      0.4374947305495843,
+      1
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.46875000115366183,
+      0.46874473055649346,
+      1
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5000000015381689,
+      0.4999947305634025,
+      1
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.2812499984621128,
+      0.2812442913865454,
+      1
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.31249999884661983,
+      0.3124942913934544,
+      1
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3437499992311268,
+      0.34374429140036356,
+      1
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.37499999961563385,
+      0.37499429140727264,
+      1
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.40625000000014083,
+      0.4062442914141817,
+      1
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.4375000003846478,
+      0.4374942914210908,
+      1
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.46875000076915485,
+      0.4687442914279999,
+      1
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5000000011536619,
+      0.49999429143490903,
+      1
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 17,
+      "result": 17,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5312500015381689,
+      0.5312442914418181,
+      1
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3124999984621128,
+      0.31249385226496096,
+      1
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3437499988466198,
+      0.34374385227187,
+      1
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.37499999923112676,
+      0.3749938522787791,
+      1
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.4062499996156338,
+      0.4062438522856882,
+      1
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.4375000000001408,
+      0.4374938522925973,
+      1
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.46875000038464776,
+      0.4687438522995064,
+      1
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5000000007691549,
+      0.49999385230641546,
+      1
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 17,
+      "result": 17,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5312500011536618,
+      0.5312438523133246,
+      1
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 18,
+      "result": 18,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5625000015381688,
+      0.5624938523202336,
+      1
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": true
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3437499984621127,
+      0.34374341314337653,
+      1
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3749999988466197,
+      0.37499341315028556,
+      1
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.4062499992311267,
+      0.4062434131571947,
+      1
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.43749999961563374,
+      0.4374934131641038,
+      1
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.4687500000001407,
+      0.46874341317101287,
+      1
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5000000003846478,
+      0.49999341317792195,
+      1
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 17,
+      "result": 17,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5312500007691547,
+      0.531243413184831,
+      1
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 18,
+      "result": 18,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5625000011536617,
+      0.5624934131917402,
+      1
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 19,
+      "result": 19,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5937500015381688,
+      0.5937434131986492,
+      1
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": -4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.3749999984621127,
+      0.3749929740217921,
+      1
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": true
+  },
+  {
+    "argument": -3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 13,
+      "result": 13,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.4062499988466197,
+      0.40624297402870113,
+      1
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": false
+  },
+  {
+    "argument": -2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 14,
+      "result": 14,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.4374999992311267,
+      0.43749297403561027,
+      1
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": false
+  },
+  {
+    "argument": -1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 15,
+      "result": 15,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.46874999961563374,
+      0.46874297404251936,
+      1
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 16,
+      "result": 16,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5000000000001408,
+      0.49999297404942844,
+      1
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": true
+  },
+  {
+    "argument": 1,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 17,
+      "result": 17,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5312500003846478,
+      0.5312429740563376,
+      1
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": false
+  },
+  {
+    "argument": 2,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 18,
+      "result": 18,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5625000007691547,
+      0.5624929740632466,
+      1
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": false
+  },
+  {
+    "argument": 3,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 19,
+      "result": 19,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.5937500011536617,
+      0.5937429740701557,
+      1
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": false
+  },
+  {
+    "argument": 4,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 20,
+      "result": 20,
+      "write": true
+    },
+    "operation_index": 0,
+    "raw_scores": [
+      0.6250000015381688,
+      0.6249929740770648,
+      1
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -16,
+      "result": -16,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.49999999999985856,
+      -0.4999929740598624,
+      0
+    ],
+    "source_accepted": true,
+    "state": -16,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -15,
+      "result": -15,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.46874999999985856,
+      -0.46874341318144686,
+      0
+    ],
+    "source_accepted": true,
+    "state": -15,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -14,
+      "result": -14,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.4374999999998586,
+      -0.4374938523030313,
+      0
+    ],
+    "source_accepted": true,
+    "state": -14,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -13,
+      "result": -13,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.40624999999985867,
+      -0.4062442914246157,
+      0
+    ],
+    "source_accepted": true,
+    "state": -13,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -12,
+      "result": -12,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.37499999999985867,
+      -0.37499473054620014,
+      0
+    ],
+    "source_accepted": true,
+    "state": -12,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -11,
+      "result": -11,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.34374999999985867,
+      -0.34374516966778457,
+      0
+    ],
+    "source_accepted": true,
+    "state": -11,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -10,
+      "result": -10,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.3124999999998587,
+      -0.312495608789369,
+      0
+    ],
+    "source_accepted": true,
+    "state": -10,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -9,
+      "result": -9,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.2812499999998588,
+      -0.2812460479109534,
+      0
+    ],
+    "source_accepted": true,
+    "state": -9,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -8,
+      "result": -8,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.24999999999985875,
+      -0.2499964870325378,
+      0
+    ],
+    "source_accepted": true,
+    "state": -8,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -7,
+      "result": -7,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.21874999999985878,
+      -0.21874692615412222,
+      0
+    ],
+    "source_accepted": true,
+    "state": -7,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -6,
+      "result": -6,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.1874999999998588,
+      -0.18749736527570665,
+      0
+    ],
+    "source_accepted": true,
+    "state": -6,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -5,
+      "result": -5,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.15624999999985884,
+      -0.15624780439729108,
+      0
+    ],
+    "source_accepted": true,
+    "state": -5,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -4,
+      "result": -4,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.12499999999985886,
+      -0.12499824351887552,
+      0
+    ],
+    "source_accepted": true,
+    "state": -4,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -3,
+      "result": -3,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.09374999999985889,
+      -0.09374868264045993,
+      0
+    ],
+    "source_accepted": true,
+    "state": -3,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -2,
+      "result": -2,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.06249999999985891,
+      -0.06249912176204436,
+      0
+    ],
+    "source_accepted": true,
+    "state": -2,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": -1,
+      "result": -1,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      -0.031249999999858946,
+      -0.03124956088362878,
+      0
+    ],
+    "source_accepted": true,
+    "state": -1,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 0,
+      "result": 0,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      1.4102781442648649e-13,
+      -5.2132074698785225e-12,
+      0
+    ],
+    "source_accepted": true,
+    "state": 0,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 1,
+      "result": 1,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.031250000000141005,
+      0.031249560873202367,
+      0
+    ],
+    "source_accepted": true,
+    "state": 1,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 2,
+      "result": 2,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.06250000000014097,
+      0.06249912175161794,
+      0
+    ],
+    "source_accepted": true,
+    "state": 2,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 3,
+      "result": 3,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.09375000000014094,
+      0.09374868263003353,
+      0
+    ],
+    "source_accepted": true,
+    "state": 3,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 4,
+      "result": 4,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.12500000000014092,
+      0.1249982435084491,
+      0
+    ],
+    "source_accepted": true,
+    "state": 4,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 5,
+      "result": 5,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.1562500000001409,
+      0.1562478043868647,
+      0
+    ],
+    "source_accepted": true,
+    "state": 5,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 6,
+      "result": 6,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.18750000000014086,
+      0.18749736526528027,
+      0
+    ],
+    "source_accepted": true,
+    "state": 6,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 7,
+      "result": 7,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.21875000000014083,
+      0.21874692614369584,
+      0
+    ],
+    "source_accepted": true,
+    "state": 7,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 8,
+      "result": 8,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.2500000000001408,
+      0.2499964870221114,
+      0
+    ],
+    "source_accepted": true,
+    "state": 8,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 9,
+      "result": 9,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.2812500000001408,
+      0.281246047900527,
+      0
+    ],
+    "source_accepted": true,
+    "state": 9,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 10,
+      "result": 10,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.3125000000001407,
+      0.31249560877894256,
+      0
+    ],
+    "source_accepted": true,
+    "state": 10,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 11,
+      "result": 11,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.34375000000014067,
+      0.34374516965735813,
+      0
+    ],
+    "source_accepted": true,
+    "state": 11,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 12,
+      "result": 12,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.37500000000014067,
+      0.3749947305357737,
+      0
+    ],
+    "source_accepted": true,
+    "state": 12,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 13,
+      "result": 13,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.40625000000014067,
+      0.4062442914141893,
+      0
+    ],
+    "source_accepted": true,
+    "state": 13,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 14,
+      "result": 14,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.4375000000001406,
+      0.43749385229260485,
+      0
+    ],
+    "source_accepted": true,
+    "state": 14,
+    "training": true
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 15,
+      "result": 15,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.46875000000014055,
+      0.4687434131710204,
+      0
+    ],
+    "source_accepted": true,
+    "state": 15,
+    "training": false
+  },
+  {
+    "argument": 0,
+    "correct_accepted_prediction": true,
+    "decoded_prediction": {
+      "next": 16,
+      "result": 16,
+      "write": false
+    },
+    "operation_index": 1,
+    "raw_scores": [
+      0.5000000000001406,
+      0.499992974049436,
+      0
+    ],
+    "source_accepted": true,
+    "state": 16,
+    "training": true
+  }
+]

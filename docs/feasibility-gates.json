@@ -1,7 +1,7 @@
 {
   "schema": "phlame.feasibility-ledger.v0",
   "date": "2026-10-26",
-  "status_note": "G00 planning baseline and G01 scalar pipeline are complete/passed. All later implementation gates remain not started; broad/full-brief verdicts remain unresolved.",
+  "status_note": "G00 planning and G01 scalar pipeline complete. G02 initial scalar reliability meets the fresh-seed target; full G02 remains in progress pending mandatory richer families and sealed acceptance. Broad/full-brief verdicts remain unresolved.",
   "verdicts": {
     "bounded_learned_execution": {
       "status": "established_for_recorded_scalar_domain",
@@ -51,11 +51,12 @@
     {
       "id": "G02",
       "title": "Training reliability",
-      "status": "not_started",
+      "status": "in_progress",
       "depends_on": [
         "G01"
       ],
-      "report": null
+      "report": "experiments/g02/run-0001/REPORT.md",
+      "scope": "Initial three scalar programs: uniform paired-affine width 8 certifies 5/5 fresh seeds per program, twice reproducibly. Mandatory G03/G05 families and acceptance remain outstanding."
     },
     {
       "id": "G03",

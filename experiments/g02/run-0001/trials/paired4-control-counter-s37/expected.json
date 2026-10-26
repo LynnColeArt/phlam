@@ -1,0 +1,7736 @@
+{
+  "primitive-0": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -20
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -20,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -20
+      }
+    ]
+  },
+  "primitive-1": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -19
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -19,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -19
+      }
+    ]
+  },
+  "primitive-10": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -18
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -18,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -18
+      }
+    ]
+  },
+  "primitive-100": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -8
+      }
+    ]
+  },
+  "primitive-101": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -7
+      }
+    ]
+  },
+  "primitive-102": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -6
+      }
+    ]
+  },
+  "primitive-103": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -5
+      }
+    ]
+  },
+  "primitive-104": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -4
+      }
+    ]
+  },
+  "primitive-105": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -3
+      }
+    ]
+  },
+  "primitive-106": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -2
+      }
+    ]
+  },
+  "primitive-107": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -1
+      }
+    ]
+  },
+  "primitive-108": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -8
+      }
+    ]
+  },
+  "primitive-109": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -7
+      }
+    ]
+  },
+  "primitive-11": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -17
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -17,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -17
+      }
+    ]
+  },
+  "primitive-110": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -6
+      }
+    ]
+  },
+  "primitive-111": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -5
+      }
+    ]
+  },
+  "primitive-112": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -4
+      }
+    ]
+  },
+  "primitive-113": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -3
+      }
+    ]
+  },
+  "primitive-114": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -2
+      }
+    ]
+  },
+  "primitive-115": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -1
+      }
+    ]
+  },
+  "primitive-116": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 0
+      }
+    ]
+  },
+  "primitive-117": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -7
+      }
+    ]
+  },
+  "primitive-118": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -6
+      }
+    ]
+  },
+  "primitive-119": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -5
+      }
+    ]
+  },
+  "primitive-12": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -16
+      }
+    ]
+  },
+  "primitive-120": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -4
+      }
+    ]
+  },
+  "primitive-121": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -3
+      }
+    ]
+  },
+  "primitive-122": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -2
+      }
+    ]
+  },
+  "primitive-123": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -1
+      }
+    ]
+  },
+  "primitive-124": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 0
+      }
+    ]
+  },
+  "primitive-125": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 1
+      }
+    ]
+  },
+  "primitive-126": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -6
+      }
+    ]
+  },
+  "primitive-127": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -5
+      }
+    ]
+  },
+  "primitive-128": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -4
+      }
+    ]
+  },
+  "primitive-129": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -3
+      }
+    ]
+  },
+  "primitive-13": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -15
+      }
+    ]
+  },
+  "primitive-130": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -2
+      }
+    ]
+  },
+  "primitive-131": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -1
+      }
+    ]
+  },
+  "primitive-132": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 0
+      }
+    ]
+  },
+  "primitive-133": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 1
+      }
+    ]
+  },
+  "primitive-134": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 2
+      }
+    ]
+  },
+  "primitive-135": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -5
+      }
+    ]
+  },
+  "primitive-136": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -4
+      }
+    ]
+  },
+  "primitive-137": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -3
+      }
+    ]
+  },
+  "primitive-138": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -2
+      }
+    ]
+  },
+  "primitive-139": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -1
+      }
+    ]
+  },
+  "primitive-14": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -14
+      }
+    ]
+  },
+  "primitive-140": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 0
+      }
+    ]
+  },
+  "primitive-141": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 1
+      }
+    ]
+  },
+  "primitive-142": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 2
+      }
+    ]
+  },
+  "primitive-143": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 3
+      }
+    ]
+  },
+  "primitive-144": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -4
+      }
+    ]
+  },
+  "primitive-145": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -3
+      }
+    ]
+  },
+  "primitive-146": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -2
+      }
+    ]
+  },
+  "primitive-147": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -1
+      }
+    ]
+  },
+  "primitive-148": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 0
+      }
+    ]
+  },
+  "primitive-149": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 1
+      }
+    ]
+  },
+  "primitive-15": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -13
+      }
+    ]
+  },
+  "primitive-150": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 2
+      }
+    ]
+  },
+  "primitive-151": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 3
+      }
+    ]
+  },
+  "primitive-152": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 4
+      }
+    ]
+  },
+  "primitive-153": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -3
+      }
+    ]
+  },
+  "primitive-154": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -2
+      }
+    ]
+  },
+  "primitive-155": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -1
+      }
+    ]
+  },
+  "primitive-156": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 0
+      }
+    ]
+  },
+  "primitive-157": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 1
+      }
+    ]
+  },
+  "primitive-158": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 2
+      }
+    ]
+  },
+  "primitive-159": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 3
+      }
+    ]
+  },
+  "primitive-16": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -12
+      }
+    ]
+  },
+  "primitive-160": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 4
+      }
+    ]
+  },
+  "primitive-161": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 5
+      }
+    ]
+  },
+  "primitive-162": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -2
+      }
+    ]
+  },
+  "primitive-163": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -1
+      }
+    ]
+  },
+  "primitive-164": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 0
+      }
+    ]
+  },
+  "primitive-165": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 1
+      }
+    ]
+  },
+  "primitive-166": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 2
+      }
+    ]
+  },
+  "primitive-167": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 3
+      }
+    ]
+  },
+  "primitive-168": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 4
+      }
+    ]
+  },
+  "primitive-169": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 5
+      }
+    ]
+  },
+  "primitive-17": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -11
+      }
+    ]
+  },
+  "primitive-170": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 6
+      }
+    ]
+  },
+  "primitive-171": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -1
+      }
+    ]
+  },
+  "primitive-172": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 0
+      }
+    ]
+  },
+  "primitive-173": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 1
+      }
+    ]
+  },
+  "primitive-174": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 2
+      }
+    ]
+  },
+  "primitive-175": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 3
+      }
+    ]
+  },
+  "primitive-176": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 4
+      }
+    ]
+  },
+  "primitive-177": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 5
+      }
+    ]
+  },
+  "primitive-178": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 6
+      }
+    ]
+  },
+  "primitive-179": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 7
+      }
+    ]
+  },
+  "primitive-18": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -18
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -18,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -18
+      }
+    ]
+  },
+  "primitive-180": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 0
+      }
+    ]
+  },
+  "primitive-181": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 1
+      }
+    ]
+  },
+  "primitive-182": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 2
+      }
+    ]
+  },
+  "primitive-183": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 3
+      }
+    ]
+  },
+  "primitive-184": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 4
+      }
+    ]
+  },
+  "primitive-185": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 5
+      }
+    ]
+  },
+  "primitive-186": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 6
+      }
+    ]
+  },
+  "primitive-187": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 7
+      }
+    ]
+  },
+  "primitive-188": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 8
+      }
+    ]
+  },
+  "primitive-189": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 1
+      }
+    ]
+  },
+  "primitive-19": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -17
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -17,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -17
+      }
+    ]
+  },
+  "primitive-190": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 2
+      }
+    ]
+  },
+  "primitive-191": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 3
+      }
+    ]
+  },
+  "primitive-192": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 4
+      }
+    ]
+  },
+  "primitive-193": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 5
+      }
+    ]
+  },
+  "primitive-194": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 6
+      }
+    ]
+  },
+  "primitive-195": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 7
+      }
+    ]
+  },
+  "primitive-196": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 8
+      }
+    ]
+  },
+  "primitive-197": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 9
+      }
+    ]
+  },
+  "primitive-198": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 2
+      }
+    ]
+  },
+  "primitive-199": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 3
+      }
+    ]
+  },
+  "primitive-2": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -18
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -18,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -18
+      }
+    ]
+  },
+  "primitive-20": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -16
+      }
+    ]
+  },
+  "primitive-200": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 4
+      }
+    ]
+  },
+  "primitive-201": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 5
+      }
+    ]
+  },
+  "primitive-202": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 6
+      }
+    ]
+  },
+  "primitive-203": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 7
+      }
+    ]
+  },
+  "primitive-204": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 8
+      }
+    ]
+  },
+  "primitive-205": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 9
+      }
+    ]
+  },
+  "primitive-206": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 10
+      }
+    ]
+  },
+  "primitive-207": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 3
+      }
+    ]
+  },
+  "primitive-208": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 4
+      }
+    ]
+  },
+  "primitive-209": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 5
+      }
+    ]
+  },
+  "primitive-21": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -15
+      }
+    ]
+  },
+  "primitive-210": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 6
+      }
+    ]
+  },
+  "primitive-211": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 7
+      }
+    ]
+  },
+  "primitive-212": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 8
+      }
+    ]
+  },
+  "primitive-213": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 9
+      }
+    ]
+  },
+  "primitive-214": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 10
+      }
+    ]
+  },
+  "primitive-215": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 11
+      }
+    ]
+  },
+  "primitive-216": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 4
+      }
+    ]
+  },
+  "primitive-217": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 5
+      }
+    ]
+  },
+  "primitive-218": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 6
+      }
+    ]
+  },
+  "primitive-219": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 7
+      }
+    ]
+  },
+  "primitive-22": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -14
+      }
+    ]
+  },
+  "primitive-220": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 8
+      }
+    ]
+  },
+  "primitive-221": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 9
+      }
+    ]
+  },
+  "primitive-222": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 10
+      }
+    ]
+  },
+  "primitive-223": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 11
+      }
+    ]
+  },
+  "primitive-224": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 12
+      }
+    ]
+  },
+  "primitive-225": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 5
+      }
+    ]
+  },
+  "primitive-226": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 6
+      }
+    ]
+  },
+  "primitive-227": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 7
+      }
+    ]
+  },
+  "primitive-228": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 8
+      }
+    ]
+  },
+  "primitive-229": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 9
+      }
+    ]
+  },
+  "primitive-23": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -13
+      }
+    ]
+  },
+  "primitive-230": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 10
+      }
+    ]
+  },
+  "primitive-231": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 11
+      }
+    ]
+  },
+  "primitive-232": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 12
+      }
+    ]
+  },
+  "primitive-233": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 13
+      }
+    ]
+  },
+  "primitive-234": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 6
+      }
+    ]
+  },
+  "primitive-235": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 7
+      }
+    ]
+  },
+  "primitive-236": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 8
+      }
+    ]
+  },
+  "primitive-237": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 9
+      }
+    ]
+  },
+  "primitive-238": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 10
+      }
+    ]
+  },
+  "primitive-239": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 11
+      }
+    ]
+  },
+  "primitive-24": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -12
+      }
+    ]
+  },
+  "primitive-240": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 12
+      }
+    ]
+  },
+  "primitive-241": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 13
+      }
+    ]
+  },
+  "primitive-242": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 14
+      }
+    ]
+  },
+  "primitive-243": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 7
+      }
+    ]
+  },
+  "primitive-244": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 8
+      }
+    ]
+  },
+  "primitive-245": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 9
+      }
+    ]
+  },
+  "primitive-246": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 10
+      }
+    ]
+  },
+  "primitive-247": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 11
+      }
+    ]
+  },
+  "primitive-248": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 12
+      }
+    ]
+  },
+  "primitive-249": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 13
+      }
+    ]
+  },
+  "primitive-25": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -11
+      }
+    ]
+  },
+  "primitive-250": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 14
+      }
+    ]
+  },
+  "primitive-251": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 15
+      }
+    ]
+  },
+  "primitive-252": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 8
+      }
+    ]
+  },
+  "primitive-253": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 9
+      }
+    ]
+  },
+  "primitive-254": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 10
+      }
+    ]
+  },
+  "primitive-255": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 11
+      }
+    ]
+  },
+  "primitive-256": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 12
+      }
+    ]
+  },
+  "primitive-257": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 13
+      }
+    ]
+  },
+  "primitive-258": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 14
+      }
+    ]
+  },
+  "primitive-259": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 15
+      }
+    ]
+  },
+  "primitive-26": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -10
+      }
+    ]
+  },
+  "primitive-260": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 16
+      }
+    ]
+  },
+  "primitive-261": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 9
+      }
+    ]
+  },
+  "primitive-262": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 10
+      }
+    ]
+  },
+  "primitive-263": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 11
+      }
+    ]
+  },
+  "primitive-264": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 12
+      }
+    ]
+  },
+  "primitive-265": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 13
+      }
+    ]
+  },
+  "primitive-266": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 14
+      }
+    ]
+  },
+  "primitive-267": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 15
+      }
+    ]
+  },
+  "primitive-268": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 16
+      }
+    ]
+  },
+  "primitive-269": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 17
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 17,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 17
+      }
+    ]
+  },
+  "primitive-27": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -17
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -17,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -17
+      }
+    ]
+  },
+  "primitive-270": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 10
+      }
+    ]
+  },
+  "primitive-271": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 11
+      }
+    ]
+  },
+  "primitive-272": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 12
+      }
+    ]
+  },
+  "primitive-273": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 13
+      }
+    ]
+  },
+  "primitive-274": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 14
+      }
+    ]
+  },
+  "primitive-275": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 15
+      }
+    ]
+  },
+  "primitive-276": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 16
+      }
+    ]
+  },
+  "primitive-277": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 17
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 17,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 17
+      }
+    ]
+  },
+  "primitive-278": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 18
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 18,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 18
+      }
+    ]
+  },
+  "primitive-279": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 11
+      }
+    ]
+  },
+  "primitive-28": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -16
+      }
+    ]
+  },
+  "primitive-280": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 12
+      }
+    ]
+  },
+  "primitive-281": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 13
+      }
+    ]
+  },
+  "primitive-282": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 14
+      }
+    ]
+  },
+  "primitive-283": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 15
+      }
+    ]
+  },
+  "primitive-284": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 16
+      }
+    ]
+  },
+  "primitive-285": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 17
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 17,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 17
+      }
+    ]
+  },
+  "primitive-286": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 18
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 18,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 18
+      }
+    ]
+  },
+  "primitive-287": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 19
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 19,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 19
+      }
+    ]
+  },
+  "primitive-288": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 12
+      }
+    ]
+  },
+  "primitive-289": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 13
+      }
+    ]
+  },
+  "primitive-29": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -15
+      }
+    ]
+  },
+  "primitive-290": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 14
+      }
+    ]
+  },
+  "primitive-291": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 15
+      }
+    ]
+  },
+  "primitive-292": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 16
+      }
+    ]
+  },
+  "primitive-293": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 17
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 17,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 17
+      }
+    ]
+  },
+  "primitive-294": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 18
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 18,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 18
+      }
+    ]
+  },
+  "primitive-295": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 19
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 19,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 19
+      }
+    ]
+  },
+  "primitive-296": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 20
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 20,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": 20
+      }
+    ]
+  },
+  "primitive-297": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -16,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-298": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -15,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-299": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -14,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-3": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -17
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -17,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -17
+      }
+    ]
+  },
+  "primitive-30": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -14
+      }
+    ]
+  },
+  "primitive-300": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -13,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-301": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-302": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-303": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-304": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-305": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-306": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-307": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-308": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-309": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-31": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -13
+      }
+    ]
+  },
+  "primitive-310": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-311": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-312": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -1,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-313": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 0
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-314": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 1
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 1,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-315": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 2,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-316": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 3,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-317": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 4,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-318": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 5,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-319": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 6,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-32": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -12
+      }
+    ]
+  },
+  "primitive-320": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 7,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-321": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 8,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-322": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 9,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-323": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 10,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-324": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 11,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-325": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 12,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-326": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 13,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-327": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 14,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-328": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 15,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-329": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": 16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 16,
+        "version": 1
+      }
+    },
+    "writes": []
+  },
+  "primitive-33": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -11
+      }
+    ]
+  },
+  "primitive-34": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -10
+      }
+    ]
+  },
+  "primitive-35": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -9
+      }
+    ]
+  },
+  "primitive-36": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -16
+      }
+    ]
+  },
+  "primitive-37": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -15
+      }
+    ]
+  },
+  "primitive-38": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -14
+      }
+    ]
+  },
+  "primitive-39": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -13
+      }
+    ]
+  },
+  "primitive-4": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -16
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -16,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -16
+      }
+    ]
+  },
+  "primitive-40": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -12
+      }
+    ]
+  },
+  "primitive-41": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -11
+      }
+    ]
+  },
+  "primitive-42": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -10
+      }
+    ]
+  },
+  "primitive-43": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -9
+      }
+    ]
+  },
+  "primitive-44": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -8
+      }
+    ]
+  },
+  "primitive-45": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -15
+      }
+    ]
+  },
+  "primitive-46": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -14
+      }
+    ]
+  },
+  "primitive-47": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -13
+      }
+    ]
+  },
+  "primitive-48": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -12
+      }
+    ]
+  },
+  "primitive-49": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -11
+      }
+    ]
+  },
+  "primitive-5": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -15
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -15,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -15
+      }
+    ]
+  },
+  "primitive-50": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -10
+      }
+    ]
+  },
+  "primitive-51": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -9
+      }
+    ]
+  },
+  "primitive-52": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -8
+      }
+    ]
+  },
+  "primitive-53": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -7
+      }
+    ]
+  },
+  "primitive-54": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -14
+      }
+    ]
+  },
+  "primitive-55": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -13
+      }
+    ]
+  },
+  "primitive-56": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -12
+      }
+    ]
+  },
+  "primitive-57": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -11
+      }
+    ]
+  },
+  "primitive-58": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -10
+      }
+    ]
+  },
+  "primitive-59": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -9
+      }
+    ]
+  },
+  "primitive-6": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -14
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -14,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -14
+      }
+    ]
+  },
+  "primitive-60": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -8
+      }
+    ]
+  },
+  "primitive-61": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -7
+      }
+    ]
+  },
+  "primitive-62": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -6
+      }
+    ]
+  },
+  "primitive-63": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -13
+      }
+    ]
+  },
+  "primitive-64": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -12
+      }
+    ]
+  },
+  "primitive-65": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -11
+      }
+    ]
+  },
+  "primitive-66": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -10
+      }
+    ]
+  },
+  "primitive-67": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -9
+      }
+    ]
+  },
+  "primitive-68": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -8
+      }
+    ]
+  },
+  "primitive-69": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -7
+      }
+    ]
+  },
+  "primitive-7": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -13
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -13,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -13
+      }
+    ]
+  },
+  "primitive-70": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -6
+      }
+    ]
+  },
+  "primitive-71": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -5
+      }
+    ]
+  },
+  "primitive-72": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -12
+      }
+    ]
+  },
+  "primitive-73": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -11
+      }
+    ]
+  },
+  "primitive-74": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -10
+      }
+    ]
+  },
+  "primitive-75": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -9
+      }
+    ]
+  },
+  "primitive-76": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -8
+      }
+    ]
+  },
+  "primitive-77": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -7
+      }
+    ]
+  },
+  "primitive-78": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -6
+      }
+    ]
+  },
+  "primitive-79": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -5
+      }
+    ]
+  },
+  "primitive-8": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -12
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -12,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -12
+      }
+    ]
+  },
+  "primitive-80": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -4
+      }
+    ]
+  },
+  "primitive-81": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -11
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -11,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -11
+      }
+    ]
+  },
+  "primitive-82": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -10
+      }
+    ]
+  },
+  "primitive-83": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -9
+      }
+    ]
+  },
+  "primitive-84": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -8
+      }
+    ]
+  },
+  "primitive-85": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -7
+      }
+    ]
+  },
+  "primitive-86": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -6
+      }
+    ]
+  },
+  "primitive-87": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -5
+      }
+    ]
+  },
+  "primitive-88": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -4
+      }
+    ]
+  },
+  "primitive-89": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -3
+      }
+    ]
+  },
+  "primitive-9": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -19
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -19,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -19
+      }
+    ]
+  },
+  "primitive-90": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -10
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -10,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -10
+      }
+    ]
+  },
+  "primitive-91": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -9
+      }
+    ]
+  },
+  "primitive-92": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -8
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -8,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -8
+      }
+    ]
+  },
+  "primitive-93": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -7
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -7,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -7
+      }
+    ]
+  },
+  "primitive-94": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -6
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -6,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -6
+      }
+    ]
+  },
+  "primitive-95": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -5
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -5,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -5
+      }
+    ]
+  },
+  "primitive-96": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -4
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -4,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -4
+      }
+    ]
+  },
+  "primitive-97": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -3
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -3,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -3
+      }
+    ]
+  },
+  "primitive-98": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -2
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -2,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -2
+      }
+    ]
+  },
+  "primitive-99": {
+    "accepted": true,
+    "results": [
+      {
+        "producer": "x",
+        "type": "int64",
+        "value": -9
+      }
+    ],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": -9,
+        "version": 2
+      }
+    },
+    "writes": [
+      {
+        "slot": "value",
+        "target": "x",
+        "value": -9
+      }
+    ]
+  },
+  "rollback-after-write": {
+    "accepted": false,
+    "results": [],
+    "states": {
+      "x": {
+        "component": "counter",
+        "value": 0,
+        "version": 1
+      }
+    },
+    "writes": []
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "builds": [
+    {
+      "attempt": {
+        "artifact": "saturating/candidate-00/deployment/saturating.json",
+        "certificate": {
+          "accepted_inputs": 1,
+          "build_ns": 109809,
+          "cases": 1,
+          "certified": false,
+          "checker_work": {
+            "expressions": 31,
+            "integer_arithmetic": 4,
+            "output_comparisons": 3,
+            "predicates": 10
+          },
+          "contract_rejected_inputs": 0,
+          "failure": "model differs from contract at operation add state -16 arg -8",
+          "key": "0cd8044f5e023b24668b6cb91d21096367e04e1dde1477d93e07e86e75b0834c",
+          "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3"
+        },
+        "error": "model differs from contract at operation add state -16 arg -8",
+        "final_mse": 0.0010166594682270735,
+        "initial_mse": 0.4095081329348545,
+        "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3",
+        "raw_nontraining_correct": 188,
+        "raw_training_correct": 51,
+        "recipe": {
+          "initialization": "paired-centered",
+          "kind": "relu",
+          "seeds": [
+            11
+          ],
+          "width": 4
+        },
+        "runtime_load_ns": 725525,
+        "runtime_verification_process_cpu_ns": 2470000,
+        "runtime_verification_process_wall_ns": 2509315,
+        "seed": 11,
+        "trainer_managed_bytes_at_end": 12015880,
+        "training_cpu_ns": 288357000,
+        "training_wall_ns": 302166500
+      },
+      "certified_within_budget": false,
+      "repetition": 0,
+      "report": "trials/paired4-control-saturating-s11/evidence-0/report.json",
+      "resources": {
+        "budget_exceeded": null,
+        "exit_code": 1,
+        "sampled_process_tree_peak_rss_bytes": 16900096,
+        "wall_ns": 381031940
+      }
+    },
+    {
+      "attempt": {
+        "artifact": "saturating/candidate-00/deployment/saturating.json",
+        "certificate": {
+          "accepted_inputs": 1,
+          "build_ns": 109489,
+          "cases": 1,
+          "certified": false,
+          "checker_work": {
+            "expressions": 31,
+            "integer_arithmetic": 4,
+            "output_comparisons": 3,
+            "predicates": 10
+          },
+          "contract_rejected_inputs": 0,
+          "failure": "model differs from contract at operation add state -16 arg -8",
+          "key": "0cd8044f5e023b24668b6cb91d21096367e04e1dde1477d93e07e86e75b0834c",
+          "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3"
+        },
+        "error": "model differs from contract at operation add state -16 arg -8",
+        "final_mse": 0.0010166594682270735,
+        "initial_mse": 0.4095081329348545,
+        "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3",
+        "raw_nontraining_correct": 188,
+        "raw_training_correct": 51,
+        "recipe": {
+          "initialization": "paired-centered",
+          "kind": "relu",
+          "seeds": [
+            11
+          ],
+          "width": 4
+        },
+        "runtime_load_ns": 659266,
+        "runtime_verification_process_cpu_ns": 2392000,
+        "runtime_verification_process_wall_ns": 2459285,
+        "seed": 11,
+        "trainer_managed_bytes_at_end": 7821576,
+        "training_cpu_ns": 287321000,
+        "training_wall_ns": 289882118
+      },
+      "certified_within_budget": false,
+      "repetition": 1,
+      "report": "trials/paired4-control-saturating-s11/evidence-1/report.json",
+      "resources": {
+        "budget_exceeded": null,
+        "exit_code": 1,
+        "sampled_process_tree_peak_rss_bytes": 16203776,
+        "wall_ns": 369830630
+      }
+    }
+  ],
+  "candidate_bytes_reproduce": true,
+  "comparisons": {
+    "learned/certified": {
+      "accepted": 0,
+      "certificates": {
+        "saturating": {
+          "accepted_inputs": 1,
+          "build_ns": 107179,
+          "cases": 1,
+          "certified": false,
+          "checker_work": {
+            "expressions": 31,
+            "integer_arithmetic": 4,
+            "output_comparisons": 3,
+            "predicates": 10
+          },
+          "contract_rejected_inputs": 0,
+          "failure": "model differs from contract at operation add state -16 arg -8",
+          "key": "0cd8044f5e023b24668b6cb91d21096367e04e1dde1477d93e07e86e75b0834c",
+          "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3"
+        }
+      },
+      "checker_relations": {},
+      "correct_supported_rejected": 0,
+      "entry_check_ns": 0,
+      "load_ns": 616746,
+      "lookup_application_work": {},
+      "phase_total_ns": {},
+      "preflight_error": "model differs from contract at operation add state -16 arg -8",
+      "rejected": 0,
+      "source_free_files": [
+        "bundle.json",
+        "key.hex",
+        "runtime",
+        "saturating.json"
+      ]
+    },
+    "learned/concrete": {
+      "accepted": 239,
+      "certificates": {
+        "saturating": {
+          "accepted_inputs": 0,
+          "build_ns": 101859,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "0cd8044f5e023b24668b6cb91d21096367e04e1dde1477d93e07e86e75b0834c",
+          "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3"
+        }
+      },
+      "checker_relations": {
+        "expressions": 26247,
+        "integer_arithmetic": 4770,
+        "output_comparisons": 1785,
+        "predicates": 7198
+      },
+      "correct_supported_rejected": 355,
+      "entry_check_ns": 84410,
+      "load_ns": 656826,
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_total_ns": {
+        "binding_ns": 37210,
+        "checker_ns": 215009,
+        "commit_ns": 19080,
+        "overhead_ns": 479934,
+        "proposal_ns": 117659,
+        "total_ns": 868892
+      },
+      "preflight_error": null,
+      "rejected": 356,
+      "source_free_files": [
+        "bundle.json",
+        "key.hex",
+        "runtime",
+        "saturating.json"
+      ]
+    },
+    "lookup/certified": {
+      "accepted": 594,
+      "certificates": {
+        "saturating": {
+          "accepted_inputs": 594,
+          "build_ns": 289078,
+          "cases": 594,
+          "certified": true,
+          "checker_work": {
+            "expressions": 26199,
+            "integer_arithmetic": 4761,
+            "output_comparisons": 1782,
+            "predicates": 7185
+          },
+          "contract_rejected_inputs": 0,
+          "key": "9e0d6b95ccfe470f5f81a59d43da2d04b120bfebab23f8dd58c97762147b687b",
+          "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3"
+        }
+      },
+      "checker_relations": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "correct_supported_rejected": 0,
+      "entry_check_ns": 64829,
+      "load_ns": 627816,
+      "lookup_application_work": {
+        "expressions": 26247,
+        "integer_arithmetic": 4770,
+        "output_comparisons": 0,
+        "predicates": 7198
+      },
+      "phase_total_ns": {
+        "binding_ns": 36089,
+        "checker_ns": 77359,
+        "commit_ns": 46690,
+        "overhead_ns": 406580,
+        "proposal_ns": 108749,
+        "total_ns": 675467
+      },
+      "preflight_error": null,
+      "rejected": 1,
+      "source_free_files": [
+        "bundle.json",
+        "key.hex",
+        "runtime",
+        "saturating.json"
+      ]
+    },
+    "lookup/concrete": {
+      "accepted": 594,
+      "certificates": {
+        "saturating": {
+          "accepted_inputs": 0,
+          "build_ns": 98810,
+          "cases": 0,
+          "certified": false,
+          "checker_work": {
+            "expressions": 0,
+            "integer_arithmetic": 0,
+            "output_comparisons": 0,
+            "predicates": 0
+          },
+          "contract_rejected_inputs": 0,
+          "key": "9e0d6b95ccfe470f5f81a59d43da2d04b120bfebab23f8dd58c97762147b687b",
+          "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3"
+        }
+      },
+      "checker_relations": {
+        "expressions": 26247,
+        "integer_arithmetic": 4770,
+        "output_comparisons": 1785,
+        "predicates": 7198
+      },
+      "correct_supported_rejected": 0,
+      "entry_check_ns": 60920,
+      "load_ns": 749305,
+      "lookup_application_work": {
+        "expressions": 0,
+        "integer_arithmetic": 0,
+        "output_comparisons": 0,
+        "predicates": 0
+      },
+      "phase_total_ns": {
+        "binding_ns": 35949,
+        "checker_ns": 159649,
+        "commit_ns": 47240,
+        "overhead_ns": 399676,
+        "proposal_ns": 13840,
+        "total_ns": 656354
+      },
+      "preflight_error": null,
+      "rejected": 1,
+      "source_free_files": [
+        "bundle.json",
+        "key.hex",
+        "runtime",
+        "saturating.json"
+      ]
+    }
+  },
+  "passed_both_builds": false,
+  "program": "saturating",
+  "seed": 11,
+  "strategy": "paired4-control"
+}

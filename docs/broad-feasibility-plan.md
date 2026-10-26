@@ -1,7 +1,9 @@
 # PHLAME broad-feasibility plan
 
 Date: 2026-10-26. Status: proposed execution plan with initial decision budgets.
-The plan is written; the new implementation gates below have not run.
+G01 has passed for the scalar subset. G02 meets its initial scalar seed target;
+its broader reliability requirements and all subsequent gates remain open.
+See the [gate ledger](feasibility-gates.json) for current evidence.
 
 [Gate ledger](feasibility-gates.json) · [First implementation slice](broad-feasibility-next-slice.md) ·
 [Project brief](../PHLAM_Codex_Project_Brief.md) · [Runtime design](learned-runtime.md)

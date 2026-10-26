@@ -1,0 +1,38 @@
+{
+  "runtime_load_ns": 717545,
+  "runtime_verification_process_wall_ns": 2679323,
+  "runtime_verification_process_cpu_ns": 2642000,
+  "recipe": {
+    "kind": "relu",
+    "width": 8,
+    "initialization": "paired-affine",
+    "seeds": [
+      71
+    ]
+  },
+  "seed": 71,
+  "module_sha256": "229f2dc8884f38d40caae30ad254b1aef135e353d24a1cf19fd996df68599939",
+  "artifact": "saturating/candidate-00/deployment/saturating.json",
+  "training_wall_ns": 473053482,
+  "training_cpu_ns": 463493000,
+  "trainer_managed_bytes_at_end": 7821576,
+  "initial_mse": 0.0011085730247981527,
+  "final_mse": 2.0159334026449662e-10,
+  "raw_training_correct": 102,
+  "raw_nontraining_correct": 492,
+  "certificate": {
+    "key": "9bf9f4841e113f079bb481bb1708b7f05e7578c3308b8fb49a0a09afdaa6f26a",
+    "module_sha256": "229f2dc8884f38d40caae30ad254b1aef135e353d24a1cf19fd996df68599939",
+    "certified": true,
+    "cases": 594,
+    "accepted_inputs": 594,
+    "contract_rejected_inputs": 0,
+    "build_ns": 308498,
+    "checker_work": {
+      "expressions": 26199,
+      "integer_arithmetic": 4761,
+      "predicates": 7185,
+      "output_comparisons": 1782
+    }
+  }
+}

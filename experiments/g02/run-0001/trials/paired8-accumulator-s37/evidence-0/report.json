@@ -1,0 +1,68 @@
+{
+  "schema": "phlame.build-report.v0",
+  "status": "built",
+  "manifest_sha256": "01453c85bb47d956944df89e720df7167640807bf83da9b3dc33a125f0931274",
+  "plan_sha256": "992f9f0c94bf936a351a9bf1faf1f6fc7d424a7ec6d4af0d92a1581a1842ff8a",
+  "implementation_sha256": "342a1d3c0e54d3b9eb2a6572e14130d6918ef060ace0e5f3f62ce73daa1885e9",
+  "toolchain": "go1.26.4",
+  "argument_policy": "explicit-int64-v0",
+  "components": {
+    "accumulator": {
+      "source": "accumulator.phlam",
+      "class": "Accumulator",
+      "source_sha256": "bda959bd8633e8f23b07db418c453df591ffa80659fd92aeff45844d97a81e36",
+      "training_sha256": "aa954c4b63cfe0910144850b27b628bcab96c10d348dc0f10aa473583c8f1583",
+      "oracle_domain_sha256": "ab9c0031f931f898d20476f4764657ab356b6fc912166671419b386021c250de",
+      "oracle_wall_ns": 58947005,
+      "oracle_cases": 594,
+      "training_cases": 90,
+      "attempts": [
+        {
+          "runtime_load_ns": 680926,
+          "runtime_verification_process_wall_ns": 2693453,
+          "runtime_verification_process_cpu_ns": 2656000,
+          "recipe": {
+            "kind": "relu",
+            "width": 8,
+            "initialization": "paired-centered",
+            "seeds": [
+              37
+            ]
+          },
+          "seed": 37,
+          "module_sha256": "4fdc656f8d6457fa891edff74b974f472454c577fe6ed3066268b498b2249df3",
+          "artifact": "accumulator/candidate-00/deployment/accumulator.json",
+          "training_wall_ns": 430857838,
+          "training_cpu_ns": 421624000,
+          "trainer_managed_bytes_at_end": 12015880,
+          "initial_mse": 0.28286761677380634,
+          "final_mse": 1.5116039000827723e-7,
+          "raw_training_correct": 90,
+          "raw_nontraining_correct": 432,
+          "certificate": {
+            "key": "9085c07c2bc1ea411ce47daae2784e36f5638d53c1b139c0a3563e624bbfb53d",
+            "module_sha256": "4fdc656f8d6457fa891edff74b974f472454c577fe6ed3066268b498b2249df3",
+            "certified": true,
+            "cases": 594,
+            "accepted_inputs": 522,
+            "contract_rejected_inputs": 72,
+            "build_ns": 342267,
+            "checker_work": {
+              "expressions": 36261,
+              "integer_arithmetic": 4200,
+              "predicates": 12831,
+              "output_comparisons": 1566
+            }
+          }
+        }
+      ],
+      "selected_attempt": 0
+    }
+  },
+  "limitations": [
+    "Finite scalar domains; no arrays/loops/eval/gateway or production authority.",
+    "Explicit int64 arguments: source method defaults are not inserted by the scalar ABI.",
+    "Training subprocess wall timeout is enforced; Go managed-memory metric/soft limit is not an OS RSS sandbox.",
+    "Finite certification repeats at runtime; a signed candidate/report is not an accepted proof bit."
+  ]
+}

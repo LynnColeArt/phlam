@@ -1,0 +1,20 @@
+{
+  "schema": "phlame.training-plan.v0",
+  "sampling": {
+    "state_stride": 2,
+    "argument_stride": 4
+  },
+  "max_primitive_cases": 5000,
+  "candidate_timeout_ms": 600000,
+  "build_timeout_ms": 7200000,
+  "candidates": [
+    {
+      "kind": "relu",
+      "width": 8,
+      "initialization": "paired-affine",
+      "seeds": [
+        37
+      ]
+    }
+  ]
+}

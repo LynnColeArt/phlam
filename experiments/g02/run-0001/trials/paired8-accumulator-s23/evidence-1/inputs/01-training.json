@@ -1,0 +1,20 @@
+{
+  "build_timeout_ms": 7200000,
+  "candidate_timeout_ms": 600000,
+  "candidates": [
+    {
+      "initialization": "paired-centered",
+      "kind": "relu",
+      "seeds": [
+        23
+      ],
+      "width": 8
+    }
+  ],
+  "max_primitive_cases": 5000,
+  "sampling": {
+    "argument_stride": 4,
+    "state_stride": 2
+  },
+  "schema": "phlame.training-plan.v0"
+}

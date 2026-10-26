@@ -1,0 +1,146 @@
+{
+  "schema": "phlame.g02.campaign.v0",
+  "date": "2026-10-26",
+  "status": "locked_before_fresh_seed_execution",
+  "scope": "initial known scalar development corpus; not G03/G05 acceptance",
+  "fresh_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "required_certifying_seeds": 4,
+  "clean_repetitions": 2,
+  "retries_per_fit": 0,
+  "strategies": [
+    {
+      "id": "paired4-control",
+      "recipe": {
+        "kind": "relu",
+        "width": 4,
+        "initialization": "paired-centered"
+      }
+    },
+    {
+      "id": "paired8",
+      "recipe": {
+        "kind": "relu",
+        "width": 8,
+        "initialization": "paired-centered"
+      }
+    },
+    {
+      "id": "paired8-affine",
+      "recipe": {
+        "kind": "relu",
+        "width": 8,
+        "initialization": "paired-affine"
+      }
+    }
+  ],
+  "selection": "first declared strategy meeting >=4/5 reproducible certifications separately for every program; no per-program mixing or latency selection",
+  "budget": {
+    "training_cpu_seconds_per_candidate": 600,
+    "verification_cpu_seconds_per_candidate": 600,
+    "candidate_wall_timeout_ms": 600000,
+    "total_wall_seconds_per_program": 7200,
+    "max_memory_bytes": 4294967296,
+    "rss_poll_seconds": 0.005,
+    "memory_measurement": "sampled simultaneous process-tree VmRSS; not an OS-enforced peak cap"
+  },
+  "plan": {
+    "schema": "phlame.training-plan.v0",
+    "sampling": {
+      "state_stride": 2,
+      "argument_stride": 4
+    },
+    "max_primitive_cases": 5000,
+    "candidate_timeout_ms": 600000,
+    "build_timeout_ms": 7200000,
+    "candidates": [
+      {
+        "kind": "affine",
+        "width": 0,
+        "initialization": "legacy",
+        "seeds": [
+          7
+        ]
+      },
+      {
+        "kind": "relu",
+        "width": 4,
+        "initialization": "paired-centered",
+        "seeds": [
+          7,
+          404
+        ]
+      },
+      {
+        "kind": "relu",
+        "width": 8,
+        "initialization": "paired-centered",
+        "seeds": [
+          7,
+          404
+        ]
+      }
+    ]
+  },
+  "programs": [
+    {
+      "alias": "counter",
+      "source": "counter.phlam",
+      "class": "Counter",
+      "domain": {
+        "state_min": -16,
+        "state_max": 16,
+        "arg_min": -4,
+        "arg_max": 4
+      },
+      "entries": [
+        "increment",
+        "read"
+      ],
+      "source_path": "examples/g01/original/counter.phlam",
+      "source_sha256": "fd26a7823ae1fd39b10f99a48ca42c99208acf36e598c7c46cd9b69ea0450d9e"
+    },
+    {
+      "alias": "accumulator",
+      "source": "accumulator.phlam",
+      "class": "Accumulator",
+      "domain": {
+        "state_min": -16,
+        "state_max": 16,
+        "arg_min": -8,
+        "arg_max": 8
+      },
+      "entries": [
+        "add",
+        "read"
+      ],
+      "source_path": "examples/g01/original/accumulator.phlam",
+      "source_sha256": "bda959bd8633e8f23b07db418c453df591ffa80659fd92aeff45844d97a81e36"
+    },
+    {
+      "alias": "saturating",
+      "source": "saturating.phlam",
+      "class": "SaturatingAccumulator",
+      "domain": {
+        "state_min": -16,
+        "state_max": 16,
+        "arg_min": -8,
+        "arg_max": 8
+      },
+      "entries": [
+        "add",
+        "read"
+      ],
+      "source_path": "examples/g01/original/saturating.phlam",
+      "source_sha256": "8c75c3cb73c83d670a26266fca83f94d6f73b844b2c4063e1c74aab17e9cffbb"
+    }
+  ],
+  "held_out_program_acceptance": "not run; future corpus commitments/reveal remain mandatory",
+  "follow_up": "at most one evidence-led follow-up campaign, <=2 interventions, only if no strategy qualifies; preserve original verdict",
+  "integration_rule": "After selection, first fresh seed certifying all three programs; same single-candidate recipe in combined manifests, two clean builds, outputs must match individual fits; integration runs do not improve reliability counts."
+}

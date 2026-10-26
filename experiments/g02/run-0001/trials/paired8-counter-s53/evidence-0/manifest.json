@@ -1,0 +1,29 @@
+{
+  "schema": "phlame.build.v0",
+  "module": {
+    "name": "g02/counter",
+    "version": "0.1.0"
+  },
+  "sources": [
+    "counter.phlam"
+  ],
+  "training_plan": "training.json",
+  "lock": "phlam.lock",
+  "components": [
+    {
+      "alias": "counter",
+      "source": "counter.phlam",
+      "class": "Counter",
+      "domain": {
+        "state_min": -16,
+        "state_max": 16,
+        "arg_min": -4,
+        "arg_max": 4
+      },
+      "entries": [
+        "increment",
+        "read"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "phlame.build-report.v0",
+  "status": "failed",
+  "error": "saturating.phlam: all bounded candidates failed certification; see saturating",
+  "manifest_sha256": "3692377c64b778a06df339a6fa80f910a1505120560cf52dca6d3271f1c54b65",
+  "plan_sha256": "7acdde76ff3c4b45395135b983f7012bf136551b4d78dcf655680b4b92528116",
+  "implementation_sha256": "342a1d3c0e54d3b9eb2a6572e14130d6918ef060ace0e5f3f62ce73daa1885e9",
+  "toolchain": "go1.26.4",
+  "argument_policy": "explicit-int64-v0",
+  "components": {
+    "saturating": {
+      "source": "saturating.phlam",
+      "class": "SaturatingAccumulator",
+      "source_sha256": "8c75c3cb73c83d670a26266fca83f94d6f73b844b2c4063e1c74aab17e9cffbb",
+      "training_sha256": "99c5e078f2c4d6ddcda49105f67d2afb66dee6ce4ceedd25190e667078b69124",
+      "oracle_domain_sha256": "ed1feb4008021d58add5483d8097f05e9d0388469791b23f95c2e19cd49bccdd",
+      "oracle_wall_ns": 55385508,
+      "oracle_cases": 594,
+      "training_cases": 102,
+      "attempts": [
+        {
+          "runtime_load_ns": 659266,
+          "runtime_verification_process_wall_ns": 2459285,
+          "runtime_verification_process_cpu_ns": 2392000,
+          "recipe": {
+            "kind": "relu",
+            "width": 4,
+            "initialization": "paired-centered",
+            "seeds": [
+              11
+            ]
+          },
+          "seed": 11,
+          "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3",
+          "artifact": "saturating/candidate-00/deployment/saturating.json",
+          "training_wall_ns": 289882118,
+          "training_cpu_ns": 287321000,
+          "trainer_managed_bytes_at_end": 7821576,
+          "initial_mse": 0.4095081329348545,
+          "final_mse": 0.0010166594682270735,
+          "raw_training_correct": 51,
+          "raw_nontraining_correct": 188,
+          "certificate": {
+            "key": "0cd8044f5e023b24668b6cb91d21096367e04e1dde1477d93e07e86e75b0834c",
+            "module_sha256": "483b9dc6bca2797d5f731687cbdf966d432dd3e0358082f56e3b9ffbdc48a1f3",
+            "certified": false,
+            "cases": 1,
+            "accepted_inputs": 1,
+            "contract_rejected_inputs": 0,
+            "build_ns": 109489,
+            "checker_work": {
+              "expressions": 31,
+              "integer_arithmetic": 4,
+              "predicates": 10,
+              "output_comparisons": 3
+            },
+            "failure": "model differs from contract at operation add state -16 arg -8"
+          },
+          "error": "model differs from contract at operation add state -16 arg -8"
+        }
+      ],
+      "selected_attempt": -1
+    }
+  },
+  "limitations": [
+    "Finite scalar domains; no arrays/loops/eval/gateway or production authority.",
+    "Explicit int64 arguments: source method defaults are not inserted by the scalar ABI.",
+    "Training subprocess wall timeout is enforced; Go managed-memory metric/soft limit is not an OS RSS sandbox.",
+    "Finite certification repeats at runtime; a signed candidate/report is not an accepted proof bit."
+  ]
+}

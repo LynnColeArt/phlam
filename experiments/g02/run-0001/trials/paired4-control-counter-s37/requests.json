@@ -1,0 +1,6202 @@
+{
+  "repeats": 1,
+  "transactions": [
+    {
+      "id": "primitive-0",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-1",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-2",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-3",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-4",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-5",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-6",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-7",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-8",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-9",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-10",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-11",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-12",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-13",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-14",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-15",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-16",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-17",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-18",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-19",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-20",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-21",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-22",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-23",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-24",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-25",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-26",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-27",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-28",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-29",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-30",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-31",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-32",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-33",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-34",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-35",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-36",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-37",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-38",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-39",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-40",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-41",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-42",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-43",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-44",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-45",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-46",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-47",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-48",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-49",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-50",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-51",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-52",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-53",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-54",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-55",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-56",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-57",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-58",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-59",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-60",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-61",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-62",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-63",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-64",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-65",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-66",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-67",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-68",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-69",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-70",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-71",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-72",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-73",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-74",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-75",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-76",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-77",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-78",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-79",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-80",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-81",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-82",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-83",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-84",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-85",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-86",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-87",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-88",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-89",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-90",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-91",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-92",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-93",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-94",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-95",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-96",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-97",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-98",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-99",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-100",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-101",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-102",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-103",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-104",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-105",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-106",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-107",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-108",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-109",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-110",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-111",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-112",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-113",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-114",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-115",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-116",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-117",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-118",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-119",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-120",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-121",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-122",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-123",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-124",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-125",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-126",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-127",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-128",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-129",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-130",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-131",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-132",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-133",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-134",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-135",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-136",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-137",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-138",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-139",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-140",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-141",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-142",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-143",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-144",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-145",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-146",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-147",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-148",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-149",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-150",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-151",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-152",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-153",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-154",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-155",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-156",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-157",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-158",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-159",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-160",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-161",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-162",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-163",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-164",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-165",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-166",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-167",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-168",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-169",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-170",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-171",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-172",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-173",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-174",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-175",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-176",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-177",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-178",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-179",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-180",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-181",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-182",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-183",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-184",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-185",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-186",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-187",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-188",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-189",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-190",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-191",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-192",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-193",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-194",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-195",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-196",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-197",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-198",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-199",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-200",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-201",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-202",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-203",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-204",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-205",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-206",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-207",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-208",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-209",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-210",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-211",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-212",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-213",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-214",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-215",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-216",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-217",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-218",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-219",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-220",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-221",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-222",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-223",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-224",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-225",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-226",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-227",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-228",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-229",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-230",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-231",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-232",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-233",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-234",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-235",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-236",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-237",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-238",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-239",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-240",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-241",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-242",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-243",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-244",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-245",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-246",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-247",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-248",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-249",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-250",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-251",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-252",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-253",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-254",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-255",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-256",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-257",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-258",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-259",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-260",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-261",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-262",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-263",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-264",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-265",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-266",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-267",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-268",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-269",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-270",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-271",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-272",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-273",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-274",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-275",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-276",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-277",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-278",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-279",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-280",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-281",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-282",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-283",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-284",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-285",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-286",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-287",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-288",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-289",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-290",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-291",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": -1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-292",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 0
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-293",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-294",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 2
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-295",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 3
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-296",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 4
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-297",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-298",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-299",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-300",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-301",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-302",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-303",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-304",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-305",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-306",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-307",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-308",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-309",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-310",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-311",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-312",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": -1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-313",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-314",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 1,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-315",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 2,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-316",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 3,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-317",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 4,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-318",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 5,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-319",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 6,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-320",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 7,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-321",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 8,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-322",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 9,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-323",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 10,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-324",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 11,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-325",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 12,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-326",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 13,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-327",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 14,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-328",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 15,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "primitive-329",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 16,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "operation": "read",
+          "target": "x"
+        }
+      ]
+    },
+    {
+      "id": "rollback-after-write",
+      "instances": {
+        "x": {
+          "component": "counter",
+          "value": 0,
+          "version": 1
+        }
+      },
+      "steps": [
+        {
+          "argument": {
+            "literal": 1
+          },
+          "operation": "increment",
+          "target": "x"
+        },
+        {
+          "argument": {
+            "literal": 100
+          },
+          "operation": "increment",
+          "target": "x"
+        }
+      ]
+    }
+  ]
+}

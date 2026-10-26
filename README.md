@@ -18,7 +18,10 @@ criteria and the final development-only authorship experiment. The
 pipeline. [G01 now passes](experiments/g01/README.md) for the finite scalar subset,
 with reproducible signed bundles and source-free execution across original,
 renamed and reordered programs. The [gate ledger](docs/feasibility-gates.json)
-keeps all later implementation gates unstarted and broad feasibility unresolved.
+records [G02 scalar reliability](experiments/g02/README.md): one uniform recipe
+certifies all five fresh seeds per initial program, twice reproducibly. Full G02
+and broad feasibility remain unresolved pending the required richer families and
+sealed acceptance programs.
 
 ## Current state
 

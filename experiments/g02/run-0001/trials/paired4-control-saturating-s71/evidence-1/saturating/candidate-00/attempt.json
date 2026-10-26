@@ -1,0 +1,40 @@
+{
+  "runtime_load_ns": 710046,
+  "runtime_verification_process_wall_ns": 2685143,
+  "runtime_verification_process_cpu_ns": 2616000,
+  "recipe": {
+    "kind": "relu",
+    "width": 4,
+    "initialization": "paired-centered",
+    "seeds": [
+      71
+    ]
+  },
+  "seed": 71,
+  "module_sha256": "9bab63cae17cce50c5ba1145152ba421a215e93dab157a4f3a53122175f3be49",
+  "artifact": "saturating/candidate-00/deployment/saturating.json",
+  "training_wall_ns": 335073940,
+  "training_cpu_ns": 328952000,
+  "trainer_managed_bytes_at_end": 12015880,
+  "initial_mse": 0.3848777744693596,
+  "final_mse": 0.0006488392967765578,
+  "raw_training_correct": 60,
+  "raw_nontraining_correct": 310,
+  "certificate": {
+    "key": "d9437dad5d9310765842cbb957284860f123159bb8f3160cbfda940fa6f70085",
+    "module_sha256": "9bab63cae17cce50c5ba1145152ba421a215e93dab157a4f3a53122175f3be49",
+    "certified": false,
+    "cases": 25,
+    "accepted_inputs": 25,
+    "contract_rejected_inputs": 0,
+    "build_ns": 121350,
+    "checker_work": {
+      "expressions": 945,
+      "integer_arithmetic": 150,
+      "predicates": 280,
+      "output_comparisons": 75
+    },
+    "failure": "model differs from contract at operation add state -15 arg -1"
+  },
+  "error": "model differs from contract at operation add state -15 arg -1"
+}

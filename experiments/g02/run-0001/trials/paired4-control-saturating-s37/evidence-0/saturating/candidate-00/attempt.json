@@ -1,0 +1,40 @@
+{
+  "runtime_load_ns": 842435,
+  "runtime_verification_process_wall_ns": 8070259,
+  "runtime_verification_process_cpu_ns": 3262000,
+  "recipe": {
+    "kind": "relu",
+    "width": 4,
+    "initialization": "paired-centered",
+    "seeds": [
+      37
+    ]
+  },
+  "seed": 37,
+  "module_sha256": "8f1bfe9c235e3e314ff303552865adcd2a5a1f4411bcab9e6b0f41954393a80f",
+  "artifact": "saturating/candidate-00/deployment/saturating.json",
+  "training_wall_ns": 509912789,
+  "training_cpu_ns": 369191000,
+  "trainer_managed_bytes_at_end": 12015880,
+  "initial_mse": 0.301569506773905,
+  "final_mse": 0.0006219514775637614,
+  "raw_training_correct": 63,
+  "raw_nontraining_correct": 292,
+  "certificate": {
+    "key": "eb212f985530d1c2c69d278c1ae6dddbaab3f7de632e0d6781cf86eb664fd78a",
+    "module_sha256": "8f1bfe9c235e3e314ff303552865adcd2a5a1f4411bcab9e6b0f41954393a80f",
+    "certified": false,
+    "cases": 9,
+    "accepted_inputs": 9,
+    "contract_rejected_inputs": 0,
+    "build_ns": 242829,
+    "checker_work": {
+      "expressions": 296,
+      "integer_arithmetic": 41,
+      "predicates": 93,
+      "output_comparisons": 27
+    },
+    "failure": "model differs from contract at operation add state -16 arg 0"
+  },
+  "error": "model differs from contract at operation add state -16 arg 0"
+}

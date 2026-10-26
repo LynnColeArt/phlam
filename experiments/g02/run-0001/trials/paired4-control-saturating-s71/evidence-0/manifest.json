@@ -1,0 +1,29 @@
+{
+  "schema": "phlame.build.v0",
+  "module": {
+    "name": "g02/saturating",
+    "version": "0.1.0"
+  },
+  "sources": [
+    "saturating.phlam"
+  ],
+  "training_plan": "training.json",
+  "lock": "phlam.lock",
+  "components": [
+    {
+      "alias": "saturating",
+      "source": "saturating.phlam",
+      "class": "SaturatingAccumulator",
+      "domain": {
+        "state_min": -16,
+        "state_max": 16,
+        "arg_min": -8,
+        "arg_max": 8
+      },
+      "entries": [
+        "add",
+        "read"
+      ]
+    }
+  ]
+}
