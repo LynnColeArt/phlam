@@ -78,14 +78,36 @@ func cloneInstances(instances map[string]Instance) map[string]Instance {
 	}
 	return copy
 }
-func (r *Registry) Run(tx Transaction) (out Outcome) {
-	start := time.Now()
+
+// Run includes phase clocks. Work counters are collected in both execution modes.
+func (r *Registry) Run(tx Transaction) Outcome { return r.run(tx, true) }
+
+// RunUninstrumented omits phase clocks but preserves all validation, work counters,
+// owned output copies and transactional semantics. It is useful for profiling the
+// execution machinery without charging every primitive for multiple timestamps.
+func (r *Registry) RunUninstrumented(tx Transaction) Outcome { return r.run(tx, false) }
+
+func phaseStart(timed bool) time.Time {
+	if timed {
+		return time.Now()
+	}
+	return time.Time{}
+}
+func phaseElapsed(start time.Time, timed bool) int64 {
+	if timed {
+		return time.Since(start).Nanoseconds()
+	}
+	return 0
+}
+
+func (r *Registry) run(tx Transaction, timed bool) (out Outcome) {
+	start := phaseStart(timed)
 	out = Outcome{ID: tx.ID, FailedStep: -1, States: cloneInstances(tx.Instances)}
 	defer func() {
-		out.Timing.TotalNS = time.Since(start).Nanoseconds()
+		out.Timing.TotalNS = phaseElapsed(start, timed)
 		out.Timing.OverheadNS = out.Timing.TotalNS - out.Timing.BindingNS - out.Timing.ProposalNS - out.Timing.CheckerNS - out.Timing.CommitNS
 	}()
-	t := time.Now()
+	t := phaseStart(timed)
 	valid := r != nil && r.ready && len(tx.Instances) > 0 && len(tx.Instances) <= 8 && len(tx.Steps) > 0 && len(tx.Steps) <= 16
 	if valid {
 		for _, state := range tx.Instances {
@@ -97,7 +119,7 @@ func (r *Registry) Run(tx Transaction) (out Outcome) {
 			}
 		}
 	}
-	out.Timing.CheckerNS += time.Since(t).Nanoseconds()
+	out.Timing.CheckerNS += phaseElapsed(t, timed)
 	if !valid {
 		out.Rejection = "invalid_transaction"
 		return
@@ -108,11 +130,11 @@ func (r *Registry) Run(tx Transaction) (out Outcome) {
 	dirty := map[string]bool{}
 	for i, step := range tx.Steps {
 		out.FailedStep = i
-		t = time.Now()
+		t = phaseStart(timed)
 		out.Work.BindingChecks++
 		state, exists := working[step.Target]
 		if !exists {
-			out.Timing.BindingNS += time.Since(t).Nanoseconds()
+			out.Timing.BindingNS += phaseElapsed(t, timed)
 			out.Rejection = "unknown_instance"
 			return
 		}
@@ -124,7 +146,7 @@ func (r *Registry) Run(tx Transaction) (out Outcome) {
 			}
 		}
 		if index < 0 {
-			out.Timing.BindingNS += time.Since(t).Nanoseconds()
+			out.Timing.BindingNS += phaseElapsed(t, timed)
 			out.Rejection = "unknown_operation"
 			return
 		}
@@ -150,17 +172,17 @@ func (r *Registry) Run(tx Transaction) (out Outcome) {
 				}
 			}
 		}
-		out.Timing.BindingNS += time.Since(t).Nanoseconds()
+		out.Timing.BindingNS += phaseElapsed(t, timed)
 		if !bindingOK {
 			out.Rejection = "invalid_value_binding"
 			return
 		}
-		t = time.Now()
+		t = phaseStart(timed)
 		out.Work.DomainChecks++
 		d := m.artifact.Domain
 		allowed := state.Value >= d.StateMin && state.Value <= d.StateMax && (op.Arity == 0 || arg >= d.ArgMin && arg <= d.ArgMax)
 		if !allowed {
-			out.Timing.CheckerNS += time.Since(t).Nanoseconds()
+			out.Timing.CheckerNS += phaseElapsed(t, timed)
 			out.Rejection = "outside_component_domain"
 			return
 		}
@@ -184,12 +206,12 @@ func (r *Registry) Run(tx Transaction) (out Outcome) {
 			selected = expected
 			allowed = err == nil && expected.Accepted
 		}
-		out.Timing.CheckerNS += time.Since(t).Nanoseconds()
+		out.Timing.CheckerNS += phaseElapsed(t, timed)
 		if !allowed {
 			out.Rejection = "component_rejected"
 			return
 		}
-		t = time.Now()
+		t = phaseStart(timed)
 		var prediction Prediction
 		var err error
 		if r.engine == "lookup" {
@@ -204,23 +226,23 @@ func (r *Registry) Run(tx Transaction) (out Outcome) {
 		} else {
 			prediction, err = predict(m.artifact, index, state.Value, arg, r.engine)
 		}
-		out.Timing.ProposalNS += time.Since(t).Nanoseconds()
+		out.Timing.ProposalNS += phaseElapsed(t, timed)
 		if err != nil {
 			out.Rejection = "invalid_prediction"
 			return
 		}
-		t = time.Now()
+		t = phaseStart(timed)
 		if r.boundary == "concrete" {
 			out.Work.Relations.Comparisons += 3
 			if prediction != selected.Prediction {
-				out.Timing.CheckerNS += time.Since(t).Nanoseconds()
+				out.Timing.CheckerNS += phaseElapsed(t, timed)
 				out.Rejection = "prediction_mismatch"
 				return
 			}
 		} else {
 			out.Work.CertificateUses++
 		}
-		out.Timing.CheckerNS += time.Since(t).Nanoseconds()
+		out.Timing.CheckerNS += phaseElapsed(t, timed)
 		// Model outputs have no target, component, slot name, handle or capability.
 		// Only this already-bound instance can be staged by this primitive.
 		state.Value = prediction.Next
@@ -231,7 +253,7 @@ func (r *Registry) Run(tx Transaction) (out Outcome) {
 			writes = append(writes, Write{Target: step.Target, Slot: m.artifact.Contract.Slot, Value: prediction.Next})
 		}
 	}
-	t = time.Now()
+	t = phaseStart(timed)
 	for target := range dirty {
 		state := working[target]
 		state.Version++
@@ -242,6 +264,6 @@ func (r *Registry) Run(tx Transaction) (out Outcome) {
 	out.Writes = writes
 	out.Accepted = true
 	out.FailedStep = -1
-	out.Timing.CommitNS = time.Since(t).Nanoseconds()
+	out.Timing.CommitNS = phaseElapsed(t, timed)
 	return
 }
