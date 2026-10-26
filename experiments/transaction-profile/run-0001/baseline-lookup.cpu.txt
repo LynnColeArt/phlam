@@ -1,0 +1,34 @@
+File: phlame-profile-baseline
+Build ID: 8ef2dcf6fde8b7a2f861b8d49c537d490aa5ae67
+Type: cpu
+Time: 2026-10-25 23:13:29 CDT
+Duration: 2.57s, Total samples = 2590ms (100.58%)
+Showing nodes accounting for 2030ms, 78.38% of 2590ms total
+Dropped 42 nodes (cum <= 12.95ms)
+Showing top 25 nodes out of 83
+      flat  flat%   sum%        cum   cum%
+     370ms 14.29% 14.29%      390ms 15.06%  github.com/LynnColeArt/phlam/runtime/components.(*Expr).eval
+     270ms 10.42% 24.71%     2480ms 95.75%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+     150ms  5.79% 30.50%      220ms  8.49%  internal/runtime/maps.(*Iter).Next
+     140ms  5.41% 35.91%      220ms  8.49%  internal/runtime/maps.(*Map).putSlotSmallFastStr
+     120ms  4.63% 40.54%      120ms  4.63%  aeshashbody
+     110ms  4.25% 44.79%      160ms  6.18%  runtime.tryDeferToSpanScan
+      80ms  3.09% 47.88%     2580ms 99.61%  main.run
+      70ms  2.70% 50.58%      610ms 23.55%  runtime.mapassign_faststr
+      60ms  2.32% 52.90%      450ms 17.37%  runtime.mallocgc
+      50ms  1.93% 54.83%      440ms 16.99%  github.com/LynnColeArt/phlam/runtime/components.Operation.Evaluate
+      50ms  1.93% 56.76%      700ms 27.03%  github.com/LynnColeArt/phlam/runtime/components.cloneInstances (inline)
+      50ms  1.93% 58.69%       50ms  1.93%  internal/runtime/maps.ctrlGroup.matchH2 (inline)
+      50ms  1.93% 60.62%      170ms  6.56%  runtime.growslice
+      50ms  1.93% 62.55%       50ms  1.93%  runtime.memclrNoHeapPointers
+      50ms  1.93% 64.48%       50ms  1.93%  runtime.nextFreeFast (inline)
+      40ms  1.54% 66.02%      190ms  7.34%  gcWriteBarrier
+      40ms  1.54% 67.57%       40ms  1.54%  internal/chacha8rand.block
+      40ms  1.54% 69.11%       40ms  1.54%  runtime.(*mspan).writeHeapBitsSmall
+      40ms  1.54% 70.66%       40ms  1.54%  runtime.memhash64
+      40ms  1.54% 72.20%       80ms  3.09%  runtime.rand
+      40ms  1.54% 73.75%       40ms  1.54%  runtime.scanObjectsSmall
+      30ms  1.16% 74.90%       80ms  3.09%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+      30ms  1.16% 76.06%       30ms  1.16%  memeqbody
+      30ms  1.16% 77.22%       30ms  1.16%  runtime.heapArenaOf (inline)
+      30ms  1.16% 78.38%       40ms  1.54%  runtime.scanObject

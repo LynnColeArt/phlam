@@ -1,0 +1,34 @@
+File: phlame-profile-optimized
+Build ID: 6d61e3e141b3e7a0e4e3f4cd43f2a7bccbe1691b
+Type: cpu
+Time: 2026-10-25 23:13:36 CDT
+Duration: 2.42s, Total samples = 2430ms (100.57%)
+Showing nodes accounting for 1890ms, 77.78% of 2430ms total
+Dropped 42 nodes (cum <= 12.15ms)
+Showing top 25 nodes out of 81
+      flat  flat%   sum%        cum   cum%
+     330ms 13.58% 13.58%      360ms 14.81%  github.com/LynnColeArt/phlam/runtime/components.(*Expr).eval
+     320ms 13.17% 26.75%     2290ms 94.24%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+     100ms  4.12% 30.86%      100ms  4.12%  aeshashbody
+     100ms  4.12% 34.98%      160ms  6.58%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+     100ms  4.12% 39.09%      200ms  8.23%  internal/runtime/maps.(*Map).putSlotSmallFastStr
+      80ms  3.29% 42.39%      110ms  4.53%  internal/runtime/maps.(*Iter).Next
+      80ms  3.29% 45.68%       80ms  3.29%  runtime.(*mspan).base (inline)
+      80ms  3.29% 48.97%      130ms  5.35%  runtime.tryDeferToSpanScan
+      70ms  2.88% 51.85%     2420ms 99.59%  main.run
+      60ms  2.47% 54.32%       60ms  2.47%  runtime.(*mspan).writeHeapBitsSmall
+      60ms  2.47% 56.79%       60ms  2.47%  runtime.nextFreeFast (inline)
+      50ms  2.06% 58.85%       90ms  3.70%  runtime.mapaccess1_fast64
+      40ms  1.65% 60.49%      110ms  4.53%  gcWriteBarrier
+      40ms  1.65% 62.14%      440ms 18.11%  github.com/LynnColeArt/phlam/runtime/components.cloneInstances (inline)
+      40ms  1.65% 63.79%       40ms  1.65%  internal/runtime/maps.ctrlGroup.matchH2 (inline)
+      40ms  1.65% 65.43%      100ms  4.12%  runtime.bulkBarrierPreWrite
+      40ms  1.65% 67.08%      230ms  9.47%  runtime.growslice
+      40ms  1.65% 68.72%       50ms  2.06%  runtime.heapArenaOf (inline)
+      40ms  1.65% 70.37%      500ms 20.58%  runtime.mapassign_faststr
+      30ms  1.23% 71.60%     2320ms 95.47%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).RunUninstrumented
+      30ms  1.23% 72.84%      390ms 16.05%  github.com/LynnColeArt/phlam/runtime/components.Operation.Evaluate
+      30ms  1.23% 74.07%       30ms  1.23%  github.com/LynnColeArt/phlam/semantics.Add (inline)
+      30ms  1.23% 75.31%       30ms  1.23%  internal/chacha8rand.block
+      30ms  1.23% 76.54%      400ms 16.46%  runtime.mallocgcSmallScanNoHeader
+      30ms  1.23% 77.78%       30ms  1.23%  runtime.memclrNoHeapPointers

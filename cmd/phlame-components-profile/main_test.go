@@ -76,6 +76,47 @@ func TestSourceFreeProfileModesAndOracleValidation(t *testing.T) {
 	if len(hashes) != 1 {
 		t.Fatal("engines/boundaries/clocks disagree on behavior", hashes)
 	}
+	// Also exercise the explicit two-component saturation-then-failure example
+	// in the unclocked source-free process, outside the 750-case benchmark mix.
+	exampleData, err := os.ReadFile(filepath.Join(study, "oracle-traces.json"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	var examples []json.RawMessage
+	if err := json.Unmarshal(exampleData, &examples); err != nil {
+		t.Fatal(err)
+	}
+	var exampleLines strings.Builder
+	for _, row := range examples {
+		var compact any
+		if err := json.Unmarshal(row, &compact); err != nil {
+			t.Fatal(err)
+		}
+		raw, err := json.Marshal(compact)
+		if err != nil {
+			t.Fatal(err)
+		}
+		exampleLines.Write(raw)
+		exampleLines.WriteByte('\n')
+	}
+	if err := os.WriteFile(filepath.Join(dir, "transactions.jsonl"), []byte(exampleLines.String()), 0644); err != nil {
+		t.Fatal(err)
+	}
+	for _, engine := range []string{"learned", "lookup"} {
+		cmd := exec.Command(binary, "-engine", engine, "-iterations", "4")
+		cmd.Dir = dir
+		raw, err := cmd.CombinedOutput()
+		if err != nil {
+			t.Fatal(string(raw), err)
+		}
+		var out output
+		if err := json.Unmarshal(raw, &out); err != nil {
+			t.Fatal(err)
+		}
+		if out.VerifiedCases != 4 || out.VerifiedAccepted != 3 || out.VerifiedRejected != 1 {
+			t.Fatal("saturation rollback changed", out)
+		}
+	}
 	// Corrupting oracle evidence must stop the run, not turn into a speed result.
 	data, err := os.ReadFile(filepath.Join(dir, "transactions.jsonl"))
 	if err != nil {

@@ -1,0 +1,28 @@
+{
+  "baseline_revision": "065027d",
+  "binary_sha256": {
+    "baseline": "db1ef711ed015d1eb206718dbe4acc54faf44e05b794603dfcff759f5f29bbe0",
+    "optimized": "dd8610e18ecf537fe870a693d6aafa9f4c0dc1121d14ae3943c12f587b99ff20"
+  },
+  "fixture_sha256": {
+    "accumulator.json": "d5fa74c41c36dd1f14839121f112ba29e68525720a18b9ec3ce283e110160c70",
+    "counter.json": "ecda6950869d2bd1e0ec16ddc709a36a5278420787233243b2c60892b6695e4d",
+    "registry.json": "ffbc4ef3b898aaa4a22d4d00b35810e47373e9c1c60c70962760943e769e6e1f",
+    "transactions.jsonl": "08dcbdc0bb48ddca2de07244ceb63a63dc9ed2b994c56866ad40185c0a14c003",
+    "trusted-key.hex": "34eeec7412342e70a4a7ba8aff50cff27778530d9f9d63cd8fcb4af25c75425d"
+  },
+  "iterations": 100000,
+  "profile_iterations": 1500000,
+  "repetitions": 3,
+  "schema": "phlame.transaction-profile.v0",
+  "seed": 20261025,
+  "source_free_files": [
+    "accumulator.json",
+    "counter.json",
+    "registry.json",
+    "transactions.jsonl",
+    "trusted-key.hex",
+    "worker"
+  ],
+  "toolchain": "go version go1.26.4 linux/amd64"
+}

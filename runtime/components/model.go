@@ -31,7 +31,11 @@ func features(count, index int, state, arg int64) []float64 {
 	return x
 }
 func (m Model) Predict(count, index int, state, arg int64) (out [3]float64) {
-	x := features(count, index, state, arg)
+	// Validated artifacts have at most eight operations and 32 hidden units.
+	// A call owns this bounded scratch buffer; no pooling or shared mutable state.
+	var scratch [3 + 8 + 32]float64
+	x := scratch[:3+count]
+	x[0], x[1], x[2], x[3+index] = 1, float64(state)/Scale, float64(arg)/Scale, 1
 	base := len(x)
 	for _, row := range m.Hidden {
 		v := 0.0

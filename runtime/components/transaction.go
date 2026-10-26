@@ -102,8 +102,13 @@ func phaseElapsed(start time.Time, timed bool) int64 {
 
 func (r *Registry) run(tx Transaction, timed bool) (out Outcome) {
 	start := phaseStart(timed)
-	out = Outcome{ID: tx.ID, FailedStep: -1, States: cloneInstances(tx.Instances)}
+	out = Outcome{ID: tx.ID, FailedStep: -1}
 	defer func() {
+		// Success publishes the working copy. Rejection discards it and returns
+		// an owned snapshot of the original, including for invalid transactions.
+		if !out.Accepted {
+			out.States = cloneInstances(tx.Instances)
+		}
 		out.Timing.TotalNS = phaseElapsed(start, timed)
 		out.Timing.OverheadNS = out.Timing.TotalNS - out.Timing.BindingNS - out.Timing.ProposalNS - out.Timing.CheckerNS - out.Timing.CommitNS
 	}()

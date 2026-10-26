@@ -1,0 +1,34 @@
+File: phlame-profile-baseline
+Build ID: 8ef2dcf6fde8b7a2f861b8d49c537d490aa5ae67
+Type: cpu
+Time: 2026-10-25 23:13:25 CDT
+Duration: 4.29s, Total samples = 4.30s (100.30%)
+Showing nodes accounting for 3.09s, 71.86% of 4.30s total
+Dropped 69 nodes (cum <= 0.02s)
+Showing top 25 nodes out of 98
+      flat  flat%   sum%        cum   cum%
+     0.95s 22.09% 22.09%      1.79s 41.63%  github.com/LynnColeArt/phlam/runtime/components.Model.Predict
+     0.42s  9.77% 31.86%      4.20s 97.67%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+     0.13s  3.02% 34.88%      0.25s  5.81%  internal/runtime/maps.(*Iter).Next
+     0.13s  3.02% 37.91%      0.18s  4.19%  runtime.tryDeferToSpanScan
+     0.12s  2.79% 40.70%      0.12s  2.79%  runtime.nextFreeFast (inline)
+     0.11s  2.56% 43.26%      0.11s  2.56%  aeshashbody
+     0.10s  2.33% 45.58%      0.19s  4.42%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+     0.09s  2.09% 47.67%      0.19s  4.42%  runtime.scanObject
+     0.09s  2.09% 49.77%      0.10s  2.33%  runtime.scanblock
+     0.09s  2.09% 51.86%      0.25s  5.81%  runtime.wbBufFlush1
+     0.08s  1.86% 53.72%      0.13s  3.02%  github.com/LynnColeArt/phlam/runtime/components.Decode
+     0.08s  1.86% 55.58%         2s 46.51%  github.com/LynnColeArt/phlam/runtime/components.predict
+     0.08s  1.86% 57.44%      0.08s  1.86%  math.archMax
+     0.07s  1.63% 59.07%      0.07s  1.63%  runtime.(*mspan).base (inline)
+     0.07s  1.63% 60.70%      0.09s  2.09%  runtime.typePointers.next
+     0.06s  1.40% 62.09%      4.30s   100%  main.run
+     0.06s  1.40% 63.49%      0.06s  1.40%  runtime.memclrNoHeapPointers
+     0.05s  1.16% 64.65%      0.16s  3.72%  internal/runtime/maps.(*Iter).Init
+     0.05s  1.16% 65.81%      0.05s  1.16%  internal/runtime/maps.h2 (inline)
+     0.05s  1.16% 66.98%      0.45s 10.47%  runtime.mallocgcSmallNoscan
+     0.05s  1.16% 68.14%      0.09s  2.09%  runtime.mapaccess1_fast64
+     0.04s  0.93% 69.07%      0.22s  5.12%  gcWriteBarrier
+     0.04s  0.93% 70.00%      0.04s  0.93%  internal/runtime/maps.(*groupReference).key (inline)
+     0.04s  0.93% 70.93%      0.04s  0.93%  internal/runtime/maps.ctrlGroup.matchH2 (inline)
+     0.04s  0.93% 71.86%      0.04s  0.93%  runtime.(*mspan).moveInlineMarks

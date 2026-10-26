@@ -204,6 +204,30 @@ optional hidden weights are dimension-bounded, signed, sealed and certified
 with the rest of the module. A public research key still supplies no production
 tenant identity or effects authorization.
 
+## Transaction profiling
+
+The subsequent [profiling study](../experiments/transaction-profile/README.md)
+reuses the same frozen modules and oracle-observation data, without retraining.
+A source-free profiling process verifies clocked/unclocked outcomes before each
+measurement, with separate successful and domain-rejected schedule groups.
+CPU and allocation profiles are diagnostic runs; randomized fresh-process
+measurements report outer latency, allocation counts, phase clocks and checker
+work separately.
+
+Call-local bounded prediction scratch eliminates numerical feature allocations;
+publishing the working copy on success eliminates a duplicate original snapshot.
+Rejected transactions still discard tentative state and return an owned original
+snapshot. All previously recorded raw scores remain bit-identical and all checks
+remain active. RunUninstrumented is an opt-in profiling API that omits timestamps,
+retaining exact work counters and semantics; the ordinary worker retains Run.
+
+Learned allocation counts now match lookup for this workload, but successful
+learned execution remains slower. The remaining gap is predominantly numerical
+prediction/decoding. Shared instance-map/output allocation and substantial
+phase-clock overhead also remain visible. Finite certificate construction is
+reported outside the warm loop; no weaker boundary or exact-result substitution
+is used to improve timings.
+
 ## Evaluation and falsification
 
 Run identical scenarios against reference execution, an explicit graph/lookup

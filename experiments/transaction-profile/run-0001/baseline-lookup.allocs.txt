@@ -1,0 +1,13 @@
+File: phlame-profile-baseline
+Build ID: 8ef2dcf6fde8b7a2f861b8d49c537d490aa5ae67
+Type: alloc_space
+Time: 2026-10-25 23:13:32 CDT
+Showing nodes accounting for 1855.06MB, 99.65% of 1861.49MB total
+Dropped 29 nodes (cum <= 9.31MB)
+      flat  flat%   sum%        cum   cum%
+ 1326.48MB 71.26% 71.26%  1326.48MB 71.26%  github.com/LynnColeArt/phlam/runtime/components.cloneInstances (inline)
+  527.57MB 28.34% 99.60%  1854.05MB 99.60%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).run
+    1.01MB 0.054% 99.65%  1860.04MB 99.92%  main.run
+         0     0% 99.65%  1853.05MB 99.55%  github.com/LynnColeArt/phlam/runtime/components.(*Registry).RunUninstrumented
+         0     0% 99.65%  1860.04MB 99.92%  main.main
+         0     0% 99.65%  1860.04MB 99.92%  runtime.main

@@ -30,7 +30,13 @@ trained Counter, all 224 supported compositions match the oracle and lookup;
 526 outside-domain schedules roll back. Warm certification runs no contract
 arithmetic or predicates. [Results and reproduction](experiments/saturating-accumulator/README.md).
 
-Certified learned execution is faster than concrete checking in this run, but
+[Transaction profiling](experiments/transaction-profile/README.md) identifies
+feature-buffer allocation, duplicate successful state copies and timestamp cost.
+Bounded stack scratch and one state copy on success reduce learned allocations
+to match lookup. Successful certified execution without phase clocks improves
+from 2.495 to 1.801 µs; lookup remains faster at 1.408 µs in the matched study.
+
+Certified learned execution is faster than concrete checking in the saturation run, but
 lookup remains faster. Supplied schedules are not learned planning. The
 [earlier Counter composition study](experiments/counter-compositions/README.md)
 and [first numerical experiment](experiments/counter/README.md) remain available.
@@ -90,6 +96,8 @@ full name/type checking are not implemented.
   composition study and source-free worker with concrete/certified boundaries.
 - `examples/counter`, `examples/accumulator`, `examples/saturating-accumulator`:
   independent affine, rejecting and saturating source examples.
+- `cmd/phlame-components-profile`: source-free CPU/allocation profiling with
+  optional phase clocks and oracle-derived outcome validation.
 - `cmd/phlame-components-experiment`, `cmd/phlame-components-worker`: independent
   module training, source-free execution and oracle/lookup measurements.
 - `tests/syntax`: valid/invalid corpus with expected diagnostic codes.

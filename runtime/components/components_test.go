@@ -153,3 +153,38 @@ func TestHiddenModelValidationAndSeal(t *testing.T) {
 		t.Fatal("oversized hidden layer accepted")
 	}
 }
+
+func TestTransactionOutputsOwnSnapshotsInBothClockModes(t *testing.T) {
+	r, _, err := NewRegistry(map[string]Artifact{"a": syntheticArtifact()}, "learned", "certified")
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, timed := range []bool{true, false} {
+		for _, reject := range []bool{true, false} {
+			tx := Transaction{Instances: map[string]Instance{"one": {Component: "a", Value: 0, Version: 1}}, Steps: []Step{{Target: "one", Operation: "bump", Argument: lit(1)}}}
+			if reject {
+				tx.Steps = append(tx.Steps, Step{Target: "one", Operation: "bump", Argument: lit(99)})
+			}
+			execute := r.Run
+			if !timed {
+				execute = r.RunUninstrumented
+			}
+			out := execute(tx)
+			if out.Accepted == reject {
+				t.Fatal("incorrect transaction disposition")
+			}
+			if reject && (out.States["one"].Value != 0 || out.States["one"].Version != 1 || len(out.Results) > 0 || len(out.Writes) > 0) {
+				t.Fatal("tentative writes escaped")
+			}
+			before := out.States["one"]
+			tx.Instances["one"] = Instance{Value: 77}
+			if out.States["one"] != before {
+				t.Fatal("outcome aliases caller input")
+			}
+			out.States["one"] = Instance{Value: 88}
+			if tx.Instances["one"].Value != 77 {
+				t.Fatal("caller input aliases outcome")
+			}
+		}
+	}
+}
